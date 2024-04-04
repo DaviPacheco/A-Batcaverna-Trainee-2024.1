@@ -26,12 +26,8 @@
 
 #### Links Úteis:
 
-* [Trello]()
-
-* [Drive com ID Visual]()
-
-
-
+* [Trello](https://trello.com/b/iP2Fl7aY/a-batcaverna-20241-trello)
+  
 ## Descrição do Projeto:
 
 * Blog / Sistema de treinamento e capacitação dos Trainees da [CodeJR](https://codejr.com.br/), na gestão 2024.1;
