@@ -13,11 +13,11 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
-* Trainee 5
+* Bernardo Berigolon
+* Luca Panza
+* Renan Couri
+* Miguel Oliveira
+* Thiago Souza
 
 
 #### Scrum Master:
