@@ -13,7 +13,7 @@
 
 #### Desenvolvedores:
 
-* Bernardo Berigolon
+* Bernardo Rigolon
 * Luca Panza
 * Renan Couri
 * Miguel Oliveira
