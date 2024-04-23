@@ -14,7 +14,7 @@
 #### Desenvolvedores:
 
 * Bernardo Rigolon
-* Luca Panza
+* Luis Henrique Farias
 * Renan Couri
 * Miguel Oliveira
 * Thiago Souza
