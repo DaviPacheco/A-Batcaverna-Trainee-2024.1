@@ -1,0 +1,42 @@
+body{
+    background: grey;
+    width: 1440px;
+    height: 1440px;
+}
+
+#bloco{
+    width:1440px;
+    height:1016px;
+    border: 1px solid white;
+    margin: 349px auto 75px auto;
+    position: relative;
+}
+
+#quadro{
+    width: 1132px;
+    height: 1016px;
+    background: red;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    left: 154px;
+}
+
+#quadropreto{
+    width: 1092px;
+    height: 976px;
+    background: black;
+    margin: 20px 20px 20px 20px;
+    position: absolute;
+}
+
+#flash img {
+    width: 311px;
+    height: 750px;
+    margin: 130px 0px 136px 0px;
+}
+
+#batman img {
+    width: 346px;
+    height: 750px;
+    margin: 130px 0px 136px 779px;
+}
