@@ -1,52 +1,99 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+body{
     background-color: #b5b5b5;
 }
-#logo{                   /* para mover uma imagem, é necessario criar uma caixa"em volta" dela*/
-    width: 212px;
-    height: 89px;
-    margin-top: 64px;
-    margin-left: auto;    /* para centralizar, tem q ser pela caixa tbm*/
-    margin-right: auto;
-    border: 1px solid red;
+body * {
+    font-family: "Oswald",sans-serif ;
+    color: white;
 }
-#logo img {
-    width: 212px;
-    height: 89px;
-    margin-left: auto;
-    margin-right: auto;
+#BlocoTotalLandingPage{
+    width:1440px;
+    margin:auto;
+    border:1px solid black;
 }
-#conteiner{
+#logo{
+    width:343px;
+    height:272px;
+    margin:0px 559px 0px 560px;
+}
+#logo img{
+    width:343px;
+    height:252px;
+}
+#abertura{
+    width:1402px;
+    background-color:black;
+    height:400px;
+    margin:1px auto auto auto;
+    padding:8px 10px;
+    border-radius:10px;
+    position:relative;
+}
+#abertura img
+{
+   display:block;
+   
+   width:1015px;
+   height:321px;
+   margin-left:20px;
+}
 
-    width: 1146px;
-    height: 751px;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 75px;
-    margin-bottom: 200px;
+#abertura p
+{
+    
+    position:absolute;
+    left:1107px;
+    top:142px;
+   
+    z-index:1;
+}
+#frase1
+{  
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+#frase2
+{
+  font-weight: 200;
+  font-size: 16px;
+  
+}
+#SobreNos{
+    position:absolute;
+    z-index:2;
+    top:10px;
+    left:1107px;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+#Publicacoes{
+    position:absolute;
+    z-index:2;
+    top:10px;
+    right:27px;
+    font-weight: 500;
+    font-size: 20px;
+}
+#titulo
+{
+    margin:10px auto auto 140px;
+    border: 1px solid rgba(255,255,255,0.7);
     border-radius: 30px;
-    border: 1px solid red;
+    width: 1062px;
+    text-align:center;
+    background-color:rgba(181,181,181,0.35);
 }
-#bordaverm{
-    width: 23px;
-    height: 751px;
-    background-color: red;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    position: absolute;
-    
+
+#titulo h1
+{
+    font-weight: 500;
+    font-size:32px;
 }
-#profile img{
-    width: 438px;
-    height: 200px;
-    margin-top: 35px;
-    margin-left: 67px;
-    
-    
-}
+
+
