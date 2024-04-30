@@ -2,6 +2,13 @@ body{
     background: #B5B5B5;
     width: 1440px;
     height: 1440px;
+    margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #bloco{
@@ -16,6 +23,7 @@ body{
     width: 1132px;
     height: 1016px;
     background: #cc2524;
+    border: 1px solid black;
     border-radius: 30px;
     margin: 0px auto 0px auto;
     position: absolute;
@@ -40,5 +48,75 @@ body{
 #batman img {
     width: 346px;
     height: 750px;
-    margin: 130px 0px 136px 779px;
+    margin: 130px 0px 136px 777px;
+}
+
+#post1 {
+    width: 451px;
+    height: 640px;
+    background: black;
+    border-radius: 30px;
+    margin: 60px 603px 276px 38px;
+    position: absolute;
+}
+
+#post2 {
+    width: 266px;
+    height: 284px;
+    background: black;
+    border-radius: 30px;
+    margin: 121px 308px 571px 518px;
+    position: absolute;
+}
+
+#post3 {
+    width: 266px;
+    height: 284px;
+    background: black;
+    border-radius: 30px;
+    margin: 121px 16px 571px 810px;
+    position: absolute;
+}
+
+
+#post4 {
+    width: 266px;
+    height: 284px;
+    background: black;
+    border-radius: 30px;
+    margin: 417px 308px 276px 518px;
+    position: absolute;
+}
+
+#post5 {
+    width: 266px;
+    height: 284px;
+    background: black;
+    border-radius: 30px;
+    margin: 417px 16px 276px 810px;
+    position: absolute;
+}
+
+#bord1 {
+    width: 25px;
+    height: 640px;
+    background: #cc2524;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+}
+
+#bord2 {
+    width: 25px;
+    height: 284px;
+    background: #cc2524;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+}
+
+#logo img {
+    width: 396px;
+    height: 259px;
+    margin: 717px 630.5px 0px 65.5px;
 }
