@@ -1,5 +1,5 @@
 body{
-    background: grey;
+    background: #B5B5B5;
     width: 1440px;
     height: 1440px;
 }
@@ -15,7 +15,8 @@ body{
 #quadro{
     width: 1132px;
     height: 1016px;
-    background: red;
+    background: #cc2524;
+    border-radius: 30px;
     margin: 0px auto 0px auto;
     position: absolute;
     left: 154px;
@@ -24,7 +25,8 @@ body{
 #quadropreto{
     width: 1092px;
     height: 976px;
-    background: black;
+    background: #737373;
+    border-radius: 30px;
     margin: 20px 20px 20px 20px;
     position: absolute;
 }
