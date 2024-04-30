@@ -8,18 +8,19 @@ body {
     background-color: #b5b5b5;
 }
 #logo{                   /* para mover uma imagem, é necessario criar uma caixa"em volta" dela*/
-    width: 212px;
-    height: 89px;
+    width: 300px;
+    height: 140px;
     margin-top: 64px;
     margin-left: auto;    /* para centralizar, tem q ser pela caixa tbm*/
     margin-right: auto;
-    border: 1px solid red;
+    border: 1px solid red;/*borda de 1px para melhor visualização*/
 }
 #logo img {
-    width: 212px;
-    height: 89px;
+    width: 300px;
+    height: 140px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 #conteiner{
 
@@ -28,15 +29,15 @@ body {
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 75px;
+    margin-top: 88px;
     margin-bottom: 200px;
     border-radius: 30px;
-    border: 1px solid red;
+     /*borda de 1px para melhor visualização*/
 }
 #bordaverm{
     width: 23px;
     height: 751px;
-    background-color: red;
+    background-color: #cc2524;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     position: absolute;
