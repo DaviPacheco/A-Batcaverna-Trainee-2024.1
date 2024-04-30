@@ -60,6 +60,21 @@ body{
     position: absolute;
 }
 
+#barra {
+    width: 500px;
+    height: 50px;
+    background: #cc2524;
+    border-radius: 30px;
+    margin: 60px 43.5px 866px 548.5px;
+    position: absolute;
+}
+
+#lupa img {
+    width: 32px;
+    height: 32px;
+    margin: 9px 26px 9px 442px;
+}
+
 #post2 {
     width: 266px;
     height: 284px;
