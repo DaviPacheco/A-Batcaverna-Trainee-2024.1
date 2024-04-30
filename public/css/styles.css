@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+nav * {
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+}
+
+nav{
+    margin-right: 16px;
+}
+
+ li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+}
+
+header {
+    background-image: url(../assets/NavBar.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    
+}
+.logo {
+    order: 0;
+    align-self: auto;
+}
