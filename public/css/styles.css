@@ -204,3 +204,20 @@ margin-left:48px;
 width: 34px;
 height: 40px;
 }
+#TextoUltimasPublicacoes{
+    width:455px;
+    margin: 109px auto auto 152px;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 30px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    justify-content: center;
+}
+#seta2{
+    margin-top: 4px;
+}
+#TextoUltimasPublicacoes h2{
+    font-size:32px;
+    font-weight: 700;
+    color: black;
+}
