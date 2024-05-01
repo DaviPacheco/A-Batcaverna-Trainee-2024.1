@@ -110,4 +110,53 @@ body * {
     height:756px;
     border: 1px solid blue;
 }
-
+#RetanguloVermelhoCentral{
+    width:908px;
+    height:42px;
+    padding:0px 28px;
+    background-color: #CC2524;
+    border: 1px solid white;
+    justify-content: center;
+   
+}
+#RetanguloVermelhoCentral h2
+{
+    font-size:32px;
+    font-weight: 400;
+}
+#Lista2{
+    width: 908px;
+    height:328px;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 80px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin:34px 0px 60px 0px;
+    background-color:rgba(0,0,0,0.9);
+    padding-left:52px;
+    padding-right:52px;
+    border-radius:15px;
+}
+#Lista2 li{
+    margin-top:54px;
+    height:206px;
+    width:180px;
+    text-align:center;
+}
+#LogoDc{
+    width:66px;
+    height:70px;
+}
+#Interrogacao{
+    width:76px;
+    height:70px;
+}
+#DailyPlanet{
+    width:129px;
+    height:67px;
+    margin-bottom:3px;
+}
+#BatmanFatosDiversos{
+    width:34px;
+    height:70px;
+}
