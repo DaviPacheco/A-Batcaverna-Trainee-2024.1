@@ -13,7 +13,6 @@ body * {
 #BlocoTotalLandingPage{
     width:1440px;
     margin:auto;
-    border:1px solid black;
 }
 #logo{
     width:343px;
@@ -103,12 +102,10 @@ body * {
     flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 18px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     padding: 0 24px;
-    border: 1px solid red;
 }
 #BatmanLateral{
     width:428px;
     height:756px;
-    border: 1px solid blue;
 }
 #RetanguloVermelhoCentral{
     width:908px;
