@@ -242,6 +242,7 @@ height: 40px;
     border-radius:30px;
     border-left:27px solid#CC2524;
     background-color:black;
+    
 }
 #ModeloDePost2{
     width:328px;
@@ -261,4 +262,24 @@ height: 40px;
     border-radius:20px;
     border-left:21px solid#CC2524; 
     background-color:black;
+    
 }
+#ImagemPost1{
+    width:365px;
+    height:290px;
+    object-fit: cover;
+    border-top-right-radius: 30px;
+}
+#ImagemPost2{
+    width:307px;
+    height:188px;
+    object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
+    border-top-right-radius: 25px;
+}
+#ImagemPost3{
+    width:311px;
+    height:154px;
+    object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
+    border-top-right-radius: 20px;
+}
+
