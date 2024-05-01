@@ -69,10 +69,20 @@ body{
     position: absolute;
 }
 
+#Pesquisar {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    margin: 9px 367px 9px 22px;
+    position: absolute;
+}
+
 #lupa img {
     width: 32px;
     height: 32px;
     margin: 9px 26px 9px 442px;
+    position: absolute;
 }
 
 #post2 {
@@ -134,4 +144,57 @@ body{
     width: 396px;
     height: 259px;
     margin: 717px 630.5px 0px 65.5px;
+}
+
+#pag1 {
+    width: 40px;
+    height: 40px;
+    background: #cc2524;
+    margin: 720px 16px 216px 1036px;
+    position: absolute;
+}
+
+#pag2 {
+    width: 40px;
+    height: 40px;
+    background: #cc2524;
+    margin: 720px 76px 216px 976px;
+    position: absolute;
+}
+
+#pag3 {
+    width: 40px;
+    height: 40px;
+    background: #cc2524;
+    margin: 720px 136px 216px 916px;
+    position: absolute;
+}
+
+#pag4 {
+    width: 40px;
+    height: 40px;
+    background: #cc2524;
+    margin: 720px 196px 216px 856px;
+    position: absolute;
+}
+
+#pag5 {
+    width: 40px;
+    height: 40px;
+    background: #cc2524;
+    margin: 720px 2566px 216px 796px;
+    position: absolute;
+}
+
+#recheio {
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    background: black;
+    margin: 4px 4px 4px 4px;
+    position: absolute;
 }
