@@ -79,3 +79,20 @@ iconify-icon[icon="octicon:book-16"]{
         background-size: 101%;
     }
 } 
+
+footer * {
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+
+}
+footer {
+    background-image: url(../assets/bat-signal.jpg);
+    background-color: rgba(204, 37, 36, 0.6);
+}
+
+.tittle{
+    font-size: 30px;
+}
+.text{
+    font-size: 20px;
+}
