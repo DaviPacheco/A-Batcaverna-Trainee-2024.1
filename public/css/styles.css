@@ -379,7 +379,7 @@ text-shadow:
     1px 1px 0 white,/*Baixo*/
     -1px 1px 0 white,/*Esquerda*/
     -1px -1px 0 white,/*Cima*/
-    1px -1px 0 white;
+    1px -1px 0 white;   
 }
 #NomeDoAutor2{
     margin-top:2px;
@@ -400,7 +400,7 @@ text-shadow:
 #NomeDoAutor3{
     margin-left:16px;
     width: 266px;
-    height: 35px;
+    height: 29px;
     font-weight: 600;
     font-size: 20px;
     text-align: left;
@@ -412,7 +412,46 @@ text-shadow:
         -1px -1px 0 white,/*Cima*/
         1px -1px 0 white;
 }
-
+#BotaoLerMais1{
+    width: 106px;
+    height: 34px;
+    margin: 6px 26px auto auto;
+    justify-content: center;
+    background-color: #CC2524;
+    border-radius:25px;
+}
+#BotaoLerMais1 p{
+    font-size:24px;
+    font-weight:400;
+    
+}
+#BotaoLerMais2{
+    width: 90px;
+    height: 26px;
+    margin: 0px 26px auto auto;
+    justify-content: center;
+    background-color: #CC2524;
+    border-radius:25px;
+}
+#BotaoLerMais2 p{
+    font-size:18px;
+    font-weight:400;
+    
+    
+}
+#BotaoLerMais3{
+    width: 73px;
+    height: 24px;
+    margin: 0px 26px auto auto;
+    justify-content: center;
+    background-color: #CC2524;
+    border-radius:25px;
+}
+#BotaoLerMais3 p{
+    font-size:16px;
+    font-weight:400;
+    
+}
 
 
 
