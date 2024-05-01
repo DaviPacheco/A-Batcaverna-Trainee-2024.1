@@ -1,7 +1,3 @@
-body{
-    background-color: black;
-}
-
 nav * {
     font-family: "Inter", sans-serif;
     color: #ffffff ;
@@ -32,13 +28,12 @@ header {
     padding-right: 22px;
 }
 
-.buttons {
+.layout-nav {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    
 }
 .logo {
-    order: 0;
     align-self: auto;
+    width: 144px;
 }
