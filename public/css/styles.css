@@ -221,3 +221,13 @@ height: 40px;
     font-weight: 700;
     color: black;
 }
+#CaixaDePosts{
+    width:1146px;
+    height:895px;
+    margin:18px auto;
+    background-color:rgba(115, 115, 115, 0.9);
+    border-top: 9px solid #CC2524;
+    border-bottom:9px solid #CC2524;
+    border-right:7px solid #CC2524;
+    border-left:7px solid #CC2524;
+}
