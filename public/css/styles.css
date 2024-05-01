@@ -178,3 +178,20 @@ body * {
     font-size:20px;
     font-weight: 300;
 }
+#BlocoDoProposito{
+    margin-top:34px;
+    background-color: rgba(0,0,0,0.9);
+    border-radius:15px;
+    width:908px;
+    height:216px;
+    padding-top:20px;
+
+}
+#BlocoDoProposito p{
+    margin: 0px 74px auto auto;
+    font-size:24px;
+    font-weight: 400;
+    height:144px;
+    width:734px;
+   
+}
