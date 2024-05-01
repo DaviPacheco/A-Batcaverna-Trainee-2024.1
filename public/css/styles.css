@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 nav * {
     font-family: "Inter", sans-serif;
     color: #ffffff ;
@@ -7,11 +11,12 @@ nav{
     margin-right: 16px;
 }
 
- li {
+ .layout-nav li {
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 24px; 
     list-style: none;
+    display: flex; /* Pra deixar a altura dos botoes iguais */ 
 }
 
 header {
@@ -67,3 +72,10 @@ header {
 iconify-icon[icon="octicon:book-16"]{
     margin-top: 3px;
 }
+
+@media (min-width:1430px){ /* Corrige o gap branco na imagem acima dessa resolução que o cover não estava fechando */
+    
+    header {
+        background-size: 101%;
+    }
+} 
