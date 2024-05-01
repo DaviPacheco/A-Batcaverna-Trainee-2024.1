@@ -235,6 +235,7 @@ height: 40px;
     border-right:7px solid #CC2524;
     border-left:7px solid #CC2524;
     padding:24px 18px;
+    position:relative;
 }
 #ModeloDePost1{
     width:392px;
@@ -463,4 +464,20 @@ text-shadow:
     margin-bottom: 30px;
     margin-left:42px;
 }
+#BotaoVerMais
+{
+    position: absolute;
+    left:400px;
+    bottom:10px;
+    background-color:black;
+    width:346px;
+    height:46px;
+    border-radius: 50%;
+    text-align:center;
+    text-decoration: none;
+}
 
+#BotaoVerMais span{
+    font-size:28px;
+    font-weight:500;
+}
