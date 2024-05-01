@@ -86,8 +86,12 @@ footer * {
 
 }
 footer {
+    height: 263px;
+    display: flex;
+    justify-content: center;
     background-image: url(../assets/bat-signal.jpg);
     background-color: rgba(204, 37, 36, 0.6);
+    background-size: contain;
 }
 
 .tittle{
@@ -96,3 +100,6 @@ footer {
 .text{
     font-size: 20px;
 }
+ .contFooter{
+    width: 42%; /* pra fazer quebra de linha */
+ }
