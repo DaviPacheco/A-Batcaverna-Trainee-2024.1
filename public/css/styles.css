@@ -222,6 +222,10 @@ height: 40px;
     color: black;
 }
 #CaixaDePosts{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 24px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     width:1146px;
     height:895px;
     margin:18px auto;
@@ -230,4 +234,31 @@ height: 40px;
     border-bottom:9px solid #CC2524;
     border-right:7px solid #CC2524;
     border-left:7px solid #CC2524;
+    padding:24px 18px;
+}
+#ModeloDePost1{
+    width:392px;
+    height:610px;
+    border-radius:30px;
+    border-left:27px solid#CC2524;
+    background-color:black;
+}
+#ModeloDePost2{
+    width:328px;
+    height:788px;
+}
+#PostDeCima{
+    height:422px;
+    width:328px;
+    border-radius:25px;
+    border-left:21px solid#CC2524; 
+    background-color:black;
+    margin-bottom:22px;
+}
+#PostDeBaixo{
+    height:344px;
+    width:328px;
+    border-radius:20px;
+    border-left:21px solid#CC2524; 
+    background-color:black;
 }
