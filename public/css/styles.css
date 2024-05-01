@@ -299,4 +299,66 @@ height: 40px;
     font-weight:500;
     margin:auto;
 }
-
+#TextoDescricaoPost1
+{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 16px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:22px;
+    margin-left:27px;
+}
+#LinhaLateral1{
+    height:132px;
+    width:6px;
+    background-color: #CC2524;
+} 
+#ParteEscritaPost1{
+    width: 280px;
+    height: 140px;
+    font-size:20px;
+    font-weight:300;
+    text-align: left;
+}
+#TextoDescricaoPost2
+{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 12px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:5px;
+    margin-left:22px;
+}
+#LinhaLateral2{
+    height:100px;
+    width:5px;
+    background-color: #CC2524;
+} 
+#ParteEscritaPost2{
+    width: 245px;
+    height: 110px;
+    font-size:16px;
+    font-weight:300;
+    text-align: left;
+}
+#TextoDescricaoPost3
+{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 12px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:7px;
+    margin-left:22px;
+}
+#LinhaLateral3{
+    height:65px;
+    width:4px;
+    background-color: #CC2524;
+} 
+#ParteEscritaPost3{
+    width: 258px;
+    height: 74px;
+    font-size:14px;
+    font-weight:300;
+    text-align: left;
+}
