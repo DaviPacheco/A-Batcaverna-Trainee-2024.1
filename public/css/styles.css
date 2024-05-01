@@ -37,3 +37,21 @@ header {
     align-self: auto;
     width: 144px;
 }
+
+.btnav{
+    background-color: #cb2523;
+    padding: 8px 16px;
+    border: 1px solid #510f0E;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btnav:hover{
+    background-color: #d5514f;
+    text-decoration: underline;
+}
+
+.btnav:active{
+    background-color: #A21E1C;
+
+}
