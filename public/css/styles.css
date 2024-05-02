@@ -109,18 +109,19 @@ footer {
 	border-right: 300px solid #6e2120;
 	border-bottom: 131.5px solid transparent;
 }
-.rightTri div{
+.Triangulo {
     width: 0;
 	height: 0;
 	border-top: 131.5px solid transparent;
 	border-left: 300px solid #6e2120;
 	border-bottom: 131.5px solid transparent;
+    position:relative;
 }
 
  .rightTri {
     height: 263px;
     width: 29%;
-    background-image: url(../assets/bat-signal.jpg);
+    background-image: url(../assets/batman_vermelho_enhanced3.jpeg);
     background-color: rgba(204, 37, 36, 0.6);
     background-size: contain;
     background-position: center;
@@ -128,10 +129,25 @@ footer {
 .leftTri {
     height: 263px;
     width: 29%;
-    background-image: url(../assets/bat-signal.jpg);
+    background-image: url(../assets/batman_vermelho_enhanced3.jpeg);
     background-color: rgba(204, 37, 36, 0.6);
     background-size: contain;
     background-position: center;
     display: flex;
     justify-content: flex-end;
+    }
+
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -296px;
+        bottom: -93px;
+        font-size: 60px;
+
+    }
+
+    a {
+        height: 68px;
     }
