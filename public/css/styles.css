@@ -71,8 +71,8 @@ body{
  
  .principal{    
     width: auto;
-    height:auto; 
-    background-image: url(../assets/fundo.png);
+    height:100vh; 
+    background-image: url(../assets/fundo\ login\ definido.png);
     background-position: center;
     background-size: cover;
     
@@ -99,7 +99,7 @@ padding: 32px 16px;
    height: 39px;
    margin-top: 12px;
    border: none;
-    
+    padding: 10px;
 }
 .buttonred{
     background-color:#CB2523 ;
@@ -111,13 +111,18 @@ padding: 32px 16px;
     height: 39px;
     margin-top: 12px;
     border: none;
+    align-items: center;
+    padding: 10px;
 } 
 .name{
     position: relative;
     width: 100%;
+
 }
 .name svg{
     position: absolute;
+    top: 20px; 
+    right:15px ;
 }
 
 .bv{ 
@@ -131,8 +136,9 @@ padding: 32px 16px;
 }
 .hbv{
     color: #D9D9D9;
-    font-size: 32px;
+    font-size: 25px;
     border:black 1px ;
+    text-align: center;
 }
 .alfred{
     width: 177px;
@@ -141,7 +147,8 @@ padding: 32px 16px;
 .segundaria{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 32px ;
+    margin-right: 190px;
+    margin-bottom: 50px; 
 }
 .ptres{
     display: flex;
