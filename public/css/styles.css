@@ -78,6 +78,7 @@ body{
     position: absolute;
 }
 
+
 #lupa img {
     width: 32px;
     height: 32px;
@@ -93,6 +94,23 @@ body{
     margin: 121px 308px 571px 518px;
     position: absolute;
 }
+
+#batmanDoFuturo1 img {
+    width: 426px;
+    height: 307px;
+    margin-left: 25px;
+    border-top-right-radius: 30px;
+    position: absolute;
+}
+
+#batmanDoFuturo img {
+    width: 241px;
+    height: 138px;
+    margin-left: 25px;
+    border-top-right-radius: 30px;
+    position: absolute;
+}    
+
 
 #post3 {
     width: 266px;
@@ -196,5 +214,22 @@ body{
     text-align: center;
     background: black;
     margin: 4px 4px 4px 4px;
+    position: absolute;
+}
+
+#titulo1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: white;
+    margin: 327px 74px 228px 99px;
+    position: absolute;
+}
+
+#barrinha1 {
+    width: 1px;
+    height: 122px;
+    background: #cc2524;
+    margin: 401px 397px 111px 54px;
     position: absolute;
 }
