@@ -70,9 +70,9 @@ body{
  }
  
  .principal{    
-    width: auto;
+    width: 100vw;
     height:100vh; 
-    background-image: url(../assets/fundo\ login\ definido.png);
+    background-image: url(../assets/LOGIN\ definitivo\ -.png);
     background-position: center;
     background-size: cover;
     
@@ -86,10 +86,13 @@ border-radius: 60px;
 width: 281px;
 height: 312px;
 padding: 32px 16px; 
+margin-top: 30px ;
+
 }
 .login form{
     display: flex;
     flex-direction: column;
+    
     
 } 
 
@@ -97,9 +100,11 @@ padding: 32px 16px;
    border-radius: 32px;
    width: 224px;
    height: 39px;
-   margin-top: 12px;
+   margin-top: 25px;
    border: none;
-    padding: 10px;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: medium;
 }
 .buttonred{
     background-color:#CB2523 ;
@@ -109,10 +114,12 @@ padding: 32px 16px;
     border-radius: 32px;
     width: 224px;
     height: 39px;
-    margin-top: 12px;
+    margin-top: 25px;
     border: none;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration:medium ;
 } 
 .name{
     position: relative;
@@ -121,24 +128,27 @@ padding: 32px 16px;
 }
 .name svg{
     position: absolute;
-    top: 20px; 
+    top: 35px; 
     right:15px ;
 }
 
 .bv{ 
- border-radius: 30px;
- background-color:#d9d9d96b;
+ border-radius: 30px 30px 0px 30px;
+ background-color:#d9d9d92f;
  width:382px ;
  height:79px ;
- padding: 16px 8px;
+padding: 16px 8px;
  display: flex;
  align-items: center;
+ 
 }
 .hbv{
     color: #D9D9D9;
     font-size: 25px;
+    text-decoration:medium ;
     border:black 1px ;
     text-align: center;
+    margin-right: 5px;
 }
 .alfred{
     width: 177px;
@@ -147,14 +157,14 @@ padding: 32px 16px;
 .segundaria{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 190px;
-    margin-bottom: 50px; 
+    margin-right: 200px;
+    margin-bottom: 70px; 
 }
 .ptres{
     display: flex;
     flex-direction:column ;
     align-items: center;
-    padding: 15px 0px; 
+   margin-bottom: 50px;    
 
 }
 .simbolo{
@@ -162,3 +172,15 @@ padding: 32px 16px;
     bottom: 5px;
 
 }
+@media screen and (max-width:720px) {
+    .principal{
+        
+      display: flex;  
+       align-items: center;
+       flex-direction: column; 
+        
+    }
+     .segundaria{
+        margin-left:200px ;
+     }
+} 
