@@ -271,101 +271,97 @@ height: 40px;
     border-left-width:21px;
     
 }
-#ImagemPost1{
+.ImagemPost1{
     width:365px;
     height:290px;
     object-fit: cover;
     border-top-right-radius: 30px;
 }
-#ImagemPost2{
+.ImagemPost2{
     width:307px;
     height:188px;
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
     border-top-right-radius: 25px;
 }
-#ImagemPost3{
+.ImagemPost3{
     width:311px;
     height:154px;
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
     border-top-right-radius: 20px;
 }
-#Titulo1{
+.Titulo1{
     font-size:44px;
     font-weight:500;
 }
-#Titulo2{
+.Titulo2{
     font-size:36px;
     font-weight:500;
     margin:auto;
 }
-#Titulo3{
+.Titulo3{
     font-size:32px;
     font-weight:500;
     margin:auto;
 }
-#TextoDescricaoPost1
-{
+.TextoDescritivo{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
+}
+.LinhaLateral{
+    background-color: #CC2524;
+}
+.ParteEscrita{
+    font-weight:300;
+    text-align: left;
+}
+.TDPost1
+{
+    
     gap: 16px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin-top:22px;
     margin-left:27px;
 }
-#LinhaLateral1{
+.LLPost1{
     height:132px;
     width:6px;
-    background-color: #CC2524;
 } 
-#ParteEscritaPost1{
+.PEPost1{
     width: 280px;
     height: 140px;
     font-size:20px;
-    font-weight:300;
-    text-align: left;
 }
-#TextoDescricaoPost2
+.TDPost2
 {
-    list-style: none; /*Anula estilo de pontos da lista*/
-    display: flex; /*Tipo de display flexível*/
-    flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 12px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin-top:5px;
     margin-left:22px;
 }
-#LinhaLateral2{
+.LLPost2{
     height:100px;
     width:5px;
-    background-color: #CC2524;
 } 
-#ParteEscritaPost2{
+.PEPost2{
     width: 245px;
     height: 110px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    text-align: left;
+
 }
-#TextoDescricaoPost3
+.TDPost3
 {
-    list-style: none; /*Anula estilo de pontos da lista*/
-    display: flex; /*Tipo de display flexível*/
-    flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 12px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin-top:7px;
     margin-left:22px;
 }
-#LinhaLateral3{
+.LLPost3{
     height:65px;
     width:4px;
-    background-color: #CC2524;
 } 
-#ParteEscritaPost3{
+.PEPost3{
     width: 258px;
     height: 74px;
     font-size:14px;
-    font-weight:300;
-    text-align: left;
 }
 /* Autor: Lex Luthor */
 #NomeDoAutor1{
