@@ -236,7 +236,7 @@ height: 40px;
 }
 #ModeloDePost1{
     width:392px;
-    height:610px;
+    height:615px;
     border-radius:30px;
     border-left:27px solid#CC2524;
     background-color:black;
@@ -411,25 +411,33 @@ text-shadow:
         1px -1px 0 white;
 }
 #BotaoLerMais1{
+    display:block;
     width: 106px;
-    height: 34px;
+    height: 36px;
     margin: 6px 26px auto auto;
     justify-content: center;
     background-color: #CC2524;
     border-radius:25px;
+    text-decoration: none;
 }
 #BotaoLerMais1 p{
     font-size:24px;
     font-weight:400;
     
 }
+#BotaoLerMais1:hover{
+    outline: 5px solid rgba(204,37,36,0.3);
+    text-decoration-line:underline;
+}
 #BotaoLerMais2{
+    display:block;
     width: 90px;
     height: 26px;
     margin: 0px 26px auto auto;
     justify-content: center;
     background-color: #CC2524;
     border-radius:25px;
+    text-decoration: none;
 }
 #BotaoLerMais2 p{
     font-size:18px;
@@ -437,24 +445,34 @@ text-shadow:
     
     
 }
+#BotaoLerMais2:hover{
+    outline: 4px solid rgba(204,37,36,0.3);
+    text-decoration-line:underline;
+}
 #BotaoLerMais3{
+    display:block;
     width: 73px;
     height: 24px;
     margin: 0px 26px auto auto;
     justify-content: center;
     background-color: #CC2524;
     border-radius:25px;
+    text-decoration: none;
 }
 #BotaoLerMais3 p{
     font-size:16px;
     font-weight:400;
     
 }
+#BotaoLerMais3:hover{
+    outline: 3px solid rgba(204,37,36,0.3);
+    text-decoration-line:underline;
+}
 #Logo2
 {
     width: 216px;
     height:171px;
-    margin-top:95px;
+    margin-top:90px;
 }
 
 #seta3{
