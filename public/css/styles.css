@@ -38,7 +38,7 @@ header {
     flex-direction: row;
     gap: 24px;
 }
-.logo {
+.logo-nav {
     align-self: auto;
     width: 144px;
 }
@@ -78,6 +78,94 @@ iconify-icon[icon="octicon:book-16"]{
         background-size: 101%;
     }
 } 
+
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #ffffff;
+    cursor: pointer;
+    width: 30px;
+    padding:0;  /* Pra o primeiro traço ficar igual os outros dois */
+}
+.hamburguer::before,.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3px;
+}
+@media(max-width: 750px){
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+    .layout-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #510f0E;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    .layout-nav a {
+        font-size: 18px;
+        opacity: 0;
+    }
+
+    .layout-nav li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .layout-nav li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+
+    }
+
+    .layout-nav li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+
+    }
+
+    .nav.active .layout-nav{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .layout-nav a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburguer {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+
+    
+}
 
 footer * {
     font-family: "Oswald", sans-serif;
