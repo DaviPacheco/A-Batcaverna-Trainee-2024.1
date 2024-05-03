@@ -96,12 +96,15 @@ iconify-icon[icon="octicon:book-16"]{
     background: #ffffff;
     margin-top: 5px;
     position: relative;
-    transition: 0.3px;
+    transition: 0.3s;
 }
 @media(max-width: 750px){
     .hamburguer {
         display: block;
         z-index: 1;
+        position:fixed;   /* hamburguer na msm posição do */
+        top: 26px;
+        right: 16px;
     }
     .layout-nav{
         position: fixed;
@@ -109,7 +112,7 @@ iconify-icon[icon="octicon:book-16"]{
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: #510f0E;
+        background: rgba(81, 15, 14, 0.8);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -148,7 +151,7 @@ iconify-icon[icon="octicon:book-16"]{
     }
 
     .nav.active .hamburguer {
-        position: fixed;
+        position: fixed;        /* posição do x */
         top: 26px;
         right: 16px;
         border-top-color: transparent;
