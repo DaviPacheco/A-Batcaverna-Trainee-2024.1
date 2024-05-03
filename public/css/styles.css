@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #b5b5b5;
 }
@@ -13,6 +16,7 @@ body * {
 #BlocoTotalLandingPage{
     width:1440px;
     margin:auto;
+    
 }
 #logo{
     width:343px;
@@ -62,22 +66,30 @@ body * {
   font-size: 16px;
   
 }
-#SobreNos{
+#BotaoSobreNos{
     position:absolute;
     z-index:2;
     top:10px;
     left:1107px;
     font-weight: 500;
     font-size: 20px;
+    text-decoration:none;
 
 }
-#Publicacoes{
+#BotaoSobreNos:hover{
+    text-decoration-line:underline;
+}
+#BotaoIrPublicacoes{
     position:absolute;
     z-index:2;
     top:10px;
     right:27px;
     font-weight: 500;
     font-size: 20px;
+    text-decoration: none;
+}
+#BotaoIrPublicacoes:hover{
+    text-decoration-line:underline;
 }
 #titulo
 {
@@ -105,11 +117,11 @@ body * {
 }
 #BatmanLateral{
     width:428px;
-    height:756px;
+    height:764px;
 }
 #RetanguloVermelhoCentral{
     width:908px;
-    height:42px;
+    height:46px;
     padding:0px 28px;
     background-color: #CC2524;
     border: 1px solid white;
