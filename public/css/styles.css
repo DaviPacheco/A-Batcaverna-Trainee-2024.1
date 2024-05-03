@@ -108,13 +108,12 @@ iconify-icon[icon="octicon:book-16"]{
     }
     .layout-nav{
         position: fixed;
-        top: 0;
+        top: 51px;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(81, 15, 14, 0.8);
         clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
+        transition: 1.3s ease-out;
 
         flex-direction: column;
         justify-content: space-around;
@@ -144,6 +143,8 @@ iconify-icon[icon="octicon:book-16"]{
     .nav.active .layout-nav{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
+        top: 51px;
+        background: rgba(81, 15, 14, 0.8);
     }
 
     .nav.active .layout-nav a {
