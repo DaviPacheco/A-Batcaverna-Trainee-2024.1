@@ -11,18 +11,12 @@ body{
     box-sizing: border-box;
 }
 
-#bloco {
-    width: 1092px;
-    height: 976px;
-    margin: auto;
-}
-
 #post1 {
     width: 451px;
     height: 640px;
     background: black;
     border-radius: 30px;
-    margin: 60px 603px 276px 38px;
+    margin: 400px 845px 400px 144px;
     position: absolute;
 }
 
@@ -31,7 +25,8 @@ body{
     height: 50px;
     background: #cc2524;
     border-radius: 30px;
-    margin: 60px 43.5px 866px 548.5px;
+    margin-top: 286px;
+    margin-left: 120px;
     position: absolute;
 }
 
@@ -54,10 +49,10 @@ body{
 
 #post2 {
     width: 266px;
-    height: 284px;
+    height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 121px 308px 571px 518px;
+    margin: 286px 480px 770px 694px;
     position: absolute;
 }
 
@@ -71,7 +66,7 @@ body{
 
 #batmanDoFuturo img {
     width: 241px;
-    height: 138px;
+    height: 184.2px;
     margin-left: 25px;
     border-top-right-radius: 30px;
     position: absolute;
@@ -80,29 +75,29 @@ body{
 
 #post3 {
     width: 266px;
-    height: 284px;
+    height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 121px 16px 571px 810px;
+    margin: 286px 121px 770px 1053px;
     position: absolute;
 }
 
 
 #post4 {
     width: 266px;
-    height: 284px;
+    height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 417px 308px 276px 518px;
+    margin: 770px 121px 286px 1053px;
     position: absolute;
 }
 
 #post5 {
     width: 266px;
-    height: 284px;
+    height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 417px 16px 276px 810px;
+    margin: 770px 480px 286px 694px;
     position: absolute;
 }
 
@@ -117,7 +112,7 @@ body{
 
 #bord2 {
     width: 25px;
-    height: 284px;
+    height: 384px;
     background: #cc2524;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -128,7 +123,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 720px 16px 216px 1036px;
+    margin: 1077px 845px 323px 555px;
     position: absolute;
 }
 
@@ -136,7 +131,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 720px 76px 216px 976px;
+    margin: 1077px 905px 323px 495px;
     position: absolute;
 }
 
@@ -144,7 +139,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 720px 136px 216px 916px;
+    margin: 1077px 965px 323px 435px;
     position: absolute;
 }
 
@@ -152,7 +147,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 720px 196px 216px 856px;
+    margin: 1077px 1025px 323px 375px;
     position: absolute;
 }
 
@@ -160,7 +155,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 720px 256px 216px 796px;
+    margin: 1077px 1085px 323px 315px;
     position: absolute;
 }
 
