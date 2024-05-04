@@ -233,3 +233,34 @@ body{
     margin: 401px 397px 111px 54px;
     position: absolute;
 }
+
+#resumo1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    margin: 396px 51px 116px 80px;
+    position: absolute;
+}
+
+#autor1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    margin: 543px 34px 32px 54px;
+    position: absolute;
+}
+
+#lermais1 {
+    width: 108px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    border-radius: 25px;
+    background: #cc2524;
+    color: white;
+    margin: 580px 24px 7px 319px;
+    position: absolute;
+}
