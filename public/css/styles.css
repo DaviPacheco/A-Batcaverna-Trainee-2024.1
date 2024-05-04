@@ -108,6 +108,7 @@ iconify-icon[icon="octicon:book-16"]{
         top: 26px;
         right: 16px;
     }
+    
     .layout-nav{
         position: fixed;
         top: 51px;
@@ -115,7 +116,7 @@ iconify-icon[icon="octicon:book-16"]{
         width: 100vw;
         height: 253px;
         padding: 0;  /* Sem espaço no menu hamburguer */
-        clip-path: circle(100px at 90% -15%);
+        clip-path: circle(100px at 90% -80%);
         transition: 1.3s ease-out;
 
         flex-direction: column;
@@ -128,7 +129,7 @@ iconify-icon[icon="octicon:book-16"]{
         font-size: 18px; /* remover essa linha dps ? */
         opacity: 0;
     }
-
+    
     .layout-nav li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
@@ -151,8 +152,7 @@ iconify-icon[icon="octicon:book-16"]{
     }
 
     .nav .btnav{
-
-        background: none;
+        background:none;
         border: 1px solid white;
         width: 100vw;
         height: 75px;
@@ -160,6 +160,7 @@ iconify-icon[icon="octicon:book-16"]{
         border-radius: 0px;
         font-size:26px;
     }
+    
 
     .nav.active .btnav:hover{
         background-color: #c82419;
@@ -206,6 +207,7 @@ footer {
 .text{
     font-size: 20px;
 }
+
  .contFooter{
     width: 42%; /* pra fazer quebra de linha */
     background-color: #6e2120;
