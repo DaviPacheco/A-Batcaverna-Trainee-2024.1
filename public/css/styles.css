@@ -11,43 +11,10 @@ body{
     box-sizing: border-box;
 }
 
-#bloco{
-    width:1440px;
-    height:1016px;
-    margin: 349px auto 75px auto;
-    position: relative;
-}
-
-#quadro{
-    width: 1132px;
-    height: 1016px;
-    background: #cc2524;
-    border: 1px solid black;
-    border-radius: 30px;
-    margin: 0px auto 0px auto;
-    position: absolute;
-    left: 154px;
-}
-
-#quadropreto{
+#bloco {
     width: 1092px;
     height: 976px;
-    background: #737373;
-    border-radius: 30px;
-    margin: 20px 20px 20px 20px;
-    position: absolute;
-}
-
-#flash img {
-    width: 311px;
-    height: 750px;
-    margin: 130px 0px 136px 0px;
-}
-
-#batman img {
-    width: 346px;
-    height: 750px;
-    margin: 130px 0px 136px 777px;
+    margin: auto;
 }
 
 #post1 {
@@ -155,12 +122,6 @@ body{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     position: absolute;
-}
-
-#logo img {
-    width: 396px;
-    height: 259px;
-    margin: 717px 630.5px 0px 65.5px;
 }
 
 #pag1 {
