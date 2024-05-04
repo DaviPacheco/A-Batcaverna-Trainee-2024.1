@@ -79,6 +79,8 @@ iconify-icon[icon="octicon:book-16"]{
     }
 } 
 
+/* Hamburguer*/
+
 .hamburguer{
     display: none;
     border: none;
@@ -102,7 +104,7 @@ iconify-icon[icon="octicon:book-16"]{
     .hamburguer {
         display: block;
         z-index: 1;
-        position:fixed;   /* hamburguer na msm posição do */
+        position:fixed;   /* hamburguer na msm posição do x */
         top: 26px;
         right: 16px;
     }
@@ -111,18 +113,19 @@ iconify-icon[icon="octicon:book-16"]{
         top: 51px;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 253px;
+        padding: 0;  /* Sem espaço no menu hamburguer */
         clip-path: circle(100px at 90% -15%);
         transition: 1.3s ease-out;
 
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         gap: 0;
         pointer-events: none;
     }
     .layout-nav a {
-        font-size: 18px;
+        font-size: 18px; /* remover essa linha dps ? */
         opacity: 0;
     }
 
@@ -132,19 +135,35 @@ iconify-icon[icon="octicon:book-16"]{
 
     .layout-nav li:nth-child(2) a {
         transition: 0.5s 0.4s;
-
     }
 
     .layout-nav li:nth-child(3) a {
         transition: 0.5s 0.6s;
-
     }
+
+    /* menu hamburguer on */
 
     .nav.active .layout-nav{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
         top: 51px;
-        background: rgba(81, 15, 14, 0.8);
+        background: rgba(74, 55, 55, 0.8);
+    }
+
+    .nav .btnav{
+
+        background: none;
+        border: 1px solid white;
+        width: 100vw;
+        height: 75px;
+        justify-content: center;
+        border-radius: 0px;
+        font-size:26px;
+    }
+
+    .nav.active .btnav:hover{
+        background-color: #c82419;
+
     }
 
     .nav.active .layout-nav a {
@@ -166,9 +185,8 @@ iconify-icon[icon="octicon:book-16"]{
         transform: rotate(-135deg);
         top: -7px;
     }
-
-
     
+    /*////////////////////// Footer //////////////////////*/
 }
 
 footer * {
@@ -197,14 +215,14 @@ footer {
     width: 0;
 	height: 0;
 	border-top: 131.5px solid transparent;
-	border-right: 300px solid #6e2120;
+	border-right: 210px solid #6e2120;
 	border-bottom: 131.5px solid transparent;
 }
 .Triangulo {
     width: 0;
 	height: 0;
 	border-top: 131.5px solid transparent;
-	border-left: 300px solid #6e2120;
+	border-left: 210px solid #6e2120;
 	border-bottom: 131.5px solid transparent;
     position:relative;
 }
@@ -213,15 +231,17 @@ footer {
     height: 263px;
     width: 29%;
     background-image: url(../assets/batman_vermelho_enhanced3.jpeg);
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: -15px;
 }
 .leftTri {
     height: 263px;
     width: 29%;
     background-image: url(../assets/batman_vermelho_enhanced3.jpeg);
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y:-41px ;
     display: flex;
     justify-content: flex-end;
     }
@@ -230,7 +250,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: -296px;
+        left: -213px;
         bottom: -93px;
         font-size: 60px;
     }
@@ -238,3 +258,97 @@ footer {
     .Icn {
         height: 68px; /* gap */
     }
+    /* responsividade*/
+@media (max-width:950px){ 
+
+    .Triangulo{
+        border: 0;
+    }
+    .rightTri{
+        width: 0px;
+    }
+    .leftTri{
+        display: none;
+    }
+    .contFooter{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .social{
+        flex-direction: row;
+        left: -227px;
+        bottom: -231px;
+        font-size: 56px;
+    }
+
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size: 64px;
+        margin-top: 9px;
+        }
+
+}
+
+@media (max-width: 363px){
+    footer{
+        height: 313px;
+    } 
+    .social{
+        flex-direction: row;
+        left: -227px;
+        bottom: -285px;
+        font-size: 56px;
+    }
+}
+@media (max-width: 1120px) and (min-width: 947px){ 
+    .leftTri{
+        display: none;
+    }
+    .contFooter{
+        width: 60%;
+        padding: 0px 15px;
+    }
+    .rightTri{
+        width: 40%;
+        background-size: cover;
+        background-position-x: -61px;
+        background-position-y: -12px;
+    }
+    .social{
+        left: -209px;
+        bottom: -88px;
+        font-size: 52px;
+    }
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size: 54px;
+        margin-top: 6px;
+    }
+    
+    .Icn{
+        height: 64px;
+    }
+}
+
+@media(min-width: 1120px){
+    .tittle, .text{
+        margin-left: -30px;
+        margin-top: 30px;
+    }
+    .rightTri{
+        background-size: 163%;
+        background-position-x: 93%;
+        background-position-y: 72%;
+    }
+    .leftTri{
+        background-size: 160%;
+        background-position-x: 0px;
+        background-position-y: -41px;
+    }
+    .social{
+        font-size: 50px;
+    }
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size: 54px;
+        margin-left: -2px;
+        margin-bottom: 1px;
+    }
+}
