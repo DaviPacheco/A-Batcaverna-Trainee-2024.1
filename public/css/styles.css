@@ -160,11 +160,9 @@ iconify-icon[icon="octicon:book-16"]{
         border-radius: 0px;
         font-size:26px;
     }
-    
 
     .nav.active .btnav:hover{
         background-color: #c82419;
-
     }
 
     .nav.active .layout-nav a {
@@ -206,11 +204,14 @@ footer {
 }
 .text{
     font-size: 20px;
+    padding-right: 18px;
 }
 
  .contFooter{
     width: 42%; /* pra fazer quebra de linha */
     background-color: #6e2120;
+    display: flex;
+    flex-direction: column;
 
  }
 .leftTri div{
@@ -260,9 +261,22 @@ footer {
     .Icn {
         height: 68px; /* gap */
     }
-    /* responsividade*/
-@media (max-width:950px){ 
+    .code{
+        font-family: "Actor", sans-serif;
+        color: #847a7a;
+        font-weight: 100;
+        font-style:normal;
+        font-size: 80%;
+        
+        text-align: center;
+    }   
 
+    /*/// responsividade (⊙_⊙;) ///*/
+
+@media (max-width:950px){ 
+    .code{
+        margin-top: 4%;
+    }
     .Triangulo{
         border: 0;
     }
@@ -292,16 +306,23 @@ footer {
 
 @media (max-width: 363px){
     footer{
-        height: 313px;
+        height: 390px;
     } 
+    .code{
+        margin-top:25%;;
+    }
     .social{
         flex-direction: row;
-        left: -227px;
-        bottom: -285px;
+        left: -259px;
+        bottom: -329px;
         font-size: 56px;
+        gap: 10px;
     }
 }
-@media (max-width: 1120px) and (min-width: 947px){ 
+@media (max-width: 1120px) and (min-width: 951px){ 
+    .code {
+        margin-top: 5%;
+    }
     .leftTri{
         display: none;
     }
@@ -331,9 +352,16 @@ footer {
 }
 
 @media(min-width: 1120px){
-    .tittle, .text{
+    .tittle{
         margin-left: -30px;
         margin-top: 30px;
+    }
+    .text {
+        margin-left: -30px;
+        margin-top: 6px;
+    }
+    .code{
+        margin-top:6.5%;
     }
     .rightTri{
         background-size: 163%;
@@ -353,4 +381,128 @@ footer {
         margin-left: -2px;
         margin-bottom: 1px;
     }
+}
+@media (max-width: 1272px) and (min-width: 1120px){
+    .code{
+        margin-top: 1%;
+    }
+    
+}
+@media (width:344px){              
+    .code{
+        margin-top:33%;
+    }
+    .social{
+        flex-direction: row;
+        left: -272px;
+        bottom: -329px;
+        font-size: 56px;
+        gap: 10px;
+    }
+}
+@media (min-width:330px) and (max-width:600px){
+    footer{
+        height: 400px;
+    }
+    .code{
+        margin-top:30%
+    }
+    .social{
+        flex-direction: row;
+        left: -74vw;
+        bottom: -329px;
+        font-size: 56px;
+        gap: 10px;
+    }
+}
+@media (width:540px){
+    .social{
+    left: -68vw;
+    bottom: -329px;
+    font-size: 57px;
+    gap: 10px;
+}
+}
+@media(min-width: 1850px){
+    .social{
+        font-size: 58px;
+    }
+    .code{
+        margin-top:6%;
+    }
+    .rightTri{
+        background-size: 150%;
+        background-position-x: 88%;
+        background-position-y: 69%;
+    }
+    .leftTri{
+        background-size: 137%;
+        background-position-x: 1%;
+        background-position-y: 43%;
+    }
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size: 62px;
+        margin-left: -2px;
+        margin-bottom: 1px;
+    }
+}
+@media(min-width: 2048px){
+    .code{
+        margin-top:5%;
+        font-size: 15px;
+    }
+    .social{
+        font-size: 61px;
+    }
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size: 64px;
+        margin-left: -2px;
+        margin-bottom: 1px;
+    }
+    .rightTri{
+        background-size: 150%;
+        background-position-x: 88%;
+        background-position-y: 69%;
+    }
+    .leftTri{
+        background-size: 137%;
+        background-position-x: 1%;
+        background-position-y: 43%;
+    }
+}
+@media(width:2560px){
+    .Triangulo{
+    width: 0;
+    height: 0;
+    border-top: 131.5px solid transparent;
+    border-left: 280px solid #6e2120;
+    border-bottom: 131.5px solid transparent;
+    position: relative;
+    }
+    .leftTri div{
+    width: 0;
+    height: 0;
+    border-top: 131.5px solid transparent;
+    border-right: 280px solid #6e2120;
+    border-bottom: 131.5px solid transparent;
+    }
+    .rightTri{
+        background-size: 144%;
+        background-position-x: 92%;
+        background-position-y: 52%;
+    }
+    .leftTri{
+        background-size: 149%;
+        background-position-x: 0%;
+        background-position-y: 37%;
+    }
+    .social{
+        font-size:60px;
+        left: -278px;
+    }
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size: 64px;
+        margin-left: -2px;
+        margin-bottom: 1px;
+}
 }
