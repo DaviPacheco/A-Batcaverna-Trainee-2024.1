@@ -78,6 +78,11 @@ iconify-icon[icon="octicon:book-16"]{
         background-size: 101%;
     }
 } 
+@media(width:1920px){
+    header{
+        background-image: url(../assets/nav1920.png); /*Adicionada na resolução mais comum p/ ficar mais fiel a versão apresentada ao cliente em 1440*/
+    }
+}
 
 /* Hamburguer*/
 
@@ -148,7 +153,7 @@ iconify-icon[icon="octicon:book-16"]{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
         top: 51px;
-        background: rgba(74, 55, 55, 0.8);
+        background: rgba(74, 55, 55, 0.8); /* Cor temporaria */
     }
 
     .nav .btnav{
@@ -162,7 +167,7 @@ iconify-icon[icon="octicon:book-16"]{
     }
 
     .nav.active .btnav:hover{
-        background-color: #c82419;
+        background-color: #220D13; /* Cor temporaria */
     }
 
     .nav.active .layout-nav a {
