@@ -6,6 +6,39 @@
 html{
     scroll-behavior: smooth;
 }
+@media screen and (min-width: 1901px){
+    html {
+        font-size: 16px;
+        --distSeta: 3%;
+        --distSobreNos:77%;
+        --distPublicacoes:90%;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
+    html {
+        font-size: 16px;
+        --distSeta: 2.5%;
+        --distSobreNos:77%;
+        --distPublicacoes:90%;
+    }
+}
+@media screen and (min-width: 1024px) and ( max-width: 1439px) {
+    html {
+        --distSeta:1%;
+        font-size: 14px;
+        --distSobreNos:77%;
+        --distPublicacoes:90%;
+    }
+}
+@media screen and (max-width: 1023px) {
+    html {
+        --distSeta:0%;
+        font-size: 12px;
+        --distSobreNos:74%;
+        --distPublicacoes:87%;
+        --distParagrafoInc:74%;
+    }
+}
 body{
     background-color: #b5b5b5;
 }
@@ -14,34 +47,37 @@ body * {
     color: white;
 }
 #BlocoTotalLandingPage{
-    width:1440px;
+    width:95%;
     margin:auto;
     
 }
 #logo{
-    width:343px;
-    height:272px;
-    margin:0px 559px 0px 560px;
+    max-width:360px;
+    width:20%;
+    margin:auto;
 }
 #logo img{
-    width:343px;
-    height:252px;
+    width:100%;
 }
 #abertura{
-    width:1402px;
+    width:90%;
+    max-width:1400px;
     background-color:black;
-    height:400px;
+    height:50%;
+    max-height:400px;
     margin:1px auto auto auto;
     padding:8px 10px;
     border-radius:10px;
     position:relative;
+    align-items: center;
 }
 #abertura img
 {
    display:block;
-   
-   width:1015px;
-   height:321px;
+   border-radius:200px;
+   height:80%;
+   width:70%;
+   object-fit: cover;
    margin-left:20px;
 }
 
@@ -49,28 +85,28 @@ body * {
 {
     
     position:absolute;
-    left:1107px;
-    top:142px;
+    left:var(--distSobreNos);
+    top:30%;
    
     z-index:1;
 }
 #frase1
 {  
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.2em;
   
 }
 #frase2
 {
   font-weight: 200;
-  font-size: 16px;
+  font-size: 1em;
   
 }
 .BotaoInicial{
     position:absolute;
     z-index:2;
     text-decoration:none;
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: 500;
     top:10px;
 }
@@ -78,19 +114,21 @@ body * {
     text-decoration-line:underline;
 }
 #BotaoSobreNos{
-  left:1107px;
+  left:var(--distSobreNos);
 
 }
 #BotaoIrPublicacoes{
- right:27px;
+ left:var(--distPublicacoes);
   
 }
 #titulo
 {
-    margin:10px auto auto 140px;
+    
+    margin:1% auto auto auto;
     border: 1px solid rgba(255,255,255,0.7);
     border-radius: 30px;
-    width: 1062px;
+    width: 95%;
+    max-width:1000px;
     text-align:center;
     background-color:rgba(181,181,181,0.35);
 }
@@ -98,23 +136,28 @@ body * {
 #titulo h1
 {
     font-weight: 500;
-    font-size:32px;
+    font-size:1.5em;
 }
 #parteCentral {
-    width:1402px; 
+    width:90%;
+    max-width:1400px; 
     margin:34px auto auto auto;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 18px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    padding: 0 24px;
+    gap: 1.2%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    padding: 0 1.71%;
 }
 #BatmanLateral{
-    width:428px;
+    width:100%;
     height:764px;
+    object-fit:cover;
+}
+#parteCentral li{
+    max-width:70%;
 }
 .RetanguloVermelhoCentral{
-    width:908px;
+    width:100%;
     height:46px;
     padding:0px 28px;
     background-color: #CC2524;
@@ -124,121 +167,138 @@ body * {
 }
 .RetanguloVermelhoCentral h2
 {
-    font-size:32px;
+    font-size: 2em;
     font-weight: 400;
 }
 #Lista2{
-    width: 908px;
+    width: 100%;
     height:328px;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 80px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: 5.71%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin:34px 0px 60px 0px;
     background-color:rgba(0,0,0,0.9);
-    padding-left:52px;
-    padding-right:52px;
+    padding-left:3.71%;
+    padding-right:3.71%;
     border-radius:15px;
 }
 #Lista2 li{
     margin-top:44px;
     height:206px;
-    width:180px;
+    width:19.8%;/*180*/
     text-align:center;
+    justify-content: center;
 }
 #LogoDc{
-    width:66px;
+    width:36.67%;
+    object-fit:contain;
     height:70px;
     margin-top:10px;
 }
 #Interrogacao{
-    width:76px;
+    width:42.2%;
+    object-fit:contain;
     height:70px;
     margin-top:10px;
 }
 #DailyPlanet{
-    width:129px;
+    width:71.67%;
     height:67px;
+    object-fit:contain;
     margin-bottom:3px;
     margin-top:10px;
 }
 #BatmanFatosDiversos{
-    width:44px;
+    width:24.44%;
+    object-fit:contain;
     height:75px;
     margin-bottom:5px;
 }
 #Lista2 li div{
     background-color:#CC2524;
-    height:51px;
-    width: 141px;
-    margin-top:52px;
-    font-size:20px;
+    height:52px;
+    width: 88.33%;
+    margin:52px auto auto auto;
     font-weight: 300;
-    border-radius:30px;
-    padding-top:11px;
+    border-radius:30px; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 #Lista2 li h3{
-    font-size:20px;
+    font-size:1.1em;
     font-weight: 300;
 }
 #BlocoDoProposito{
     margin-top:34px;
     background-color: rgba(0,0,0,0.9);
     border-radius:15px;
-    width:908px;
+    width:100%;
     height:216px;
-    padding-top:20px;
+    padding-top:2%;
+    padding-left:5%;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 18px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
 }
+#BlocoDoProposito li{
+    Max-width:95%;
+}
 #BlocoDoProposito p{
     margin: 0px 74px auto auto;
-    font-size:24px;
+    font-size:1.5em;
     font-weight: 400;
-    height:144px;
-    width:734px;
+    width:90%;
    
 }
 /* Arrow 2 */
 #seta{
-margin-left:48px;
 width: 34px;
 height: 40px;
 }
 #TextoUltimasPublicacoes{
-    width:455px;
-    margin: 109px auto auto 152px;
+    margin: 109px auto auto auto;
+    width:100%;
+    max-width:1146px;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 30px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    justify-content: center;
+    gap: 20px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    justify-content: left;
 }
 #seta2{
     margin-top: 4px;
 }
 #TextoUltimasPublicacoes h2{
-    font-size:32px;
+    font-size:2em;
     font-weight: 700;
     color: black;
+}
+#ParteDosPosts
+{
+    width:95%;
+    margin:18px auto;
+    border-top: 9px solid #CC2524;
+    border-bottom:9px solid #CC2524;
+    border-right:7px solid #CC2524;
+    border-left:7px solid #CC2524;
+    max-width:1146px;
+    background-color:rgba(115, 115, 115, 0.9);
+    padding:1.094% 1.071%;
+    position:relative;
 }
 #CaixaDePosts{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 24px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    width:1146px;
-    height:895px;
-    margin:18px auto;
-    background-color:rgba(115, 115, 115, 0.9);
-    border-top: 9px solid #CC2524;
-    border-bottom:9px solid #CC2524;
-    border-right:7px solid #CC2524;
-    border-left:7px solid #CC2524;
-    padding:24px 18px;
-    position:relative;
+    width:100%;
+    
+}
+.BlocoAPublicacoes{
+    width:120%;
 }
 .PostLandingPage{
     border-left: solid#CC2524;
@@ -246,60 +306,56 @@ height: 40px;
     text-align:center;
 }
 .Maior{
-    width:392px;
-    height:615px;
+    width:100%;
     border-radius:30px;
-    border-left-width:27px;
-    
+    border-left-width:1.5em;
+    padding-bottom:2%;
 }
 .ModeloDePost2{
-    width:328px;
-    height:788px;
+    width:100%;
 }
 .MenorCima{
-    height:422px;
-    width:328px;
+    width:100%;
     border-radius:25px;
     border-left-width:21px;
-    margin-bottom:22px;
-  
+    margin-bottom:1.5em;
+    padding-bottom:2%;
 }
 .MenorBaixo{
-    height:344px;
-    width:328px;
+    width:100%;
     border-radius:20px;
-    border-left-width:21px;
-    
+    border-left-width:1.2em;
+    padding-bottom:2%;
 }
 .ImagemPost1{
-    width:365px;
+    width:100%;
     height:290px;
     object-fit: cover;
     border-top-right-radius: 30px;
 }
 .ImagemPost2{
-    width:307px;
+    width:100%;
     height:188px;
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
     border-top-right-radius: 25px;
 }
 .ImagemPost3{
-    width:311px;
+    width:100%;
     height:154px;
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
     border-top-right-radius: 20px;
 }
 .Titulo1{
-    font-size:44px;
+    font-size:2.6em;
     font-weight:500;
 }
 .Titulo2{
-    font-size:36px;
+    font-size:2.2em;
     font-weight:500;
     margin:auto;
 }
 .Titulo3{
-    font-size:32px;
+    font-size:2em;
     font-weight:500;
     margin:auto;
 }
@@ -318,50 +374,46 @@ height: 40px;
 .TDPost1
 {
     
-    gap: 16px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: 5%; 
     margin-top:22px;
-    margin-left:27px;
+    margin-left:6%;
 }
 .LLPost1{
-    height:132px;
     width:6px;
 } 
 .PEPost1{
-    width: 280px;
-    height: 140px;
-    font-size:20px;
+    width: 88%;
+    font-size:1.5em;
+    margin-bottom:8%;
 }
 .TDPost2
 {
-    gap: 12px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    margin-top:5px;
-    margin-left:22px;
+    gap: 5%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:2%;
+    margin-left:7%;
 }
 .LLPost2{
-    height:100px;
     width:5px;
 } 
 .PEPost2{
-    width: 245px;
-    height: 110px;
-    font-size: 16px;
-    line-height: 24px;
+    width:88%;
+    font-size: 1.2em;
+   
 
 }
 .TDPost3
 {
-    gap: 12px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    margin-top:7px;
-    margin-left:22px;
+    gap: 5%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:2%;
+    margin-left:7%;
 }
 .LLPost3{
-    height:65px;
     width:4px;
 } 
 .PEPost3{
-    width: 258px;
-    height: 74px;
-    font-size:14px;
+    width:88%;
+    font-size:1em;
+    margin-bottom:6%;
 }
 .NomeDoAutor{
     text-align: left;
@@ -375,27 +427,22 @@ height: 40px;
         1px -1px 0 white;  
 }
 .NA1{
-margin-top:7px;
-margin-left:20px;
-width: 304px;
-height: 35px;
+margin-top:3%;
+margin-left:5%;
 
-font-size: 24px;
+font-size: 1.5em;
  
 }
 .NA2{
-    margin-top:2px;
-    margin-left:18px;
-    width: 262px;
-    height: 29px;
-    font-size: 20px;
+    margin-top:3%;
+    margin-left:5%;
+    font-size: 1.2em;
  
 }
 .NA3{
-    margin-left:16px;
-    width: 266px;
-    height: 29px;
-    font-size: 20px;
+    margin-top:3%;
+    margin-left:5%;
+    font-size: 1.2em;
 
 }
 .BotaoLerMais{
@@ -415,75 +462,77 @@ font-size: 24px;
 }
 .BM1{
     
-    width: 106px;
-    height: 36px;
+    width: 20%;
+    min-width:80px;
     margin: 6px 26px auto auto;
     
 }
 .BM1 p{
-    font-size:24px;
+    font-size:1.5em;
 }
 .BM1:hover{
     outline-width: 5px ;
     
 }
 .BM2{
-    width: 90px;
-    height: 26px;
+    width: 20%;
+    min-width:60px;
     margin: 0px 26px auto auto;
 }
 .BM2 p{
-    font-size:18px;
+    font-size:1.1em;
 }
 .BM2:hover{
     outline-width: 4px;
 }
 .BM3{
-    width: 73px;
-    height: 24px;
+    width: 20%;
+    min-width:60px;
     margin: 0px 26px auto auto;
 }
 .BM3 p{
-    font-size:16px;
+    font-size:1em;
 }
 .BM3:hover{
     outline-width: 3px;
 }
+
 #Logo2
 {
-    width: 216px;
-    height:171px;
-    margin-top:90px;
+    position:absolute;
+    width: 18%;
+    bottom:-2%;
 }
-
 #seta3{
-    margin-bottom: 30px;
-    margin-left:42px;
+    position:absolute;
+    bottom:var(--distSeta);
+    left:25%;
+    z-index:1;
+    width:8%;
 }
 #BotaoVerMais
 {
-    position: absolute;
-    left:400px;
-    bottom:10px;
-    background-color:black;
-    width:346px;
-    height:46px;
+    width:28%;
+    height: fit-content;
+    display:flex;
     border-radius: 50%;
+    justify-content:center;
     text-align:center;
+    align-items: center;
+    background-color:black;
     opacity: 1;
+    margin:2% auto auto auto;
+    padding:1% 3%;
     transition:background 0.25s;
     text-decoration: none;
 }
 #BotaoVerMais:hover{
     background:rgba(10,10,10,0.81);
-    width:346px;
-    height:46px;
-    border-radius: 50%;
-    text-align:center;
     outline: 6px solid rgba(0,0,0,0.2);
     text-decoration-line: underline;
+    padding:1% 3%;
 }
 #BotaoVerMais span{
-    font-size:28px;
+    font-size:1.5em;
     font-weight:500;
 }
