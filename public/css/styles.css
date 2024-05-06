@@ -12,6 +12,8 @@ html{
         --distSeta: 3%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
+        --tamMaxQuadrosCentrais: 65%;
+        --batmanAltura:728px;
     }
 }
 @media screen and (min-width: 1440px) and (max-width: 1900px) {
@@ -20,6 +22,8 @@ html{
         --distSeta: 2.5%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
+        --tamMaxQuadrosCentrais: 65%;
+        --batmanAltura:700px;
     }
 }
 @media screen and (min-width: 1024px) and ( max-width: 1439px) {
@@ -28,16 +32,58 @@ html{
         font-size: 14px;
         --distSobreNos:77%;
         --distPublicacoes:90%;
+        --tamMaxQuadrosCentrais: 68%;
+        --batmanAltura:650px;
     }
 }
 @media screen and (max-width: 1023px) {
     html {
-        --distSeta:0%;
+        --distSeta:-0.5%;
         font-size: 12px;
         --distSobreNos:74%;
         --distPublicacoes:87%;
         --distParagrafoInc:74%;
+        --tamMaxQuadrosCentrais: 75%;
+        --margemCategorias:20%;
+        --batmanAltura:620px;
     }
+}
+@media screen and (max-width: 767px){
+    html {
+        --ModeloLista: column;
+        --tamMaxQuadrosCentrais: 100%;
+        --gapLista:2%;
+        --MargemSuperiorElementos:2%;
+        --tamanhoElemento:80%;
+        --TamBatmanLateral:0;
+        --margemCategorias:5%;
+    } 
+    .ModeloA
+   {
+    justify-content: start;
+    }
+     .ModeloB{
+        margin-top:5%;
+    justify-content: end;
+   }
+}
+@media screen and (min-width: 768px){
+    html {
+        --ModeloLista: row;
+        --gapLista:10%;
+        --MargemSuperiorElementos:2%;
+        --tamanhoElemento:50%;
+        --TamBatmanLateral:100%;
+    } 
+    .ModeloA
+   {
+    justify-content: start;
+     height:60%;
+    }
+     .ModeloB{
+    justify-content: end;
+   height: 40%;
+   }
 }
 body{
     background-color: #b5b5b5;
@@ -149,16 +195,24 @@ body * {
     padding: 0 1.71%;
 }
 #BatmanLateral{
-    width:100%;
-    height:764px;
-    object-fit:cover;
+    max-width:var(--TamBatmanLateral);
+    object-fit: cover;
+    height: var(--batmanAltura);
 }
-#parteCentral li{
-    max-width:70%;
+.PorcoesCentrais
+{
+    max-width:var(--tamMaxQuadrosCentrais);
 }
+.PorteCentralModelo{
+    display: flex;
+    flex-direction: column;
+    
+    border:1px solid red;
+}
+
 .RetanguloVermelhoCentral{
     width:100%;
-    height:46px;
+    max-height:46px;
     padding:0px 28px;
     background-color: #CC2524;
     border: 1px solid white;
@@ -167,75 +221,81 @@ body * {
 }
 .RetanguloVermelhoCentral h2
 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
 }
 #Lista2{
     width: 100%;
-    height:328px;
+    align-self:top;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: var(--ModeloLista); /*Altera o padrão de linha para colunas*/
+    gap: var(--gapLista); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin:34px 0px 0px 0px;
+    background-color:rgba(0,0,0,0.9);
+    padding:10% 3%;
+    border-radius:15px;
+    align-items: center;
+    justify-content:center;
+}
+#Lista2 li{
+    width:var(--tamanhoElemento);/*180*/
+    text-align:center;
+    justify-content: center;
+    max-width:300px;
+}
+.ListaInterna-2{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 5.71%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    margin:34px 0px 60px 0px;
-    background-color:rgba(0,0,0,0.9);
-    padding-left:3.71%;
-    padding-right:3.71%;
-    border-radius:15px;
-}
-#Lista2 li{
-    margin-top:44px;
-    height:206px;
-    width:19.8%;/*180*/
-    text-align:center;
-    justify-content: center;
+    gap: 20%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
 }
 #LogoDc{
-    width:36.67%;
+    width:45%;
     object-fit:contain;
     height:70px;
-    margin-top:10px;
 }
 #Interrogacao{
-    width:42.2%;
+    width:45%;
     object-fit:contain;
     height:70px;
-    margin-top:10px;
 }
 #DailyPlanet{
-    width:71.67%;
+    width:81.67%;
     height:67px;
     object-fit:contain;
-    margin-bottom:3px;
-    margin-top:10px;
+    margin-bottom:5px;
 }
 #BatmanFatosDiversos{
-    width:24.44%;
+    width:25.44%;
     object-fit:contain;
     height:75px;
-    margin-bottom:5px;
+    margin-bottom:3px;
+    margin-top:-7px;
 }
 #Lista2 li div{
     background-color:#CC2524;
-    height:52px;
-    width: 88.33%;
-    margin:52px auto auto auto;
+    min-height:40px;
+    width: 100%;
+    margin:--margemCategorias auto auto auto;
     font-weight: 300;
     border-radius:30px; 
     display:flex;
     align-items: center;
     justify-content: center;
 }
+
 #Lista2 li h3{
     font-size:1.1em;
     font-weight: 300;
 }
+
+
 #BlocoDoProposito{
     margin-top:34px;
     background-color: rgba(0,0,0,0.9);
     border-radius:15px;
     width:100%;
-    height:216px;
     padding-top:2%;
     padding-left:5%;
     list-style: none; /*Anula estilo de pontos da lista*/
@@ -247,7 +307,7 @@ body * {
     Max-width:95%;
 }
 #BlocoDoProposito p{
-    margin: 0px 74px auto auto;
+    margin: 10px 74px auto auto;
     font-size:1.5em;
     font-weight: 400;
     width:90%;
@@ -255,8 +315,8 @@ body * {
 }
 /* Arrow 2 */
 #seta{
-width: 34px;
-height: 40px;
+width: 3em;
+height: 3.8em;
 }
 #TextoUltimasPublicacoes{
     margin: 109px auto auto auto;
@@ -307,8 +367,8 @@ height: 40px;
 }
 .Maior{
     width:100%;
-    border-radius:30px;
-    border-left-width:1.5em;
+    border-radius:1.8em;
+    border-left-width:1.8em;
     padding-bottom:2%;
 }
 .ModeloDePost2{
@@ -316,14 +376,14 @@ height: 40px;
 }
 .MenorCima{
     width:100%;
-    border-radius:25px;
-    border-left-width:21px;
+    border-radius:1.5em;
+    border-left-width:1.5em;
     margin-bottom:1.5em;
     padding-bottom:2%;
 }
 .MenorBaixo{
     width:100%;
-    border-radius:20px;
+    border-radius:1.2em;
     border-left-width:1.2em;
     padding-bottom:2%;
 }
@@ -331,19 +391,19 @@ height: 40px;
     width:100%;
     height:290px;
     object-fit: cover;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 1.8em;
 }
 .ImagemPost2{
     width:100%;
     height:188px;
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
-    border-top-right-radius: 25px;
+    border-top-right-radius: 1.5em;
 }
 .ImagemPost3{
     width:100%;
     height:154px;
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
-    border-top-right-radius: 20px;
+    border-top-right-radius: 1.2em;
 }
 .Titulo1{
     font-size:2.6em;
@@ -379,10 +439,11 @@ height: 40px;
     margin-left:6%;
 }
 .LLPost1{
-    width:6px;
+    max-width:6px;
+    width:2%;
 } 
 .PEPost1{
-    width: 88%;
+    width: 90%;
     font-size:1.5em;
     margin-bottom:8%;
 }
@@ -393,10 +454,11 @@ height: 40px;
     margin-left:7%;
 }
 .LLPost2{
-    width:5px;
+    width:2%;
+    max-width:4px;
 } 
 .PEPost2{
-    width:88%;
+    width:90%;
     font-size: 1.2em;
    
 
@@ -408,10 +470,11 @@ height: 40px;
     margin-left:7%;
 }
 .LLPost3{
-    width:4px;
+    width:2%;
+    max-width:3px;
 } 
 .PEPost3{
-    width:88%;
+    width:90%;
     font-size:1em;
     margin-bottom:6%;
 }
@@ -513,6 +576,7 @@ font-size: 1.5em;
 #BotaoVerMais
 {
     width:28%;
+    min-width:200px;
     height: fit-content;
     display:flex;
     border-radius: 50%;
