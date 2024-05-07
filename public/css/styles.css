@@ -13,17 +13,17 @@ html{
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
-        --batmanAltura:728px;
+        --batmanAltura:668px;
     }
 }
 @media screen and (min-width: 1440px) and (max-width: 1900px) {
     html {
-        font-size: 16px;
+        font-size: 18px;
         --distSeta: 2.5%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
-        --batmanAltura:700px;
+        --batmanAltura:640px;
     }
 }
 @media screen and (min-width: 1024px) and ( max-width: 1439px) {
@@ -33,7 +33,7 @@ html{
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 68%;
-        --batmanAltura:650px;
+        --batmanAltura:600px;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -45,7 +45,7 @@ html{
         --distParagrafoInc:74%;
         --tamMaxQuadrosCentrais: 75%;
         --margemCategorias:20%;
-        --batmanAltura:620px;
+        --batmanAltura:520px;
         --LarguraImgAbertura:70%;
     }
 }
@@ -53,17 +53,19 @@ html{
     html {
         --ModeloLista: column;
         --tamMaxQuadrosCentrais: 100%;
-        --gapLista:2%;
-        --MargemSuperiorElementos:2%;
-        --tamanhoElemento:80%;
+        --gapLista:0%;
+        --MargemSuperiorElementos:20px;
+        --tamanhoElemento:71%;
         --TamBatmanLateral:0;
-        --margemCategorias:5%;
+        --margemCategorias:10%;
         --distSobreNos:15%;
         --distPublicacoes:65%;
-        --LarguraImgAbertura:95%;
+        --LarguraImgAbertura:100%;
         --TamanhoFonteBotoesIniciais:10px;
         --FonteBotoesInciais:400;
         --DistanciaBotoesIniciais:2%;
+        --DirecaoDosPosts: Column;
+        --TamanhoPost1:100%;
     } 
     .ModeloA
    {
@@ -77,20 +79,22 @@ html{
      margin:auto;
      text-align:center;
      font-size:9px;
+     margin-top:5%;
    }
    #ParagrafoModelo1{
     font-size:0;
     width:0;
-    margin-top:2%;
    }
    #titulo h1
 {
-    font-weight: 500;
-    font-size:1em;
+    font-weight: 400;
+    font-size:1.2em;
+    margin:auto 1%;
 }
 #abertura img{
-    margin: 8% auto auto auto;
-    }
+    margin: 8% auto 4% auto;
+    min-height:140px;
+ }
     #frase1
 {  
   font-weight: 600;
@@ -109,6 +113,9 @@ html{
   #BotaoIrPublicacoes{
    right:15%; 
   }
+  .RetanguloVermelhoCentral{
+    font-size:10px;
+  }
 
 }
 
@@ -116,13 +123,15 @@ html{
     html {
         --ModeloLista: row;
         --gapLista:10%;
-        --MargemSuperiorElementos:2%;
+        --MargemSuperiorElementos:0;
         --tamanhoElemento:50%;
         --TamBatmanLateral:100%;
         --TamanhoFonteBotoesIniciais:1.1em;
         --FonteBotoesInciais:500;
         --DistanciaBotoesIniciais:2%;
         --LarguraImgAbertura:70%;
+        --DirecaoDosPosts: row;
+        --TamanhoPost1:120%;
     } 
     .ModeloA
    {
@@ -154,6 +163,8 @@ html{
 }
 #abertura img{
 margin-left:20px;
+height:80%;
+margin-bottom:2%;
 }
 #frase1
 {  
@@ -189,14 +200,14 @@ body * {
 }
 #logo{
     max-width:360px;
-    width:20%;
+    width:25%;
     margin:auto;
 }
 #logo img{
     width:100%;
 }
 #abertura{
-    width:90%;
+    width:95%;
     max-width:1400px;
     background-color:black;
     height:50%;
@@ -211,7 +222,7 @@ body * {
 {
    display:block;
    border-radius:200px;
-   height:80%;
+
    width:var(--LarguraImgAbertura);
    object-fit: cover;
 }
@@ -233,10 +244,10 @@ body * {
 #titulo
 {
     
-    margin:1% auto auto auto;
+    margin:auto;
     border: 1px solid rgba(255,255,255,0.7);
     border-radius: 30px;
-    width: 95%;
+    width: 100%;
     max-width:1000px;
     text-align:center;
     background-color:rgba(181,181,181,0.35);
@@ -265,8 +276,6 @@ body * {
 .PorteCentralModelo{
     display: flex;
     flex-direction: column;
-    
-    border:1px solid red;
 }
 
 .RetanguloVermelhoCentral{
@@ -280,7 +289,7 @@ body * {
 }
 .RetanguloVermelhoCentral h2
 {
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: 400;
 }
 #Lista2{
@@ -290,7 +299,7 @@ body * {
     display: flex; /*Tipo de display flexível*/
     flex-direction: var(--ModeloLista); /*Altera o padrão de linha para colunas*/
     gap: var(--gapLista); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
-    margin:34px 0px 0px 0px;
+    margin:4% 0px 0px 0px;
     background-color:rgba(0,0,0,0.9);
     padding:10% 3%;
     border-radius:15px;
@@ -303,11 +312,14 @@ body * {
     justify-content: center;
     max-width:300px;
 }
-.ListaInterna-2{
+.ListaInterna{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 20%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+}
+.LI2{
+    margin-top:var(--MargemSuperiorElementos);
 }
 #LogoDc{
     width:45%;
@@ -351,31 +363,91 @@ body * {
 
 
 #BlocoDoProposito{
-    margin-top:34px;
+    margin-top:4%;
     background-color: rgba(0,0,0,0.9);
     border-radius:15px;
     width:100%;
     padding-top:2%;
-    padding-left:5%;
+    padding-left:3%;
+    padding-bottom:2%;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 18px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: 3%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    align-items:top;
 }
 #BlocoDoProposito li{
     Max-width:95%;
 }
 #BlocoDoProposito p{
-    margin: 10px 74px auto auto;
-    font-size:1.5em;
+    font-size:1.2em;
     font-weight: 400;
     width:90%;
    
 }
-/* Arrow 2 */
 #seta{
-width: 3em;
-height: 3.8em;
+width: 2.2em;
+height: 1.8em;
+}
+@media screen and (max-width: 767px){
+    html{
+        --TamanhoFonteUltPublc:1.6em;
+        --PesoFonteUltPublc:600;
+        --TamanhoSeta:4em;
+        --DirecaoListaMaiorPosts:column;
+        --DirecaoListaMenorPosts:row;
+        --LarguraPostMaior:95%;
+        --gapListaMaiorPosts:2vh;
+        --RaioELarguraBorda2:1em;
+        --RaioELarguraBorda3:var(--RaioELarguraBorda2);
+        --AlturaImagem2Post:154px;
+        --AlturaImagem3Post:154px;
+        --TamanhoFonteTituloPost2:1.8em;
+        --TamanhoFonteTituloPost3:1.8em;
+        --TamanhoFonteParteEscritaPost2:1.2em;
+        --TamanhoFonteParteEscritaPost3:1.2em;
+        --TamanhoFonteBotaoLerMais2:1.1em;
+        --TamanhoFonteBotaoLerMais3:1.1em;
+        --TamanhoOutLineBotaoLerMais2:4px;
+        --TamanhoOutLineBotaoLerMais3:4px;
+        --TamSeta:0;
+    }
+    #Logo2{
+        width:20%;
+        min-width:120px;
+        margin-top:1%;
+        margin-bottom:-5%;
+    }
+}
+    @media screen and (min-width: 768px){
+        html{
+            --TamanhoFonteUltPublc:2em;
+            --PesoFonteUltPublc:700;
+            --TamanhoSeta:6em;
+            --DirecaoListaMaiorPosts:row;
+            --DirecaoListaMenorPosts:column;
+            --LarguraPostMaior:120%;
+            --gapListaMaiorPosts:2%;
+            --RaioELarguraBorda2:1.4em;
+            --RaioELarguraBorda3:1.2em;
+            --AlturaImagem2Post:188px;
+            --AlturaImagem3Post:154px;
+            --TamanhoFonteTituloPost2:2.2em;
+            --TamanhoFonteTituloPost3:2em;
+            --TamanhoFonteParteEscritaPost2:1.2em;
+            --TamanhoFonteParteEscritaPost3:1em;
+            --TamanhoFonteBotaoLerMais2:1.1em;
+            --TamanhoFonteBotaoLerMais3:1em;
+            --TamanhoOutLineBotaoLerMais2:4px;
+            --TamanhoOutLineBotaoLerMais3:3px;
+            --TamSeta:8%;
+        }
+        #Logo2
+{
+    position:absolute;
+    width: 18%;
+    bottom:-2%;
+}
 }
 #TextoUltimasPublicacoes{
     margin: 109px auto auto auto;
@@ -384,21 +456,22 @@ height: 3.8em;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 20px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: 3%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     justify-content: left;
+    align-items: center;
 }
 #seta2{
-    margin-top: 4px;
+    width:var(--TamanhoSeta);
 }
 #TextoUltimasPublicacoes h2{
-    font-size:2em;
-    font-weight: 700;
+    font-size:var(--TamanhoFonteUltPublc);
+    font-weight: var(--PesoFonteUltPublc);
     color: black;
 }
 #ParteDosPosts
 {
     width:95%;
-    margin:18px auto;
+    margin:2% auto;
     border-top: 9px solid #CC2524;
     border-bottom:9px solid #CC2524;
     border-right:7px solid #CC2524;
@@ -411,13 +484,16 @@ height: 3.8em;
 #CaixaDePosts{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
-    flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 24px; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    flex-direction: var(--DirecaoListaMaiorPosts); /*Altera o padrão de linha para colunas*/
+    gap: var(--gapListaMaiorPosts); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     width:100%;
     
 }
 .BlocoAPublicacoes{
-    width:120%;
+    width:var(--LarguraPostMaior);
+    max-width:420px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .PostLandingPage{
     border-left: solid#CC2524;
@@ -430,20 +506,25 @@ height: 3.8em;
     border-left-width:1.8em;
     padding-bottom:2%;
 }
+.ListaDosPostsMenores{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: var(--DirecaoListaMenorPosts); /*Altera o padrão de linha para colunas*/
+    gap: 1em; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+}
 .ModeloDePost2{
     width:100%;
 }
 .MenorCima{
     width:100%;
-    border-radius:1.5em;
-    border-left-width:1.5em;
-    margin-bottom:1.5em;
+    border-radius:var(--RaioELarguraBorda2);
+    border-left-width:var(--RaioELarguraBorda2);
     padding-bottom:2%;
 }
 .MenorBaixo{
     width:100%;
-    border-radius:1.2em;
-    border-left-width:1.2em;
+    border-radius:var(--RaioELarguraBorda3);
+    border-left-width:var(--RaioELarguraBorda3);
     padding-bottom:2%;
 }
 .ImagemPost1{
@@ -454,27 +535,27 @@ height: 3.8em;
 }
 .ImagemPost2{
     width:100%;
-    height:188px;
+    height:var(--AlturaImagem2Post);
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
-    border-top-right-radius: 1.5em;
+    border-top-right-radius: var(--RaioELarguraBorda2);
 }
 .ImagemPost3{
     width:100%;
-    height:154px;
+    height:var(--AlturaImagem3Post);
     object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
-    border-top-right-radius: 1.2em;
+    border-top-right-radius: var(--RaioELarguraBorda2);
 }
 .Titulo1{
     font-size:2.6em;
     font-weight:500;
 }
 .Titulo2{
-    font-size:2.2em;
+    font-size:var(--TamanhoFonteTituloPost2);
     font-weight:500;
     margin:auto;
 }
 .Titulo3{
-    font-size:2em;
+    font-size:var(--TamanhoFonteTituloPost3);
     font-weight:500;
     margin:auto;
 }
@@ -514,12 +595,12 @@ height: 3.8em;
 }
 .LLPost2{
     width:2%;
-    max-width:4px;
+    max-width:3px;
 } 
 .PEPost2{
     width:90%;
-    font-size: 1.2em;
-   
+    font-size: var(--TamanhoFonteParteEscritaPost2);
+    margin-bottom:6%;
 
 }
 .TDPost3
@@ -534,7 +615,7 @@ height: 3.8em;
 } 
 .PEPost3{
     width:90%;
-    font-size:1em;
+    font-size:var(--TamanhoFonteParteEscritaPost3);
     margin-bottom:6%;
 }
 .NomeDoAutor{
@@ -586,7 +667,7 @@ font-size: 1.5em;
     
     width: 20%;
     min-width:80px;
-    margin: 6px 26px auto auto;
+    margin: 6px 5% auto auto;
     
 }
 .BM1 p{
@@ -599,38 +680,33 @@ font-size: 1.5em;
 .BM2{
     width: 20%;
     min-width:60px;
-    margin: 0px 26px auto auto;
+    margin: 2px 4% auto auto;
 }
 .BM2 p{
-    font-size:1.1em;
+    font-size:var(--TamanhoFonteBotaoLerMais2);
 }
 .BM2:hover{
-    outline-width: 4px;
+    outline-width: var(--TamanhoOutLineBotaoLerMais2);
 }
 .BM3{
     width: 20%;
     min-width:60px;
-    margin: 0px 26px auto auto;
+    margin: 2px 4% auto auto;
 }
 .BM3 p{
-    font-size:1em;
+    font-size:var(--TamanhoFonteBotaoLerMais3);
 }
 .BM3:hover{
-    outline-width: 3px;
+    outline-width: var(--TamanhoOutLineBotaoLerMais3);
 }
 
-#Logo2
-{
-    position:absolute;
-    width: 18%;
-    bottom:-2%;
-}
+
 #seta3{
     position:absolute;
     bottom:var(--distSeta);
     left:25%;
     z-index:1;
-    width:8%;
+    width:var(--TamSeta);
 }
 #BotaoVerMais
 {
