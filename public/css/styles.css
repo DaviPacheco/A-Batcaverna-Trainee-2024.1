@@ -394,8 +394,6 @@ height: 1.8em;
         --TamanhoFonteUltPublc:1.6em;
         --PesoFonteUltPublc:600;
         --TamanhoSeta:4em;
-        --DirecaoListaMaiorPosts:column;
-        --DirecaoListaMenorPosts:row;
         --LarguraPostMaior:95%;
         --gapListaMaiorPosts:2vh;
         --RaioELarguraBorda2:1em;
@@ -441,6 +439,8 @@ height: 1.8em;
             --TamanhoOutLineBotaoLerMais2:4px;
             --TamanhoOutLineBotaoLerMais3:3px;
             --TamSeta:8%;
+            --LarguraMaximaPost2:100%;
+            --LarguraMaximaPost3:100%;
         }
         #Logo2
 {
@@ -448,6 +448,24 @@ height: 1.8em;
     width: 18%;
     bottom:-2%;
 }
+
+}
+@media screen and (max-width: 374px){
+    html{
+        --DirecaoListaMaiorPosts:column;
+        --DirecaoListaMenorPosts:column;
+        --LarguraMaximaPost2:95%;
+        --LarguraMaximaPost3:95%;
+        
+    }
+}
+@media screen and (min-width:375px) and (max-width: 767px){
+    html{
+        --DirecaoListaMaiorPosts: column;
+        --DirecaoListaMenorPosts: row;
+        --LarguraMaximaPost2:100%;
+        --LarguraMaximaPost3:100%;
+        }
 }
 #TextoUltimasPublicacoes{
     margin: 109px auto auto auto;
@@ -516,16 +534,18 @@ height: 1.8em;
     width:100%;
 }
 .MenorCima{
-    width:100%;
+    width:var(--LarguraMaximaPost2);
     border-radius:var(--RaioELarguraBorda2);
     border-left-width:var(--RaioELarguraBorda2);
     padding-bottom:2%;
+    margin:auto;
 }
 .MenorBaixo{
-    width:100%;
+    width:var(--LarguraMaximaPost3);
     border-radius:var(--RaioELarguraBorda3);
     border-left-width:var(--RaioELarguraBorda3);
     padding-bottom:2%;
+    margin:auto;
 }
 .ImagemPost1{
     width:100%;
