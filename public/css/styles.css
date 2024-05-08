@@ -41,10 +41,17 @@ body{
 
 
 #lupa {
+    width: 40px;
+    height: 36px;
+    background: #cc2524;
     font-size: 32px;
     font-weight: 600;
     margin: 9px 26px 9px 442px;
     position: absolute;
+}
+
+#lupa:hover {
+    cursor: pointer;
 }
 
 #post2 {
@@ -172,6 +179,10 @@ body{
     position: absolute;
 }
 
+#recheio:hover {
+    cursor: pointer;
+}
+
 #titulo1 {
     font-weight: 700;
     font-size: 36px;
@@ -218,4 +229,9 @@ body{
     color: white;
     margin: 580px 24px 7px 319px;
     position: absolute;
+}
+
+#lermais1:hover {
+    border: 1.5px solid white;
+    cursor: pointer;
 }
