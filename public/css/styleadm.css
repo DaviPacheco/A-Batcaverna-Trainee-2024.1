@@ -14,7 +14,7 @@ body {
 #logobat img{
     width: 396px;
     height: 259px;
-    margin: 84px auto;
+    margin: 84px 522px 0px;
 }
 
 #barraMeio{
@@ -22,5 +22,14 @@ body {
     height: 120px;
     background: #cc2524;
     border-radius: 30px;
-    margin: 0px auto;
+    margin: auto;
+    display: flex;
+    gap: 140px;
+    padding: 30px 70px;
+    font-size: 60px;
+}
+
+#barraMeio a:hover{
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
 }
