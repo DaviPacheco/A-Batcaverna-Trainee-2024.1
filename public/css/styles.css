@@ -514,13 +514,19 @@ footer {
 
 /*////////// Tabela ////////////////*/
 .back{
-    background-color: #551212; /* temporario */
+    background: url(../assets/gotham.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    backdrop-filter: opacity(0.5); /* funcionou n rs */
+
+    background-color: #d7d7d7; /* temporario */
     height: 100vh;
     padding: 20px;
 }
-.cont_tab{
-    border: 1px solid red;
-    background-color: #1d0a10; /* temporario */
+.cont_user{
+    border: 1px solid rgba(252, 252, 14, 0.234);
+    background-color: #03020212; /* temporario */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -557,4 +563,15 @@ footer {
 .bt_create:hover{
     background-color: #948787b1;
     text-decoration:none;
+}
+.cont_tab{
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 3; 
+}
+.header_tab{
+    background-color: #510f0E;
+}
+.body_tab{
+    background-color: rgb(18, 207, 27) ;
 }
