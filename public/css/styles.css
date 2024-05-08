@@ -524,6 +524,7 @@ footer {
     height: 100vh;
     padding: 20px;
 }
+
 .cont_user{
     border: 1px solid rgba(252, 252, 14, 0.234);
     background-color: #03020212; /* temporario */
@@ -534,6 +535,7 @@ footer {
     border-radius: 20px;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 3%;
     
     font-family: "Inter", sans-serif;
     color: #ffffff ;
@@ -564,14 +566,25 @@ footer {
     background-color: #948787b1;
     text-decoration:none;
 }
+
+/*///// tabela /////*/
+
 .cont_tab{
+    
+}
+table{
+    background-color:rgba(0, 0, 0, 0.855);    
     color: #ffffff;
     font-size: 1.25rem;
     line-height: 3; 
+    width: 100%;    
 }
-.header_tab{
-    background-color: #510f0E;
+td {
+    padding: 0.5rem;
+    text-align: center;
 }
-.body_tab{
-    background-color: rgb(18, 207, 27) ;
+th{
+    border: solid 1px rgb(255, 255, 255);
 }
+
+   
