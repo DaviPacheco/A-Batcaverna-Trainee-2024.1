@@ -511,3 +511,50 @@ footer {
         margin-bottom: 1px;
 }
 }
+
+/*////////// Tabela ////////////////*/
+.back{
+    background-color: #551212; /* temporario */
+    height: 100vh;
+    padding: 20px;
+}
+.cont_tab{
+    border: 1px solid red;
+    background-color: #1d0a10; /* temporario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+
+}
+.title_user{
+    padding-left: 5%;
+    font-size: 23px;
+    
+}
+.bt_create{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #ffffff;
+    border-style: solid;
+
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+.bt_create:hover{
+    background-color: #948787b1;
+    text-decoration:none;
+}
