@@ -40,9 +40,9 @@ body{
 }
 
 
-#lupa img {
-    width: 32px;
-    height: 32px;
+#lupa {
+    font-size: 32px;
+    font-weight: 600;
     margin: 9px 26px 9px 442px;
     position: absolute;
 }
