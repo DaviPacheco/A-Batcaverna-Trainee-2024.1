@@ -1,0 +1,26 @@
+body {
+    background: #B5B5B5;
+    width: 1440px;
+    height: 720px;
+    margin: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logobat img{
+    width: 396px;
+    height: 259px;
+    margin: 84px auto;
+}
+
+#barraMeio{
+    width: 800px;
+    height: 120px;
+    background: #cc2524;
+    border-radius: 30px;
+    margin: 0px auto;
+}
