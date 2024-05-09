@@ -78,3 +78,48 @@ button{
     object-fit:cover;
     max-width:95%;
 }
+button{
+   
+    border-radius:10px;
+    padding:5px;
+    cursor:pointer;
+    font-size:1.2em;
+    margin-left:2%;
+    border:0;
+}
+.BotoesFormularios{
+    display:flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+.Botao1Formulario{
+    color:white;
+    background-color: #cc2524;
+    
+}
+.Botao1Formulario:hover{
+    opacity: 0.8;
+}
+.Botao2Formulario{
+    color:#cc2524;
+    background-color: #c9c9c9;
+}
+.Botao2Formulario:hover{
+    opacity:0.8;
+}
+@media screen and (max-width:475px){
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-size:1em;
+}
+}
+@media screen and (max-width:378px){
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-weight: 400;
+    font-size:0.82em;
+}
+#ConfirmacaoExclusaoPostForm button{
+    font-size:1em;
+}
+}
