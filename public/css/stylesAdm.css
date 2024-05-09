@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #b5b5b5;
+}
+body * {
+    font-family: "Oswald",sans-serif ;
+    color: white;
+}
+@media screen and (min-width:1024px) {
+    body *{
+    font-size:20px;
+    }
+}
+form{
+    margin-left:5%;
+    margin-top:15px;
+    margin-bottom:50px;
+}
+h2{
+    font-size:1.8em;
+    margin-bottom:30px;
+    color:#cc2524;
+    font-weight: 600;
+}
+h3{
+    font-size:1.3em;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+input{
+    color:black;
+    border-radius:5px;
+    border: 1px solid rgba(204,37,37,0.7);;  
+    
+}
