@@ -512,7 +512,7 @@ footer {
 }
 }
 
-/*////////// Tabela ////////////////*/
+/*////////// Tabela Background e top Div ////////////////*/
 .back{
     background: url(../assets/gotham.jpg);
     background-repeat: no-repeat;
@@ -526,7 +526,7 @@ footer {
 }
 
 .cont_user{
-    border: 1px solid rgba(252, 252, 14, 0.234);
+    border: 1px solid rgba(252, 252, 14, 0.234); /* temporario */
     background-color: #03020212; /* temporario */
     display: flex;
     justify-content: space-between;
@@ -543,7 +543,7 @@ footer {
 }
 .title_user{
     padding-left: 5%;
-    font-size: 23px;
+    font-size: 24px;
     
 }
 .bt_create{
@@ -573,18 +573,62 @@ footer {
     
 }
 table{
-    background-color:rgba(0, 0, 0, 0.855);    
     color: #ffffff;
     font-size: 1.25rem;
     line-height: 3; 
-    width: 100%;    
+    width: 100%; 
+    border-collapse: collapse;
 }
+
+th{
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+thead,tbody tr{   /* Coloca background no thead e no tbody pra manter o espaçamento entre os 2 transparente */
+    background-color:rgba(0, 0, 0, 0.8);
+    border-left: 3px solid white;
+    overflow: hidden;
+}
+
+tbody tr{
+    backdrop-filter: blur(2px); /*Se colocar junto com o thead as bordars somem !? */
+}
+
+tbody:before {
+    line-height:2.5em;
+    content:"\200C"; /* caractere invisivel pra dar espaço */
+    color:white;
+    display:block;
+}
+tbody tr:nth-child(even){
+    background-color: #3c0707c4; /* temp */
+    
+}
+tbody tr:hover{
+    background-color:rgba(0, 0, 0, 0.5); /* temp */
+}
+
 td {
     padding: 0.5rem;
     text-align: center;
 }
-th{
-    border: solid 1px rgb(255, 255, 255);
+td button{
+    padding: 8px 14px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: transparent;
+    color: #ffffff;
+    border-style: solid;
+    border-color: white;
 }
+
+.header_id{
+    padding: 0px 10px
+}
+
 
    
