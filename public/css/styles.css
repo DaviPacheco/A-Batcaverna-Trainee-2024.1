@@ -260,16 +260,16 @@ padding: 16px 8px;
  .fundoprincipal{
     width:100% ;
    height:100vh ;
-    background-color: white;
     
     
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 
- .btnuser{
-    background-color: #CB2523;
- }
  
+
+
  
  .divform{
     max-width: 500px;
@@ -279,10 +279,10 @@ padding: 16px 8px;
     align-items: center;
     flex-direction: column;
     display: flex;
-    border-style: inset ;
+    
     justify-content: center;
     border-radius: 60px;
-    border-color:red ;
+    
  } 
 .formad{
     display: flex;
@@ -296,14 +296,106 @@ padding: 16px 8px;
     
 }
 .in{
-    width:350px ;
+    width:390px ;
+
     height:40px ;
     margin:10px; 
     border-radius: 15px;
-    border-style: inset;
-    border-color: red;
+    border-style: double ;
+    border-color: #CB2523;
+    
 }
 .nv{
     position: relative;
     bottom:50px ;
+    
+    
+    
 }
+.nc{
+    font-size: 40px;
+    color:#CB2523;
+    
+    
+}
+.tt{
+    position: relative;
+    right:170px ;
+    font-size:23px ;
+    color:#CB2523;
+    
+}
+.f{
+    border-radius: 10px;
+    color:white ;
+    background-color: #CB2523;
+    width: 90px;
+    height: 25px;
+    position: relative;
+    right:100px ;
+    top: 50px;
+    border: none;
+}
+.fe{
+    border-radius: 10px;
+    color:white ;
+    background-color: #CB2523;
+    width: 90px;
+    height: 25px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    border:none ;
+}
+@media screen and (max-width: 550px){
+  .divform{
+    width: 80%;
+    
+
+  }
+  .nv{
+    bottom: 35px;
+  }
+  .nc{
+    font-size: 35px;
+  }
+  .in{
+    width:290px ;
+  }
+  .tt{
+    font-size:18px ;
+    right:110px ;
+  }
+  .f{
+    right:50px ;
+  }
+  .fe{
+    left: 50px;
+  }
+}
+@media screen and (max-width: 400px){
+    .divform{
+      width: 60%;
+      
+  
+    }
+    .nv{
+      bottom: 35px;
+    }
+    .nc{
+      font-size: 30px;
+    }
+    .in{
+      width:190px ;
+    }
+    .tt{
+      font-size:18px ;
+      right:0px ;
+    }
+    .f{
+      right:10px ;
+    }
+    .fe{
+      left: 10px;
+    }
+  }
