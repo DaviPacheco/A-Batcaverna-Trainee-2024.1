@@ -257,6 +257,7 @@ padding: 16px 8px;
 }
 
 /* adusuariarios */
+
  .fundoprincipal{
     width:100% ;
    height:100vh ;
@@ -307,7 +308,7 @@ padding: 16px 8px;
 }
 .nv{
     position: relative;
-    bottom:50px ;
+    bottom:40px ;
     
     
     
@@ -315,7 +316,7 @@ padding: 16px 8px;
 .nc{
     font-size: 40px;
     color:#CB2523;
-    
+    font-family: "Oswald", sans-serif;
     
 }
 .tt{
@@ -323,29 +324,31 @@ padding: 16px 8px;
     right:170px ;
     font-size:23px ;
     color:#CB2523;
-    
+    font-family: "Oswald", sans-serif;
 }
 .f{
     border-radius: 10px;
     color:white ;
     background-color: #CB2523;
     width: 90px;
-    height: 25px;
+    height: 30px;
     position: relative;
     right:100px ;
-    top: 50px;
+    top: 40px;
     border: none;
+    
 }
 .fe{
     border-radius: 10px;
     color:white ;
     background-color: #CB2523;
     width: 90px;
-    height: 25px;
+    height: 30px;
     position: relative;
     left: 100px;
-    top: 50px;
+    top: 40px;
     border:none ;
+    
 }
 @media screen and (max-width: 550px){
   .divform{
@@ -380,22 +383,178 @@ padding: 16px 8px;
   
     }
     .nv{
-      bottom: 35px;
+      bottom: 30px;
     }
     .nc{
-      font-size: 30px;
+      font-size: 25px;
     }
     .in{
-      width:190px ;
+      width:170px ;
     }
     .tt{
-      font-size:18px ;
+      font-size:13px ;
       right:0px ;
     }
     .f{
-      right:10px ;
+      right:5px ;
+      height:20px ;
+      width:60px ;
     }
     .fe{
-      left: 10px;
+      left: 5px;
+      height: 20px;
+      width:60px ;
     }
   }
+
+  /*edusuarios*/ 
+
+  .edfundoprincipal{
+    width:100% ;
+   height:100vh ;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ 
+
+
+ 
+ .eddivform{
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    border-radius: 60px;
+    
+ } 
+.formed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.edaf{
+    display: flex;
+    
+}
+.edin{
+    width:390px ;
+
+    height:40px ;
+    margin:10px; 
+    border-radius: 15px;
+    border-style: double ;
+    border-color: #CB2523;
+    
+}
+.ednv{
+    position: relative;
+    bottom:40px ;
+    
+    
+    
+}
+.ednc{
+    font-size: 40px;
+    color:#CB2523;
+    font-family: "Oswald", sans-serif;
+    
+}
+.edtt{
+    position: relative;
+    right:170px ;
+    font-size:23px ;
+    color:#CB2523;
+    font-family: "Oswald", sans-serif;
+}
+.edf{
+    border-radius: 10px;
+    color:white ;
+    background-color: #CB2523;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    right:100px ;
+    top: 40px;
+    border: none;
+}
+.edfe{
+    border-radius: 10px;
+    color:white ;
+    background-color: #CB2523;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    left: 100px;
+    top: 40px;
+    border:none ;
+}
+@media screen and (max-width: 550px){
+  .eddivform{
+    width: 80%;
+    
+
+  }
+  .ednv{
+    bottom: 35px;
+  }
+  .ednc{
+    font-size: 35px;
+  }
+  .edin{
+    width:290px ;
+  }
+  .edtt{
+    font-size:18px ;
+    right:110px ;
+  }
+  .edf{
+    right:50px ;
+  }
+  .edfe{
+    left: 50px;
+  }
+}
+@media screen and (max-width: 400px){
+    .eddivform{
+      width: 60%;
+      
+  
+    }
+    .ednv{
+      bottom: 30px;
+    }
+    .ednc{
+      font-size: 25px;
+    }
+    .edin{
+      width:170px ;
+    }
+    .edtt{
+      font-size:13px ;
+      right:0px ;
+    }
+    .edf{
+      right:5px ;
+      height: 20px;
+      width:60px ;
+    }
+    .edfe{
+      left: 5px;
+      height: 20px;
+      width: 60px;
+    }
+    
+  }
+
+  /*deletarusuario*/
