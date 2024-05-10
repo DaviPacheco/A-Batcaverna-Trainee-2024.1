@@ -75,13 +75,71 @@
                 </tr>
             </tbody>
         </table>
+        <table>
+            <thead>
+                <tr class ="header_tab">
+                    <th class="header_id">ID</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th class ="header_ac">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class ="body_tab">
+                    <td>1</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis">Visualizar</button>
+                        <button class="bt_edit">Editar</button>
+                        <button class="bt_delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>2</td>
+                    <td>Joker</td>
+                    <td>comedy@gotham.com</td>
+                    <td><button class="bt_vis">Visualizar</button>
+                        <button class="bt_edit">Editar</button>
+                        <button class="bt_delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>3</td>
+                    <td>Wayne</td>
+                    <td>seraaaaaa@gotham.com</td>
+                    <td><button class="bt_vis">Visualizar</button>
+                        <button class="bt_edit">Editar</button>
+                        <button class="bt_delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>4</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis">Visualizar</button>
+                        <button class="bt_edit">Editar</button>
+                        <button class="bt_delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>5</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis">Visualizar</button>
+                        <button class="bt_edit">Editar</button>
+                        <button class="bt_delete">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <div class="paginacao">
-            <a href="#" class="seta_pag1"><i class="fa-thin fa-angles-left"></i></a>
-            <a href="#" class="num_pag active">1</a>
-            <a href="#" class="num_pag">2</a>
-            <a href="#" class="seta_pag2"><i class="fa-thin fa-angles-right"></i></a>
+           <button onclick="troca_relativa(-1)" class="seta_pag1"><i class="fa-thin fa-angles-left"></i></button>
+            <a href="#1" class="num_pag active">1</a>
+            <a href="#2" class="num_pag">2</a>
+            <button onclick="troca_relativa(+1)"  class="seta_pag2"><i class="fa-thin fa-angles-right"></i></button>
         </div>
     </div>
 </div>
+<script defer src="../../../public/js/Paginacao.js"></script>
 </body>
 </html>

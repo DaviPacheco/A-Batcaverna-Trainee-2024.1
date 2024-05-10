@@ -689,7 +689,7 @@ td button{
     text-align: left;
     display: flex;
    }
-.paginacao a{
+.paginacao a, button{
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -697,25 +697,29 @@ td button{
     margin-top: 2%;
     padding: 8px 12px;
     background-color: #ffffff1e;
-    border: 1px solid rgba(71, 4, 3, 0.681);
+    border: 1px solid rgba(158, 149, 149, 0.681);
    }
 .seta_pag1{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-    font-size: 10px;
 }
 .seta_pag2{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.paginacao a.active{
+.paginacao a.active, button.active{
     background-color: rgb(94, 10, 10);
     font-weight: bold;
 }
-.paginacao a:hover:not(.active){
+.paginacao a:hover:not(.active), button:hover:not(.active){
     background-color: rgb(25, 11, 3);
 }
-
 .fa-thin{
 font-size: 50%;
+}
+
+/* troca de paginacao */
+
+table{
+    display: none;
 }
