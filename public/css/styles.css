@@ -520,7 +520,8 @@ footer {
     background-position-x: center;
     
     background-color: #d7d7d7; /* temporario */
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     padding: 20px;
 }
 
@@ -682,6 +683,39 @@ td button{
         margin: 1%;
         border-radius: 8px;
         cursor: pointer;
-} 
+    } 
 }
-   
+.paginacao{
+    text-align: left;
+    display: flex;
+   }
+.paginacao a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 2%;
+    padding: 8px 12px;
+    background-color: #ffffff1e;
+    border: 1px solid rgba(71, 4, 3, 0.681);
+   }
+.seta_pag1{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 10px;
+}
+.seta_pag2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.paginacao a.active{
+    background-color: rgb(94, 10, 10);
+    font-weight: bold;
+}
+.paginacao a:hover:not(.active){
+    background-color: rgb(25, 11, 3);
+}
+
+.fa-thin{
+font-size: 50%;
+}
