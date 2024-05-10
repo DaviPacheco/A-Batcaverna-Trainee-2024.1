@@ -619,6 +619,8 @@ td button{
     border-radius: 8px;
     align-items: center;
     cursor: pointer;
+    font-size: 1.2rem;
+    margin: 2px;
 
     background-color: transparent;
     color: #ffffff;
@@ -683,14 +685,16 @@ td button{
         margin: 1%;
         border-radius: 8px;
         cursor: pointer;
+
     } 
 }
 .paginacao{
     text-align: left;
     display: flex;
    }
-.paginacao a, button{
-    display: inline-block;
+.paginacao a, .paginacao button{
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -708,18 +712,19 @@ td button{
     border-bottom-right-radius: 5px;
 }
 .paginacao a.active, button.active{
-    background-color: rgb(94, 10, 10);
+    background-color: rgb(36, 4, 4);
     font-weight: bold;
 }
 .paginacao a:hover:not(.active), button:hover:not(.active){
     background-color: rgb(25, 11, 3);
 }
 .fa-thin{
-font-size: 50%;
+   font-size: 50%;
+   font-weight: 300;
 }
 
 /* troca de paginacao */
-
 table{
     display: none;
 }
+
