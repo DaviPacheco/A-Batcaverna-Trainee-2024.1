@@ -327,28 +327,28 @@ padding: 16px 8px;
     font-family: "Oswald", sans-serif;
 }
 .f{
-    border-radius: 10px;
+    border-radius: 15px;
     color:white ;
     background-color: #CB2523;
-    width: 90px;
+    width: 100px;
     height: 30px;
     position: relative;
     right:100px ;
     top: 40px;
     border: none;
-    
+    font-family: "Oswald", sans-serif;
 }
 .fe{
-    border-radius: 10px;
+    border-radius: 15px;
     color:white ;
     background-color: #CB2523;
-    width: 90px;
+    width: 100px;
     height: 30px;
     position: relative;
     left: 100px;
     top: 40px;
     border:none ;
-    
+    font-family: "Oswald", sans-serif;
 }
 @media screen and (max-width: 550px){
   .divform{
@@ -478,26 +478,28 @@ padding: 16px 8px;
     font-family: "Oswald", sans-serif;
 }
 .edf{
-    border-radius: 10px;
+    border-radius: 15px;
     color:white ;
     background-color: #CB2523;
-    width: 90px;
+    width: 100px;
     height: 30px;
     position: relative;
     right:100px ;
     top: 40px;
     border: none;
+    font-family: "Oswald", sans-serif;
 }
 .edfe{
-    border-radius: 10px;
+    border-radius: 15px;
     color:white ;
     background-color: #CB2523;
-    width: 90px;
+    width: 100px;
     height: 30px;
     position: relative;
     left: 100px;
     top: 40px;
     border:none ;
+    font-family: "Oswald", sans-serif;
 }
 @media screen and (max-width: 550px){
   .eddivform{
@@ -558,3 +560,215 @@ padding: 16px 8px;
   }
 
   /*deletarusuario*/
+   
+  .deleprincipal{
+    width: 100%;
+    height: 100vh;
+     display: flex;
+     align-items: center;
+    justify-content: center;
+  }
+  .divdelete{
+    height: 250px;
+    width: 100%;
+    max-width:900px ;
+    background-color: #f5f1f1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius:20px ;
+  }
+ .texti{
+   position: relative;
+
+ }
+ .exu{
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  color: #CB2523;
+  text-align: center;
+  
+  
+ }
+ .divaviso{
+  position: relative;
+  top:10px ;  
+ }
+ .deletext{
+  font-family: "Oswald", sans-serif;
+  font-size:25px ;
+  color: black;
+  left:10PX ;
+  position: relative;
+ }
+ .bbpos{
+  position:relative;
+  top: 40px;
+ }
+ .butcan{
+  position: relative;
+  left:  250px;
+  border-radius:15px ;
+  background-color: #CB2523;
+  color: white;
+  height: 30px;
+  width:100px ;
+  top: 40PX;
+  font-family: "Oswald", sans-serif;
+  border: none;
+ }
+ .butex{
+  position:relative ;
+  left:300px ;
+  border-radius: 15px; 
+  background-color: #CB2523;
+  color: white;
+  height:30px ;
+  width:100px ;
+  font-family: "Oswald", sans-serif;
+  top:40PX ;
+  border: none;
+  
+ }
+ @media screen and (max-width:950px ) {
+  .divdelete{
+    width:70% ;
+  }
+  .exu{
+    font-size:30px ;
+  }
+  .deletext{
+    font-size:25px ;
+    left:2px ;
+  }
+  .butcan{
+   left:100px ;
+  }
+  .butex{
+    left:150px ;
+  }
+ }
+ @media screen and (max-width:750px ) {
+  .divdelete{
+    width:70% ;
+  }
+  .exu{
+    font-size:25px ;
+  }
+  .deletext{
+    font-size:20px ;
+    left: 1px;
+  }
+  .butcan{
+   left:50px ;
+   width:70px ;
+   top: 30px ;
+  }
+  .butex{
+    left:100px ;
+    width:70px ;
+    top: 30px ;
+  }
+}
+@media screen and (max-width:590px ) {
+  .divdelete{
+    width:70% ;
+  }
+  .exu{
+    font-size:22px ;
+  }
+  .deletext{
+    font-size:17px ;
+    
+  }
+  .butcan{
+   left:0px ;
+  }
+  .butex{
+    left:10px ;
+  }
+} 
+
+/*visualizar usuarios*/
+
+.vsfundo{
+  height:100vh ;
+  width:100% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.divvs{
+  max-width:500px ;
+  width:100% ;
+  height:500px ;
+  background-color: white;
+  border-radius:30px ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+.divti{
+ position: relative;
+ top:50px ;
+}
+.h2vs{
+  color: #CB2523;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif; 
+  
+
+}
+.divvn{
+position: relative;
+top: 100px;
+right: 180px ;
+}
+.pvs{
+  font-family: "Oswald", sans-serif;
+  color: #CB2523;
+  font-size: 30px;
+}
+.divve{
+  position: relative;
+  top:150px ;
+  right:170px; ;
+}
+.butvs{
+  position: relative;
+  top:200px  ;
+  left:100px ;
+  width:100px ;
+  height:30px ;
+  border-radius: 15px;
+  font-family: "Oswald", sans-serif;
+  background-color: #CB2523;
+  color: white;
+  border: none;
+}
+.p{
+  font-family: "Oswald", sans-serif;
+}
+@media screen and (max-width:570px){
+  .divvs{
+    width:75% ;
+  }
+  .h2vs{
+    font-size: 30px;
+  }
+  .pvs{
+    font-size:23px ;
+  }
+  .divve{
+     right:50px ;
+  }
+  .divvn{
+    right: 65px;
+  }
+  .butvs{
+    left:30px ;
+  }
+}
