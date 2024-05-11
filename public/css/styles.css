@@ -563,7 +563,7 @@ footer {
     cursor: pointer;
 }
 .bt_create:hover{
-    background-color: #948787b1;
+    background-color: #8b0c0cb1; /*cores temp*/
     text-decoration:none;
 }
 
@@ -607,7 +607,7 @@ tbody tr:nth-child(even){
     
 }
 tbody tr:hover{
-    background-color:rgba(0, 0, 0, 0.5); /* temp */
+    background-color:rgba(41, 40, 45, 0.5); /* temp */
 }
 
 td {
@@ -637,12 +637,15 @@ td button{
 
 }
 .bt_edit{
-    border-color: rgba(172, 178, 6, 0.757) ; /*cores temp*/
-    color: rgb(255, 242, 0);
+    border-color: rgba(6, 126, 178, 0.757) ; /*cores temp*/
+    color: rgb(25, 139, 221);
 }
 .bt_delete{
     background-color: rgb(62, 6, 6); /*cores temp*/
     border-color: rgba(255, 255, 255, 0.757) ;
+}
+.bt_vis:hover, .bt_delete:hover, .bt_edit:hover{
+    background-color: rgb(158, 150, 150); /*cores temp*/
 }
 
 /*//////// Responsividade ///////*/
@@ -698,6 +701,12 @@ td button{
         margin-left: 38%;
     }
 }
+
+@media (min-width:574px) and (max-width:650px){
+    .bt_delete{
+        margin-left: 1%;
+    }
+}
 /*/// paginacao ///*/
 .paginacao{
     text-align: left;
@@ -723,11 +732,11 @@ td button{
     border-bottom-right-radius: 5px;
 }
 .paginacao a.active, button.active{
-    background-color: rgb(36, 4, 4);
+    background-color: rgb(36, 4, 4); /*cores temp*/
     font-weight: bold;
 }
-.paginacao a:hover:not(.active), button:hover:not(.active){
-    background-color: rgb(25, 11, 3);
+.paginacao a:hover:not(.active), .paginacao button:hover:not(.active){
+    background-color: rgb(52, 14, 14); /*cores temp*/
 }
 .fa-thin{
    font-size: 50%;
