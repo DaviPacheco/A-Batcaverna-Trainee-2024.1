@@ -514,12 +514,12 @@ footer {
 
 /*////////// Tabela Background e top Div ////////////////*/
 .back{
-    background: url(../assets/gotham.jpg);
+    background-image: url(../assets/gotham.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     
-    background-color: #d7d7d7; /* temporario */
+    background-color: #b5b5b5; /* temporario */
     min-height: 100vh;
     min-width: 100vw;
     padding: 20px;
@@ -698,7 +698,7 @@ td button{
     .bt_delete{
         display: flex;
         justify-content: center;
-        margin-left: 38%;
+       /* margin-left: 35%; Com isso o botao de delete desce uma linha numa resolução mais baixa*/
     }
 }
 
@@ -747,4 +747,28 @@ td button{
 table{
     display: none;
 }
+/* icones */
+.fa-regular::before {
+    display: none;
+}  
 
+@media (max-width: 400px){
+    
+    .fa-regular::before {
+        display: inline-block;
+        font-size: 110%;
+        font-weight: 300;
+    }  
+    .fa-pen-to-square::before{
+        font-weight: 500;
+
+    }
+    .stx {
+        display: none;
+    }
+    td button {
+        width: 20%;
+    }
+
+}
+ 
