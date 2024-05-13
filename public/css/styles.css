@@ -296,13 +296,15 @@ padding: 16px 8px;
 }
 .af{
     display: flex;
-    
+    position: relative;
+    top: 20px;
+    left: 120px;
 }
 .in{
     width:390px ;
 
     height:40px ;
-    margin:10px; 
+    margin:5px; 
     border-radius: 15px;
     border-style: double ;
     border-color: #CB2523;
@@ -334,11 +336,11 @@ padding: 16px 8px;
     background-color: #b5b5b5;
     border-style: solid;
     border-color: #CB2523;
-    width: 100px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     position: relative;
-    right:100px ;
-    top: 40px;
+   right:10px ;
+    
     
     font-family: "Oswald", sans-serif;
 }
@@ -346,11 +348,9 @@ padding: 16px 8px;
     border-radius: 5px;
     color:white;
     background-color: #CB2523;
-    width: 100px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     position: relative;
-    left: 100px;
-    top: 40px;
     border:none ;
     font-family: "Oswald", sans-serif;
 }
@@ -359,6 +359,9 @@ padding: 16px 8px;
     width: 80%;
     
 
+  }
+  .af{
+    left: 50px;
   }
   .nv{
     bottom: 35px;
@@ -374,10 +377,10 @@ padding: 16px 8px;
     right:110px ;
   }
   .f{
-    right:50px ;
+    right:5px ;
   }
   .fe{
-    left: 50px;
+    left: 5px;
   }
 }
 @media screen and (max-width: 400px){
@@ -385,6 +388,10 @@ padding: 16px 8px;
       width: 60%;
       
   
+    }
+    .af{
+   left: 0px;
+         
     }
     .nv{
       bottom: 30px;
@@ -401,12 +408,12 @@ padding: 16px 8px;
     }
     .f{
       right:5px ;
-      height:20px ;
+      height:30px ;
       width:60px ;
     }
     .fe{
       left: 5px;
-      height: 20px;
+      height: 30px;
       width:60px ;
     }
   }
@@ -450,13 +457,15 @@ padding: 16px 8px;
 }
 .edaf{
     display: flex;
-    
+    position: relative;
+    top: 20px;
+    left: 100px;
 }
 .edin{
     width:390px ;
 
     height:40px ;
-    margin:10px; 
+    margin:5px; 
     border-radius: 15px;
     border-style: double ;
     border-color: #CB2523;
@@ -486,11 +495,10 @@ padding: 16px 8px;
     border-radius: 5px;
     color:#CB2523 ;
     background-color: #b5b5b5;
-    width: 100px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     position: relative;
-    right:100px ;
-    top: 40px;
+    right: 10px;
     border-style:solid ;
     border-color: #CB2523;
     font-family: "Oswald", sans-serif;
@@ -499,11 +507,11 @@ padding: 16px 8px;
     border-radius: 5px;
     color:white ;
     background-color: #CB2523;
-    width: 100px;
-    height: 30px;
-    position: relative;
-    left: 100px;
-    top: 40px;
+    width: 60px;
+    height: 40px;
+    
+    
+    
     border:none ;
     font-family: "Oswald", sans-serif;
 }
@@ -512,6 +520,9 @@ padding: 16px 8px;
     width: 80%;
     
 
+  }
+  .edaf{
+    left: 50px;
   }
   .ednv{
     bottom: 35px;
@@ -527,10 +538,10 @@ padding: 16px 8px;
     right:110px ;
   }
   .edf{
-    right:50px ;
+    right:5px ;
   }
   .edfe{
-    left: 50px;
+    left: 5px;
   }
 }
 @media screen and (max-width: 400px){
@@ -538,6 +549,9 @@ padding: 16px 8px;
       width: 60%;
       
   
+    }
+    .edaf{
+      left: 0px;
     }
     .ednv{
       bottom: 30px;
@@ -554,12 +568,12 @@ padding: 16px 8px;
     }
     .edf{
       right:5px ;
-      height: 20px;
+      height: 30px;
       width:60px ;
     }
     .edfe{
       left: 5px;
-      height: 20px;
+      height: 30px;
       width: 60px;
     }
     
@@ -615,13 +629,13 @@ padding: 16px 8px;
  }
  .butcan{
   position: relative;
-  left:  250px;
+  left:  290px;
   border-radius:5px ;
   background-color: #b5b5b5;
   color:#CB2523;
-  height: 30px;
-  width:100px ;
-  top: 40PX;
+  height: 40px;
+  width:60px ;
+  top: 20PX;
   font-family: "Oswald", sans-serif;
   border-color:#CB2523 ;
   border-style:solid ;
@@ -632,10 +646,10 @@ padding: 16px 8px;
   border-radius: 5px; 
   background-color: #CB2523;
   color: white;
-  height:30px ;
-  width:100px ;
+  height:40px ;
+  width:60px ;
   font-family: "Oswald", sans-serif;
-  top:40PX ;
+  top:20PX ;
   border: none;
   
  }
@@ -651,12 +665,12 @@ padding: 16px 8px;
     left:2px ;
   }
   .butcan{
-   left:100px ;
-   top:10px ;
+   left:140px ;
+   top:0px ;
   }
   .butex{
     left:150px ;
-    top: 10px;
+    top: 0px;
   }
  }
  @media screen and (max-width:750px ) {
@@ -694,11 +708,11 @@ padding: 16px 8px;
   }
   .butcan{
    left:0px ;
-   top: 5px;
+   top: 0px;
   }
   .butex{
     left:10px ;
-    top: 5px;
+    top: 0px;
   }
 } 
 
@@ -756,8 +770,8 @@ right: 180px ;
   position: relative;
   top:200px  ;
   left:100px ;
-  width:100px ;
-  height:30px ;
+  width:60px ;
+  height:40px ;
   border-radius: 5px;
   font-family: "Oswald", sans-serif;
   background-color: #b5b5b5;
