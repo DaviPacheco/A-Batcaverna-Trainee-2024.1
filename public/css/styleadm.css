@@ -1,7 +1,5 @@
 body {
     background: #B5B5B5;
-    width: 1440px;
-    height: 720px;
     margin: auto;
 }
 
@@ -11,25 +9,75 @@ body {
     box-sizing: border-box;
 }
 
+#logobat {
+    text-align: center;
+}
+
 #logobat img{
     width: 396px;
     height: 259px;
-    margin: 84px 522px 0px;
+    margin-top: 84px;
 }
 
 #barraMeio{
     width: 800px;
     height: 120px;
-    background: #cc2524;
+    background: black;
     border-radius: 30px;
     margin: auto;
     display: flex;
-    gap: 140px;
-    padding: 30px 70px;
+    gap: 100px;
+    padding: 10px 50px;
     font-size: 60px;
 }
 
+#barraMeio a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.2s;
+    border-radius: 50%;
+    color: #cc2524;
+}
+
 #barraMeio a:hover{
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    
+    #barraMeio{
+        width: 750px;
+        gap: 90px;
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+body {
+    padding-bottom: 20px;
+    border: 1px solid white;
+}
+
+    #logobat img{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    #barraMeio{
+        width: 80%;
+        height: 800px;
+        margin: 0px auto 0px;
+        display: block;
+        padding: 20px 10% 20px 10%;
+        font-size: 60px;
+    }
+
+    #barraMeio a{
+        padding: 60px;
+    }
 }
