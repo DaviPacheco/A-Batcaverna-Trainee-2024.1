@@ -18,7 +18,7 @@ html{
 }
 @media screen and (min-width: 1440px) and (max-width: 1900px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
         --distSeta: 2.5%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
@@ -49,11 +49,11 @@ html{
         --LarguraImgAbertura:70%;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 900px){
     html {
         --ModeloLista: column;
         --tamMaxQuadrosCentrais: 100%;
-        --gapLista:0%;
+        --gapLista:10%;
         --MargemSuperiorElementos:20px;
         --tamanhoElemento:71%;
         --TamBatmanLateral:0;
@@ -62,7 +62,7 @@ html{
         --distPublicacoes:65%;
         --LarguraImgAbertura:100%;
         --TamanhoFonteBotoesIniciais:10px;
-        --FonteBotoesInciais:400;
+        --FonteBotoesInciais:500;
         --DistanciaBotoesIniciais:2%;
         --DirecaoDosPosts: Column;
         --TamanhoPost1:100%;
@@ -88,29 +88,35 @@ html{
    #titulo h1
 {
     font-weight: 400;
-    font-size:1.2em;
+    font-size:2em;
     margin:auto 1%;
 }
 #abertura img{
-    margin: 8% auto 4% auto;
-    min-height:140px;
+    margin: 12% auto 4% auto;
+    
+    height:25vh;
+    min-height:180px;
+    max-height:280px;
+    border-radius:90px;
  }
     .frase1
 {  
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.5em;
   
 }
 .frase2
 {
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1.3em;
   
 }
 #BotaoSobreNos{
+    font-size:1.4em;
     left:15%;
   }
   #BotaoIrPublicacoes{
+    font-size:1.4em;
    right:15%; 
   }
   .RetanguloVermelhoCentral{
@@ -119,7 +125,7 @@ html{
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 901px){
     html {
         --ModeloLista: row;
         --gapLista:10%;
@@ -159,12 +165,13 @@ html{
 #titulo h1
 {
     font-weight: 500;
-    font-size:1.5em;
+    font-size:2em;
 }
 #abertura img{
 margin-left:20px;
 height:80%;
 margin-bottom:2%;
+border-radius:200px;
 }
 .frase1
 {  
@@ -196,10 +203,10 @@ body * {
 #BlocoTotalLandingPage{
     width:95%;
     margin:auto;
-    
 }
 #logo{
     max-width:360px;
+    min-width:140px;
     width:25%;
     margin:auto;
 }
@@ -207,11 +214,11 @@ body * {
     width:100%;
 }
 #abertura{
+    margin:auto;
     width:95%;
-    max-width:1400px;
+    max-width:1850px;
     background-color:black;
-    height:50%;
-    max-height:400px;
+    max-height:100vh;
     margin:1px auto auto auto;
     padding:8px 10px;
     border-radius:10px;
@@ -221,7 +228,7 @@ body * {
 #abertura img
 {
    display:block;
-   border-radius:200px;
+  
 
    width:var(--LarguraImgAbertura);
    object-fit: cover;
@@ -248,21 +255,24 @@ body * {
     border: 1px solid rgba(255,255,255,0.7);
     border-radius: 30px;
     width: 100%;
-    max-width:1000px;
+    max-width:1400px;
     text-align:center;
     background-color:rgba(181,181,181,0.35);
+    padding:0px 2%;
 }
 
 
 #parteCentral {
     width:90%;
-    max-width:1400px; 
-    margin:34px auto auto auto;
+    max-width:1800px; 
+    margin:auto;
+    margin-top:34px;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
     gap: 1.2%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     padding: 0 1.71%;
+    justify-content: center;
 }
 #BatmanLateral{
     max-width:var(--TamBatmanLateral);
@@ -289,7 +299,7 @@ body * {
 }
 .RetanguloVermelhoCentral h2
 {
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 400;
 }
 #Lista2{
@@ -298,7 +308,7 @@ body * {
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: var(--ModeloLista); /*Altera o padrão de linha para colunas*/
-    gap: var(--gapLista); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: 5%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin:4% 0px 0px 0px;
     background-color:rgba(0,0,0,0.9);
     padding:10% 3%;
@@ -310,13 +320,14 @@ body * {
     width:var(--tamanhoElemento);/*180*/
     text-align:center;
     justify-content: center;
-    max-width:300px;
+    width:100%;
 }
 .ListaInterna{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 20%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: 10%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    
 }
 .LI2{
     margin-top:var(--MargemSuperiorElementos);
@@ -347,13 +358,16 @@ body * {
 #Lista2 li div{
     background-color:#CC2524;
     min-height:40px;
-    width: 100%;
-    margin:--margemCategorias auto auto auto;
+    max-width:200px;
+    margin:auto;
+    margin-top:var(--margemCategorias);
     font-weight: 300;
     border-radius:30px; 
     display:flex;
     align-items: center;
     justify-content: center;
+    justify-self:center;
+    align-self: center;
 }
 
 #Lista2 li h3{
@@ -380,7 +394,7 @@ body * {
     Max-width:95%;
 }
 #BlocoDoProposito p{
-    font-size:1.2em;
+    font-size:1.4em;
     font-weight: 400;
     width:90%;
    
@@ -389,7 +403,7 @@ body * {
 width: 2.2em;
 height: 1.8em;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 901px){
     html{
         --TamanhoFonteUltPublc:1.6em;
         --PesoFonteUltPublc:600;
@@ -402,8 +416,8 @@ height: 1.8em;
         --AlturaImagem3Post:154px;
         --TamanhoFonteTituloPost2:1.8em;
         --TamanhoFonteTituloPost3:1.8em;
-        --TamanhoFonteParteEscritaPost2:1.2em;
-        --TamanhoFonteParteEscritaPost3:1.2em;
+        --TamanhoFonteParteEscritaPost2:1.3em;
+        --TamanhoFonteParteEscritaPost3:1.3em;
         --TamanhoFonteBotaoLerMais2:1.1em;
         --TamanhoFonteBotaoLerMais3:1.1em;
         --TamanhoOutLineBotaoLerMais2:4px;
@@ -417,7 +431,7 @@ height: 1.8em;
         margin-bottom:-5%;
     }
 }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 900px){
         html{
             --TamanhoFonteUltPublc:2em;
             --PesoFonteUltPublc:700;
@@ -450,16 +464,16 @@ height: 1.8em;
 }
 
 }
-@media screen and (max-width: 374px){
+@media screen and (max-width: 500px){
     html{
         --DirecaoListaMaiorPosts:column;
         --DirecaoListaMenorPosts:column;
-        --LarguraMaximaPost2:95%;
-        --LarguraMaximaPost3:95%;
+        --LarguraMaximaPost2:90%;
+        --LarguraMaximaPost3:90%;
         
     }
 }
-@media screen and (min-width:375px) and (max-width: 767px){
+@media screen and (min-width:501px) and (max-width: 900px){
     html{
         --DirecaoListaMaiorPosts: column;
         --DirecaoListaMenorPosts: row;
@@ -773,15 +787,6 @@ font-size: 1.5em;
         padding:0px;
         gap:5px;
     }
-    .ListaInterna{
-        flex-direction:column;
-        margin:auto;
-        justify-content: center;
-        gap:10px;
-        margin-bottom:5px;
-        align-items:center;
-        font-size:10px;
-    }
     .RetanguloVermelhoCentral{
         padding:5px;
     }
@@ -790,4 +795,34 @@ font-size: 1.5em;
         font-weight: 400;
     }
     }
+    @media screen and (max-width: 500px){
+    #Lista2{
+        gap:50px;
+    }    
+        .ListaInterna{
+        flex-direction:column;
+        margin:auto;
+        justify-content: center;
+        gap:50px;
+        margin-bottom:5px;
+        align-items:center;
+        font-size:10px;
+        font-size:1.2em;
+    }
+    #Lista2 li div{
+        margin-top:8px;
+    }
+    #abertura img{
+        border-radius:40px;
+        margin-top:16%;
+        margin-bottom:46px;
+    }
+    #abertura p{
+        margin-top:26px;
+        margin-bottom:20px;
+    }
+    #abertura{
+        width:100%;
+    }
 
+}
