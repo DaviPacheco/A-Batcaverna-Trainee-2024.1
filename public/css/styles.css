@@ -760,9 +760,10 @@ right: 180px ;
   height:30px ;
   border-radius: 5px;
   font-family: "Oswald", sans-serif;
-  background-color: #CB2523;
-  color: white;
-  border: none;
+  background-color: #b5b5b5;
+  color:#CB2523;
+  border:#CB2523;
+  border-style: solid;
 }
 .p{
   font-family: "Oswald", sans-serif;
