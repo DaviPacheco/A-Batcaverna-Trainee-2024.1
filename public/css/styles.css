@@ -62,20 +62,25 @@ body{
     margin:0px ;
  }
  
- .b{
+ 
     
-    top: 5px;
+  
     
-    position: absolute;
- }
+   
+
  
  .principal{    
-    width: 100vw;
+    width: 100%;
     height:100vh; 
     background-image: url(../assets/LOGIN\ definitivo\ -.png);
     background-position: center;
     background-size: cover;
     
+}
+#batc{
+  top: 5px;
+  position: absolute;
+  
 }
 .login{
 background-color: rgba(0, 0, 0, 0.623);
@@ -84,6 +89,7 @@ flex-direction: column;
 align-items: center;
 border-radius: 60px;
 width: 281px;
+
 height: 312px;
 padding: 32px 16px; 
 margin-top: 30px ;
@@ -162,8 +168,10 @@ padding: 16px 8px;
 .segundaria{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 280px;
-    margin-bottom: 70px; 
+    position: relative;
+    top: 200px;
+    right:300px ;
+  
 }
 .ptres{
     display: flex;
@@ -175,8 +183,38 @@ padding: 16px 8px;
 .simbolo{
     position: absolute;
     bottom: 5px;
+    left: 10px;
 
 }
+@media screen and (max-width:1440px) {
+   
+    
+
+    
+      
+      
+   
+   #batc{
+    top: 20px;
+    left: 40px;
+   }
+} 
+@media screen and (max-width:1024px) {
+  
+   .segundaria{
+      right:100px ;
+       
+   }
+   #batc{
+     top:10px ;
+     left:5px ;
+   }
+   .simbolo{
+    
+    left:5px ;
+   }
+   
+} 
 @media screen and (max-width:900px) {
     .principal{
         
@@ -186,16 +224,12 @@ padding: 16px 8px;
         
     }
      .segundaria{
-        margin-left:200px ;
+        left: 80px ;
      }
 } 
 @media screen and (max-width:650px) {
    
-   .principal{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-   }
+   
    
     .alfred{
         display: none;
@@ -220,7 +254,15 @@ padding: 16px 8px;
     margin: 0px;
    }
    .segundaria{
-    margin: 0px;
+     position: relative;
+     top: 300px;
+     left:0px ;
+   }
+   #batc{
+    margin-left:80px ;
+   }
+   .simbolo{
+    margin-left:110px ;
    }
    
 }
@@ -241,19 +283,41 @@ padding: 16px 8px;
         flex-direction: column;
         
        }
-    #b{
-        height: 100px;
+    #batc{
+        margin-left: 0px ;
         
         
         
+    }
+    .simbolo{
+      margin-bottom:20px ;
+      margin-left: 90px;
     }
     .segundaria{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    height: 100%;
-    
+      top: 300px;
     }
+    
+}
+@media screen and (max-width:320px) {
+.principal{
+  height:100vh;
+  
+}
+
+  #batc{
+  top: 30px;
+  left: 0px;
+  
+}
+ .simbolo{
+  right:30PX ;
+  margin-left: 80PX;
+ }
+  
+
+
+
+
 }
 
 /* adusuariarios */
@@ -297,8 +361,8 @@ padding: 16px 8px;
 .af{
     display: flex;
     position: relative;
-    top: 20px;
-    left: 120px;
+    top: 50px;
+    left: 150px;
 }
 .in{
     width:390px ;
@@ -331,7 +395,7 @@ padding: 16px 8px;
     font-family: "Oswald", sans-serif;
 }
 .f{
-    border-radius: 5px;
+    border-radius: 15px;
     color:#CB2523 ;
     background-color: #b5b5b5;
     border-style: solid;
@@ -345,7 +409,7 @@ padding: 16px 8px;
     font-family: "Oswald", sans-serif;
 }
 .fe{
-    border-radius: 5px;
+    border-radius: 15px;
     color:white;
     background-color: #CB2523;
     width: 60px;
@@ -458,8 +522,8 @@ padding: 16px 8px;
 .edaf{
     display: flex;
     position: relative;
-    top: 20px;
-    left: 100px;
+    top: 50px;
+    left: 150px;
 }
 .edin{
     width:390px ;
@@ -492,7 +556,7 @@ padding: 16px 8px;
     font-family: "Oswald", sans-serif;
 }
 .edf{
-    border-radius: 5px;
+    border-radius: 15px;
     color:#CB2523 ;
     background-color: #b5b5b5;
     width: 60px;
@@ -504,7 +568,7 @@ padding: 16px 8px;
     font-family: "Oswald", sans-serif;
 }
 .edfe{
-    border-radius: 5px;
+    border-radius: 15px;
     color:white ;
     background-color: #CB2523;
     width: 60px;
@@ -591,7 +655,7 @@ padding: 16px 8px;
   .divdelete{
     height: 250px;
     width: 100%;
-    max-width:900px ;
+    max-width:800px ;
     background-color: #b5b5b5;
     display: flex;
     align-items: center;
@@ -618,7 +682,7 @@ padding: 16px 8px;
  }
  .deletext{
   font-family: "Oswald", sans-serif;
-  font-size:25px ;
+  font-size:30px ;
   color: black;
   left:10PX ;
   position: relative;
@@ -630,12 +694,12 @@ padding: 16px 8px;
  .butcan{
   position: relative;
   left:  290px;
-  border-radius:5px ;
+  border-radius:15px ;
   background-color: #b5b5b5;
   color:#CB2523;
   height: 40px;
   width:60px ;
-  top: 20PX;
+  
   font-family: "Oswald", sans-serif;
   border-color:#CB2523 ;
   border-style:solid ;
@@ -643,13 +707,13 @@ padding: 16px 8px;
  .butex{
   position:relative ;
   left:300px ;
-  border-radius: 5px; 
+  border-radius: 15px; 
   background-color: #CB2523;
   color: white;
   height:40px ;
   width:60px ;
   font-family: "Oswald", sans-serif;
-  top:20PX ;
+  
   border: none;
   
  }
@@ -708,12 +772,32 @@ padding: 16px 8px;
   }
   .butcan{
    left:0px ;
-   top: 0px;
+   top: 30px;
   }
   .butex{
     left:10px ;
-    top: 0px;
+    top: 30px;
   }
+}
+  @media screen and (max-width:320px ) {
+    .divdelete{
+      width:70% ;
+    }
+    .exu{
+      font-size:22px ;
+    }
+    .deletext{
+      font-size:17px ;
+      
+    }
+    .butcan{
+     left:0px ;
+     top: 1px;
+    }
+    .butex{
+      left:10px ;
+      top: 1px;
+    }
 } 
 
 /*visualizar usuarios*/
@@ -729,7 +813,7 @@ padding: 16px 8px;
 .divvs{
   max-width:500px ;
   width:100% ;
-  height:500px ;
+  height:400px ;
   background-color:#b5b5b5;
   border-color: #CB2523;
   border-style:solid ;
@@ -763,23 +847,26 @@ right: 180px ;
 }
 .divve{
   position: relative;
-  top:150px ;
-  right:170px; ;
+  top:120px ;
+  right:155px; ;
 }
 .butvs{
   position: relative;
-  top:200px  ;
-  left:100px ;
+  top:130px  ;
+  left:190px ;
   width:60px ;
   height:40px ;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: "Oswald", sans-serif;
   background-color: #b5b5b5;
   color:#CB2523;
   border:#CB2523;
   border-style: solid;
 }
-.p{
+.ppu{
+  font-family: "Oswald", sans-serif;
+}
+.ppu2{
   font-family: "Oswald", sans-serif;
 }
 @media screen and (max-width:570px){
@@ -796,9 +883,57 @@ right: 180px ;
      right:50px ;
   }
   .divvn{
-    right: 65px;
+    right: 83px;
   }
   .butvs{
-    left:30px ;
+    left:100px ;
+    top: 170px ;
   }
 }
+
+
+
+
+@media screen and (max-width:344px){
+.h2vs{
+  font-size:20px ;
+}
+.butvs{
+  margin-right: 20px;
+}
+
+}
+@media screen and (max-width:320px){
+  .butvs{
+ 
+   margin-right: 80px;
+  }
+  .divvs{
+   width:60% ;
+ }
+ .h2vs{
+   font-size: 20px;
+   
+ }
+ .pvs{
+   font-size:23px ;
+   position: relative;
+   left: 30px;
+ }
+ .divve{
+    right:45px ;
+ }
+ .divvn{
+   right: 83px;
+ }
+ .ppu{
+   margin-left:30px ;
+ }
+ .ppu2{
+   margin-left: 35px;
+ }
+ 
+ 
+ 
+ 
+ }
