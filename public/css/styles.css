@@ -13,7 +13,7 @@ html{
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
-        --batmanAltura:668px;
+        --batmanAltura:708px;
     }
 }
 @media screen and (min-width: 1440px) and (max-width: 1900px) {
@@ -23,7 +23,7 @@ html{
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
-        --batmanAltura:640px;
+        --batmanAltura:660px;
     }
 }
 @media screen and (min-width: 1074px) and ( max-width: 1439px) {
@@ -45,7 +45,7 @@ html{
         --distParagrafoInc:74%;
         --tamMaxQuadrosCentrais: 75%;
         --margemCategorias:20%;
-        --batmanAltura:520px;
+        --batmanAltura:540px;
         --LarguraImgAbertura:70%;
     }
 }
@@ -65,7 +65,8 @@ html{
     html {
         --ModeloLista: column;
         --tamMaxQuadrosCentrais: 100%;
-        --gapLista:10%;
+        --gapLista:20px;
+        --gapListaInterna:8%;
         --MargemSuperiorElementos:20px;
         --tamanhoElemento:71%;
         --TamBatmanLateral:0;
@@ -140,7 +141,8 @@ html{
 @media screen and (min-width: 901px){
     html {
         --ModeloLista: row;
-        --gapLista:10%;
+        --gapLista:5%;
+        --gapListaInterna:10%;
         --MargemSuperiorElementos:0;
         --tamanhoElemento:50%;
         --TamBatmanLateral:100%;
@@ -285,7 +287,6 @@ body * {
     gap: 1.2%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     padding: 0 1.71%;
     justify-content: center;
-    border:1px solid white;
 }
 #BatmanLateral{
     max-width:var(--TamBatmanLateral);
@@ -312,8 +313,15 @@ body * {
 }
 .RetanguloVermelhoCentral h2
 {
+    font-size: 2.2em;
+    font-weight: 400;
+}
+@media screen and (max-width:307px){
+    .RetanguloVermelhoCentral h2
+{
     font-size: 2em;
     font-weight: 400;
+}
 }
 #Lista2{
     width: 100%;
@@ -321,13 +329,14 @@ body * {
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: var(--ModeloLista); /*Altera o padrão de linha para colunas*/
-    gap: 5%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: var(--gapLista); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin:4% 0px 0px 0px;
     background-color:rgba(0,0,0,0.9);
     padding:10% 3%;
     border-radius:15px;
     align-items: center;
     justify-content:center;
+    
 }
 #Lista2 li{
     width:var(--tamanhoElemento);/*180*/
@@ -335,11 +344,12 @@ body * {
     justify-content: center;
     width:100%;
 }
+
 .ListaInterna{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
-    gap: 10%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    gap: var(--gapListaInterna); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     
 }
 .LI2{
@@ -384,11 +394,15 @@ body * {
 }
 
 #Lista2 li h3{
-    font-size:1.1em;
+    font-size:1.2em;
     font-weight: 300;
 }
 
-
+@media screen and (min-width:501px) and (max-width:900px) {
+    #Lista2 li{
+      max-width:500px;
+    }    
+  }
 #BlocoDoProposito{
     margin-top:4%;
     background-color: rgba(0,0,0,0.9);
@@ -418,12 +432,12 @@ height: 1.8em;
 }
 @media screen and (max-width: 900px){
     html{
-        --TamanhoFonteUltPublc:1.6em;
+        --TamanhoFonteUltPublc:1.8em;
         --PesoFonteUltPublc:600;
         --TamanhoSeta:4em;
         --LarguraPostMaior:95%;
         --gapListaMaiorPosts:2vh;
-        --RaioELarguraBorda2:1em;
+        --RaioELarguraBorda2:1.4em;
         --RaioELarguraBorda3:var(--RaioELarguraBorda2);
         --AlturaImagem2Post:154px;
         --AlturaImagem3Post:154px;
@@ -495,9 +509,9 @@ height: 1.8em;
         }
 }
 #TextoUltimasPublicacoes{
-    margin: 109px auto auto auto;
-    width:100%;
-    max-width:1306px;
+    margin: 5em auto auto auto;
+    width:95%;
+    max-width:1256px;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
@@ -521,7 +535,7 @@ height: 1.8em;
     border-bottom:9px solid #CC2524;
     border-right:7px solid #CC2524;
     border-left:7px solid #CC2524;
-    max-width:1306px;
+    max-width:1256px;
     background-color:rgba(115, 115, 115, 0.9);
     padding:1.094% 1.071%;
     position:relative;
@@ -547,8 +561,8 @@ height: 1.8em;
 }
 .Maior{
     width:100%;
-    border-radius:1.8em;
-    border-left-width:1.8em;
+    border-radius:1.7em;
+    border-left-width:1.7em;
     padding-bottom:2%;
 }
 .ListaDosPostsMenores{
@@ -556,6 +570,8 @@ height: 1.8em;
     display: flex; /*Tipo de display flexível*/
     flex-direction: var(--DirecaoListaMenorPosts); /*Altera o padrão de linha para colunas*/
     gap: 1em; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin:auto;
+    max-width:670px;
 }
 .ModeloDePost2{
     width:100%;
@@ -712,8 +728,8 @@ font-size: 1.5em;
 }
 .BM1{
     
-    width: 20%;
-    min-width:80px;
+    width: 25%;
+    min-width:85px;
     margin: 6px 5% auto auto;
     
 }
@@ -767,14 +783,14 @@ font-size: 1.5em;
     align-items: center;
     background-color:black;
     opacity: 1;
-    margin:2% auto auto auto;
+    margin:1.8em auto auto auto;
     padding:1% 3%;
     transition:background 0.25s;
     text-decoration: none;
 }
 #BotaoVerMais:hover{
     background:rgba(10,10,10,0.81);
-    outline: 6px solid rgba(0,0,0,0.2);
+    outline: 3px solid rgba(0,0,0,0.2);
     text-decoration-line: underline;
     padding:1% 3%;
 }
@@ -782,7 +798,7 @@ font-size: 1.5em;
     font-size:1.5em;
     font-weight:500;
 }
-@media screen and (max-width: 251px){
+@media screen and (max-width: 281px){
     #BotaoVerMais{
         min-width:fit-content;
     }
@@ -804,8 +820,11 @@ font-size: 1.5em;
         padding:5px;
     }
     .RetanguloVermelhoCentral h2{
-        font-size:10px;
+        font-size:1.8em;
         font-weight: 400;
+    }
+    .ListaInterna div{
+        font-size:1em;
     }
     }
     @media screen and (max-width: 500px){
