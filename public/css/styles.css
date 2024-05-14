@@ -74,6 +74,16 @@ body {
         font-size: 1.8rem;
         font-weight: 500;
     }
+    #autor{
+        display: block;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 85px;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+   
     
         
     
