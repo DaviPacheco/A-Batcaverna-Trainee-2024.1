@@ -34,5 +34,15 @@ body {
     border-radius: 30px;
      /*borda de 1px para melhor visualização*/
     }
+    #bordaverm{
+        width: 23px;
+        height: 751px;
+        background-color: #cc2524;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        position: absolute;
+        
+    }
+    
     
 
