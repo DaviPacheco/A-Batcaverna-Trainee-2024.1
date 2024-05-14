@@ -9,7 +9,7 @@ html{
 @media screen and (min-width: 1901px){
     html {
         font-size: 16px;
-        --distSeta: 3%;
+        --distSeta: 3.5%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
@@ -26,9 +26,9 @@ html{
         --batmanAltura:640px;
     }
 }
-@media screen and (min-width: 1024px) and ( max-width: 1439px) {
+@media screen and (min-width: 1074px) and ( max-width: 1439px) {
     html {
-        --distSeta:1%;
+        --distSeta:2%;
         font-size: 14px;
         --distSobreNos:77%;
         --distPublicacoes:90%;
@@ -36,9 +36,9 @@ html{
         --batmanAltura:600px;
     }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1073px) {
     html {
-        --distSeta:-0.5%;
+        --distSeta:0.7%;
         font-size: 12px;
         --distSobreNos:74%;
         --distPublicacoes:87%;
@@ -47,6 +47,18 @@ html{
         --margemCategorias:20%;
         --batmanAltura:520px;
         --LarguraImgAbertura:70%;
+    }
+}
+@media screen and (min-width:901px) and (max-width: 988px)
+{
+    html {
+        --distSeta:0.2%;
+}
+}
+@media screen and (min-width: 1074px) and ( max-width: 1199px)
+{
+    html{
+        --distSeta:1.6%;
     }
 }
 @media screen and (max-width: 900px){
@@ -216,7 +228,7 @@ body * {
 #abertura{
     margin:auto;
     width:95%;
-    max-width:1850px;
+    max-width:1800px;
     background-color:black;
     max-height:100vh;
     margin:1px auto auto auto;
@@ -264,7 +276,7 @@ body * {
 
 #parteCentral {
     width:90%;
-    max-width:1800px; 
+    max-width:1900px; 
     margin:auto;
     margin-top:34px;
     list-style: none; /*Anula estilo de pontos da lista*/
@@ -273,6 +285,7 @@ body * {
     gap: 1.2%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     padding: 0 1.71%;
     justify-content: center;
+    border:1px solid white;
 }
 #BatmanLateral{
     max-width:var(--TamBatmanLateral);
@@ -403,7 +416,7 @@ body * {
 width: 2.2em;
 height: 1.8em;
 }
-@media screen and (max-width: 901px){
+@media screen and (max-width: 900px){
     html{
         --TamanhoFonteUltPublc:1.6em;
         --PesoFonteUltPublc:600;
@@ -431,7 +444,7 @@ height: 1.8em;
         margin-bottom:-5%;
     }
 }
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 901px){
         html{
             --TamanhoFonteUltPublc:2em;
             --PesoFonteUltPublc:700;
@@ -484,7 +497,7 @@ height: 1.8em;
 #TextoUltimasPublicacoes{
     margin: 109px auto auto auto;
     width:100%;
-    max-width:1146px;
+    max-width:1306px;
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
@@ -508,7 +521,7 @@ height: 1.8em;
     border-bottom:9px solid #CC2524;
     border-right:7px solid #CC2524;
     border-left:7px solid #CC2524;
-    max-width:1146px;
+    max-width:1306px;
     background-color:rgba(115, 115, 115, 0.9);
     padding:1.094% 1.071%;
     position:relative;
