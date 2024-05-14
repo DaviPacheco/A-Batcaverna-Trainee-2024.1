@@ -9,6 +9,7 @@ body{
     box-sizing: border-box;
 }
 
+
 #post1 {
     max-width: 451px;
     width: 100%;
@@ -311,7 +312,12 @@ body{
     }
 
     #barra {
-        margin-left: 134px;
+        margin-left: 234px;
+        width: 300px;
+    }
+
+    #lupa {
+        margin: 9px 226px 9px 242px;
     }
 
     #post1 {
@@ -335,22 +341,22 @@ body{
     }
 
     #pag1 {
-        margin: 2045px 788px;
+        margin: 1789px 660px;
     }
     
     #pag2 {
-        margin: 2045px 728px;
+        margin: 1789px 600px;
     }
     
     #pag3 {
-        margin: 2045px 668px;
+        margin: 1789px 540px;
     }
     
     #pag4 {
-        margin: 2045px 608px;
+        margin: 1789px 480px;
     }
     
     #pag5 {
-        margin: 2045px 548px;
+        margin: 1789px 420px;
     }
 }
