@@ -196,7 +196,8 @@ body{
     width: 1px;
     height: 122px;
     background: #cc2524;
-    margin: 401px 397px 111px 54px;
+    margin: 401px;
+    margin-left: 54px;
     position: absolute;
 }
 
@@ -214,7 +215,8 @@ body{
     font-size: 24px;
     line-height: 36px;
     color: white;
-    margin: 543px 34px 32px 54px;
+    margin-top: 543px;
+    margin-left: 59px;
     position: absolute;
 }
 
@@ -367,6 +369,59 @@ body{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     position: absolute;
+    }
+
+    #titulo1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: white;
+        margin-top: 199px;
+        margin-left: 70px;
+        margin-right: 0;
+        position: absolute;
+    }
+    
+    #barrinha1 {
+        width: 1px;
+        height: 73.2px;
+        background: #cc2524;
+        margin-top: 239px;
+        margin-left: 40px;
+        position: absolute;
+    }
+    
+    #resumo1 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+        margin: 235px 0px 0px 55px;
+        position: absolute;
+    }
+    
+    #autor1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: white;
+        margin-top: 327px;
+        margin-left: 45px;
+        position: absolute;
+    }
+    
+    #lermais1 {
+        width: 66px;
+        height: 24px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        border-radius: 25px;
+        background: #cc2524;
+        color: white;
+        margin-top: 350px;
+        margin-left: 186px;
+        position: absolute;
     }
 
     #barra {
