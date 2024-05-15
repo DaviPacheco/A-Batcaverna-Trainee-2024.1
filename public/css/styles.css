@@ -151,7 +151,66 @@ body {
         }
 
    }
-   
+   @media (max-width: 768px){
+    .lista img {
+        height: 160px;
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+    #conteiner .lista{
+        list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:55px;
+    }
+    #conteiner{
+        margin-top: 60px;
+    }
+    #logo {
+        height: 59px; /* mudar so a altura da imagem, ja mexe na largura*/
+    }
+    #titulo{
+        display: flex;
+        color: white;
+        line-height: 100px; /* margem do topo*/
+        font-size: 2.0rem; 
+        font-weight: 600;
+    }
+    #conteudo{
+        display: block;
+        margin-top: 45px;
+        margin-left: 13px;
+        margin-right: 13px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    #conteiner .infos{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+    }
+    #autor{
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 12px;
+        padding-left: 60px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 300;
+        
+    }
+    #data{
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 12px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 300;
+        
+    }
+}
 
         
     
