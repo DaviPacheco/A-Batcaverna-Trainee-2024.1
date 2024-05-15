@@ -130,7 +130,25 @@ body {
             flex-direction: row;
             gap: 220px;
         }
-
+        #autor{
+            display: flex;
+            padding-top: 200px;
+            padding-bottom: 12px;
+            padding-left: 60px;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 400;
+            
+        }
+        #data{
+            display: flex;
+            padding-top: 200px;
+            padding-bottom: 12px;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 400;
+            
+        }
 
    }
    
