@@ -105,6 +105,10 @@ body {
         #conteiner{
             margin-top: 70px;
         }
+        #logo {
+            height: 78px; /* mudar so a altura da imagem, ja mexe na largura*/
+        }
+
 
    }
    
