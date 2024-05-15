@@ -15,8 +15,8 @@ body {
 
 #logobat img{
     width: 396px;
-    height: 259px;
-    margin-top: 84px;
+    margin-bottom: -62px;
+    /* para vermelho: margin-top:84px; */
 }
 
 #barraMeio{
