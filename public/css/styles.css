@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald';
 }
 
 #post1 {
@@ -231,6 +232,64 @@ body{
 }
 
 #lermais1:hover {
+    border: 1.5px solid white;
+    cursor: pointer;
+}
+
+#titulo2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+    margin-top: 199px;
+    margin-left: 70px;
+    position: absolute;
+}
+
+#barrinha2 {
+    width: 1px;
+    height: 73.2px;
+    background: #cc2524;
+    margin-top: 239px;
+    margin-left: 40px;
+    position: absolute;
+}
+
+#resumo2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    margin-top: 235px;
+    margin-left: 55px;
+    position: absolute;
+}
+
+#autor2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    margin-top: 327px;
+    margin-left: 45px;
+    position: absolute;
+}
+
+#lermais2 {
+    width: 66px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 25px;
+    background: #cc2524;
+    color: white;
+    margin-top: 350px;
+    margin-left: 186px;
+    position: absolute;
+}
+
+#lermais2:hover {
     border: 1.5px solid white;
     cursor: pointer;
 }
