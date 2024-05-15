@@ -9,6 +9,8 @@ body{
     box-sizing: border-box;
 }
 
+
+
 #post1 {
     max-width: 451px;
     width: 100%;
@@ -405,4 +407,51 @@ body{
     #pag5 {
         margin: 2757px 72.5px;
     }
+
+    @media (max-width:400px)
+{
+    #barra {
+        margin-left: 37.5px;
+    }
+
+    #post1 {
+        margin-left: 54.5px;
+    }
+
+    #post2 {
+        margin: 884px 54.5px;
+    }     
+    
+    #post3 {
+        margin: 1368px 54.5px;
+    }
+    
+    #post4 {
+        margin: 1852px 54.5px;
+    }
+    
+    #post5 {
+        margin: 2336px 54.5px;
+    }
+
+    #pag1 {
+        margin: 2757px 287.5px;
+    }
+    
+    #pag2 {
+        margin: 2757px 227.5px;
+    }
+    
+    #pag3 {
+        margin: 2757px 167.5px;
+    }
+    
+    #pag4 {
+        margin: 2757px 107.5px;
+    }
+    
+    #pag5 {
+        margin: 2757px 47.5px;
+    }
+}
 }
