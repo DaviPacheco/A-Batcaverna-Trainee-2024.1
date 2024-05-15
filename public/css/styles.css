@@ -124,6 +124,12 @@ body {
             font-size: 1.6rem;
             font-weight: 400;
         }
+        #conteiner .infos{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 220px;
+        }
 
 
    }
