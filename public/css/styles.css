@@ -96,7 +96,16 @@ body {
         .lista img {
             height: 200px; /* mudar so a altura da imagem, ja mexe na largura*/
         }
-        
+        #conteiner .lista{
+            list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 100px; /*distancia entre a foto de perfil e o titulo*/
+        }
+        #conteiner{
+            margin-top: 70px;
+        }
+
    }
    
 
