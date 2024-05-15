@@ -9,7 +9,6 @@ body{
     box-sizing: border-box;
 }
 
-
 #post1 {
     max-width: 451px;
     width: 100%;
@@ -289,7 +288,7 @@ body{
         width: 266px;
     height: 384px;
     margin-top: 400px;
-    
+    margin-left: 251px;
     background: black;
     border-radius: 30px;
     }
@@ -358,5 +357,52 @@ body{
     
     #pag5 {
         margin: 1789px 420px;
+    }
+}
+
+@media (max-width:500px)
+{
+    #barra {
+        margin-left: 62.5px;
+    }
+
+    #post1 {
+        margin-left: 79.5px;
+    }
+
+    #post2 {
+        margin: 884px 79.5px;
+    }     
+    
+    #post3 {
+        margin: 1368px 79.5px;
+    }
+    
+    #post4 {
+        margin: 1852px 79.5px;
+    }
+    
+    #post5 {
+        margin: 2336px 79.5px;
+    }
+
+    #pag1 {
+        margin: 2757px 312.5px;
+    }
+    
+    #pag2 {
+        margin: 2757px 252.5px;
+    }
+    
+    #pag3 {
+        margin: 2757px 192.5px;
+    }
+    
+    #pag4 {
+        margin: 2757px 132.5px;
+    }
+    
+    #pag5 {
+        margin: 2757px 72.5px;
     }
 }
