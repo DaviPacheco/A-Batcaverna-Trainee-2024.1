@@ -308,6 +308,7 @@ body * {
     padding:0px 28px;
     background-color: #CC2524;
     border: 1px solid white;
+    display:flex;
     align-items: center;
    
 }
