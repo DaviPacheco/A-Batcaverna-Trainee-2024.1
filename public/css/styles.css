@@ -1,13 +1,14 @@
 body{
     background: #B5B5B5;
     margin: auto;
+    height: 1440px;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald';
+    font-family: 'Oswald' , sans-serif;
 }
 
 #post1 {
@@ -35,7 +36,7 @@ body{
     font-size: 24px;
     line-height: 32px;
     color: white;
-    margin: 9px 367px 9px 22px;
+    margin: 8px 367px 10px 22px;
     position: absolute;
 }
 
@@ -46,7 +47,7 @@ body{
     background: #cc2524;
     font-size: 32px;
     font-weight: 600;
-    margin: 9px 26px 9px 442px;
+    margin: 3px 26px 15px 442px;
     position: absolute;
 }
 
@@ -298,6 +299,10 @@ body{
 
 @media (max-width: 1200px)
 {
+    body{
+        height: 2385px;
+    }
+
     #barra {
         margin-left: 262px;
     }
@@ -345,6 +350,10 @@ body{
 
 @media (max-width:1000px)
 {
+    body {
+        height: 2129px;
+    }
+
     #post1 {
         width: 266px;
     height: 384px;
@@ -476,6 +485,10 @@ body{
 
 @media (max-width:500px)
 {
+    body {
+        height: 3097px;
+    }
+
     #barra {
         margin-left: 62.5px;
     }
