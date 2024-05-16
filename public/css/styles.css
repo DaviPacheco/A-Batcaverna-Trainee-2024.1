@@ -389,7 +389,83 @@ body{
 .descricao_do_item{
    width: 0px;
 }
+body{
+    /* isto fez ocupar todo o espaço*/
+   background-color: #b5b5b5;
+}
+/*   #sair a i{ /* icone lista*/
+/*    color: red;
+   padding-top: 25px; /* preenchimento do icone X*/
+/*    padding-left: 30px;
+   font-size: 20px; 
+   
+} */
+#space{
+   padding-top: 30px;
+}
+#Sidebar{
+   
+   width: 80px;
+   background-color: #cc2524;
+   height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
+   border-radius: 0px 8px 8px 0px;
+   position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
 
+
+
+#Sidebar:hover{
+   width: 200px;
+   background-color: #cc2524;
+   height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
+   border-radius: 0px 8px 8px 0px;
+   position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
+   top: 0;
+   left: 0;
+   transition: .2s;
+}
+
+#items{
+   display: flex; /* pra poder dar o gap */
+   flex-direction: column;
+   gap: 8px; /* espaçamento entre os itens*/
+   list-style: none; /* tirar as bolinhas de listagem */
+}
+.item{
+   display: flex; /*isto fez o icone ficar fixo ao maximizar a sidebar*/
+   border-radius: 8px;
+   margin: 10px 10px 0px 10px;
+   padding: 14px;
+   cursor: pointer;
+   
+
+}
+.item a{
+   display: flex;  /* isto fez a descrição do item sumir*/
+   align-items: center; /*alinhamento vertical*/
+   justify-content: center; /*alinhamento hoorizontal*/
+   text-decoration: none;/* para tirar a linha sublinhada do link*/
+   padding: 0px 0px 0px 5px; /* espaçamento entre as extremidades laterais da sidebar*/
+   color: black;
+}
+
+.item a i{
+   margin: 0px 40px 0px 0px; /* espaçamento entre icones e descriçao*/ 
+   font-size: 30px; /*aumentar os icones */
+   
+}
+.descricao_do_item{
+   width: 0px;
+}
+.item:hover{
+   background-color: #e3e9f7;
+}
+.item{
+   transition: .2s;
+}   
     
     
     
