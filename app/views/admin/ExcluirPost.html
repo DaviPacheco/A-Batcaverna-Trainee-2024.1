@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Exclusão de Posts</title>
-    <link rel="stylesheet" href="/public/css/stylesAdm.css" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
     </head>
 <form id="ConfirmacaoExclusaoPostForm">
   <h2>Exclusão de Post</h2>
@@ -19,7 +19,7 @@
     desfazê-la.<br />Tem certeza que deseja excluir esse post PERMANENTEMENTE?
   </p>
   <div class="BotoesFormularios">
-    <button class="Botao1Formulario">Excluir</button>
-    <button class="Botao2Formulario">Cancelar</button>
+    <button class="Botao1Formulario" class="Botao2Formulario" onclick= "FecharModal('ConfirmacaoExclusaoPostForm')">Excluir</button>
+    <button class="Botao2Formulario" class="Botao2Formulario" onclick= "FecharModal('ConfirmacaoExclusaoPostForm')">Cancelar</button>
   </div>
 </form>

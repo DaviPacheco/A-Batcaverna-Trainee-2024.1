@@ -38,7 +38,7 @@ h3{
 input, textarea{
     border-radius:5px;
     border: 1px solid rgba(204,37,37,0.5);
-    background-color: #dddddd;
+    background-color: #d9d9d9;
     width:60%;
     padding-top:0.5em;
     padding-bottom:0.5em;
@@ -48,7 +48,7 @@ textarea{
     width:90%;
 }
 input:focus,textarea:focus{
-    border:1px solid #dddddd;
+    border:1px solid #d9d9d9;
     outline:1px solid #cc2524;
 }
 .ImagemDoPostForm{
