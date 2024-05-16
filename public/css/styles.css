@@ -603,11 +603,11 @@ tbody:before {
     display:block;
 }
 tbody tr:nth-child(even){
-    background-color: #3c0707c4; /* temp */
+    background-color: #3c0707c4; /* tab row  */
     
 }
 tbody tr:hover{
-    background-color:rgba(41, 40, 45, 0.5); /* temp */
+    background-color:rgba(41, 40, 45, 0.5); /* tab row hover*/
 }
 
 td {
@@ -641,13 +641,20 @@ td button{
     color: rgb(25, 139, 221);
 }
 .bt_delete{
-    background-color: rgb(62, 6, 6); /*cores temp*/
+    background-color: #3c0707c4; /*cores temp*/
     border-color: rgba(255, 255, 255, 0.757) ;
 }
-.bt_vis:hover, .bt_delete:hover, .bt_edit:hover{
-    background-color: rgb(158, 150, 150); /*cores temp*/
+.bt_vis:hover{
+    background-color: #776d6d75; /*cores temp hover botoes tab*/
 }
-
+.bt_edit:hover{
+    background-color: rgba(30, 91, 121, 0.482);
+    color: rgba(255, 255, 255, 0.835);
+    border-color: white;
+}
+.bt_delete:hover{
+    background-color: #8b0c0cb1;
+}
 /*//////// Responsividade ///////*/
 
 @media (max-width: 650px){
@@ -720,8 +727,8 @@ td button{
     font-size: 1.2rem;
     margin-top: 2%;
     padding: 8px 12px;
-    background-color: #ffffff1e;
-    border: 1px solid rgba(158, 149, 149, 0.681);
+    background-color: #c8cfca1e; /*cor background pag*/
+    border: 1px solid rgba(158, 149, 149, 0.681); /*cor borda pag */
    }
 .seta_pag1{
     border-bottom-left-radius: 5px;
@@ -732,11 +739,11 @@ td button{
     border-bottom-right-radius: 5px;
 }
 .paginacao a.active, button.active{
-    background-color: rgb(36, 4, 4); /*cores temp*/
+    background-color:#3c0707c4; /*cores temp active pag */
     font-weight: bold;
 }
 .paginacao a:hover:not(.active), .paginacao button:hover:not(.active){
-    background-color: rgb(52, 14, 14); /*cores temp*/
+    background-color: #3c0707c4; /*cores temp hover pag*/
 }
 .fa-thin{
    font-size: 50%;
@@ -771,4 +778,3 @@ table{
     }
 
 }
- 
