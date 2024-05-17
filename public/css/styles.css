@@ -189,7 +189,7 @@ body{
     font-size: 36px;
     line-height: 48px;
     color: white;
-    margin: 327px 74px 228px 99px;
+    margin: 327px 39px 228px 134px;
     position: absolute;
 }
 
@@ -204,7 +204,7 @@ body{
 
 #resumo1 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 32px;
     color: white;
     margin: 396px 51px 116px 80px;
@@ -213,7 +213,7 @@ body{
 
 #autor1 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 36px;
     color: white;
     margin-top: 543px;
@@ -245,7 +245,7 @@ body{
     line-height: 28px;
     color: white;
     margin-top: 199px;
-    margin-left: 70px;
+    margin-left: 85px;
     position: absolute;
 }
 
@@ -260,17 +260,18 @@ body{
 
 #resumo2 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     color: white;
     margin-top: 235px;
     margin-left: 55px;
+    margin-right: 20px;
     position: absolute;
 }
 
 #autor2 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     color: white;
     margin-top: 327px;
@@ -386,7 +387,7 @@ body{
         line-height: 28px;
         color: white;
         margin-top: 199px;
-        margin-left: 70px;
+        margin-left: 85px;
         margin-right: 0;
         position: absolute;
     }
@@ -402,16 +403,16 @@ body{
     
     #resumo1 {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 20px;
         color: white;
-        margin: 235px 0px 0px 55px;
+        margin: 235px 20px 0px 55px;
         position: absolute;
     }
     
     #autor1 {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 22px;
         color: white;
         margin-top: 327px;
