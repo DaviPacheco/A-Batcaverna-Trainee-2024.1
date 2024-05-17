@@ -232,6 +232,7 @@ body{
     color: white;
     margin: 580px 24px 7px 319px;
     position: absolute;
+    border: 1.5px solid black;
 }
 
 #lermais1:hover {
@@ -291,6 +292,7 @@ body{
     margin-top: 350px;
     margin-left: 186px;
     position: absolute;
+    border: 1.5px solid black;
 }
 
 #lermais2:hover {
@@ -352,7 +354,7 @@ body{
 @media (max-width:1000px)
 {
     body {
-        height: 2129px;
+        height: 3097px;
     }
 
     #post1 {
@@ -360,64 +362,47 @@ body{
     height: 384px;
     margin-top: 400px;
     margin-left: 251px;
-    background: black;
-    border-radius: 30px;
     }
     
     #batmanDoFuturo1 img {
         width: 241px;
     height: 184.2px;
-    margin-left: 25px;
-    border-top-right-radius: 30px;
-    position: absolute;
     }
 
     #bord1 {
         width: 25px;
     height: 384px;
-    background: #cc2524;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    position: absolute;
     }
 
     #titulo1 {
         font-weight: 700;
         font-size: 20px;
         line-height: 28px;
-        color: white;
         margin-top: 199px;
         margin-left: 85px;
         margin-right: 0;
-        position: absolute;
     }
     
     #barrinha1 {
         width: 1px;
         height: 73.2px;
-        background: #cc2524;
         margin-top: 239px;
         margin-left: 40px;
-        position: absolute;
     }
     
     #resumo1 {
         font-weight: 400;
         font-size: 15px;
         line-height: 20px;
-        color: white;
         margin: 235px 20px 0px 55px;
-        position: absolute;
     }
     
     #autor1 {
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
-        color: white;
         margin-top: 327px;
         margin-left: 45px;
-        position: absolute;
     }
     
     #lermais1 {
@@ -426,72 +411,60 @@ body{
         font-weight: 600;
         font-size: 14px;
         line-height: 22px;
-        border-radius: 25px;
-        background: #cc2524;
-        color: white;
         margin-top: 350px;
         margin-left: 186px;
-        position: absolute;
     }
 
     #barra {
-        margin-left: 234px;
-        width: 300px;
-    }
-
-    #lupa {
-        margin: 3px 226px 15px 242px;
-    }
-
-    #post1 {
-        margin-left: 251px;
+        margin-left: 134px;
     }
 
     #post2 {
-        margin: 884px 68px;
+        margin: 884px 251px;
     }     
     
     #post3 {
-        margin: 884px 434px;
+        margin: 1368px 251px;
     }
     
     #post4 {
-        margin: 1368px 68px;
+        margin: 1852px 251px;
     }
     
     #post5 {
-        margin: 1368px 434px;
+        margin: 2336px 251px;
     }
 
     #pag1 {
-        margin: 1789px 660px;
+        margin: 2757px 484px;
     }
     
     #pag2 {
-        margin: 1789px 600px;
+        margin: 2757px 424px;
     }
     
     #pag3 {
-        margin: 1789px 540px;
+        margin: 2757px 364px;
     }
     
     #pag4 {
-        margin: 1789px 480px;
+        margin: 2757px 304px;
     }
     
     #pag5 {
-        margin: 1789px 420px;
+        margin: 2757px 244px;
     }
 }
 
 @media (max-width:500px)
 {
-    body {
-        height: 3097px;
+    #barra {
+        width: 300px;
+        margin-left: 62.5px;
     }
 
-    #barra {
-        margin-left: 62.5px;
+    #lupa {
+        margin: 3px 226px 15px 242px;
     }
 
     #post1 {
