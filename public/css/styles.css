@@ -65,7 +65,7 @@ body {
         margin-right: 20px;
         color: white;
         font-size: 1.8rem;
-        font-weight: 500;
+        font-weight: 450;
     }
     #conteiner .infos{
         list-style: none;
@@ -79,8 +79,8 @@ body {
         padding-bottom: 12px;
         padding-left: 85px;
         color: white;
-        font-size: 1.8rem;
-        font-weight: 500;
+        font-size: 1.95rem;
+        font-weight: 750;
         
     }
     #data{
@@ -88,8 +88,8 @@ body {
         padding-top: 200px;
         padding-bottom: 12px;
         color: white;
-        font-size: 1.8rem;
-        font-weight: 500;
+        font-size: 1.95rem;
+        font-weight: 750;
         
     }
     
@@ -124,7 +124,7 @@ body {
             margin-right: 15px;
             color: white;
             font-size: 1.5rem;
-            font-weight: 400;
+            font-weight: 350;
         }
         #conteiner .infos{
             list-style: none;
@@ -138,8 +138,8 @@ body {
             padding-bottom: 12px;
             padding-left: 60px;
             color: white;
-            font-size: 1.6rem;
-            font-weight: 400;
+            font-size: 1.65rem;
+            font-weight: 600;
             
         }
         #data{
@@ -147,8 +147,8 @@ body {
             padding-top: 100px;
             padding-bottom: 12px;
             color: white;
-            font-size: 1.6rem;
-            font-weight: 400;
+            font-size: 1.65rem;
+            font-weight: 600;
             
         }
 
@@ -198,10 +198,10 @@ body {
         display: flex;
         padding-top: 70px;
         padding-bottom: 12px;
-        padding-left: 60px;
+        padding-left: 40px;
         color: white;
-        font-size: 1.3rem;
-        font-weight: 300;
+        font-size: 1.45rem;
+        font-weight: 480;
         
     }
     #data{
@@ -209,8 +209,8 @@ body {
         padding-top: 70px;
         padding-bottom: 12px;
         color: white;
-        font-size: 1.3rem;
-        font-weight: 300;
+        font-size: 1.45rem;
+        font-weight: 480;
         
     }
 }
@@ -241,7 +241,7 @@ body {
         display: flex;
         color: white;
         font-size: 1.7rem;
-        font-weight: 500;
+        font-weight: 550;
         text-align: center;
         line-height: normal;
         justify-content: center;
@@ -268,7 +268,7 @@ body {
         padding-bottom: 0px;
         color: white;
         font-size: 1.1rem;
-        font-weight: 250;
+        font-weight: 420;
         
     }
     #data{
@@ -278,7 +278,7 @@ body {
         padding-bottom: 10px;
         color: white;
         font-size: 1.1rem;
-        font-weight: 250;
+        font-weight: 420;
         
     }
 
@@ -290,15 +290,15 @@ body {
     }
     #autor{
         font-size: 1rem;
-        font-weight: 220px;
+        font-weight: 350;
     }
     #data{
         font-size: 1rem;
-        font-weight: 220px;
+        font-weight: 350;
     }
     #titulo{
         font-size: 1.5rem;
-        font-weight: 380;
+        font-weight: 440;
     }
 }
 @media (max-width: 321px){
@@ -308,11 +308,11 @@ body {
     }
     #autor{
         font-size: 0.8rem;
-        font-weight: 200px;
+        font-weight: 300;
     }
     #data{
         font-size: 0.8rem;
-        font-weight: 200px;
+        font-weight: 300;
     #titulo{
         font-size: 1.4rem;
         font-weight: 350;
@@ -336,7 +336,7 @@ body{
 #Sidebar{
    
    width: 80px;
-   background-color: #cc2524;
+   background-color: black;
    height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
    border-radius: 0px 8px 8px 0px;
    position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
@@ -349,7 +349,7 @@ body{
 
 #Sidebar:hover{
    width: 200px;
-   background-color: #cc2524;
+   background-color: black;
    height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
    border-radius: 0px 8px 8px 0px;
    position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
@@ -407,7 +407,7 @@ body{
 #Sidebar{
    
    width: 80px;
-   background-color: #cc2524;
+   background-color: black;
    height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
    border-radius: 0px 8px 8px 0px;
    position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
@@ -420,7 +420,7 @@ body{
 
 #Sidebar:hover{
    width: 200px;
-   background-color: #cc2524;
+   background-color: black;
    height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
    border-radius: 0px 8px 8px 0px;
    position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
@@ -450,7 +450,7 @@ body{
    justify-content: center; /*alinhamento hoorizontal*/
    text-decoration: none;/* para tirar a linha sublinhada do link*/
    padding: 0px 0px 0px 5px; /* espaçamento entre as extremidades laterais da sidebar*/
-   color: black;
+   color: #cc2524;
 }
 
 .item a i{
