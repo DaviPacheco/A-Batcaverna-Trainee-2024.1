@@ -1,7 +1,7 @@
 body{
     background: #B5B5B5;
     margin: auto;
-    height: 1440px;
+    height: 1040px;
 }
 
 *{
@@ -17,7 +17,7 @@ body{
     height: 640px;
     background: black;
     border-radius: 30px;
-    margin: 400px 845px 400px 144px;
+    margin: 200px 845px 400px 144px;
     position: absolute;
 }
 
@@ -26,7 +26,7 @@ body{
     height: 50px;
     background: #cc2524;
     border-radius: 30px;
-    margin-top: 286px;
+    margin-top: 86px;
     margin-left: 120px;
     position: absolute;
 }
@@ -60,7 +60,7 @@ body{
     height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 286px 480px 770px 694px;
+    margin: 86px 480px 770px 694px;
     position: absolute;
 }
 
@@ -86,7 +86,7 @@ body{
     height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 286px 121px 770px 1053px;
+    margin: 86px 121px 770px 1053px;
     position: absolute;
 }
 
@@ -96,7 +96,7 @@ body{
     height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 770px 121px 286px 1053px;
+    margin: 570px 121px 286px 1053px;
     position: absolute;
 }
 
@@ -105,7 +105,7 @@ body{
     height: 384px;
     background: black;
     border-radius: 30px;
-    margin: 770px 480px 286px 694px;
+    margin: 570px 480px 286px 694px;
     position: absolute;
 }
 
@@ -131,7 +131,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 1077px 845px 323px 555px;
+    margin: 877px 845px 323px 555px;
     position: absolute;
 }
 
@@ -139,7 +139,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 1077px 905px 323px 495px;
+    margin: 877px 905px 323px 495px;
     position: absolute;
 }
 
@@ -147,7 +147,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 1077px 965px 323px 435px;
+    margin: 877px 965px 323px 435px;
     position: absolute;
 }
 
@@ -155,7 +155,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 1077px 1025px 323px 375px;
+    margin: 877px 1025px 323px 375px;
     position: absolute;
 }
 
@@ -163,7 +163,7 @@ body{
     width: 40px;
     height: 40px;
     background: #cc2524;
-    margin: 1077px 1085px 323px 315px;
+    margin: 877px 1085px 323px 315px;
     position: absolute;
 }
 
@@ -303,7 +303,7 @@ body{
 @media (max-width: 1200px)
 {
     body{
-        height: 2385px;
+        height: 1985px;
     }
 
     #barra {
@@ -315,52 +315,52 @@ body{
     }
 
     #post2 {
-        margin: 1140px 196px;
+        margin: 940px 196px;
     }     
     
     #post3 {
-        margin: 1140px 562px;
+        margin: 940px 562px;
     }
     
     #post4 {
-        margin: 1624px 196px;
+        margin: 1424px 196px;
     }
     
     #post5 {
-        margin: 1624px 562px;
+        margin: 1424px 562px;
     }
 
     #pag1 {
-        margin: 2045px 788px;
+        margin: 1845px 788px;
     }
     
     #pag2 {
-        margin: 2045px 728px;
+        margin: 1845px 728px;
     }
     
     #pag3 {
-        margin: 2045px 668px;
+        margin: 1845px 668px;
     }
     
     #pag4 {
-        margin: 2045px 608px;
+        margin: 1845px 608px;
     }
     
     #pag5 {
-        margin: 2045px 548px;
+        margin: 1845px 548px;
     }
 }
 
 @media (max-width:1000px)
 {
     body {
-        height: 3097px;
+        height: 2697px;
     }
 
     #post1 {
         width: 266px;
     height: 384px;
-    margin-top: 400px;
+    margin-top: 200px;
     margin-left: 251px;
     }
     
@@ -420,39 +420,39 @@ body{
     }
 
     #post2 {
-        margin: 884px 251px;
+        margin: 684px 251px;
     }     
     
     #post3 {
-        margin: 1368px 251px;
+        margin: 1168px 251px;
     }
     
     #post4 {
-        margin: 1852px 251px;
+        margin: 1652px 251px;
     }
     
     #post5 {
-        margin: 2336px 251px;
+        margin: 2136px 251px;
     }
 
     #pag1 {
-        margin: 2757px 484px;
+        margin: 2557px 484px;
     }
     
     #pag2 {
-        margin: 2757px 424px;
+        margin: 2557px 424px;
     }
     
     #pag3 {
-        margin: 2757px 364px;
+        margin: 2557px 364px;
     }
     
     #pag4 {
-        margin: 2757px 304px;
+        margin: 2557px 304px;
     }
     
     #pag5 {
-        margin: 2757px 244px;
+        margin: 2557px 244px;
     }
 }
 
@@ -472,39 +472,39 @@ body{
     }
 
     #post2 {
-        margin: 884px 79.5px;
+        margin: 684px 79.5px;
     }     
     
     #post3 {
-        margin: 1368px 79.5px;
+        margin: 1168px 79.5px;
     }
     
     #post4 {
-        margin: 1852px 79.5px;
+        margin: 1652px 79.5px;
     }
     
     #post5 {
-        margin: 2336px 79.5px;
+        margin: 2136px 79.5px;
     }
 
     #pag1 {
-        margin: 2757px 312.5px;
+        margin: 2557px 312.5px;
     }
     
     #pag2 {
-        margin: 2757px 252.5px;
+        margin: 2557px 252.5px;
     }
     
     #pag3 {
-        margin: 2757px 192.5px;
+        margin: 2557px 192.5px;
     }
     
     #pag4 {
-        margin: 2757px 132.5px;
+        margin: 2557px 132.5px;
     }
     
     #pag5 {
-        margin: 2757px 72.5px;
+        margin: 2557px 72.5px;
     }
 
     @media (max-width:400px)
@@ -518,39 +518,39 @@ body{
     }
 
     #post2 {
-        margin: 884px 54.5px;
+        margin: 684px 54.5px;
     }     
     
     #post3 {
-        margin: 1368px 54.5px;
+        margin: 1168px 54.5px;
     }
     
     #post4 {
-        margin: 1852px 54.5px;
+        margin: 1652px 54.5px;
     }
     
     #post5 {
-        margin: 2336px 54.5px;
+        margin: 2136px 54.5px;
     }
 
     #pag1 {
-        margin: 2757px 287.5px;
+        margin: 2557px 287.5px;
     }
     
     #pag2 {
-        margin: 2757px 227.5px;
+        margin: 2557px 227.5px;
     }
     
     #pag3 {
-        margin: 2757px 167.5px;
+        margin: 2557px 167.5px;
     }
     
     #pag4 {
-        margin: 2757px 107.5px;
+        margin: 2557px 107.5px;
     }
     
     #pag5 {
-        margin: 2757px 47.5px;
+        margin: 2557px 47.5px;
     }
 }
 
@@ -565,39 +565,39 @@ body{
     }
 
     #post2 {
-        margin: 884px 27px;
+        margin: 684px 27px;
     }     
     
     #post3 {
-        margin: 1368px 27px;
+        margin: 1168px 27px;
     }
     
     #post4 {
-        margin: 1852px 27px;
+        margin: 1652px 27px;
     }
     
     #post5 {
-        margin: 2336px 27px;
+        margin: 2136px 27px;
     }
 
     #pag1 {
-        margin: 2757px 260px;
+        margin: 2557px 260px;
     }
     
     #pag2 {
-        margin: 2757px 200px;
+        margin: 2557px 200px;
     }
     
     #pag3 {
-        margin: 2757px 140px;
+        margin: 2557px 140px;
     }
     
     #pag4 {
-        margin: 2757px 80px;
+        margin: 2557px 80px;
     }
     
     #pag5 {
-        margin: 2757px 20px;
+        margin: 2557px 20px;
     }
 }
 }
