@@ -521,7 +521,6 @@ footer {
     
     background-color: #b5b5b5; /* temporario */
     min-height: 100vh;
-    min-width: 100vw;
     padding: 20px;
 }
 
@@ -776,5 +775,9 @@ table{
     td button {
         width: 20%;
     }
+    .bt_create{
+        padding: 4px 18px;
+    }
 
 }
+
