@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
+    <script src="../../../public/js/index.js"></script>
+</head>
+<body>
+    <div class="back">
+        
+    <div class="cont_user">
+        <p class="title_user">Lista de Usuários</p>
+        <button type="button" class="bt_create" onclick="abrirmodal('divform')">Criar Usuário</button>
+    </div>
+    <div class="cont_tab">
+        <table>
+            <thead>
+                <tr class ="header_tab">
+                    <th class="header_id">ID</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th>Ação</th>
+                    <th class ="header_ac">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class ="body_tab">
+                    <td class="border_number">1</td>
+                    <td>1</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button type="button" class="bt_vis" onclick="abrirmodal('divvs')">Visualizar</button>
+                        <button type="button" class="bt_edit" onclick="abrirmodal('eddivform')">Editar</button>
+                        <button type="button" class="bt_delete" onclick="abrirmodal('divdelete')">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td class="border_number">2</td>
+                    <td>2</td>
+                    <td>Joker</td>
+                    <td>comedy@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')">Visualizar</button>
+                        <button class="bt_edit" onclick="abrirmodal('eddivform')">Editar</button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td class="border_number">3</td>
+                    <td>3</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td>dsidjsiddsdsdds@gotham.com</td>
+                    <td><button class="bt_vis" type="button" onclick="abrirmodal('divvs')">Visualizar</button>
+                        <button class="bt_edit" type="button" onclick="abrirmodal('eddivform')">Editar</button>
+                        <button class="bt_delete" type="button" onclick="abrirmodal('divdelete')">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td class="border_number">4</td>
+                    <td>4</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis"type="button" onclick="abrirmodal('divvs')">Visualizar</button>
+                        <button class="bt_edit"type="button" onclick="abrirmodal('eddivform')">Editar</button>
+                        <button class="bt_delete"type="button"onclick="abrirmodal('divdelete')">Excluir</button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td class="border_number">5</td>
+                    <td>5</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis" type="button" onclick="abrirmodal('divvs')">Visualizar</button>
+                        <button class="bt_edit" type="button" onclick="abrirmodal('eddivform')">Editar</button>
+                        <button class="bt_delete" type="button" onclick="abrirmodal('divdelete')">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="divform" id="divform" >
+        <div class="nv"><h2 class="nc">CRIAR USUARIO</h2></div>
+        <form class="formad">
+            <label class="tt">Nome:</label>
+            <input class="in" type="username"placeholder="  nome do usuario">
+            <label class="tt">Email:</label>
+            <input class="in" type="email"placeholder="  email">
+            <label class="tt">Senha:</label>
+            <input class="in" type="password"placeholder="  digite sua senha">
+        </form>
+        <div class="af">       
+        <button type="button"  class="f" onclick="fecharmodal('divform')">SAlVAR</button>
+        <button class="fe" type="button" onclick="fecharmodal('divform')">CANCELAR</button>
+    </div>
+    </div>
+        <div class="eddivform"id="eddivform" >
+            <div class="ednv"><h2 class="ednc">EDITAR USUARIO</h2></div>
+            <form class="formed">
+                <label class="edtt">Nome:</label>
+                <input class="edin" type="username"placeholder="  usuario">
+                <label class="edtt">Email:</label>
+                <input class="edin" type="email"placeholder=" usuario.@email">
+                <label class="edtt">Senha:</label>
+                <input class="edin" type="password"placeholder="  editar senha">
+            </form>
+            <div class="edaf">       
+            <button class="edf" onclick="fecharmodal('eddivform')">CANCELAR</button>
+            <button class="edfe"type="submit" onclick="fecharmodal('eddivform')">SALVAR</button>
+            </div>
+        </div>   
+        <div class="divvs" id="divvs">
+            <div class="divti">
+                <h2 class="h2vs">VISUALIZAR USUÁRIO</h2>
+            </div>
+            <div class="vsidu">
+                <p class="idu"> ID:</p>
+            </div>
+            <div class="divvn">
+                <p class="pvs"> Nome:</p> 
+                <p class="ppu">Usuario</p>
+            </div>
+
+            <div class="divve">
+                <p class="pvs">Email:</p>
+                <p class="ppu2">Usuario@email.com</p>
+            </div>
+            <button type="button" class="butvs" onclick="fecharmodal('divvs')" >FECHAR</button>
+            </div>
+        </div>
+
+        <div class="divdelete" id="divdelete">
+            <div class="texti">
+               <h2 class="exu">EXCLUIR USUÁRIO</h2>
+            </div>
+            <div class="divaviso">
+              <p class="deletext">
+               Atenção, após essa ação for concluida, não será possivel desfazê-la!<br/>
+               Tem certeza que deseja excluir esse Usuário?
+              </p>
+            </div>
+            <div class="bbpos">            
+             <button class="butcan">EXCLUIR</button>
+             <button class="butex" type="button" onclick="fecharmodal('divdelete')">CANCELAR</button>
+           </div>
+            </div>
+
+
+
+</body>
+<script src="../../../public/js/index.js"></script>
+</html>
