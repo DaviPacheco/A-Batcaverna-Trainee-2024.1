@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/public/css/styles.css" />
   </head>
   <body>
-    <form id="FormularioCriacaoDePost">
+    <button onclick= "abrirModal('FormularioCriacaoDePost',1)" >ABRIR MODAL </button>
+    <form class="formA" id="FormularioCriacaoDePost">
       <h2>Criação de Post</h2>
       <section class="TituloPostForm">
         <h3>Título:</h3>
@@ -48,9 +49,10 @@
         <p>Lex Luthor</p>
       </section>
       <div class="BotoesFormularios">
-        <button class="Botao1Formulario" onclick= "FecharModal('FormularioCriacaoDePost')" >Criar</button>
-        <button class="Botao2Formulario" onclick= "FecharModal('FormularioCriacaoDePost')" >Cancelar</button>
+        <button class="Botao1Formulario" onclick= "fecharModal('FormularioCriacaoDePost')" >Criar</button>
+        <button class="Botao2Formulario" onclick= "fecharModal('FormularioCriacaoDePost')" >Cancelar</button>
       </div>
     </form>
   </body>
+  <script src="/public/js/auxiliarForms.js"></script>
 </html>

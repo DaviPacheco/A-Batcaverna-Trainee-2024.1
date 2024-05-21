@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,37 +11,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Edição de Posts</title>
     <link rel="stylesheet" href="/public/css/styles.css" />
-</head>
 <body>
-    <form id="FormularioEdicaoDePost">
-        <h2>Edição de Post</h2>
-        <section class="TituloPostForm">
-          <h3>Título:</h3>
-          <input type="text" />
-        </section>
-        <section class="ConteudoPostForm">
-          <h3>Conteúdo:</h3>
-          <textarea rows="7"></textarea>
-        </section>
-        <section class="ImagemDoPostForm">
-          <h3>Imagem:</h3>
-          <label class="LabelBotaoDeArquivo" >
-            <span>Editar a imagem do post: <br/></span>
-          </label>
-          <input type="file" id="EscolhaImagem2">
-        </section>
-        <section class="DataDeCriacaoPostForm">
-          <h3>Data de criação:</h3>
-          <p>07/05/2024</p>
-        </section>
-        <section class="NomeDoAutorPostForm">
-          <h3>Autor:</h3>
-          <p>Lex Luthor</p>
-        </section>
-        <div class="BotoesFormularios">
-          <button class="Botao1Formulario" class="Botao2Formulario" onclick= "fecharModal('FormularioEdicaoDePost') ">Salvar</button>
-          <button class="Botao2Formulario" class="Botao2Formulario" onclick= "fecharModal('FormularioEdicaoDePost') ">Cancelar</button>
-        </div>
-      </form>
+  <button onclick= "abrirModal('FormularioEdicaoDePost',1)" >ABRIR MODAL </button>
+  <form class="formA" id="FormularioEdicaoDePost">
+    <h2>Edição de Post</h2>
+    <section class="TituloPostForm">
+      <h3>Título:</h3>
+      <input type="text" />
+    </section>
+    <section class="ConteudoPostForm">
+      <h3>Conteúdo:</h3>
+      <textarea
+        rows="7"
+      ></textarea>
+      >
+    </section>
+    <section class="ImagemDoPostForm">
+      <h3>Imagem:</h3>
+      <label class="LabelBotaoDeArquivo" >
+        <span>Editar a imagem do post: <br/> </span>
+      </label>
+      <input
+        type="file"
+        id="EscolhaImagem1"
+        accept="image/png, image/jpeg"
+        multiple
+      />
+    </section>
+    <section class="DataDeCriacaoPostForm">
+      <h3>Data de criação:</h3>
+      <p>07/05/2024</p>
+    </section>
+    <section class="NomeDoAutorPostForm">
+      <h3>Autor:</h3>
+      <p>Lex Luthor</p>
+    </section>
+    <div class="BotoesFormularios">
+      <button class="Botao1Formulario" onclick= "fecharModal('FormularioEdicaoDePost')" >Salvar</button>
+      <button class="Botao2Formulario" onclick= "fecharModal('FormularioEdicaoDePost')" >Cancelar</button>
+    </div>
+  </form>
 </body>
+<script src="/public/js/auxiliarForms.js"></script>
 </html>

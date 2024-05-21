@@ -11,15 +11,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Exclusão de Posts</title>
     <link rel="stylesheet" href="/public/css/styles.css" />
-    </head>
-<form id="ConfirmacaoExclusaoPostForm">
-  <h2>Exclusão de Post</h2>
-  <p>
-    ATENÇÃO! Após a conclusão dessa ação, não será possível
-    desfazê-la.<br />Tem certeza que deseja excluir esse post PERMANENTEMENTE?
-  </p>
-  <div class="BotoesFormularios">
-    <button class="Botao1Formulario" class="Botao2Formulario" onclick= "FecharModal('ConfirmacaoExclusaoPostForm')">Excluir</button>
-    <button class="Botao2Formulario" class="Botao2Formulario" onclick= "FecharModal('ConfirmacaoExclusaoPostForm')">Cancelar</button>
-  </div>
-</form>
+  </head>
+  <body>
+    <button onclick="abrirModal('ConfirmacaoExclusaoPostForm',1)">
+      ABRIR MODAL
+    </button>
+    <form class="formA" id="ConfirmacaoExclusaoPostForm">
+      <h2>Exclusão de Post</h2>
+      <p>
+        ATENÇÃO! Após a conclusão dessa ação, não será possível desfazê-la.<br />Tem
+        certeza que deseja excluir esse post PERMANENTEMENTE?
+      </p>
+      <div class="BotoesFormularios">
+        <button
+          class="Botao1Formulario"
+          class="Botao2Formulario"
+          onclick="FecharModal('ConfirmacaoExclusaoPostForm')"
+        >
+          Excluir
+        </button>
+        <button
+          class="Botao2Formulario"
+          class="Botao2Formulario"
+          onclick="FecharModal('ConfirmacaoExclusaoPostForm')"
+        >
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </body>
+  <script src="/public/js/auxiliarForms.js"></script>
+</html>

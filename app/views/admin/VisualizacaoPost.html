@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/public/css/styles.css" />
   </head>
   <body>
-    <form id="FormularioVisualizacaoDePost">
+    <button onclick= "abrirModal('FormularioVisualizacaoDePost',1)" >ABRIR MODAL </button>
+    <form class="formA" id="FormularioVisualizacaoDePost">
       <h2>Visualização de Posts</h2>
       <section class="IDpostForm">
         <h3>ID:</h3>
@@ -46,8 +47,9 @@
         <p>Lex Luthor</p>
       </section>
       <div class="BotoesFormularios">
-        <button class="Botao1Formulario" class="Botao2Formulario" onclick= "FecharModal('FormularioVisualizacaoDePost')">Fechar</button>
+        <button class="Botao1Formulario" onclick= "FecharModal('FormularioVisualizacaoDePost')">Fechar</button>
       </div>
     </form>
   </body>
+  <script src="/public/js/auxiliarForms.js"></script>
 </html>
