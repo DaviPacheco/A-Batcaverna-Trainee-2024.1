@@ -9,6 +9,7 @@ body{
 }
 body * {
     font-family: "Oswald",sans-serif ;
+    font-size:16px;
 }
 /*Parte do modal do adm*/
 
@@ -31,35 +32,38 @@ body * {
     transition:opacity 0.05s;
 }
 #CaixaDosFormularios{
-    top:0;
+    padding:20px 0px;
+    gap:50px;
+    display:flex;
+    flex-direction: column;
     width:100%;
     position:absolute;
     justify-content:center;
     align-items: center;
     padding-left:1%;
     padding-right:1%;
-     height:1000px;
-     max-height:100vh;
      z-index:3;
+    margin-bottom:50px; 
     
 }
 .formA *{
     color:black;
 }
 .formA{
+    display:flex;
     flex-direction:column;
-    width:90%;
+    width:95%;
     max-width:570px;
     padding-left:2%;
     border-radius: 40px;
     background-color: #b8b8b8;
     padding-bottom:15px;
-    padding-right:2%;
+    padding-right:1%;
     border:1px solid #cc2534;
     align-self: center;
 }
 .formA h2{
-    font-size:2.2em;
+    font-size:2em;
     margin-top:5px;
     color:#cc2524;
     font-weight: 600;
@@ -67,7 +71,7 @@ body * {
 }
 .formA h3{
     color:#cc2524;
-    font-size:1.6em;
+    font-size:1.5em;
     font-weight: 400;
     margin-top:10px;
 }
@@ -146,7 +150,7 @@ body * {
 #FormularioVisualizacaoDePost img{
     object-fit:cover;
     max-width:95%;
-    max-height:230px;
+    max-height:200px;
     margin-top:10px;
 }
 .formA button{
@@ -157,7 +161,7 @@ body * {
     font-size:1.2em;
     margin-left:2%;
     width:16%;
-    min-width:50px;
+    min-width:70px;
     transition: opacity 0.1s,background 0.2s;
 }
 .BotoesFormularios{
@@ -196,20 +200,20 @@ body * {
 @media screen and (max-width:475px){
     #ConfirmacaoExclusaoPostForm p
 {
-    font-size:1.16em;
+    font-size:1.04em;
 }
 .formA input{
     width:80%;
 }
 }
-@media screen and (max-width:378px){
+@media screen and (max-width:386px){
     #ConfirmacaoExclusaoPostForm h2{
         font-size:1.8em;
     } 
     #ConfirmacaoExclusaoPostForm p
 {
     font-weight: 400;
-    font-size:0.95em;
+    font-size:0.82em;
 }
 #ConfirmacaoExclusaoPostForm button{
     font-size:1em;
