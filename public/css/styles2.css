@@ -1,0 +1,519 @@
+/*////////// Tabela Background e top Div ////////////////*/
+.back{
+    background-image: url(../assets/gotham.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
+    background-color: #b5b5b5; /* temporario */
+    min-height: 100vh;
+    padding: 20px;
+    
+}
+
+.cont_user{
+    border: 1px solid rgba(252, 252, 14, 0.234); /* temporario */
+    background-color: #03020212; /* temporario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+
+}
+.title_user{
+    padding-left: 5%;
+    font-size: 24px;
+    
+}
+.bt_create{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #ffffff;
+    border-style: solid;
+
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+.bt_create:hover{
+    background-color: #8b0c0cb1; /*cores temp*/
+    text-decoration:none;
+}
+
+/*///// tabela /////*/
+
+.cont_tab{
+    
+}
+table{
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 3; 
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+thead,tbody tr{   /* Coloca background no thead e no tbody pra manter o espaçamento entre os 2 transparente */
+    background-color:rgba(0, 0, 0, 0.8);
+    border-left: 3px solid white;
+    overflow: hidden;
+}
+
+tbody tr{
+    backdrop-filter: blur(2px); /*Se colocar junto com o thead as bordars somem !? */
+}
+
+tbody:before {
+    line-height:2.5em;
+    content:"\200C"; /* caractere invisivel pra dar espaço */
+    color:white;
+    display:block;
+}
+tbody tr:nth-child(even){
+    background-color: #3c0707c4; /* tab row  */
+    
+}
+tbody tr:hover{
+    background-color:rgba(41, 40, 45, 0.5); /* tab row hover*/
+}
+
+td {
+    padding: 0.5rem;
+    text-align: center;
+}
+td button{
+    padding: 8px 14px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 2px;
+
+    background-color: transparent;
+    color: #ffffff;
+    border-style: solid;
+    border-color: white;
+}
+.header_ac{
+    border-right: none;
+}
+.header_id{
+    padding: 0px 10px
+}
+.bt_vis{
+
+}
+.bt_edit{
+    border-color: rgba(6, 126, 178, 0.757) ; /*cores temp*/
+    color: rgb(25, 139, 221);
+}
+.bt_delete{
+    background-color: #3c0707c4; /*cores temp*/
+    border-color: rgba(255, 255, 255, 0.757) ;
+}
+.bt_vis:hover{
+    background-color: #776d6d75; /*cores temp hover botoes tab*/
+}
+.bt_edit:hover{
+    background-color: rgba(30, 91, 121, 0.482);
+    color: rgba(255, 255, 255, 0.835);
+    border-color: white;
+}
+.bt_delete:hover{
+    background-color: #8b0c0cb1;
+}
+/*//////// Responsividade ///////*/
+
+@media (max-width: 650px){
+    th{
+        display: none; 
+    }
+    td {
+        display: flex;
+        padding: 0.75rem 0.5rem;
+        flex-wrap: wrap;
+    }
+    td::before {
+        font-weight:800;
+        padding-right: 0.5rem;
+        padding-left: 0.3rem;
+    }
+    td:first-child{
+        padding-top: 2rem;
+    }
+    td:last-child{
+        padding-bottom: 2rem;
+    }
+    td:nth-of-type(1)::before{
+        content: "ID:";
+    }
+    td:nth-of-type(2)::before{
+        content: "Usuário:";
+    }
+    td:nth-of-type(3)::before{
+        content: "Email:";
+    }
+    td:nth-of-type(4)::before{
+        content: "Ação:";
+    }
+    
+    td button{
+        height: 100%;
+        align-self: center;
+        margin: 1%;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+
+    } 
+    .bt_delete, .bt_vis, .bt_edit{
+        flex-grow: 0.3;
+    }
+    .bt_delete{
+        display: flex;
+        justify-content: center;
+       /* margin-left: 35%; Com isso o botao de delete desce uma linha numa resolução mais baixa*/
+    }
+}
+
+@media (min-width:574px) and (max-width:650px){
+    .bt_delete{
+        margin-left: 1%;
+    }
+}
+/*/// paginacao ///*/
+.paginacao{
+    text-align: left;
+    display: flex;
+   }
+.paginacao a, .paginacao button{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 2%;
+    padding: 8px 12px;
+    background-color: #c8cfca1e; /*cor background pag*/
+    border: 1px solid rgba(158, 149, 149, 0.681); /*cor borda pag */
+   }
+.seta_pag1{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.seta_pag2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.paginacao a.active, button.active{
+    background-color:#3c0707c4; /*cores temp active pag */
+    font-weight: bold;
+}
+.paginacao a:hover:not(.active), .paginacao button:hover:not(.active){
+    background-color: #3c0707c4; /*cores temp hover pag*/
+}
+.fa-thin{
+   font-size: 50%;
+   font-weight: 300;
+}
+
+/* troca de paginacao */
+table{
+    display: none;
+}
+/* icones */
+.fa-regular::before {
+    display: none;
+}  
+
+@media (max-width: 400px){
+    
+    .fa-regular::before {
+        display: inline-block;
+        font-size: 110%;
+        font-weight: 300;
+    }  
+    .fa-pen-to-square::before{
+        font-weight: 500;
+
+    }
+    .stx {
+        display: none;
+    }
+    td button {
+        width: 20%;
+    }
+    .bt_create{
+        padding: 4px 18px;
+    }
+
+}
+/*PARTE DE CRIAÇÃO DE POST*/
+.tela{
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     opacity: 50%;
+     display: none;
+     position: absolute;
+}
+
+form{
+    margin:auto;
+    margin-bottom:400px;
+    width: 50%;
+    display: none;
+    padding-left:2%;
+    border-radius: 40px;
+    background-color: #c9c9c9;
+    padding-bottom:15px;
+    padding-right:1%;
+    border:1px solid #cc2534;
+    margin-top: -750px;
+    position: absolute;
+    left: 350px;
+    
+}
+h2{
+    font-size:2.0em;
+    margin-top:5px;
+    margin-bottom:10px;
+    color:#cc2524;
+    font-weight: 500;
+    text-align:center;
+    font-family: "Oswald", sans-serif;
+}
+h3{
+    color:#cc2524;
+    font-size:1.3em;
+    font-weight: 400;
+    margin-bottom:10px;
+    margin-top: 10px;
+    font-family: "Oswald", sans-serif;
+}
+input, textarea{
+    border-radius:5px;
+    border: 1px solid rgba(204,37,37,0.5);
+    background-color: #d9d9d9;
+    width:60%;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:5px;
+    font-family: "Oswald", sans-serif;
+}
+textarea{
+    width:90%;
+    font-family: "Oswald", sans-serif;
+}
+input:focus,textarea:focus{
+    border:1px solid #d9d9d9;
+    outline:1px solid #cc2524;
+}
+.ImagemDoPostForm{
+    position: relative;
+    /*margin-bottom:55px;*/
+    width:100%;
+}
+.ImagemDoPostForm input{
+    /*border:0;
+    padding:0.5em 0;
+    background-color:#c9c9c9;
+    cursor:pointer;
+    position:absolute;
+    left:19%;
+    z-index:0;
+    font-size:1em;
+    */
+    cursor:pointer;
+}
+/*
+.ImagemDoPostForm label{
+    /*position:absolute;
+    font-size:1em;
+    padding-left:5px;
+    z-index:1;
+    */
+    /*display:flex;
+    justify-content:center;
+    width:fit-content;
+    gap:15px;
+    padding: 0.5em 5px;
+    background-color:#dddddd;
+    border: 1px solid rgba(204,37,37,0.5);
+    border-radius:5px;
+    margin-top:10px;
+    cursor:pointer;
+    transition: background 0.2s,outline 0.1s, border 0.1s;
+    outline: 0px solid #dddddd;
+    display:none;
+}
+.ImagemDoPostForm svg, .ImagemDoPostForm img{
+    width:1em;
+    margin-top:2px;
+}
+.ImagemDoPostForm label:hover{
+    background-color:#bdbdbd;
+    border:1px solid rgba(204,37,37,1);
+}
+.ImagemDoPostForm label:focus{
+    outline: 1px solid #cc2524;
+}
+.ImagemDoPostForm label:active{
+    border: 2px solid rgba(204,37,37,1);
+}
+*/
+.ImagemDoPostForm label{
+    padding-left:2px;
+}
+.ImagemDoPostForm input:hover{
+    opacity:0.8;
+    border:1px solid rgba(204,37,37,1);
+    
+}
+.ImagemDoPostForm input:focus{
+    outline: 1px solid #cc2524;
+}
+.ImagemDoPostForm input:active{
+    border: 2px solid rgba(204,37,37,1);
+}
+section{
+    margin-bottom:20px;
+}
+ .corpreto{
+    background-color: #c9c9c9;
+    padding:2px;
+    border-radius:5px;
+    font-size:1.1em;
+    width:fit-content;
+}
+#ConfirmacaoExclusaoPostForm p
+{
+    margin-top:-10px;
+    font-size:1.2em;
+    margin-bottom:30px;
+}
+#FormularioVisualizacaoDePost img{
+    object-fit:cover;
+    max-width:95%;
+}
+.corpreto{
+    color: black;
+    font-family: "Oswald", sans-serif;
+    line-height: 10px;
+}
+button{
+    outline: 0px;
+    border-radius:10px;
+    padding:5px;
+    cursor:pointer;
+    font-size:1.2em;
+    margin-left:2%;
+    border:0;
+    transition: opacity 0.1s,background 0.2s;
+    font-family: "Oswald", sans-serif;
+}
+.BotoesFormularios{
+    display:flex;
+    justify-content: right;
+    padding-right: 10px;
+    
+}
+.Botao1Formulario:focus{
+    outline: 1px solid rgba(245,245,245,0.9);
+    background-color: rgba(204,37,37,0.8);
+}
+.Botao2Formulario:focus{
+    outline: 1px solid rgba(245,245,245,0.9);
+    background-color: rgba(220,220,220,0.8);
+}
+.Botao1Formulario{
+    color:white;
+    background-color: #cc2524;
+    padding-left: 2%;
+    padding-right:2%;
+}
+.Botao1Formulario:hover{
+    background-color: rgba(229,49,49,1);
+}
+.Botao2Formulario{
+    color:#cc2524;
+    background-color: #c9c9c9;
+    border:1px solid #cc2524
+}
+.Botao2Formulario:hover{
+    background-color: rgba(220,220,220,0.8);
+}
+@media screen and (max-width:1025px){
+    form{
+        left: 256px;
+        margin-top: -690px;
+    }
+    section{
+        margin-bottom: 10px;
+    }
+    .corpreto{
+        line-height: 5px;
+        font-size: 1em;
+    }
+
+}
+@media screen and (max-width:769px){
+    form{
+        width: 75%;
+        left: 96px;
+        margin-top: -925px;
+    }
+}
+@media screen and (max-width:475px){
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-size:1em;
+}
+input{
+    width:65%;
+}
+form{
+    left:0px;
+    width: 100%;
+    margin-top: -1209px;
+}
+}
+@media screen and (max-width:378px){
+    form{
+        left:0px;
+        width: 100%;
+    }
+    #ConfirmacaoExclusaoPostForm h2{
+        font-size:1.8em;
+    } 
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-weight: 400;
+    font-size:0.82em;
+}
+#ConfirmacaoExclusaoPostForm button{
+    font-size:1em;
+}
+input{
+    width:70%;
+}
+}
