@@ -8,38 +8,47 @@ html{
 }
 @media screen and (min-width: 1901px){
     html {
-        font-size: 16px;
+        
         --distSeta: 3.5%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
         --batmanAltura:708px;
     }
+    #BlocoTotalLandingPage {
+        font-size: 16px;
+    }
 }
 @media screen and (min-width: 1440px) and (max-width: 1900px) {
     html {
-        font-size: 16px;
+        
         --distSeta: 2.5%;
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 65%;
         --batmanAltura:660px;
     }
+    #BlocoTotalLandingPage {
+        font-size: 16px;
+    }
 }
 @media screen and (min-width: 1074px) and ( max-width: 1439px) {
     html {
         --distSeta:2%;
-        font-size: 14px;
+        
         --distSobreNos:77%;
         --distPublicacoes:90%;
         --tamMaxQuadrosCentrais: 68%;
         --batmanAltura:600px;
     }
+    #BlocoTotalLandingPage {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 1073px) {
     html {
         --distSeta:0.7%;
-        font-size: 12px;
+        
         --distSobreNos:74%;
         --distPublicacoes:87%;
         --distParagrafoInc:74%;
@@ -47,6 +56,9 @@ html{
         --margemCategorias:20%;
         --batmanAltura:540px;
         --LarguraImgAbertura:70%;
+    }
+    #BlocoTotalLandingPage {
+        font-size: 12px;
     }
 }
 @media screen and (min-width:901px) and (max-width: 988px)
