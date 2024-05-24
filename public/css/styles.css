@@ -876,8 +876,32 @@ font-size: 1.5em;
 
 
 /*Parte do modal do adm*/
-
-
+/* Os blocos de media abaixo servem para que o resto do código não quebre. Isso ocorre, pois no início esses tamanhos de fontes estavam para o html.
+Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
+@media screen and (min-width: 1901px){
+   
+    .formA {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
+   
+    .formA {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1074px) and ( max-width: 1439px) {
+    
+    .formA {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1073px) {
+   
+    .formA {
+        font-size: 12px;
+    }
+}  
 #telaBloqueadora{
     top:0;
     width:100%;
