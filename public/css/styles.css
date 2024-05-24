@@ -744,7 +744,7 @@ td button{
 .paginacao a:hover:not(.active), .paginacao button:hover:not(.active){
     background-color: #3c0707c4; /*cores temp hover pag*/
 }
-.fa-thin{
+.fa-solid{
    font-size: 50%;
    font-weight: 300;
 }
