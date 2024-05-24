@@ -8,7 +8,9 @@ body {
     background-color: #b5b5b5;
 }
 
-
+body * {
+    font-family: "Oswald",sans-serif ;
+}
 /*Parte do modal do adm*/
 /* Os blocos de media abaixo servem para que o resto do código não quebre. Isso ocorre, pois no início esses tamanhos de fontes estavam para o html.
 Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
