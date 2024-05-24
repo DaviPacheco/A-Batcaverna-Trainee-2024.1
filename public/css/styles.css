@@ -1012,7 +1012,7 @@ font-size: 1.5em;
     font-size:1.2em;
     margin-left:2%;
     width:16%;
-    min-width:50px;
+    min-width:60px;
     transition: opacity 0.1s,background 0.2s;
 }
 .BotoesFormularios{
@@ -1067,7 +1067,7 @@ font-size: 1.5em;
     font-size:0.95em;
 }
 #ConfirmacaoExclusaoPostForm button{
-    font-size:1em;
+    font-size:1.2em;
 }
 .formA input{
     width:80%;
