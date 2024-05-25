@@ -1,13 +1,14 @@
-
+const tela = document.querySelector('#telaopacidade');
 
 function abrirmodal(iddModal)
 {
     document.getElementById(iddModal).style.display ="flex";
-    
+    tela.style.display="flex";
 }
 function fecharmodal(iddModal)
 {
-    document.getElementById(iddModal).style.display ="none"
+    document.getElementById(iddModal).style.display ="none";
+    tela.style.display="none";
 } 
 
 function troca_list (num_pag){
