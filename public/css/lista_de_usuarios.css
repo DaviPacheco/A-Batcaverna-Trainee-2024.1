@@ -811,6 +811,7 @@ table{
     position: absolute;
     margin-top: -615px;
     left: 470px;
+    z-index: 3;
 
     
  } 
@@ -880,6 +881,15 @@ table{
     
     border:none ;
     font-family: "Oswald", sans-serif;
+}
+
+#telaBloqueadora{
+    top:0;
+    width:100%;
+    position:absolute;
+    min-height:100vh;
+    display:none;
+    z-index:2;
 }
 
 @media (max-width:1200px){

@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div id="telaBloqueadora"></div>
+    <div id="BlocoDaListaDeUsuarios">
     <div class="back">
     <div class="cont_user">
         <p class="title_user">Lista de Usuários</p>
@@ -33,7 +35,7 @@
                     <td>Wayne</td>
                     <td>not_batman@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',1)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -42,7 +44,7 @@
                     <td>Joker</td>
                     <td>comedy@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',2)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -51,7 +53,7 @@
                     <td>Arlequina</td>
                     <td>margot_robbie@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',3)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -60,7 +62,7 @@
                     <td>Wayne</td>
                     <td>not_batman@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',4)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -69,7 +71,7 @@
                     <td>Wayne</td>
                     <td>not_batman@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',5)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -90,7 +92,7 @@
                     <td>Davi</td>
                     <td>pacheco@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',1)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -99,7 +101,7 @@
                     <td>Super</td>
                     <td>man@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',2)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -108,7 +110,7 @@
                     <td>Mulher</td>
                     <td>maravilha@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',3)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -117,7 +119,7 @@
                     <td>Wayne</td>
                     <td>not_batman@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',4)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -126,7 +128,7 @@
                     <td>Lanterna</td>
                     <td>verde-msm@gotham.com</td>
                     <td><button class="bt_vis" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit" onclick="abrirModal('editar')"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_edit" onclick="abrirModal('editar',5)"><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
                         <button class="bt_delete" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
@@ -140,7 +142,7 @@
         </div>
     </div>
 </div>
-    
+</div>
 
      
     
