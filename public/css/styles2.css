@@ -519,3 +519,16 @@ input{
     width:70%;
 }
 }
+.modalc{
+    width: 20%;
+    height: fit-content;
+    background-color: #cc2524;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-family: "oswald", sans-serif;
+}
