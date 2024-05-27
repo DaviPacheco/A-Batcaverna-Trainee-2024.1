@@ -46,6 +46,18 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 2000px){
+    #logobat img{
+    margin-top: 170px;
+    }
+}
+
+@media (max-width: 1800px){
+    #logobat img{
+    margin-top: 0px;
+    }
+}
+
 @media (max-width: 1000px) {
 
     
