@@ -12,9 +12,6 @@
     <script defer src="https://kit.fontawesome.com/10f37f7ffb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="telaopacidade" id="telaopacidade">
-
-    </div>
     <div class="back">
     <div class="cont_user">
         <p class="title_user">Lista de Usuários</p>
@@ -146,8 +143,8 @@
 <script defer src="../../../public/js/Paginacao.js"></script>
 
 
-
-    <div class="divform" id="divform" >
+<div class="cont_modal" id="divform">
+    <div class="divform">
         <div class="nv"><h2 class="nc">CRIAR USUARIO</h2></div>
         <form class="formad">
             <label class="tt">Nome:</label>
@@ -162,7 +159,9 @@
         <button class="fe" type="button" onclick="fecharmodal('divform')">CANCELAR</button>
     </div>
     </div>
-        <div class="eddivform"id="eddivform" >
+    </div>
+    <div class="cont_modal" id="eddivform">
+        <div class="eddivform" >
             <div class="ednv"><h2 class="ednc">EDITAR USUARIO</h2></div>
             <form class="formed">
                 <label class="edtt">Nome:</label>
@@ -177,12 +176,17 @@
             <button class="edfe"type="submit" onclick="fecharmodal('eddivform')">CANCELAR</button>
             </div>
         </div>   
-        <div class="divvs" id="divvs">
+        </div>
+        <div class="cont_modal" id="divvs">
+        <div class="divvs">
             <div class="divti">
                 <h2 class="h2vs">VISUALIZAR USUÁRIO</h2>
             </div>
+            <div class="cabeca_conteudo">
             <div class="vsidu">
                 <p class="idu"> ID:</p>
+                <p class="idu2"> x</p>
+
             </div>
             <div class="divvn">
                 <p class="pvs"> Nome:</p> 
@@ -193,11 +197,16 @@
                 <p class="pvs">Email:</p>
                 <p class="ppu2">Usuario@email.com</p>
             </div>
+            </div>
+            <div class="cabeca_butao">
             <button type="button" class="butvs" onclick="fecharmodal('divvs')" >FECHAR</button>
             </div>
+            </div>
         </div>
+    </div>
 
-        <div class="divdelete" id="divdelete">
+    <div class="cont_modal" id="divdelete">
+        <div class="divdelete">
             <div class="texti">
                <h2 class="exu">EXCLUIR USUÁRIO</h2>
             </div>
@@ -208,11 +217,12 @@
               </p>
             </div>
             <div class="bbpos">            
-             <button class="butcan">EXCLUIR</button>
+             <button class="butcan" onclick="fecharmodal('divdelete')">EXCLUIR</button>
              <button class="butex" type="button" onclick="fecharmodal('divdelete')">CANCELAR</button>
            </div>
             </div>
-
+        </div>
+    </div>
 
 
 </body>
