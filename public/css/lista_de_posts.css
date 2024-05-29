@@ -300,6 +300,199 @@ body{
     cursor: pointer;
 }
 
+@media (min-width: 1800px)
+{
+    body{
+        height: 1456px;
+    }
+
+    #post1 {
+        max-width: 631.4px;
+        width: 100%;
+        height: 896px;
+        margin: 280px 1183px 560px 201.6px;
+    }
+    
+    #barra {
+        width: 700px;
+        height: 70px;
+        margin-top: 120.4px;
+        margin-left: 168px;
+    }
+    
+    #Pesquisar {
+        font-size: 33.6px;
+        line-height: 44.8px;
+        margin: 11.2px 513.8px 14px 30.8px;
+    }
+    
+    
+    #lupa {
+        width: 56px;
+        height: 50.4px;
+        font-size: 44.8px;
+        margin: 4.2px 36.4px 21px 618.8px;
+    }
+    
+    #post2 {
+        width: 372.4px;
+        height: 537.6px;
+        margin: 120.4px 672px 1078px 971.6px;
+    }
+    
+    #batmanDoFuturo1 img {
+        width: 596.4px;
+        height: 429.8px;
+        margin-left: 35px;
+    }
+    
+    #batmanDoFuturo img {
+        width: 337.4px;
+        height: 257.88px;
+        margin-left: 35px;
+    }    
+    
+    
+    #post3 {
+        width: 372.4px;
+        height: 537.6px;
+        margin: 120.4px 169.4px 1078px 1474.2px;
+    }
+    
+    
+    #post4 {
+        width: 372.4px;
+        height: 537.6px;
+        margin: 798px 169.4px 400.4px 1474.2px;
+    }
+    
+    #post5 {
+        width: 372.4px;
+        height: 537.6px;
+        margin: 798px 672px 400.4px 971.6px;
+    }
+    
+    #bord1 {
+        width: 35px;
+        height: 896px;
+    }
+    
+    #bord2 {
+        width: 35px;
+        height: 537.6px;
+    }
+    
+    #pag1 {
+        width: 56px;
+        height: 56px;
+        margin: 1227.8px 1183px 452.2px 777px;
+    }
+    
+    #pag2 {
+        width: 56px;
+        height: 56px;
+        margin: 1227.8px 1267px 452.2px 693px;
+    }
+    
+    #pag3 {
+        width: 56px;
+        height: 56px;
+        margin: 1227.8px 1351px 452.2px 609px;
+    }
+    
+    #pag4 {
+        width: 56px;
+        height: 56px;
+        margin: 1227.8px 1435px 452.2px 525px;
+    }
+    
+    #pag5 {
+        width: 56px;
+        height: 56px;
+        margin: 1227.8px 1519px 452.2px 441px;
+    }
+    
+    #recheio {
+        width: 44.8px;
+        height: 44.8px;
+        font-size: 33.6px;
+        line-height: 44.8px;
+        margin: 5.6px 5.6px 5.6px 5.6px;
+    }
+    
+    #titulo1 {
+        font-size: 50.4px;
+        line-height: 67.2px;
+        margin: 457.8px 54.6px 319.2px 187.6px;
+    }
+    
+    #barrinha1 {
+        width: 1.4px;
+        height: 170.8px;
+        margin: 561.4px;
+        margin-left: 75.6px;
+    }
+    
+    #resumo1 {
+        font-size: 32.2px;
+        line-height: 44.8px;
+        margin: 554.4px 71.4px 162.4px 112px;
+    }
+    
+    #autor1 {
+        font-size: 39.2px;
+        line-height: 50.4px;
+        margin-top: 760.2px;
+        margin-left: 82.6px;
+    }
+    
+    #lermais1 {
+        width: 151.2px;
+        height: 54.6px;
+        font-size: 33.6px;
+        line-height: 50.4px;
+        margin: 812px 33.6px 9.8px 446.6px;
+    }
+    
+    #titulo2 {
+        font-size: 28px;
+        line-height: 39.2px;
+        margin-top: 278.6px;
+        margin-left: 119px;
+    }
+    
+    #barrinha2 {
+        width: 1.4px;
+        height: 102.48px;
+        margin-top: 334.6px;
+        margin-left: 56px;
+    }
+    
+    #resumo2 {
+        font-size: 21px;
+        line-height: 28px;
+        margin-top: 329px;
+        margin-left: 77px;
+        margin-right: 28px;
+    }
+    
+    #autor2 {
+        font-size: 25.2px;
+        line-height: 30.8px;
+        margin-top: 457.8px;
+        margin-left: 63px;
+    }
+    
+    #lermais2 {
+        width: 92.4px;
+        height: 33.6px;
+        font-size: 19.6px;
+        line-height: 30.8px;
+        margin-top: 490px;
+        margin-left: 260.4px;
+    }
+}
+
 @media (max-width: 1200px)
 {
     body{
