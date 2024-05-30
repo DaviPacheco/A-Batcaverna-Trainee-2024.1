@@ -46,9 +46,34 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     display:none;
     z-index:2;
 }
-@media screen and (max-width:650px){
+@media screen and (min-width:382px) and (max-width:650px){
     #telaBloqueadora{
-        height:1632px;
+        height:2100px;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width:327px) and (max-width:381px){
+    #telaBloqueadora{
+        height:2162px;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width: 279px) and (max-width:326px){
+    #telaBloqueadora{
+        height:2220px;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width: 267px) and (max-width:278px){
+    #telaBloqueadora{
+        height:2280px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:266px){
+    #telaBloqueadora{
+        height:280vh;
+        object-fit: cover;
     }
 }
 #BlocoDaListaDePosts{
@@ -285,13 +310,13 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
 
 
 .back{
+    background-image: url(../assets/gotham.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     
     background-color: #b5b5b5; /* temporario */
     min-height: 100vh;
-    min-width: 100vw;
     padding: 20px;
 }
 
@@ -454,7 +479,7 @@ td button{
         content: "Usuário:";
     }
     td:nth-of-type(3)::before{
-        content: "Email:";
+        content: "Post:";
     }
     td:nth-of-type(4)::before{
         content: "Ação:";
@@ -545,6 +570,9 @@ table{
     }
     td button {
         width: 20%;
+    }
+    .bt_create{
+        padding: 4px 18px;
     }
 
 }

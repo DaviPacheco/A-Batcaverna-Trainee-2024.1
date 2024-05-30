@@ -13,15 +13,15 @@ print = console.log.bind(console)
                     }
                     if(situacao==3)
                     {
-                        document.getElementById(idModal).style.marginTop="470px";
+                        document.getElementById(idModal).style.marginTop="380px";
                     }
                     if(situacao==4)
                     {
-                        document.getElementById(idModal).style.marginTop="880px";
+                        document.getElementById(idModal).style.marginTop="690px";
                     }
                     if(situacao==5)
                     {
-                        document.getElementById(idModal).style.marginTop="1180px";
+                        document.getElementById(idModal).style.marginTop="850px";
                     }
                 }
                 document.getElementById("BlocoDaListaDePosts").style.opacity="0.5";

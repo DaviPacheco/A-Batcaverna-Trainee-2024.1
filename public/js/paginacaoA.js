@@ -1,3 +1,4 @@
+/* Paginaçao pra tabela */
 
 function troca_list (num_pag){
     listas = document.querySelectorAll("table")
