@@ -80,17 +80,18 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     opacity: 1;
     transition:opacity 0.05s;
 }
-#CaixaDosFormularios{
-    top:0;
-    width:100%;
-    position:absolute;
-    justify-content:center;
-    align-items: center;
-    padding-left:1%;
-    padding-right:1%;
-     display:none;
-     height:1000px;
-     max-height:100vh;
+.BlocoPost{
+    position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
      z-index:3;
     
 }
@@ -107,7 +108,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     padding-bottom:15px;
     padding-right:2%;
     border:1px solid #cc2534;
-    display:none;
+    display:flex;
     align-self: center;
 }
 .formA h2{
