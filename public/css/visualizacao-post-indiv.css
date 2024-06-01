@@ -106,6 +106,8 @@ body {
         }
         #conteiner{
             margin-top: 70px;
+            margin-bottom: 150px;
+            width: 85%;
         }
         #logo {
             height: 78px; /* mudar so a altura da imagem, ja mexe na largura*/
@@ -167,6 +169,7 @@ body {
     }
     #conteiner{
         margin-top: 60px;
+        margin-bottom: 100px;
     }
     #logo {
         height: 59px; /* mudar so a altura da imagem, ja mexe na largura*/
@@ -233,6 +236,7 @@ body {
         margin-top: 30px;
         border-radius: 15px;
         border-left: 15px solid #cc2524;
+        margin-bottom: 80px;
     }
     #logo {
         height: 40px; /* mudar so a altura da imagem, ja mexe na largura*/
