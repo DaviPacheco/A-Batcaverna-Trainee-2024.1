@@ -207,11 +207,19 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     border-radius:10px;
     padding:5px;
     cursor:pointer;
-    font-size:1.2em;
+    font-size:1.1em;
     margin-left:2%;
-    width:16%;
+    width:18%;
     min-width:60px;
     transition: opacity 0.1s,background 0.2s;
+}
+@media screen and (min-width:651px) and (max-width:1073px){
+    .formA button{
+        font-size:1.3em;
+    }
+    #ConfirmacaoExclusaoPostForm  button{
+        font-size:1.1em;
+    }
 }
 .BotoesFormularios{
     display:flex;
@@ -265,7 +273,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     font-size:0.95em;
 }
 #ConfirmacaoExclusaoPostForm button{
-    font-size:1.2em;
+    font-size:1.1em;
 }
 .formA input{
     width:80%;
