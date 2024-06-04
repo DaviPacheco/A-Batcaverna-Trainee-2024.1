@@ -3,11 +3,12 @@
 function abrirmodal(iddModal)
 {
     document.getElementById(iddModal).style.display ="flex";
-    
+
 }
 function fecharmodal(iddModal)
 {
-    document.getElementById(iddModal).style.display ="none"
+    document.getElementById(iddModal).style.display ="none";
+
 } 
 
 function troca_list (num_pag){

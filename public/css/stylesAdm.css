@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #b5b5b5;
+}
+body * {
+    font-family: "Oswald",sans-serif ;
+    color: black;
+}
+form{
+    margin:auto;
+    margin-bottom:400px;
+    max-width:570px;
+    padding-left:2%;
+    border-radius: 40px;
+    background-color: #c9c9c9;
+    padding-bottom:15px;
+    padding-right:1%;
+    border:1px solid #cc2534;
+}
+h2{
+    font-size:2.2em;
+    margin-top:15px;
+    margin-bottom:30px;
+    color:#cc2524;
+    font-weight: 600;
+    text-align:center;
+}
+h3{
+    color:#cc2524;
+    font-size:1.6em;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+input, textarea{
+    border-radius:5px;
+    border: 1px solid rgba(204,37,37,0.5);
+    background-color: #d9d9d9;
+    width:60%;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:5px;
+}
+textarea{
+    width:90%;
+}
+input:focus,textarea:focus{
+    border:1px solid #d9d9d9;
+    outline:1px solid #cc2524;
+}
+.ImagemDoPostForm{
+    position: relative;
+    /*margin-bottom:55px;*/
+    width:100%;
+}
+.ImagemDoPostForm input{
+    /*border:0;
+    padding:0.5em 0;
+    background-color:#c9c9c9;
+    cursor:pointer;
+    position:absolute;
+    left:19%;
+    z-index:0;
+    font-size:1em;
+    */
+    cursor:pointer;
+}
+/*
+.ImagemDoPostForm label{
+    /*position:absolute;
+    font-size:1em;
+    padding-left:5px;
+    z-index:1;
+    */
+    /*display:flex;
+    justify-content:center;
+    width:fit-content;
+    gap:15px;
+    padding: 0.5em 5px;
+    background-color:#dddddd;
+    border: 1px solid rgba(204,37,37,0.5);
+    border-radius:5px;
+    margin-top:10px;
+    cursor:pointer;
+    transition: background 0.2s,outline 0.1s, border 0.1s;
+    outline: 0px solid #dddddd;
+    display:none;
+}
+.ImagemDoPostForm svg, .ImagemDoPostForm img{
+    width:1em;
+    margin-top:2px;
+}
+.ImagemDoPostForm label:hover{
+    background-color:#bdbdbd;
+    border:1px solid rgba(204,37,37,1);
+}
+.ImagemDoPostForm label:focus{
+    outline: 1px solid #cc2524;
+}
+.ImagemDoPostForm label:active{
+    border: 2px solid rgba(204,37,37,1);
+}
+*/
+.ImagemDoPostForm label{
+    padding-left:2px;
+}
+.ImagemDoPostForm input:hover{
+    opacity:0.8;
+    border:1px solid rgba(204,37,37,1);
+    
+}
+.ImagemDoPostForm input:focus{
+    outline: 1px solid #cc2524;
+}
+.ImagemDoPostForm input:active{
+    border: 2px solid rgba(204,37,37,1);
+}
+section{
+    margin-bottom:30px;
+}
+ p{
+    background-color: #c9c9c9;
+    padding:2px;
+    border-radius:5px;
+    font-size:1.1em;
+    width:fit-content;
+}
+#ConfirmacaoExclusaoPostForm p
+{
+    margin-top:-10px;
+    font-size:1.2em;
+    margin-bottom:30px;
+}
+#FormularioVisualizacaoDePost img{
+    object-fit:cover;
+    max-width:95%;
+}
+button{
+    outline: 0px;
+    border-radius:10px;
+    padding:5px;
+    cursor:pointer;
+    font-size:1.2em;
+    margin-left:2%;
+    border:0;
+    transition: opacity 0.1s,background 0.2s;
+}
+.BotoesFormularios{
+    display:flex;
+    justify-content: right;
+    padding-right: 10px;
+    
+}
+.Botao1Formulario:focus{
+    outline: 1px solid rgba(245,245,245,0.9);
+    background-color: rgba(204,37,37,0.8);
+}
+.Botao2Formulario:focus{
+    outline: 1px solid rgba(245,245,245,0.9);
+    background-color: rgba(220,220,220,0.8);
+}
+.Botao1Formulario{
+    color:white;
+    background-color: #cc2524;
+    padding-left: 2%;
+    padding-right:2%;
+}
+.Botao1Formulario:hover{
+    background-color: rgba(229,49,49,1);
+}
+.Botao2Formulario{
+    color:#cc2524;
+    background-color: #c9c9c9;
+    border:1px solid #cc2524
+}
+.Botao2Formulario:hover{
+    background-color: rgba(220,220,220,0.8);
+}
+@media screen and (max-width:475px){
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-size:1em;
+}
+input{
+    width:65%;
+}
+}
+@media screen and (max-width:378px){
+    #ConfirmacaoExclusaoPostForm h2{
+        font-size:1.8em;
+    } 
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-weight: 400;
+    font-size:0.82em;
+}
+#ConfirmacaoExclusaoPostForm button{
+    font-size:1em;
+}
+input{
+    width:70%;
+}
+}

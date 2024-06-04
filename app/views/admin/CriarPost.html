@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Criação de Posts</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+  </head>
+  <body>
+    <button onclick= "abrirModal('FormularioCriacaoDePost',1)" >ABRIR MODAL </button>
+    <form class="formA" id="FormularioCriacaoDePost">
+      <h2>Criação de Post</h2>
+      <section class="TituloPostForm">
+        <h3>Título:</h3>
+        <input type="text" placeholder="Digite o título do post aqui" />
+      </section>
+      <section class="ConteudoPostForm">
+        <h3>Conteúdo:</h3>
+        <textarea
+          rows="7"
+          placeholder="Digite o conteúdo do post aqui"
+        ></textarea>
+        >
+      </section>
+      <section class="ImagemDoPostForm">
+        <h3>Imagem:</h3>
+        <label class="LabelBotaoDeArquivo" >
+          <span>Escolher a imagem do post: <br/> </span>
+        </label>
+        <input
+          type="file"
+          id="EscolhaImagem1"
+          accept="image/png, image/jpeg"
+          multiple
+        />
+      </section>
+      <section class="DataDeCriacaoPostForm">
+        <h3>Data de criação:</h3>
+        <p>07/05/2024</p>
+      </section>
+      <section class="NomeDoAutorPostForm">
+        <h3>Autor:</h3>
+        <p>Lex Luthor</p>
+      </section>
+      <div class="BotoesFormularios">
+        <button class="Botao1Formulario" onclick= "fecharModal('FormularioCriacaoDePost')" >Criar</button>
+        <button class="Botao2Formulario" onclick= "fecharModal('FormularioCriacaoDePost')" >Cancelar</button>
+      </div>
+    </form>
+  </body>
+  <script src="/public/js/auxiliarForms.js"></script>
+</html>
