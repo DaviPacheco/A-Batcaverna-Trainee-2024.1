@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald" , sans-serif;
+}
+
+body {
+    background-color: #b5b5b5;
+}
+#logo{                   /* para mover uma imagem, é necessario criar uma caixa"em volta" dela*/
+    width: 20.8%;
+    height: 140px;
+    margin-top: 64px;
+    margin-left: auto;    /* para centralizar, tem q ser pela caixa tbm*/
+    margin-right: auto;
+    
+}
+#logo img {
+    width: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#conteiner{
+    flex-direction: column;
+    display: flex; /*isto fez o texto do conteudo se adequar ao tamanho da caixa conteiner*/
+    width: 79.6%;
+    border-left: 23px solid #cc2524;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 88px;
+    margin-bottom: 200px;
+    border-radius: 23px;
+     /*borda de 1px para melhor visualização*/
+    }
+    #conteiner .lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        
+    }
+    .lista img{
+        height: 300px;
+        margin-top: 35px;
+        margin-left: 80px;
+    }
+    #titulo{
+        display: flex;
+        color: white;
+        line-height: 100px; /* margem do topo*/
+        font-size: 2.4rem;
+        font-weight: 850;
+        
+        
+    }
+    #conteudo{
+        display: block;
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 20px;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 450;
+    }
+    #conteiner .infos{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 300px;
+    }
+    #autor{
+        display: flex;
+        padding-top: 200px;
+        padding-bottom: 12px;
+        padding-left: 85px;
+        color: white;
+        font-size: 1.95rem;
+        font-weight: 750;
+        
+    }
+    #data{
+        display: flex;
+        padding-top: 200px;
+        padding-bottom: 12px;
+        color: white;
+        font-size: 1.95rem;
+        font-weight: 750;
+        
+    }
+    
+   @media (max-width: 1024px){ /*LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP*/
+        .lista img {
+            height: 200px; /* mudar so a altura da imagem, ja mexe na largura*/
+            margin-left: 60px;
+        }
+        #conteiner .lista{
+            list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 100px; /*distancia entre a foto de perfil e o titulo*/
+        }
+        #conteiner{
+            margin-top: 70px;
+            margin-bottom: 150px;
+            width: 85%;
+        }
+        #logo {
+            height: 78px; /* mudar so a altura da imagem, ja mexe na largura*/
+        }
+        #titulo{
+            display: flex;
+            color: white;
+            line-height: 100px; /* margem do topo*/
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        #conteudo{
+            display: block;
+            margin-top: 30px;
+            margin-left: 60px;
+            margin-right: 15px;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 350;
+        }
+        #conteiner .infos{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 220px;
+        }
+        #autor{
+            display: flex;
+            padding-top: 100px;
+            padding-bottom: 12px;
+            padding-left: 60px;
+            color: white;
+            font-size: 1.65rem;
+            font-weight: 600;
+            
+        }
+        #data{
+            display: flex;
+            padding-top: 100px;
+            padding-bottom: 12px;
+            color: white;
+            font-size: 1.65rem;
+            font-weight: 600;
+            
+        }
+
+   }
+   @media (max-width: 768px){   /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET*/
+    .lista img {
+        height: 160px;
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+    #conteiner .lista{
+        list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:55px;
+    }
+    #conteiner{
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    #logo {
+        height: 59px; /* mudar so a altura da imagem, ja mexe na largura*/
+    }
+    #titulo{
+        display: flex;
+        color: white;
+        line-height: 100px; /* margem do topo*/
+        font-size: 2.0rem; 
+        font-weight: 600;
+        line-height: 100px;
+    }
+    #conteudo{
+        display: block;
+        margin-top: 26px;
+        margin-left: 40px;
+        margin-right: 13px;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    #conteiner .infos{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+    }
+    #autor{
+        display: flex;
+        padding-top: 70px;
+        padding-bottom: 12px;
+        padding-left: 40px;
+        color: white;
+        font-size: 1.45rem;
+        font-weight: 480;
+        
+    }
+    #data{
+        display: flex;
+        padding-top: 70px;
+        padding-bottom: 12px;
+        color: white;
+        font-size: 1.45rem;
+        font-weight: 480;
+        
+    }
+}
+@media (max-width: 426px){ /*MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L */
+    .lista img {
+        height: 120px; /* mudar so a altura da imagem, ja mexe na largura*/
+        margin-top: 20px;
+        margin-left: 0px;
+        }
+    #conteiner .lista{
+        list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*distancia entre a foto de perfil e o titulo*/
+    justify-content: center;/*linhas 225 a 227, centralizar imagem e titulo*/
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #conteiner{
+        margin-top: 30px;
+        border-radius: 15px;
+        border-left: 15px solid #cc2524;
+        margin-bottom: 80px;
+    }
+    #logo {
+        height: 40px; /* mudar so a altura da imagem, ja mexe na largura*/
+    }
+    #titulo{
+        display: flex;
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 550;
+        text-align: center;
+        line-height: normal;
+        justify-content: center;
+    }
+    #conteudo{
+        display: block;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 220;
+    }
+    #conteiner .infos{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    #autor{
+        display: flex;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-bottom: 0px;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 420;
+        
+    }
+    #data{
+        display: flex;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 420;
+        
+    }
+
+}
+@media (max-width: 376px){
+    #conteudo{
+        font-size: 0.8rem;
+        font-weight: 180;
+    }
+    #autor{
+        font-size: 1rem;
+        font-weight: 350;
+    }
+    #data{
+        font-size: 1rem;
+        font-weight: 350;
+    }
+    #titulo{
+        font-size: 1.5rem;
+        font-weight: 440;
+    }
+}
+@media (max-width: 321px){
+    #conteudo{
+        font-size: 0.6rem;
+        font-weight: 150;
+    }
+    #autor{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    #data{
+        font-size: 0.8rem;
+        font-weight: 300;
+    #titulo{
+        font-size: 1.4rem;
+        font-weight: 350;
+    }
+}
+}     
+
+    
+    
+    
+
