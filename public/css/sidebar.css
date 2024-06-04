@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "oswald", sans-serif;
+    
+}
+
+body {
+    background-color: #b5b5b5;
+}
+#logo{                   /* para mover uma imagem, é necessario criar uma caixa"em volta" dela*/
+    width: 212px;
+    height: 89px;
+    margin-top: 64px;
+    margin-left: auto;    /* para centralizar, tem q ser pela caixa tbm*/
+    margin-right: auto;
+    border: 1px solid red;
+}
+#logo img {
+    width: 212px;
+    height: 89px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#conteiner{
+
+    width: 1146px;
+    height: 751px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 200px;
+    border-radius: 30px;
+    border: 1px solid red;
+}
+#bordaverm{
+    width: 23px;
+    height: 751px;
+    background-color: red;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    
+}
+#profile img{
+    width: 438px;
+    height: 200px;
+    margin-top: 35px;
+    margin-left: 67px;
+    
+    
+}
+body{
+    /* isto fez ocupar todo o espaço*/
+   background-color: #b5b5b5;
+}
+/*   #sair a i{ /* icone lista*/
+/*    color: red;
+   padding-top: 25px; /* preenchimento do icone X*/
+/*    padding-left: 30px;
+   font-size: 20px; 
+   
+} */
+#space{
+   padding-top: 30px;
+}
+#Sidebar{
+   
+   width: 80px;
+   background-color: black;
+   height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
+   border-radius: 0px 8px 8px 0px;
+   position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+
+
+#Sidebar:hover{
+   width: 200px;
+   background-color: black;
+   height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
+   border-radius: 0px 8px 8px 0px;
+   position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
+   top: 0;
+   left: 0;
+   transition: .2s;
+}
+
+#items{
+   display: flex; /* pra poder dar o gap */
+   flex-direction: column;
+   gap: 8px; /* espaçamento entre os itens*/
+   list-style: none; /* tirar as bolinhas de listagem */
+}
+.item{
+   display: flex; /*isto fez o icone ficar fixo ao maximizar a sidebar*/
+   border-radius: 8px;
+   margin: 10px 10px 0px 10px;
+   padding: 14px;
+   cursor: pointer;
+   
+
+}
+.item a{
+   display: flex;  /* isto fez a descrição do item sumir*/
+   align-items: center; /*alinhamento vertical*/
+   justify-content: center; /*alinhamento hoorizontal*/
+   text-decoration: none;/* para tirar a linha sublinhada do link*/
+   padding: 0px 0px 0px 5px; /* espaçamento entre as extremidades laterais da sidebar*/
+   color: black;
+}
+
+.item a i{
+   margin: 0px 40px 0px 0px; /* espaçamento entre icones e descriçao*/ 
+   font-size: 30px; /*aumentar os icones */
+   
+}
+.descricao_do_item{
+   width: 0px;
+}
+body{
+    /* isto fez ocupar todo o espaço*/
+   background-color: #b5b5b5;
+}
+/*   #sair a i{ /* icone lista*/
+/*    color: red;
+   padding-top: 25px; /* preenchimento do icone X*/
+/*    padding-left: 30px;
+   font-size: 20px; 
+   
+} */
+#space{
+   padding-top: 30px;
+}
+#Sidebar{
+   
+   width: 80px;
+   background-color: black;
+   height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
+   border-radius: 0px 8px 8px 0px;
+   position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+
+
+#Sidebar:hover{
+   width: 200px;
+   background-color: black;
+   height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
+   border-radius: 0px 8px 8px 0px;
+   position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
+   top: 0;
+   left: 0;
+   transition: .2s;
+}
+
+#items{
+   display: flex; /* pra poder dar o gap */
+   flex-direction: column;
+   gap: 8px; /* espaçamento entre os itens*/
+   list-style: none; /* tirar as bolinhas de listagem */
+}
+.item{
+   display: flex; /*isto fez o icone ficar fixo ao maximizar a sidebar*/
+   border-radius: 8px;
+   margin: 10px 10px 0px 10px;
+   padding: 14px;
+   cursor: pointer;
+   
+
+}
+.item a{
+   display: flex;  /* isto fez a descrição do item sumir*/
+   align-items: center; /*alinhamento vertical*/
+   justify-content: center; /*alinhamento hoorizontal*/
+   text-decoration: none;/* para tirar a linha sublinhada do link*/
+   padding: 0px 0px 0px 5px; /* espaçamento entre as extremidades laterais da sidebar*/
+   color: #cc2524;
+}
+
+.item a i{
+   margin: 0px 40px 0px 0px; /* espaçamento entre icones e descriçao*/ 
+   font-size: 30px; /*aumentar os icones */
+   
+}
+.descricao_do_item{
+   width: 0px;
+}
+.item:hover{
+   background-color: #e3e9f7;
+}
+.item{
+   transition: .2s;
+}   
