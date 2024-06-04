@@ -1,4 +1,15 @@
-/* Paginaçao pra tabela */
+
+
+function abrirmodal(iddModal)
+{
+    document.getElementById(iddModal).style.display ="flex";
+
+}
+function fecharmodal(iddModal)
+{
+    document.getElementById(iddModal).style.display ="none";
+
+} 
 
 function troca_list (num_pag){
     listas = document.querySelectorAll("table")
