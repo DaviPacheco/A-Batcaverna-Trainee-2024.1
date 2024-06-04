@@ -1,0 +1,1414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 1901px){
+    html {
+        
+        --distSeta: 3.5%;
+        --distSobreNos:77%;
+        --distPublicacoes:90%;
+        --tamMaxQuadrosCentrais: 65%;
+        --batmanAltura:708px;
+    }
+    #BlocoTotalLandingPage {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
+    html {
+        
+        --distSeta: 2.5%;
+        --distSobreNos:77%;
+        --distPublicacoes:90%;
+        --tamMaxQuadrosCentrais: 65%;
+        --batmanAltura:660px;
+    }
+    #BlocoTotalLandingPage {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1074px) and ( max-width: 1439px) {
+    html {
+        --distSeta:2%;
+        
+        --distSobreNos:77%;
+        --distPublicacoes:90%;
+        --tamMaxQuadrosCentrais: 68%;
+        --batmanAltura:600px;
+    }
+    #BlocoTotalLandingPage {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1073px) {
+    html {
+        --distSeta:0.7%;
+        
+        --distSobreNos:74%;
+        --distPublicacoes:87%;
+        --distParagrafoInc:74%;
+        --tamMaxQuadrosCentrais: 75%;
+        --margemCategorias:20%;
+        --batmanAltura:540px;
+        --LarguraImgAbertura:70%;
+    }
+    #BlocoTotalLandingPage {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:901px) and (max-width: 988px)
+{
+    html {
+        --distSeta:0.2%;
+}
+}
+@media screen and (min-width: 1074px) and ( max-width: 1199px)
+{
+    html{
+        --distSeta:1.6%;
+    }
+}
+@media screen and (max-width: 900px){
+    html {
+        --ModeloLista: column;
+        --tamMaxQuadrosCentrais: 100%;
+        --gapLista:20px;
+        --gapListaInterna:8%;
+        --MargemSuperiorElementos:20px;
+        --tamanhoElemento:71%;
+        --TamBatmanLateral:0;
+        --margemCategorias:10%;
+        --distSobreNos:15%;
+        --distPublicacoes:65%;
+        --LarguraImgAbertura:100%;
+        --TamanhoFonteBotoesIniciais:10px;
+        --FonteBotoesInciais:500;
+        --DistanciaBotoesIniciais:2%;
+        --DirecaoDosPosts: Column;
+        --TamanhoPost1:100%;
+    } 
+    .ModeloA
+   {
+    justify-content: start;
+    }
+     .ModeloB{
+        margin-top:5%;
+    justify-content: end;
+   }
+   #ParagrafoModelo2{
+     margin:auto;
+     text-align:center;
+     font-size:9px;
+     margin-top:5%;
+   }
+   #ParagrafoModelo1{
+    font-size:0;
+    width:0;
+   }
+   #titulo h1
+{
+    font-weight: 400;
+    font-size:2em;
+    margin:auto 1%;
+}
+#abertura img{
+    margin: 12% auto 4% auto;
+    
+    height:25vh;
+    min-height:180px;
+    max-height:280px;
+    border-radius:90px;
+ }
+    .frase1
+{  
+  font-weight: 600;
+  font-size: 1.5em;
+  
+}
+.frase2
+{
+  font-weight: 400;
+  font-size: 1.3em;
+  
+}
+#BotaoSobreNos{
+    font-size:1.4em;
+    left:15%;
+  }
+  #BotaoIrPublicacoes{
+    font-size:1.4em;
+   right:15%; 
+  }
+  .RetanguloVermelhoCentral{
+    font-size:10px;
+  }
+
+}
+
+@media screen and (min-width: 901px){
+    html {
+        --ModeloLista: row;
+        --gapLista:5%;
+        --gapListaInterna:10%;
+        --MargemSuperiorElementos:0;
+        --tamanhoElemento:50%;
+        --TamBatmanLateral:100%;
+        --TamanhoFonteBotoesIniciais:1.1em;
+        --FonteBotoesInciais:500;
+        --DistanciaBotoesIniciais:2%;
+        --LarguraImgAbertura:70%;
+        --DirecaoDosPosts: row;
+        --TamanhoPost1:120%;
+    } 
+    .ModeloA
+   {
+    justify-content: start;
+     height:60%;
+    }
+     .ModeloB{
+    justify-content: end;
+   height: 40%;
+   }
+   #ParagrafoModelo1
+{
+    
+    position:absolute;
+    left:var(--distSobreNos);
+    top:30%;
+    z-index:1;
+}
+#ParagrafoModelo2
+{
+  width:0px;
+  height:0px;
+  font-size:0;
+}
+#titulo h1
+{
+    font-weight: 500;
+    font-size:2em;
+}
+#abertura img{
+margin-left:20px;
+height:80%;
+margin-bottom:2%;
+border-radius:200px;
+}
+.frase1
+{  
+  font-weight: 600;
+  font-size: 1.2em;
+  
+}
+.frase2
+{
+  font-weight: 200;
+  font-size: 1em;
+  
+}
+#BotaoSobreNos{
+    left:var(--distSobreNos);
+  }
+  #BotaoIrPublicacoes{
+   left:var(--distPublicacoes); 
+  }
+
+}
+body{
+    background-color: #b5b5b5;
+}
+body * {
+    font-family: "Oswald",sans-serif ;
+}
+.BlocoTotalLP *{
+    color:white;
+}
+#BlocoTotalLandingPage{
+    width:95%;
+    margin:auto;
+}
+#logo{
+    max-width:360px;
+    min-width:140px;
+    width:25%;
+    margin:auto;
+}
+#logo img{
+    width:100%;
+}
+#abertura{
+    margin:auto;
+    width:95%;
+    max-width:1800px;
+    background-color:black;
+    max-height:100vh;
+    margin:1px auto auto auto;
+    padding:8px 10px;
+    border-radius:10px;
+    position:relative;
+    align-items: center;
+}
+#abertura img
+{
+   display:block;
+  
+
+   width:var(--LarguraImgAbertura);
+   object-fit: cover;
+}
+
+
+
+.BotaoInicial{
+    position:absolute;
+    z-index:2;
+    text-decoration:none;
+    font-size: var(--TamanhoFonteBotoesIniciais);
+    font-weight: var(--FonteBotoesInciais);
+    top:var(--DistanciaBotoesIniciais);
+}
+.BotaoInicial:hover{
+    text-decoration-line:underline;
+}
+
+#titulo
+{
+    
+    margin:auto;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 30px;
+    width: 100%;
+    max-width:1400px;
+    text-align:center;
+    background-color:rgba(181,181,181,0.35);
+    padding:0px 2%;
+}
+
+
+#parteCentral {
+    width:90%;
+    max-width:1900px; 
+    margin:auto;
+    margin-top:34px;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 1.2%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    padding: 0 1.71%;
+    justify-content: center;
+}
+#BatmanLateral{
+    max-width:var(--TamBatmanLateral);
+    object-fit: cover;
+    height: var(--batmanAltura);
+}
+.PorcoesCentrais
+{
+    max-width:var(--tamMaxQuadrosCentrais);
+}
+.PorteCentralModelo{
+    display: flex;
+    flex-direction: column;
+}
+
+.RetanguloVermelhoCentral{
+    width:100%;
+    max-height:46px;
+    padding:0px 28px;
+    background-color: #CC2524;
+    border: 1px solid white;
+    display:flex;
+    align-items: center;
+   
+}
+.RetanguloVermelhoCentral h2
+{
+    font-size: 2.2em;
+    font-weight: 400;
+}
+@media screen and (max-width:307px){
+    .RetanguloVermelhoCentral h2
+{
+    font-size: 2em;
+    font-weight: 400;
+}
+}
+#Lista2{
+    width: 100%;
+    align-self:top;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: var(--ModeloLista); /*Altera o padrão de linha para colunas*/
+    gap: var(--gapLista); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin:4% 0px 0px 0px;
+    background-color:rgba(0,0,0,0.9);
+    padding:10% 3%;
+    border-radius:15px;
+    align-items: center;
+    justify-content:center;
+    
+}
+#Lista2 li{
+    width:var(--tamanhoElemento);/*180*/
+    text-align:center;
+    justify-content: center;
+    width:100%;
+}
+
+.ListaInterna{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: var(--gapListaInterna); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    
+}
+.LI2{
+    margin-top:var(--MargemSuperiorElementos);
+}
+#LogoDc{
+    width:45%;
+    object-fit:contain;
+    height:70px;
+}
+#Interrogacao{
+    width:45%;
+    object-fit:contain;
+    height:70px;
+}
+#DailyPlanet{
+    width:81.67%;
+    height:67px;
+    object-fit:contain;
+    margin-bottom:5px;
+}
+#BatmanFatosDiversos{
+    width:25.44%;
+    object-fit:contain;
+    height:75px;
+    margin-bottom:3px;
+    margin-top:-7px;
+}
+#Lista2 li div{
+    background-color:#CC2524;
+    min-height:40px;
+    max-width:200px;
+    margin:auto;
+    margin-top:var(--margemCategorias);
+    font-weight: 300;
+    border-radius:30px; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-self:center;
+    align-self: center;
+}
+
+#Lista2 li h3{
+    font-size:1.2em;
+    font-weight: 300;
+}
+
+@media screen and (min-width:501px) and (max-width:900px) {
+    #Lista2 li{
+      max-width:500px;
+    }    
+  }
+#BlocoDoProposito{
+    margin-top:4%;
+    background-color: rgba(0,0,0,0.9);
+    border-radius:15px;
+    width:100%;
+    padding-top:2%;
+    padding-left:3%;
+    padding-bottom:2%;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 3%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    align-items:top;
+}
+#BlocoDoProposito li{
+    Max-width:95%;
+}
+#BlocoDoProposito p{
+    font-size:1.4em;
+    font-weight: 400;
+    width:90%;
+   
+}
+#seta{
+width: 2.2em;
+height: 1.8em;
+}
+@media screen and (max-width: 900px){
+    html{
+        --TamanhoFonteUltPublc:1.8em;
+        --PesoFonteUltPublc:600;
+        --TamanhoSeta:4em;
+        --LarguraPostMaior:95%;
+        --gapListaMaiorPosts:2vh;
+        --RaioELarguraBorda2:1.4em;
+        --RaioELarguraBorda3:var(--RaioELarguraBorda2);
+        --AlturaImagem2Post:154px;
+        --AlturaImagem3Post:154px;
+        --TamanhoFonteTituloPost2:1.8em;
+        --TamanhoFonteTituloPost3:1.8em;
+        --TamanhoFonteParteEscritaPost2:1.3em;
+        --TamanhoFonteParteEscritaPost3:1.3em;
+        --TamanhoFonteBotaoLerMais2:1.1em;
+        --TamanhoFonteBotaoLerMais3:1.1em;
+        --TamanhoOutLineBotaoLerMais2:4px;
+        --TamanhoOutLineBotaoLerMais3:4px;
+        --TamSeta:0;
+    }
+    #Logo2{
+        width:20%;
+        min-width:120px;
+        margin-top:1%;
+        margin-bottom:-5%;
+    }
+}
+    @media screen and (min-width: 901px){
+        html{
+            --TamanhoFonteUltPublc:2em;
+            --PesoFonteUltPublc:700;
+            --TamanhoSeta:6em;
+            --DirecaoListaMaiorPosts:row;
+            --DirecaoListaMenorPosts:column;
+            --LarguraPostMaior:120%;
+            --gapListaMaiorPosts:2%;
+            --RaioELarguraBorda2:1.4em;
+            --RaioELarguraBorda3:1.2em;
+            --AlturaImagem2Post:188px;
+            --AlturaImagem3Post:154px;
+            --TamanhoFonteTituloPost2:2.2em;
+            --TamanhoFonteTituloPost3:2em;
+            --TamanhoFonteParteEscritaPost2:1.2em;
+            --TamanhoFonteParteEscritaPost3:1em;
+            --TamanhoFonteBotaoLerMais2:1.1em;
+            --TamanhoFonteBotaoLerMais3:1em;
+            --TamanhoOutLineBotaoLerMais2:4px;
+            --TamanhoOutLineBotaoLerMais3:3px;
+            --TamSeta:8%;
+            --LarguraMaximaPost2:100%;
+            --LarguraMaximaPost3:100%;
+        }
+        #Logo2
+{
+    position:absolute;
+    width: 18%;
+    bottom:-2%;
+}
+
+}
+@media screen and (max-width: 500px){
+    html{
+        --DirecaoListaMaiorPosts:column;
+        --DirecaoListaMenorPosts:column;
+        --LarguraMaximaPost2:90%;
+        --LarguraMaximaPost3:90%;
+        
+    }
+}
+@media screen and (min-width:501px) and (max-width: 900px){
+    html{
+        --DirecaoListaMaiorPosts: column;
+        --DirecaoListaMenorPosts: row;
+        --LarguraMaximaPost2:100%;
+        --LarguraMaximaPost3:100%;
+        }
+}
+#TextoUltimasPublicacoes{
+    margin: 5em auto auto auto;
+    width:95%;
+    max-width:1256px;
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+    gap: 3%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    justify-content: left;
+    align-items: center;
+}
+#seta2{
+    width:var(--TamanhoSeta);
+}
+#TextoUltimasPublicacoes h2{
+    font-size:var(--TamanhoFonteUltPublc);
+    font-weight: var(--PesoFonteUltPublc);
+    color: black;
+}
+#ParteDosPosts
+{
+    width:95%;
+    margin:2% auto;
+    border-top: 9px solid #CC2524;
+    border-bottom:9px solid #CC2524;
+    border-right:7px solid #CC2524;
+    border-left:7px solid #CC2524;
+    max-width:1256px;
+    background-color:rgba(115, 115, 115, 0.9);
+    padding:1.094% 1.071%;
+    position:relative;
+}
+#CaixaDePosts{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: var(--DirecaoListaMaiorPosts); /*Altera o padrão de linha para colunas*/
+    gap: var(--gapListaMaiorPosts); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    width:100%;
+    
+}
+.BlocoAPublicacoes{
+    width:var(--LarguraPostMaior);
+    max-width:420px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.PostLandingPage{
+    border-left: solid#CC2524;
+    background-color:black;
+    text-align:center;
+}
+.Maior{
+    width:100%;
+    border-radius:1.7em;
+    border-left-width:1.7em;
+    padding-bottom:2%;
+}
+.ListaDosPostsMenores{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: var(--DirecaoListaMenorPosts); /*Altera o padrão de linha para colunas*/
+    gap: 1em; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin:auto;
+    max-width:670px;
+}
+.ModeloDePost2{
+    width:100%;
+}
+.MenorCima{
+    width:var(--LarguraMaximaPost2);
+    border-radius:var(--RaioELarguraBorda2);
+    border-left-width:var(--RaioELarguraBorda2);
+    padding-bottom:2%;
+    margin:auto;
+}
+.MenorBaixo{
+    width:var(--LarguraMaximaPost3);
+    border-radius:var(--RaioELarguraBorda3);
+    border-left-width:var(--RaioELarguraBorda3);
+    padding-bottom:2%;
+    margin:auto;
+}
+.ImagemPost1{
+    width:100%;
+    height:290px;
+    object-fit: cover;
+    border-top-right-radius: 1.8em;
+}
+.ImagemPost2{
+    width:100%;
+    height:var(--AlturaImagem2Post);
+    object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
+    border-top-right-radius: var(--RaioELarguraBorda2);
+}
+.ImagemPost3{
+    width:100%;
+    height:var(--AlturaImagem3Post);
+    object-fit: cover;/* Cobrir todo o espaço colocado, sem perder proporções*/
+    border-top-right-radius: var(--RaioELarguraBorda2);
+}
+.Titulo1{
+    font-size:2.6em;
+    font-weight:500;
+}
+.Titulo2{
+    font-size:var(--TamanhoFonteTituloPost2);
+    font-weight:500;
+    margin:auto;
+}
+.Titulo3{
+    font-size:var(--TamanhoFonteTituloPost3);
+    font-weight:500;
+    margin:auto;
+}
+.TextoDescritivo{
+    list-style: none; /*Anula estilo de pontos da lista*/
+    display: flex; /*Tipo de display flexível*/
+    flex-direction: row; /*Altera o padrão de linha para colunas*/
+}
+.LinhaLateral{
+    background-color: #CC2524;
+}
+.ParteEscrita{
+    font-weight:300;
+    text-align: left;
+}
+.TDPost1
+{
+    
+    gap: 5%; 
+    margin-top:22px;
+    margin-left:6%;
+}
+.LLPost1{
+    max-width:6px;
+    width:2%;
+} 
+.PEPost1{
+    width: 90%;
+    font-size:1.5em;
+    margin-bottom:8%;
+}
+.TDPost2
+{
+    gap: 5%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:2%;
+    margin-left:7%;
+}
+.LLPost2{
+    width:2%;
+    max-width:3px;
+} 
+.PEPost2{
+    width:90%;
+    font-size: var(--TamanhoFonteParteEscritaPost2);
+    margin-bottom:6%;
+
+}
+.TDPost3
+{
+    gap: 5%; /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
+    margin-top:2%;
+    margin-left:7%;
+}
+.LLPost3{
+    width:2%;
+    max-width:3px;
+} 
+.PEPost3{
+    width:90%;
+    font-size:var(--TamanhoFonteParteEscritaPost3);
+    margin-bottom:6%;
+}
+.NomeDoAutor{
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
+    /*Text shadow ficou melhor visualmente que o stroke*/
+    text-shadow:
+        1px 1px 0 white,/*Baixo*/
+        -1px 1px 0 white,/*Esquerda*/
+        -1px -1px 0 white,/*Cima*/
+        1px -1px 0 white;  
+}
+.NA1{
+margin-top:3%;
+margin-left:5%;
+
+font-size: 1.5em;
+ 
+}
+.NA2{
+    margin-top:3%;
+    margin-left:5%;
+    font-size: 1.2em;
+ 
+}
+.NA3{
+    margin-top:3%;
+    margin-left:5%;
+    font-size: 1.2em;
+
+}
+.BotaoLerMais{
+    display:block;
+    justify-content: center;
+    background-color: #CC2524;
+    border-radius:25px;
+    text-decoration: none;
+}
+.BotaoLerMais p{
+    font-weight:400;
+}
+.BotaoLerMais:hover
+{
+    outline: solid rgba(204,37,36,0.3);;
+    text-decoration-line:underline;
+}
+.BM1{
+    
+    width: 25%;
+    min-width:85px;
+    margin: 6px 5% auto auto;
+    
+}
+.BM1 p{
+    font-size:1.5em;
+}
+.BM1:hover{
+    outline-width: 5px ;
+    
+}
+.BM2{
+    width: 20%;
+    min-width:60px;
+    margin: 2px 4% auto auto;
+}
+.BM2 p{
+    font-size:var(--TamanhoFonteBotaoLerMais2);
+}
+.BM2:hover{
+    outline-width: var(--TamanhoOutLineBotaoLerMais2);
+}
+.BM3{
+    width: 20%;
+    min-width:60px;
+    margin: 2px 4% auto auto;
+}
+.BM3 p{
+    font-size:var(--TamanhoFonteBotaoLerMais3);
+}
+.BM3:hover{
+    outline-width: var(--TamanhoOutLineBotaoLerMais3);
+}
+
+
+#seta3{
+    position:absolute;
+    bottom:var(--distSeta);
+    left:25%;
+    z-index:1;
+    width:var(--TamSeta);
+}
+#BotaoVerMais
+{
+    width:28%;
+    min-width:200px;
+    height: fit-content;
+    display:flex;
+    border-radius: 50%;
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+    background-color:black;
+    opacity: 1;
+    margin:1.8em auto auto auto;
+    padding:1% 3%;
+    transition:background 0.25s;
+    text-decoration: none;
+}
+#BotaoVerMais:hover{
+    background:rgba(10,10,10,0.81);
+    outline: 3px solid rgba(0,0,0,0.2);
+    text-decoration-line: underline;
+    padding:1% 3%;
+}
+#BotaoVerMais span{
+    font-size:1.5em;
+    font-weight:500;
+}
+@media screen and (max-width: 281px){
+    #BotaoVerMais{
+        min-width:fit-content;
+    }
+    #BotaoVerMais span{
+        
+        font-size:12px;
+        font-weight:400;
+    }
+    #Logo2{
+        width:100%;
+        min-width:1px;
+    }
+    #Lista2{
+        margin:10px auto auto auto;
+        padding:0px;
+        gap:5px;
+    }
+    .RetanguloVermelhoCentral{
+        padding:5px;
+    }
+    .RetanguloVermelhoCentral h2{
+        font-size:1.8em;
+        font-weight: 400;
+    }
+    .ListaInterna div{
+        font-size:1em;
+    }
+    }
+    @media screen and (max-width: 500px){
+    #Lista2{
+        gap:50px;
+    }    
+        .ListaInterna{
+        flex-direction:column;
+        margin:auto;
+        justify-content: center;
+        gap:50px;
+        margin-bottom:5px;
+        align-items:center;
+        font-size:10px;
+        font-size:1.2em;
+    }
+    #Lista2 li div{
+        margin-top:8px;
+    }
+    #abertura img{
+        border-radius:40px;
+        margin-top:16%;
+        margin-bottom:46px;
+    }
+    #abertura p{
+        margin-top:26px;
+        margin-bottom:20px;
+    }
+    #abertura{
+        width:100%;
+    }
+
+}
+
+
+/*Parte do modal do adm*/
+/* Os blocos de media abaixo servem para que o resto do código não quebre. Isso ocorre, pois no início esses tamanhos de fontes estavam para o html.
+Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
+@media screen and (min-width: 1901px){
+   
+    .formA {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
+   
+    .formA {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1074px) and ( max-width: 1439px) {
+    
+    .formA {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1073px) {
+   
+    .formA {
+        font-size: 12px;
+    }
+}  
+#telaBloqueadora{
+    top:0;
+    width:100%;
+    position:absolute;
+    min-height:100vh;
+    display:none;
+    z-index:2;
+}
+@media screen and (max-width:650px){
+    #telaBloqueadora{
+        height:1632px;
+    }
+}
+#BlocoDaListaDePosts{
+    opacity: 1;
+    transition:opacity 0.05s;
+}
+#CaixaDosFormularios{
+    top:0;
+    width:100%;
+    position:absolute;
+    justify-content:center;
+    align-items: center;
+    padding-left:1%;
+    padding-right:1%;
+     display:none;
+     height:1000px;
+     max-height:100vh;
+     z-index:3;
+    
+}
+.formA *{
+    color:black;
+}
+.formA{
+    flex-direction:column;
+    width:90%;
+    max-width:570px;
+    padding-left:2%;
+    border-radius: 40px;
+    background-color: #b8b8b8;
+    padding-bottom:15px;
+    padding-right:2%;
+    border:1px solid #cc2534;
+    display:none;
+    align-self: center;
+}
+.formA h2{
+    font-size:2.2em;
+    margin-top:5px;
+    color:#cc2524;
+    font-weight: 600;
+    text-align:center;
+}
+.formA h3{
+    color:#cc2524;
+    font-size:1.6em;
+    font-weight: 400;
+    margin-top:10px;
+}
+.formA input, .formA textarea{
+    border-radius:5px;
+    border: 1px solid rgba(204,37,37,0.5);
+    background-color: #d9d9d9;
+    width:80%;
+    margin-top:5px;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:5px;
+}
+.formA textarea{
+    width:80%;
+    resize: none;
+}
+.formA input:focus, .formA textarea:focus{
+    border:1px solid #d9d9d9;
+    outline:1px solid #cc2524;
+}
+.ImagemDoPostForm{
+    position: relative;
+    /*margin-bottom:55px;*/
+    width:100%;
+}
+.ImagemDoPostForm input{
+    /*border:0;
+    padding:0.5em 0;
+    background-color:#b8b8b8;
+    cursor:pointer;
+    position:absolute;
+    left:19%;
+    z-index:0;
+    font-size:1em;
+    */
+    cursor:pointer;
+}
+
+.ImagemDoPostForm label{
+    padding-left:2px;
+}
+.ImagemDoPostForm input:hover{
+    opacity:0.8;
+    border:1px solid rgba(204,37,37,1);
+    
+}
+.ImagemDoPostForm input:focus{
+    outline: 1px solid #cc2524;
+}
+.ImagemDoPostForm input:active{
+    border: 2px solid rgba(204,37,37,1);
+}
+.formA section{
+    margin-bottom:10px;
+}
+ .formA p{
+    background-color: #b8b8b8;
+    padding:2px;
+    border-radius:5px;
+    font-size:1.1em;
+    width:fit-content;
+}
+#ConfirmacaoExclusaoPostForm{
+    justify-content:center;
+    width:fit-content;
+}
+#ConfirmacaoExclusaoPostForm p
+{
+    width:fit-content;
+    align-self:center;
+    font-size:1.2em;
+    margin-bottom:30px;
+    padding:0;
+}
+#FormularioVisualizacaoDePost img{
+    object-fit:cover;
+    max-width:95%;
+    max-height:230px;
+    margin-top:10px;
+}
+.formA button{
+    outline: 0px;
+    border-radius:10px;
+    padding:5px;
+    cursor:pointer;
+    font-size:1.2em;
+    margin-left:2%;
+    width:16%;
+    min-width:60px;
+    transition: opacity 0.1s,background 0.2s;
+}
+.BotoesFormularios{
+    display:flex;
+    justify-content: right;
+    padding-right: 10px;
+    
+}
+.Botao1Formulario:focus{
+    background-color: rgba(204,37,37,0.8);
+}
+.Botao2Formulario:focus{
+    background-color: rgba(220,220,220,0.8);
+    
+}
+.Botao1Formulario{
+    color:white;
+    background-color: #cc2524;
+    padding-left: 2%;
+    padding-right:2%;
+    border:0;
+    
+}
+.Botao1Formulario:hover{
+    background-color: rgba(229,49,49,1);
+   
+}
+.Botao2Formulario{
+    color:#cc2524;
+    background-color: #b8b8b8;
+    border: 1px solid #cc2524;
+}
+.Botao2Formulario:hover{
+    background-color: rgba(220,220,220,0.8);
+}
+@media screen and (max-width:475px){
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-size:1.16em;
+}
+.formA input{
+    width:80%;
+}
+}
+@media screen and (max-width:378px){
+    #ConfirmacaoExclusaoPostForm h2{
+        font-size:1.8em;
+    } 
+    #ConfirmacaoExclusaoPostForm p
+{
+    font-weight: 400;
+    font-size:0.95em;
+}
+#ConfirmacaoExclusaoPostForm button{
+    font-size:1.2em;
+}
+.formA input{
+    width:80%;
+}
+}
+/*
+.ImagemDoPostForm label{
+    /*position:absolute;
+    font-size:1em;
+    padding-left:5px;
+    z-index:1;
+    */
+    /*display:flex;
+    justify-content:center;
+    width:fit-content;
+    gap:15px;
+    padding: 0.5em 5px;
+    background-color:#dddddd;
+    border: 1px solid rgba(204,37,37,0.5);
+    border-radius:5px;
+    margin-top:10px;
+    cursor:pointer;
+    transition: background 0.2s,outline 0.1s, border 0.1s;
+    outline: 0px solid #dddddd;
+    display:none;
+}
+.ImagemDoPostForm svg, .ImagemDoPostForm img{
+    width:1em;
+    margin-top:2px;
+}
+.ImagemDoPostForm label:hover{
+    background-color:#bdbdbd;
+    border:1px solid rgba(204,37,37,1);
+}
+.ImagemDoPostForm label:focus{
+    outline: 1px solid #cc2524;
+}
+.ImagemDoPostForm label:active{
+    border: 2px solid rgba(204,37,37,1);
+}
+*/
+
+
+
+.back{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    
+    background-color: #b5b5b5; /* temporario */
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 20px;
+}
+
+.cont_user{
+    border: 1px solid rgba(252, 252, 14, 0.234); /* temporario */
+    background-color: #03020212; /* temporario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+
+}
+.title_user{
+    padding-left: 5%;
+    font-size: 24px;
+    
+}
+.bt_create{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #ffffff;
+    border-style: solid;
+
+    font-family: "Inter", sans-serif;
+    color: #ffffff ;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+.bt_create:hover{
+    background-color: #8b0c0cb1; /*cores temp*/
+    text-decoration:none;
+}
+
+/*///// tabela /////*/
+
+.cont_tab{
+    
+}
+table{
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 3; 
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+thead,tbody tr{   /* Coloca background no thead e no tbody pra manter o espaçamento entre os 2 transparente */
+    background-color:rgba(0, 0, 0, 0.8);
+    border-left: 3px solid white;
+    overflow: hidden;
+}
+
+tbody tr{
+    backdrop-filter: blur(2px); /*Se colocar junto com o thead as bordars somem !? */
+}
+
+tbody:before {
+    line-height:2.5em;
+    content:"\200C"; /* caractere invisivel pra dar espaço */
+    color:white;
+    display:block;
+}
+tbody tr:nth-child(even){
+    background-color: #3c0707c4; /* tab row  */
+    
+}
+tbody tr:hover{
+    background-color:rgba(41, 40, 45, 0.5); /* tab row hover*/
+}
+
+td {
+    padding: 0.5rem;
+    text-align: center;
+}
+td button{
+    padding: 8px 14px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 2px;
+
+    background-color: transparent;
+    color: #ffffff;
+    border-style: solid;
+    border-color: white;
+}
+.header_ac{
+    border-right: none;
+}
+.header_id{
+    padding: 0px 10px
+}
+.bt_vis{
+
+}
+.bt_edit{
+    border-color: rgba(6, 126, 178, 0.757) ; /*cores temp*/
+    color: rgb(25, 139, 221);
+}
+.bt_delete{
+    background-color: #3c0707c4; /*cores temp*/
+    border-color: rgba(255, 255, 255, 0.757) ;
+}
+.bt_vis:hover{
+    background-color: #776d6d75; /*cores temp hover botoes tab*/
+}
+.bt_edit:hover{
+    background-color: rgba(30, 91, 121, 0.482);
+    color: rgba(255, 255, 255, 0.835);
+    border-color: white;
+}
+.bt_delete:hover{
+    background-color: #8b0c0cb1;
+}
+/*//////// Responsividade ///////*/
+
+@media (max-width: 650px){
+    th{
+        display: none; 
+    }
+    td {
+        display: flex;
+        padding: 0.75rem 0.5rem;
+        flex-wrap: wrap;
+    }
+    td::before {
+        font-weight:800;
+        padding-right: 0.5rem;
+        padding-left: 0.3rem;
+    }
+    td:first-child{
+        padding-top: 2rem;
+    }
+    td:last-child{
+        padding-bottom: 2rem;
+    }
+    td:nth-of-type(1)::before{
+        content: "ID:";
+    }
+    td:nth-of-type(2)::before{
+        content: "Usuário:";
+    }
+    td:nth-of-type(3)::before{
+        content: "Email:";
+    }
+    td:nth-of-type(4)::before{
+        content: "Ação:";
+    }
+    
+    td button{
+        height: 100%;
+        align-self: center;
+        margin: 1%;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+
+    } 
+    .bt_delete, .bt_vis, .bt_edit{
+        flex-grow: 0.3;
+    }
+    .bt_delete{
+        display: flex;
+        justify-content: center;
+       /* margin-left: 35%; Com isso o botao de delete desce uma linha numa resolução mais baixa*/
+    }
+}
+
+@media (min-width:574px) and (max-width:650px){
+    .bt_delete{
+        margin-left: 1%;
+    }
+}
+/*/// paginacao ///*/
+.paginacao{
+    text-align: left;
+    display: flex;
+   }
+.paginacao a, .paginacao button{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 2%;
+    padding: 8px 12px;
+    background-color: #c8cfca1e; /*cor background pag*/
+    border: 1px solid rgba(158, 149, 149, 0.681); /*cor borda pag */
+   }
+.seta_pag1{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.seta_pag2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.paginacao a.active, button.active{
+    background-color:#3c0707c4; /*cores temp active pag */
+    font-weight: bold;
+}
+.paginacao a:hover:not(.active), .paginacao button:hover:not(.active){
+    background-color: #3c0707c4; /*cores temp hover pag*/
+}
+.fa-thin{
+   font-size: 50%;
+   font-weight: 300;
+}
+
+/* troca de paginacao */
+table{
+    display: none;
+}
+/* icones */
+.fa-regular::before {
+    display: none;
+}  
+
+@media (max-width: 400px){
+    
+    .fa-regular::before {
+        display: inline-block;
+        font-size: 110%;
+        font-weight: 300;
+    }  
+    .fa-pen-to-square::before{
+        font-weight: 500;
+
+    }
+    .stx {
+        display: none;
+    }
+    td button {
+        width: 20%;
+    }
+
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista_usuario</title>
+    <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/10f37f7ffb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="back">
+    <div class="cont_user">
+        <p class="title_user">Lista de Usuários</p>
+        <button class="bt_create" onclick="abrirmodal('divform')">Criar Usuário</button>
+    </div>
+    <div class="cont_tab">
+        <table>
+            <thead>
+                <tr class ="header_tab">
+                    <th class="header_id">ID</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th class ="header_ac">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class ="body_tab">
+                    <td>1</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>2</td>
+                    <td>Joker</td>
+                    <td>comedy@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>3</td>
+                    <td>Arlequina</td>
+                    <td>margot_robbie@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>4</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>5</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr class ="header_tab">
+                    <th class="header_id">ID</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th class ="header_ac">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class ="body_tab">
+                    <td>6</td>
+                    <td>Davi</td>
+                    <td>pacheco@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>7</td>
+                    <td>Super</td>
+                    <td>man@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>8</td>
+                    <td>Mulher</td>
+                    <td>maravilha@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>9</td>
+                    <td>Wayne</td>
+                    <td>not_batman@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+                <tr class ="body_tab">
+                    <td>10</td>
+                    <td>Lanterna</td>
+                    <td>verde-msm@gotham.com</td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="paginacao">
+           <button onclick="troca_relativa(-1)" class="seta_pag1"><i class="fa-solid fa-angles-left "></i></button>
+            <a href="#1" class="num_pag">1</a>
+            <a href="#2" class="num_pag">2</a>
+            <button onclick="troca_relativa(+1)"  class="seta_pag2"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
+    </div>
+</div>
+<script defer src="../../../public/js/Paginacao.js"></script>
+
+    <!--////////////////// MODAL ////////////////-->
+
+    <!-- CRIAR USUARIO -->
+<div class="cont_modal" id="divform">
+    <div class="divform">
+        <div class="nv"><h2 class="nc">CRIAR USUARIO</h2></div>
+        <form class="formad">
+            <label class="tt">Nome:</label>
+            <input class="in" type="username"placeholder="  nome do usuario">
+            <label class="tt">Email:</label>
+            <input class="in" type="email"placeholder="  email">
+            <label class="tt">Senha:</label>
+            <input class="in" type="password"placeholder="  digite sua senha">
+        </form>
+        <div class="af">       
+        <button type="button"  class="f" onclick="fecharmodal('divform')">SAlVAR</button>
+        <button class="fe" type="button" onclick="fecharmodal('divform')">CANCELAR</button>
+    </div>
+    </div>
+    </div>
+    <!-- EDITAR -->
+    <div class="cont_modal" id="eddivform">
+        <div class="eddivform" >
+            <div class="ednv"><h2 class="ednc">EDITAR USUARIO</h2></div>
+            <form class="formed">
+                <label class="edtt">Nome:</label>
+                <input class="edin" type="username"placeholder="  usuario">
+                <label class="edtt">Email:</label>
+                <input class="edin" type="email"placeholder=" usuario.@email">
+                <label class="edtt">Senha:</label>
+                <input class="edin" type="password"placeholder="  editar senha">
+            </form>
+            <div class="edaf">       
+            <button class="edf" onclick="fecharmodal('eddivform')">SALVAR</button>
+            <button class="edfe"type="submit" onclick="fecharmodal('eddivform')">CANCELAR</button>
+            </div>
+        </div>   
+        </div>
+    <!-- VISUALIZAR -->
+        <div class="cont_modal" id="divvs">
+        <div class="divvs">
+            <div class="divti">
+                <h2 class="h2vs">VISUALIZAR USUÁRIO</h2>
+            </div>
+            <div class="cabeca_conteudo">
+            <div class="vsidu">
+                <p class="idu"> ID:</p>
+                <p class="idu2"> x</p>
+
+            </div>
+            <div class="divvn">
+                <p class="pvs"> Nome:</p> 
+                <p class="ppu">Usuario</p>
+            </div>
+
+            <div class="divve">
+                <p class="pvs">Email:</p>
+                <p class="ppu2">Usuario@email.com</p>
+            </div>
+            </div>
+            <div class="cabeca_butao">
+            <button type="button" class="butvs" onclick="fecharmodal('divvs')" >FECHAR</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- EXCLUIR -->
+    <div class="cont_modal" id="divdelete">
+        <div class="divdelete">
+            <div class="texti">
+               <h2 class="exu">EXCLUIR USUÁRIO</h2>
+            </div>
+            <div class="divaviso">
+              <p class="deletext">
+               Atenção, após essa ação for concluida, não será possivel desfazê-la!<br/>
+               Tem certeza que deseja excluir esse Usuário?
+              </p>
+            </div>
+            <div class="bbpos">            
+             <button class="butcan" onclick="fecharmodal('divdelete')">EXCLUIR</button>
+             <button class="butex" type="button" onclick="fecharmodal('divdelete')">CANCELAR</button>
+           </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="../../../public/js/index.js"></script>
+</html>
