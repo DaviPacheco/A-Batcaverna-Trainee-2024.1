@@ -459,6 +459,11 @@ td button{
 .bt_delete:hover{
     background-color: #8b0c0cb1;
 }
+
+.fa-solid {
+    font-size: 50%;
+}
+
 /*//////// Responsividade ///////*/
 
 @media (max-width: 650px){
