@@ -36,5 +36,11 @@ class UserAdminController
 
         header('Location: /users'); 
      }
+     public function delete(){
+        $id= $_POST['id'];
+        app::get('database')->delete ('users',$id);
+        header ('location:/users'); 
+    }
+     
 }
 ?>

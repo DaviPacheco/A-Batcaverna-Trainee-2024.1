@@ -10,5 +10,5 @@ use App\Core\Router;
     // index é metodo.
     $router->post('users/create', 'UserAdminController@create');
     $router->post('users/edit', 'UserAdminController@edit');
-
+    $router->post('users/delete', 'UserAdminController@delete');
 ?>
