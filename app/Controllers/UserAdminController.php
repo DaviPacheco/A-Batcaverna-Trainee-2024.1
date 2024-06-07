@@ -20,7 +20,21 @@ class UserAdminController
             'email' => $_POST['email'],
             'password' => $_POST['password'],
         ];
-        App::get('database')->insert('users',$parameters); 
+        App::get('database')->insert('users',$parameters);
+        
+      header('Location: /users'); 
     }
+
+     public function edit(){
+        $parameters = [
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password'],
+        ];
+        $id = $_POST['id'];
+        App::get('database')->update('users',$parameters,$id);
+
+        header('Location: /users'); 
+     }
 }
 ?>
