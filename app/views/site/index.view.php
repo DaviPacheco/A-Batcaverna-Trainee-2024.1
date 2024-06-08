@@ -1,3 +1,14 @@
+<?php
+
+$mysql = new mysqli('localhost', 'root','', 'a_batcaverna');
+$mysql->set_charset('utf8');
+if($mysql==true)
+{
+  echo 'banco conectado';
+}
+
+?>
+
 <html lang="pt">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,12 +54,17 @@
                 <th class="header_ac">Ação</th>
               </tr>
             </thead>
+
+
+            
             <tbody>
 
+              <?php foreach($posts as $post): ?>
+
               <tr class="body_tab">
-                <td>1</td>
+                <td><?= $post->id ?></td>
                 <td>Wayne</td>
-                <td>Novo filme do batmana</td>
+                <td><?= $post->title ?></td>
                 <td>
                   <button
                     class="bt_vis"
@@ -73,282 +89,17 @@
                   </button>
                 </td>
               </tr>
-              <tr class="body_tab">
-                <td>2</td>
-                <td>Miguel</td>
-                <td>Nova HQ</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',2) "
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',2) "
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',2) "
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>3</td>
-                <td>Wayne</td>
-                <td>seraaa@gotham.com</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',3)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',3)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',3)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>4</td>
-                <td>Bernado</td>
-                <td>Melhores episódios da Liga da justiça</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',4)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',4)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',4)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>5</td>
-                <td>Wayne</td>
-                <td>....</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',5)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',5)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',5)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
+
+              
+              
             </tbody>
           </table>
-          <table>
-            <thead>
-              <tr class="header_tab">
-                <th class="header_id">ID</th>
-                <th>Usuário</th>
-                <th>Post</th>
-                <th class="header_ac">Ação</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="body_tab">
-                <td>3</td>
-                <td>Renan</td>
-                <td>Novo filme da liga da justiça</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',1)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',1)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',1)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>7</td>
-                <td>Marlon</td>
-                <td>The flash ep 08 s1</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',2) "
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',2) "
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',2) "
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>11</td>
-                <td>Alfred</td>
-                <td>bla e bla</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',3)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',3)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',3)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>24</td>
-                <td>Luis</td>
-                <td>Mulher gavião é o melhor personagem</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',4)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',4)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',4)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-              <tr class="body_tab">
-                <td>9</td>
-                <td>Wayne</td>
-                <td>not_batman@gotham.com</td>
-                <td>
-                  <button
-                    class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',5)"
-                  >
-                    <i class="fa-regular fa-eye"></i
-                    ><span class="stx">Visualizar</span>
-                  </button>
-                  <button
-                    class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',5)"
-                  >
-                    <i class="fa-regular fa-pen-to-square"></i
-                    ><span class="stx">Editar</span>
-                  </button>
-                  <button
-                    class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',5)"
-                  >
-                    <i class="fa-regular fa-trash-can"></i
-                    ><span class="stx">Excluir</span>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="paginacao">
-            <button onclick="troca_relativa(-1)" class="seta_pag1">
-              <i class="fa-solid fa-angles-left"></i>
-            </button>
-            <a href="#1" class="num_pag">1</a>
-            <a href="#2" class="num_pag">2</a>
-            <button onclick="troca_relativa(+1)" class="seta_pag2">
-              <i class="fa-solid fa-angles-right"></i>
-            </button>
-          </div>
+          
+
+          
+          
+
+
         </div>
       </div>
     </div>
@@ -360,17 +111,16 @@
           <h2>VISUALIZAR POST</h2>
           <section class="IDpostForm">
             <h3>ID:</h3>
-            <p>1</p>
+            <p><?= $post->id ?></p>
           </section>
           <section class="TituloPostForm">
             <h3>Título:</h3>
-            <p>DC: A ORIGEM</p>
+            <p><?= $post->title ?></p>
           </section>
           <section class="ConteudoPostForm">
             <h3>Conteúdo:</h3>
             <p>
-              Texto informativo contando a história de origem da DC COMICS,
-              desde os primórdios, e como a empresa se tornou o que é hoje.
+              <?= $post->content ?>
             </p>
           </section>
           <section class="ImagemDoPostFormV">
@@ -382,11 +132,11 @@
           </section>
           <section class="DataDeCriacaoPostForm">
             <h3>Data de criação:</h3>
-            <p>07/05/2024</p>
+            <p><?=$post->created_at?></p>
           </section>
           <section class="NomeDoAutorPostForm">
             <h3>Autor:</h3>
-            <p>Lex Luthor</p>
+            <p><?= $post->author?></p>
           </section>
           <div class="BotoesFormularios">
             <button
@@ -429,17 +179,18 @@
 <!-- Modal Criar -->
 
       <div class="BlocoPost" id="DivFormularioCriacaoDePost">
-      <form class="formA" id="FormularioCriacaoDePost">
+      <form class="formA" id="FormularioCriacaoDePost" method="POST" action="/posts/create">
         <h2>CRIAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
-          <input type="text" placeholder="Digite o título do post aqui" />
+          <input type="text" name="title" placeholder="Digite o título do post aqui" />
         </section>
         <section class="ConteudoPostForm">
           <h3>Conteúdo:</h3>
           <textarea
             rows="7"
             placeholder="Digite o conteúdo do post aqui"
+            name="content"
           ></textarea>
           >
         </section>
@@ -453,15 +204,16 @@
             id="EscolhaImagem1"
             accept="image/png, image/jpeg"
             multiple
+            name="image"
           />
         </section>
         <section class="DataDeCriacaoPostForm">
           <h3>Data de criação:</h3>
-          <p>07/05/2024</p>
+          <p><?= $post->created_at ?></p>
         </section>
         <section class="NomeDoAutorPostForm">
           <h3>Autor:</h3>
-          <p>Lex Luthor</p>
+          <p><?= $post->author ?></p>
         </section>
         <div class="BotoesFormularios">
           <button
@@ -502,11 +254,11 @@
         </section>
         <section class="DataDeCriacaoPostForm">
           <h3>Data de criação:</h3>
-          <p>07/05/2024</p>
+          <p><?= $post->created_at ?></p>
         </section>
         <section class="NomeDoAutorPostForm">
           <h3>Autor:</h3>
-          <p>Lex Luthor</p>
+          <p><?= $post->author ?></p>
         </section>
         <div class="BotoesFormularios">
           <button
@@ -524,6 +276,20 @@
         </div>
       </form>
       </div>
+
+      <?php endforeach; ?>
+
+      <div class="paginacao">
+            <button onclick="troca_relativa(-1)" class="seta_pag1">
+              <i class="fa-solid fa-angles-left"></i>
+            </button>
+            <a href="#1" class="num_pag">1</a>
+            <a href="#2" class="num_pag">2</a>
+            <button onclick="troca_relativa(+1)" class="seta_pag2">
+              <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+
   </body>
   <script src="/public/js/paginacaoA.js"></script>
   <script src="/public/js/funcoesModal.js"></script>
