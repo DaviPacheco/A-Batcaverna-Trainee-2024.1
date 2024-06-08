@@ -12,7 +12,7 @@ class UserAdminController
     {
         $users = App::get('database')->selectAll('users');
         // Obtém Banco de Dados e seleciona tudo
-        return view('site/index',compact($users));//Compact Transforma em array
+        return view('site/ListaDeUsuarios_ComModal',compact('users')); //Compact Transforma em array
     }
     public function create(){
         $parameters = [
@@ -38,7 +38,7 @@ class UserAdminController
      }
      public function delete(){
         $id= $_POST['id'];
-        app::get('database')->delete ('users',$id);
+        App::get('database')->delete ('users',$id);
         header ('location:/users'); 
     }
      

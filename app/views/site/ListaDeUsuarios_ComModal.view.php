@@ -19,63 +19,31 @@
     </div>
     <div class="cont_tab"> 
 
-        <?php foreach($users as $user): ?>
+        
 
         <table>
             <thead>
                 <tr class ="header_tab">
-                    <th class="header_id"> <?- $user->id ?> </th>
-                    <th><?- $user->name ?></th>
-                    <th><?- $user->email ?></th>
+                      <th class="header_id">ID</th>
+                        <th>Usuário</th>
+                        <th>Email</th>
                     <th class ="header_ac">Ação</th>
                 </tr>
             </thead>
             <tbody>
+            <?php
+        foreach($users as $user): ?>
                 <tr class ="body_tab">
-                    <td>1</td>
-                    <td>Wayne</td>
-                    <td>not_batman@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
+                    <td><?=$user->id ?? '1'?></td>
+                    <td><?=$user->name?></td>
+                    <td><?=$user->email?></td>
+                    <td><button class="bt_vis" onclick="abrirmodal('divvs<?=$user->id ?? '1'?>')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
+                        <button class="bt_edit"onclick="abrirmodal('eddivform<?=$user->id ?? '1'?>')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
+                        <button class="bt_delete" onclick="abrirmodal('divdelete<?=$user->id ?? '1'?>')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
                     </td>
                 </tr>
-                <tr class ="body_tab">
-                    <td>2</td>
-                    <td>Joker</td>
-                    <td>comedy@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>3</td>
-                    <td>Arlequina</td>
-                    <td>margot_robbie@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>4</td>
-                    <td>Wayne</td>
-                    <td>not_batman@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>5</td>
-                    <td>Wayne</td>
-                    <td>not_batman@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
+                
+<?php endforeach; ?> 
             </tbody>
         </table>
         <table>
@@ -149,43 +117,45 @@
 
     <!-- CRIAR USUARIO -->
 <div class="cont_modal" id="divform">
-    <div class="divform">
+    <form class="divform" method="POST" action="users/create">
         <div class="nv"><h2 class="nc">CRIAR USUARIO</h2></div>
-        <form class="formad">
+        <div class="formad" >
             <label class="tt">Nome:</label>
-            <input class="in" type="username"placeholder="  nome do usuario">
+            <input class="in" type="username" placeholder="  nome do usuario" name="name" required>
             <label class="tt">Email:</label>
-            <input class="in" type="email"placeholder="  email">
+            <input class="in" type="email"placeholder="  email" name="email" required>
             <label class="tt">Senha:</label>
-            <input class="in" type="password"placeholder="  digite sua senha">
-        </form>
+            <input class="in" type="password"placeholder="  digite sua senha" name="password" required>
+        </div>
         <div class="af">       
-        <button type="button"  class="f" onclick="fecharmodal('divform')">SAlVAR</button>
+        <button type="submit"  class="f">SALVAR</button>
         <button class="fe" type="button" onclick="fecharmodal('divform')">CANCELAR</button>
-    </div>
-    </div>
-    </div>
+         </div>
+    </form>
+</div>
     
     <!-- EDITAR -->
-    <div class="cont_modal" id="eddivform <?=$user->id ?? '1'?>" >
-        <div class="eddivform" >
+     <?php foreach( $users as $user): ?>
+    <div class="cont_modal" id="eddivform<?=$user->id ?? '1'?>" >
+        <form class="eddivform"   method="POST" action="users/edit">
             <div class="ednv"><h2 class="ednc">EDITAR USUARIO</h2></div>
-            <form class="formed">
+            <div class="formed">
+                <input type="hidden" value="<?=$user->id ?? '1'?>" name="id" >
                 <label class="edtt">Nome:</label>
-                <input class="edin" type="username"placeholder="  usuario" value="$">
+                <input class="edin" type="name" placeholder="  usuario" value="<?=$user->name?>" name="name" required>
                 <label class="edtt">Email:</label>
-                <input class="edin" type="email"placeholder=" usuario.@email">
+                <input class="edin" type="email" placeholder=" usuario.@email" value="<?=$user->email?>" name="email" required>
                 <label class="edtt">Senha:</label>
-                <input class="edin" type="password"placeholder="  editar senha">
-            </form>
-            <div class="edaf">       
-            <button class="edf" onclick="fecharmodal('eddivform')">SALVAR</button>
-            <button class="edfe"type="submit" onclick="fecharmodal('eddivform')">CANCELAR</button>
+                <input class="edin" type="password" placeholder="  editar senha" value="<?=$user->password?>" name="password" required>
             </div>
-        </div>   
+            <div class="edaf">       
+            <button type="submit" class="edf" >SALVAR</button>
+            <button type="button" class="edfe" onclick="fecharmodal('eddivform<?=$user->id ?? '1'?>')">CANCELAR</button>
+            </div>
+     </form>   
         </div>
     <!-- VISUALIZAR -->
-        <div class="cont_modal" id="divvs">
+        <div class="cont_modal" id="divvs<?=$user->id ?? '1'?>">
         <div class="divvs">
             <div class="divti">
                 <h2 class="h2vs">VISUALIZAR USUÁRIO</h2>
@@ -193,28 +163,28 @@
             <div class="cabeca_conteudo">
             <div class="vsidu">
                 <p class="idu"> ID:</p>
-                <p class="idu2"> x</p>
+                <p class="idu2"> <?=$user->id ?? '1'?></p>
 
             </div>
             <div class="divvn">
                 <p class="pvs"> Nome:</p> 
-                <p class="ppu">Usuario</p>
+                <p class="ppu"><?=$user->name ?></p>
             </div>
 
             <div class="divve">
                 <p class="pvs">Email:</p>
-                <p class="ppu2">Usuario@email.com</p>
+                <p class="ppu2"><?=$user->email ?></p>
             </div>
             </div>
             <div class="cabeca_butao">
-            <button type="button" class="butvs" onclick="fecharmodal('divvs')" >FECHAR</button>
+            <button type="button" class="butvs" onclick="fecharmodal('divvs<?=$user->id ?? '1'?>')" >FECHAR</button>
             </div>
             </div>
         </div>
     </div>
     <!-- EXCLUIR -->
-    <div class="cont_modal" id="divdelete">
-        <div class="divdelete">
+    <div class="cont_modal" id="divdelete<?=$user->id ?? '1'?>">
+        <form class="divdelete" method="POST" action="users/delete">
             <div class="texti">
                <h2 class="exu">EXCLUIR USUÁRIO</h2>
             </div>
@@ -224,15 +194,15 @@
                Tem certeza que deseja excluir esse Usuário?
               </p>
             </div>
-            <div class="bbpos">            
-             <button class="butcan" onclick="fecharmodal('divdelete')">EXCLUIR</button>
-             <button class="butex" type="button" onclick="fecharmodal('divdelete')">CANCELAR</button>
+            <div class="bbpos"> 
+              <input type="hidden" value="<?=$user->id ?? '1'?>" name="id" >           
+             <button class="butcan" >EXCLUIR</button>
+             <button class="butex" type="button" onclick="fecharmodal('divdelete<?=$user->id ?? '1'?>')">CANCELAR</button>
            </div>
             </div>
-        </div>
+     </form>
     </div>
-<?php endforeach; ?> 
-
+   <?php endforeach; ?>
 </body>
 <script src="../../../public/js/Modal_Luis.js"></script>
 </html>

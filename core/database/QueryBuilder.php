@@ -22,17 +22,17 @@ class QueryBuilder
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
 
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $stmt->fetchAll(\PDO::FETCH_CLASS);
 
         } catch (Exception $e) {
             die($e->getMessage());
         }
     }
     public function insert($table,$parameters){
-        $sql = sprintf("INSERT INTO %s, (%s) VALUES (%s) ",
+        $sql = sprintf("INSERT INTO %s (%s) VALUES (%s) ",
         $table,
         implode(', ', array_keys($parameters)),
-        ':' . implode(',: ', array_keys($parameters)) 
+        ':' . implode(', :', array_keys($parameters)) 
         );
         try {
         $stmt = $this->pdo->prepare($sql);
@@ -43,7 +43,7 @@ class QueryBuilder
         die($e->getMessage());
        }
     }
-    public function update($table,$id,$parameters){
+    public function update($table,$parameters,$id){
         $sql = sprintf("UPDATE %s SET %s WHERE id= %s ",
         $table,
         implode( ', ' , 
@@ -51,8 +51,9 @@ class QueryBuilder
            return $param . "= :" . $param;
         }
         ,array_keys($parameters))
-        ,$id
         )
+        ,$id
+        
         ) ; 
         try {
             $stmt = $this->pdo->prepare($sql);
