@@ -15,7 +15,7 @@
     <div class="back">
     <div class="cont_user">
         <p class="title_user">Lista de Usuários</p>
-        <button class="bt_create">Criar Usuário</button>
+        <button class="bt_create">Criar Usuário</button> 
     </div>
     <div class="cont_tab">
         <table>

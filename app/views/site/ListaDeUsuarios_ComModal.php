@@ -17,13 +17,16 @@
         <p class="title_user">Lista de Usuários</p>
         <button class="bt_create" onclick="abrirmodal('divform')">Criar Usuário</button>
     </div>
-    <div class="cont_tab">
+    <div class="cont_tab"> 
+
+        <?php foreach($users as $user): ?>
+
         <table>
             <thead>
                 <tr class ="header_tab">
-                    <th class="header_id">ID</th>
-                    <th>Usuário</th>
-                    <th>Email</th>
+                    <th class="header_id"> <?- $user->id ?> </th>
+                    <th><?- $user->name ?></th>
+                    <th><?- $user->email ?></th>
                     <th class ="header_ac">Ação</th>
                 </tr>
             </thead>
@@ -162,13 +165,14 @@
     </div>
     </div>
     </div>
+    
     <!-- EDITAR -->
-    <div class="cont_modal" id="eddivform">
+    <div class="cont_modal" id="eddivform <?=$user->id ?? '1'?>" >
         <div class="eddivform" >
             <div class="ednv"><h2 class="ednc">EDITAR USUARIO</h2></div>
             <form class="formed">
                 <label class="edtt">Nome:</label>
-                <input class="edin" type="username"placeholder="  usuario">
+                <input class="edin" type="username"placeholder="  usuario" value="$">
                 <label class="edtt">Email:</label>
                 <input class="edin" type="email"placeholder=" usuario.@email">
                 <label class="edtt">Senha:</label>
@@ -227,7 +231,7 @@
             </div>
         </div>
     </div>
-
+<?php endforeach; ?> 
 
 </body>
 <script src="../../../public/js/Modal_Luis.js"></script>
