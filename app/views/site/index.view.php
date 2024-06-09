@@ -152,7 +152,7 @@ if($mysql==true)
 <!-- Modal Excluir -->
 
       <div class="BlocoPost" id="DivConfirmacaoExclusaoPostForm">
-        <form class="formA" id="ConfirmacaoExclusaoPostForm">
+        <form class="formA" id="ConfirmacaoExclusaoPostForm" method="POST">
           <h2>EXCLUIR POST</h2>
           <p>
             ATENÇÃO! Após a conclusão dessa ação, não será possível
@@ -235,7 +235,7 @@ if($mysql==true)
 <!-- Modal Editar -->
 
       <div class="BlocoPost" id="DivFormularioEdicaoDePost">
-      <form class="formA" id="FormularioEdicaoDePost">
+      <form class="formA" id="FormularioEdicaoDePost" method="POST" action="/posts/edit">
         <h2>EDITAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
