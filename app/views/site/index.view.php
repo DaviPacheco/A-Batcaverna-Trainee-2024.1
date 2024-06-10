@@ -56,7 +56,7 @@ if($mysql==true)
             </thead>
 
 
-            
+
             <tbody>
 
               <?php foreach($posts as $post): ?>
@@ -108,6 +108,7 @@ if($mysql==true)
 
       <div class="BlocoPost" id="DivFormularioVisualizacaoDePost">
         <form class="formA" id="FormularioVisualizacaoDePost">
+        <input type="hidden" value="<?php $post->id ?>" name="id"/>
           <h2>VISUALIZAR POST</h2>
           <section class="IDpostForm">
             <h3>ID:</h3>
@@ -152,7 +153,8 @@ if($mysql==true)
 <!-- Modal Excluir -->
 
       <div class="BlocoPost" id="DivConfirmacaoExclusaoPostForm">
-        <form class="formA" id="ConfirmacaoExclusaoPostForm" method="POST">
+        <form class="formA" id="ConfirmacaoExclusaoPostForm" method="POST" action="/posts/delete">
+        <input type="hidden" value="<?php $post->id ?>" name="id"/>
           <h2>EXCLUIR POST</h2>
           <p>
             ATENÇÃO! Após a conclusão dessa ação, não será possível
@@ -177,9 +179,10 @@ if($mysql==true)
       </div>
 
 <!-- Modal Criar -->
-
-      <div class="BlocoPost" id="DivFormularioCriacaoDePost">
+             
+<div class="BlocoPost" id="DivFormularioCriacaoDePost">
       <form class="formA" id="FormularioCriacaoDePost" method="POST" action="/posts/create">
+      <input type="hidden" value="<?php $post->id ?>" name="id"/>
         <h2>CRIAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
@@ -192,7 +195,6 @@ if($mysql==true)
             placeholder="Digite o conteúdo do post aqui"
             name="content"
           ></textarea>
-          >
         </section>
         <section class="ImagemDoPostForm">
           <h3>Imagem:</h3>
@@ -236,21 +238,23 @@ if($mysql==true)
 
       <div class="BlocoPost" id="DivFormularioEdicaoDePost">
       <form class="formA" id="FormularioEdicaoDePost" method="POST" action="/posts/edit">
+        <input type="hidden" value="<?php $post->id ?>" name="id"/>
         <h2>EDITAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
-          <input type="text" />
+          <input type="text" name="title" />
         </section>
         <section class="ConteudoPostForm">
           <h3>Conteúdo:</h3>
-          <textarea rows="7"></textarea>
+          <textarea rows="7"
+          name="content"></textarea>
         </section>
         <section class="ImagemDoPostForm">
           <h3>Imagem:</h3>
           <label class="LabelBotaoDeArquivo" for="EscolhaImagem2" tabindex="0">
             <span>Editar imagem do post: <br /></span>
           </label>
-          <input type="file" id="EscolhaImagem2" />
+          <input type="file" id="EscolhaImagem2" name="image" />
         </section>
         <section class="DataDeCriacaoPostForm">
           <h3>Data de criação:</h3>
