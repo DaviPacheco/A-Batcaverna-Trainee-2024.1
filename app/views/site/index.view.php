@@ -1,13 +1,3 @@
-<?php
-
-$mysql = new mysqli('localhost', 'root','', 'a_batcaverna');
-$mysql->set_charset('utf8');
-if($mysql==true)
-{
-  echo 'banco conectado';
-}
-
-?>
 
 <html lang="pt">
   <head>
@@ -69,21 +59,21 @@ if($mysql==true)
                 <td>
                   <button
                     class="bt_vis"
-                    onclick="abrirModal('DivFormularioVisualizacaoDePost',1)"
+                    onclick="abrirModal('DivFormularioVisualizacaoDePost<?php echo $post->id ?? '1' ?>',1)"
                   >
                     <i class="fa-regular fa-eye"></i
                     ><span class="stx">Visualizar</span>
                   </button>
                   <button
                     class="bt_edit"
-                    onclick="abrirModal('DivFormularioEdicaoDePost',1)"
+                    onclick="abrirModal('DivFormularioEdicaoDePost<?php echo $post->id ?? '1' ?>',1)"
                   >
                     <i class="fa-regular fa-pen-to-square"></i
                     ><span class="stx">Editar</span>
                   </button>
                   <button
                     class="bt_delete"
-                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm',1)"
+                    onclick="abrirModal('DivConfirmacaoExclusaoPostForm<?php echo $post->id ?? '1' ?>',1)"
                   >
                     <i class="fa-regular fa-trash-can"></i
                     ><span class="stx">Excluir</span>
@@ -150,12 +140,14 @@ if($mysql==true)
         </section>
         <div class="BotoesFormularios">
           <button
+            type = "submit"
             class="Botao1Formulario"
             onclick="fecharModal('DivFormularioCriacaoDePost')"
           >
             CRIAR
           </button>
           <button
+            type = "button"
             class="Botao2Formulario"
             onclick="fecharModal('DivFormularioCriacaoDePost')"
           >
@@ -170,9 +162,9 @@ if($mysql==true)
 
               <!-- Modal Visulizar -->
 
-              <div class="BlocoPost" id="DivFormularioVisualizacaoDePost">
+              <div class="BlocoPost" id="DivFormularioVisualizacaoDePost<?php echo $post->id ?? '1' ?>">
         <form class="formA" id="FormularioVisualizacaoDePost">
-        <input type="hidden" value="<?php $post->id ?? '1' ?>" name="id"/>
+        <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
           <h2>VISUALIZAR POST</h2>
           <section class="IDpostForm">
             <h3>ID:</h3>
@@ -191,8 +183,7 @@ if($mysql==true)
           <section class="ImagemDoPostFormV">
             <h3>Imagem:</h3>
             <img
-              src="/public/assets/BatmanPorvisórioPost.jpg"
-              alt="Imagem do Batman do Futuro, com fundo de lua cheia em céu roxo"
+              src="<?= $post->image ?>"
             />
           </section>
           <section class="DataDeCriacaoPostForm">
@@ -206,7 +197,7 @@ if($mysql==true)
           <div class="BotoesFormularios">
             <button
               class="Botao1Formulario"
-              onclick="fecharModal('DivFormularioVisualizacaoDePost')"
+              onclick="fecharModal('DivFormularioVisualizacaoDePost<?= $post->id ?? '1' ?>')"
             >
               FECHAR
             </button>
@@ -216,25 +207,25 @@ if($mysql==true)
 
 <!-- Modal Excluir -->
 
-      <div class="BlocoPost" id="DivConfirmacaoExclusaoPostForm">
+      <div class="BlocoPost" id="DivConfirmacaoExclusaoPostForm<?php echo $post->id ?? '1' ?>">
         <form class="formA" id="ConfirmacaoExclusaoPostForm" method="POST" action="/posts/delete">
-        <input type="hidden" value="<?php $post->id ?? '1' ?>" name="id"/>
+        <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
           <h2>EXCLUIR POST</h2>
           <p>
-            ATENÇÃO! Após a conclusão dessa ação, não será possível
+            ATENÇÃO! <?php $post->id ?? '1' ?> Após a conclusão dessa ação, não será possível
             desfazê-la.<br />Tem certeza que deseja excluir esse post
             PERMANENTEMENTE?
           </p>
           <div class="BotoesFormularios">
             <button type = "submit"
               class="Botao1Formulario"
-              onclick="fecharModal('DivConfirmacaoExclusaoPostForm')"
+              onclick="fecharModal('DivConfirmacaoExclusaoPostForm<?= $post->id ?? '1' ?>')"
             >
               EXCLUIR
             </button>
             <button type = "button"
               class="Botao2Formulario"
-              onclick="fecharModal('DivConfirmacaoExclusaoPostForm')"
+              onclick="fecharModal('DivConfirmacaoExclusaoPostForm<?= $post->id ?? '1' ?>')"
             >
               CANCELAR
             </button>
@@ -245,9 +236,9 @@ if($mysql==true)
 
 <!-- Modal Editar -->
 
-      <div class="BlocoPost" id="DivFormularioEdicaoDePost">
+      <div class="BlocoPost" id="DivFormularioEdicaoDePost<?php echo $post->id ?? '1' ?>">
       <form class="formA" id="FormularioEdicaoDePost" method="POST" action="/posts/edit">
-        <input type="hidden" value="<?php $post->id ?? '1' ?>" name="id"/>
+        <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
         <h2>EDITAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
@@ -276,13 +267,13 @@ if($mysql==true)
         <div class="BotoesFormularios">
           <button type = "submit"
             class="Botao1Formulario"
-            onclick="fecharModal('DivFormularioEdicaoDePost')"
+            onclick="fecharModal('DivFormularioEdicaoDePost<?= $post->id ?? '1' ?>')"
           >
             SALVAR
           </button>
           <button type = "button"
             class="Botao2Formulario"
-            onclick="fecharModal('DivFormularioEdicaoDePost')"
+            onclick="fecharModal('DivFormularioEdicaoDePost<?= $post->id ?? '1' ?>')"
           >
             CANCELAR
           </button>
