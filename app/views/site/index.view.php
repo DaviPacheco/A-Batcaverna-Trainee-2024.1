@@ -1,3 +1,22 @@
+<?php
+
+if(isset($_FILES['image'])){
+  $arquivo = $_FILES['image'];
+
+
+
+$pasta = "A-Batcaverna-Trainee-2024.1/";
+$nomeDoArquivo = $arquivo['name'];
+$novoNomeDoArquivo = uniqid();
+$extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
+$path = $pasta . $novoNomeDoArquivo . "." . $extensao;
+}
+
+
+
+$date = date('d/m/Y');
+
+?>
 
 <html lang="pt">
   <head>
@@ -102,8 +121,8 @@
 <!-- Modal Criar -->
 
 <div class="BlocoPost" id="DivFormularioCriacaoDePost">
-      <form class="formA" id="FormularioCriacaoDePost" method="POST" action="/posts/create">
-      <input type="hidden" value="<?php $post->id ?? '1' ?>" name="id"/>
+      <form class="formA" id="FormularioCriacaoDePost" method="POST" action="/posts/create" enctype = "multipart/form-data">
+      <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
         <h2>CRIAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
@@ -132,11 +151,11 @@
         </section>
         <section class="DataDeCriacaoPostForm">
           <h3>Data de criação:</h3>
-          <p><?= $post->created_at ?></p>
+          <input type="text" value="<?= date('d/m/Y'); ?>" name="created_at" placeholder="<?php echo"<pre>"; print_r($date); echo"</pre>" ?>" readonly/>
         </section>
         <section class="NomeDoAutorPostForm">
           <h3>Autor:</h3>
-          <p><?= $post->author ?></p>
+          <p>be</p>
         </section>
         <div class="BotoesFormularios">
           <button
@@ -188,7 +207,7 @@
           </section>
           <section class="DataDeCriacaoPostForm">
             <h3>Data de criação:</h3>
-            <p><?=$post->created_at?></p>
+            <p><?php echo"<pre>"; print_r($post->created_at); echo"</pre>" ?></p>
           </section>
           <section class="NomeDoAutorPostForm">
             <h3>Autor:</h3>
@@ -242,12 +261,12 @@
         <h2>EDITAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
-          <input type="text" name="title" />
+          <input type="text" name="title" value = "<?= $post->title ?>"/>
         </section>
         <section class="ConteudoPostForm">
           <h3>Conteúdo:</h3>
           <textarea rows="7"
-          name="content"></textarea>
+          name="content"><?= $post->content ?></textarea>
         </section>
         <section class="ImagemDoPostForm">
           <h3>Imagem:</h3>
@@ -258,7 +277,7 @@
         </section>
         <section class="DataDeCriacaoPostForm">
           <h3>Data de criação:</h3>
-          <p><?= $post->created_at ?></p>
+          <p><?php echo"<pre>"; print_r($post->created_at); echo"</pre>" ?></p>
         </section>
         <section class="NomeDoAutorPostForm">
           <h3>Autor:</h3>

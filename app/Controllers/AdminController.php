@@ -20,7 +20,8 @@ class AdminController
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
-            'image'=> $_POST['image']
+            'image'=> $_POST['image'],
+            'created_at' => $_POST['created_at']
 
         ];
 
@@ -44,7 +45,6 @@ class AdminController
             'title' => $_POST['title'],
             'content' => $_POST['content'],
             'image'=> $_POST['image']
-
         ];
         App::get('database')->edit('posts', $_POST['id'] ,$parameters);
         header('Location: /posts');
