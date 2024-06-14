@@ -9,10 +9,27 @@ class AdminController
 {
     public function view()
     {
-        $posts = App::get('database')->selectAll('posts');
-        return view('site/index', compact('posts'));
-    }
+        $pagina_atual = 1;
+        if(isset($_GET['paginacaonumero']) && !empty($_GET['paginacaonumero'])){
+                    $pagina_atual = intval($_GET['paginacaonumero']);
+                    if ($pagina_atual <= 0){
+                        redirect('site/index');
+}
+        }
+        $itens_na_pagina = 5;
+        $inicio = $itens_na_pagina * $pagina_atual - $itens_na_pagina;
+        $contagem_linhas = App::get('database')->countAll('posts');
 
+        $pagina_total = ceil($contagem_linhas/$itens_na_pagina);
+
+        if ($inicio > $contagem_linhas){
+            redirect('site/index');
+        }
+    
+        $posts = App::get('database')->selectAll('posts', $inicio, $itens_na_pagina);
+        return view('site/index', compact('posts', 'pagina_atual', 'pagina_total'));
+    }
+    
 
     public function create()
     {

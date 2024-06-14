@@ -117,7 +117,7 @@ $date = date('d/m/Y');
             </tbody>
           </table>
           
-
+              <!-- ----------------------------PAGINACAO-------------------------------------------- -->
           <nav style = "display: flex; justify-content:center;" aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item <?= $pagina <= 1 ? "disabled" : "" ?>">
@@ -128,7 +128,11 @@ $date = date('d/m/Y');
 
     <?php for($pagina = 1; $pagina <= $pagina_total; $pagina++): ?>
 
-    <li class="page-item"><a class="page-link <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>"><?= $pagina ?></a></li>
+    <li class="page-item">
+      <a class="page-link <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>">
+        <?= $pagina ?>
+      </a>
+  </li>
 
     <?php endfor ?>
 
@@ -140,7 +144,7 @@ $date = date('d/m/Y');
   </ul>
 </nav>
           
-
+    <!-- ----------------------------------------FIM DA PAGINACAO ---------------------------------------- -->
 
         </div>
       </div>
@@ -158,7 +162,8 @@ $date = date('d/m/Y');
           <input type="text" name="title" placeholder="Digite o título do post aqui" />
         </section>
         <section class="ConteudoPostForm">
-          <h3>Conteúdo:</h3>
+          <h3>Conteúdo:</h3>,
+
           <textarea
             rows="7"
             placeholder="Digite o conteúdo do post aqui"

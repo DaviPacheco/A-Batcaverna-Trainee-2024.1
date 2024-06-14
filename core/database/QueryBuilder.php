@@ -14,12 +14,12 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table, $start_limit = null, $rows_amount = null)
+    public function selectAll($table, $inicio = null, $contagem_linhas = null)
     {
         $sql = "select * from {$table}";
 
-        if ($start_limit >=0 && $rows_amount > 0) {
-            $sql .= " LIMIT {$start_limit}, {$rows_amount}";
+        if ($inicio >=0 && $contagem_linhas > 0) {
+            $sql .= " LIMIT {$inicio}, {$contagem_linhas}";
         }
 
         try {
@@ -33,7 +33,24 @@ class QueryBuilder
         }
     }
 
-    
+    public function countAll($table, $inicio = null, $contagem_linhas = null)
+    {
+        $sql = "select COUNT(*) from {$table}";
+
+        if ($inicio >=0 && $contagem_linhas > 0) {
+            $sql .= " LIMIT {$inicio}, {$contagem_linhas}";
+        }
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return intval($stmt->fetch(PDO::FETCH_NUM)[0]);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
     
     public function insert($table, $parameters,){
         $sql = sprintf(
