@@ -1,15 +1,19 @@
 <?php
 
 if(isset($_FILES['image'])){
+  var_dump($_FILES['image']);
   $arquivo = $_FILES['image'];
 
-
+  echo 'oi';
 
 $pasta = "A-Batcaverna-Trainee-2024.1/";
 $nomeDoArquivo = $arquivo['name'];
 $novoNomeDoArquivo = uniqid();
 $extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
 $path = $pasta . $novoNomeDoArquivo . "." . $extensao;
+
+echo $path;
+$mysli->query("INSERT INTO posts (image) VALUES ('$path')");
 }
 
 
@@ -207,7 +211,7 @@ $date = date('d/m/Y');
           </section>
           <section class="DataDeCriacaoPostForm">
             <h3>Data de criação:</h3>
-            <p><?php echo"<pre>"; print_r($post->created_at); echo"</pre>" ?></p>
+            <p><?= $post->created_at ?></p>
           </section>
           <section class="NomeDoAutorPostForm">
             <h3>Autor:</h3>
@@ -277,7 +281,7 @@ $date = date('d/m/Y');
         </section>
         <section class="DataDeCriacaoPostForm">
           <h3>Data de criação:</h3>
-          <p><?php echo"<pre>"; print_r($post->created_at); echo"</pre>" ?></p>
+          <p><?= $post->created_at ?></p>
         </section>
         <section class="NomeDoAutorPostForm">
           <h3>Autor:</h3>
