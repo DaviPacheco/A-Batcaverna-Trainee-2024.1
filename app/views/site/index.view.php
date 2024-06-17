@@ -120,7 +120,7 @@ $date = date('d/m/Y');
               <!-- ----------------------------PAGINACAO-------------------------------------------- -->
           <nav style = "display: flex; justify-content:center;" aria-label="Page navigation example">
   <ul class="pagination">
-    <li class="page-item <?= $pagina <= 1 ? "disabled" : "" ?>">
+    <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>">
       <a class="page-link" href="?pagina=<?= $pagina_atual - 1 ?>" aria-label="Previous">
         <span class = "text-dark" aria-hidden="true">&laquo;</span>
       </a>
@@ -136,7 +136,7 @@ $date = date('d/m/Y');
 
     <?php endfor ?>
 
-    <li class="page-item <?= $pagina >= $pagina_total ? "disabled" : "" ?>">
+    <li class="page-item <?= $pagina_atual >= $pagina_total ? "disabled" : "" ?>">
       <a class="page-link" href="?pagina=<?= $pagina_atual + 1 ?>" aria-label="Next">
         <span class = "text-dark" aria-hidden="true">&raquo;</span>
       </a>
