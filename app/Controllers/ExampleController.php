@@ -57,7 +57,7 @@ class ExampleController
         } catch (PDOException $e) {
             die("Consulta falhou: " . $e->getMessage());
         }
-        header("location: /");
+        header("location: /"); // pra alguma pagina, provavelmente a landing page
         die();
     }
 }
