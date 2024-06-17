@@ -9,7 +9,7 @@ function check_login_erros ()
 
     echo "<br>";
     foreach ($erros as $erro) {
-        echo  $erro . "<br>"; // 56,10
+        echo '<p class ="errormsg">' . $erro . '</p>'; // 56,10
 
         unset($_SESSION['erros_login']);
     }
