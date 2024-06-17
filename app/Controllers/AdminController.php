@@ -10,8 +10,8 @@ class AdminController
     public function view()
     {
         $pagina_atual = 1;
-        if(isset($_GET['paginacaonumero']) && !empty($_GET['paginacaonumero'])){
-                    $pagina_atual = intval($_GET['paginacaonumero']);
+        if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
+                    $pagina_atual = intval($_GET['pagina']);
                     if ($pagina_atual <= 0){
                         redirect('site/index');
 }
@@ -20,13 +20,16 @@ class AdminController
         $inicio = $itens_na_pagina * $pagina_atual - $itens_na_pagina;
         $contagem_linhas = App::get('database')->countAll('posts');
 
-        $pagina_total = ceil($contagem_linhas/$itens_na_pagina);
+        
 
         if ($inicio > $contagem_linhas){
             redirect('site/index');
         }
     
         $posts = App::get('database')->selectAll('posts', $inicio, $itens_na_pagina);
+
+        $pagina_total = ceil($contagem_linhas/$itens_na_pagina);
+
         return view('site/index', compact('posts', 'pagina_atual', 'pagina_total'));
     }
     
