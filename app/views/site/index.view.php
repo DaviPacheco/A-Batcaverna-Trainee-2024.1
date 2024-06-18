@@ -248,7 +248,7 @@ $date = date('d/m/Y');
           </section>
           <div class="BotoesFormularios">
             <button
-              class="Botao1Formulario"
+              class="Botao1Formulario" type = "button"
               onclick="fecharModal('DivFormularioVisualizacaoDePost<?= $post->id ?? '1' ?>')"
             >
               FECHAR
@@ -318,7 +318,7 @@ $date = date('d/m/Y');
         </section>
         <div class="BotoesFormularios">
           <button type = "submit"
-            class="Botao1Formulario"
+            class="Botao1Formulario" id = "boTao"
             onclick="fecharModal('DivFormularioEdicaoDePost<?= $post->id ?? '1' ?>')"
           >
             SALVAR

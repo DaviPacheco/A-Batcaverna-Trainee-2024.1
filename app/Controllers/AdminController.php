@@ -39,8 +39,7 @@ class AdminController
 
         $parameters = [
             'title' => $_POST['title'],
-            'content' => $_POST['content'],
-            'created_at' => $_POST['created_at']
+            'content' => $_POST['content']
 
         ];
 
