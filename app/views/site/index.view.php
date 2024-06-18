@@ -34,8 +34,7 @@ $date = date('d/m/Y');
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <script
       defer
       src="https://kit.fontawesome.com/10f37f7ffb.js"
@@ -118,10 +117,10 @@ $date = date('d/m/Y');
           </table>
           
               <!-- ----------------------------PAGINACAO-------------------------------------------- -->
-          <nav style = "display: flex; justify-content:center;" aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>">
-      <a class="page-link" href="?pagina=<?= $pagina_atual - 1 ?>" aria-label="Previous">
+          <nav class="paginacao" style = "display: flex; justify-content: center; margin-top: 20px;" aria-label="Page navigation example">
+  <ul class="paginacao" style = "list-style-type: none">
+    <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
+      <a class="seta_pag1" href="?pagina=<?= $pagina_atual - 1 ?>" aria-label="Previous">
         <span class = "text-dark" aria-hidden="true">&laquo;</span>
       </a>
     </li>
@@ -129,7 +128,7 @@ $date = date('d/m/Y');
     <?php for($pagina = 1; $pagina <= $pagina_total; $pagina++): ?>
 
     <li class="page-item">
-      <a class="page-link <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>">
+      <a class="page-item <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>">
         <?= $pagina ?>
       </a>
   </li>
@@ -137,7 +136,7 @@ $date = date('d/m/Y');
     <?php endfor ?>
 
     <li class="page-item <?= $pagina_atual >= $pagina_total ? "disabled" : "" ?>">
-      <a class="page-link" href="?pagina=<?= $pagina_atual + 1 ?>" aria-label="Next">
+      <a class="seta_pag2" href="?pagina=<?= $pagina_atual + 1 ?>" aria-label="Next">
         <span class = "text-dark" aria-hidden="true">&raquo;</span>
       </a>
     </li>
