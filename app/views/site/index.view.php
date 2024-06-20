@@ -1,26 +1,10 @@
 <?php
 
-if(isset($_FILES['image'])){
-  var_dump($_FILES['image']);
-  $arquivo = $_FILES['image'];
-
-  echo 'oi';
-
-$pasta = "A-Batcaverna-Trainee-2024.1/";
-$nomeDoArquivo = $arquivo['name'];
-$novoNomeDoArquivo = uniqid();
-$extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
-$path = $pasta . $novoNomeDoArquivo . "." . $extensao;
-
-echo $path;
-$mysli->query("INSERT INTO posts (image) VALUES ('$path')");
-}
-
-
-
 $date = date('d/m/Y');
 
 ?>
+
+<?php date_default_timezone_set('America/Sao_Paulo') ?>
 
 <html lang="pt">
   <head>
@@ -154,7 +138,7 @@ $date = date('d/m/Y');
 
 <div class="BlocoPost" id="DivFormularioCriacaoDePost">
       <form class="formA" id="FormularioCriacaoDePost" method="POST" action="/posts/create" enctype = "multipart/form-data">
-      <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
+      <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id" required/>
         <h2>CRIAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
@@ -167,6 +151,7 @@ $date = date('d/m/Y');
             rows="7"
             placeholder="Digite o conteúdo do post aqui"
             name="content"
+            required
           ></textarea>
         </section>
         <section class="ImagemDoPostForm">
@@ -180,6 +165,7 @@ $date = date('d/m/Y');
             accept="image/png, image/jpeg"
             multiple
             name="image"
+            required
           />
         </section>
         <section class="DataDeCriacaoPostForm">
@@ -215,7 +201,7 @@ $date = date('d/m/Y');
               <!-- Modal Visulizar -->
 
               <div class="BlocoPost" id="DivFormularioVisualizacaoDePost<?php echo $post->id ?? '1' ?>">
-        <form class="formA" id="FormularioVisualizacaoDePost">
+        <form class="formA" id="FormularioVisualizacaoDePost" >
         <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
           <h2>VISUALIZAR POST</h2>
           <section class="IDpostForm">
@@ -289,17 +275,18 @@ $date = date('d/m/Y');
 <!-- Modal Editar -->
 
       <div class="BlocoPost" id="DivFormularioEdicaoDePost<?php echo $post->id ?? '1' ?>">
-      <form class="formA" id="FormularioEdicaoDePost" method="POST" action="/posts/edit">
+      <form class="formA" id="FormularioEdicaoDePost" method="POST" action="/posts/edit" enctype = "multipart/form-data">
         <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
         <h2>EDITAR POST</h2>
         <section class="TituloPostForm">
           <h3>Título:</h3>
-          <input type="text" name="title" value = "<?= $post->title ?>"/>
+          <input type="text" name="title" value = "<?= $post->title ?>" required/>
         </section>
         <section class="ConteudoPostForm">
           <h3>Conteúdo:</h3>
           <textarea rows="7"
-          name="content"><?= $post->content ?></textarea>
+          name="content" required><?= $post->content ?>
+        </textarea>
         </section>
         <section class="ImagemDoPostForm">
           <h3>Imagem:</h3>

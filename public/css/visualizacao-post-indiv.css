@@ -41,7 +41,6 @@ body {
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: 200px;
         
     }
     .lista img{
@@ -91,6 +90,12 @@ body {
         font-size: 1.95rem;
         font-weight: 750;
         
+    }
+
+    .pedro_bial{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
    @media (max-width: 1024px){ /*LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP*/

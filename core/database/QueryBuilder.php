@@ -33,6 +33,24 @@ class QueryBuilder
         }
     }
 
+    public function select($table, $id)
+    {
+        $sql = "select * from {$table} where id = ?";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->bindValue(1, $id);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
     public function countAll($table, $inicio = null, $contagem_linhas = null)
     {
         $sql = "select COUNT(*) from {$table}";
