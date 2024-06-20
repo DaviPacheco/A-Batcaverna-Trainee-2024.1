@@ -212,7 +212,7 @@ padding: 16px 8px;
    }
    .login{
     width:200px ;
-    height: 260px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -242,7 +242,7 @@ padding: 16px 8px;
        }
        .login{
         width:180px ;
-        height: 250px;
+        height: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
