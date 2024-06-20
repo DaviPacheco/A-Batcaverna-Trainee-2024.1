@@ -4,13 +4,14 @@ namespace App\Controllers;
 
 use App\Core\App;
 use App\Core\database\Connection;
+use App\Core\Database\QueryBuilder;
 
 use Exception;
 
-
+/*
 require_once 'core/database/Connection.php'; // ?
 require_once 'app/views/include/LoginController.php';
-
+*/
 class ExampleController
 {
 
@@ -32,17 +33,17 @@ class ExampleController
             //Error handlers
             $erros =[];
 
-            if (is_empty($username, $pwd)){
+            if (empty($username) || empty($pwd)){
                 $erros["input_vazio"]= "Preencha todos os campos!";
             }
+            $builder = new QueryBuilder(Connection::make(App::get('config')['database']));
+            $result = $builder->get_user($username);// object pdo
 
-            $result = get_user(Connection::make(App::get('config')['database']), $username);// object pdo
-
-            if (is_user_wrong($result)){
+            if (!$result){
                 $erros["login_incorrect"] = "Informação de login incorreta!";
             }
 
-            if (!is_user_wrong($result) && is_pwd_wrong($pwd, $result["password"])){
+            if (!(empty($username) || empty($pwd)) && !($pwd === $result['password'])){
                 $erros["login_incorrect"] = "Informação de login incorreta!";
             }
 
