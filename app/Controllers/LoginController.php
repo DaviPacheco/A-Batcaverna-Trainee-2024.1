@@ -12,8 +12,25 @@ use Exception;
 require_once 'core/database/Connection.php'; // ?
 require_once 'app/views/include/LoginController.php';
 */
-class ExampleController
+class LoginController
 {
+    public function logout()
+    {
+        session_start();
+        unset($_SESSION['sessao']);
+        session_destroy();
+        return redirect('login');
+    }
+
+    public function landing()
+    {
+        return view('site/LandingPage');
+    }
+
+    public function dash()
+    {
+        return view('admin/dashboard');
+    }
 
     public function index()
     {
@@ -57,8 +74,10 @@ class ExampleController
 
         } catch (PDOException $e) {
             die("Consulta falhou: " . $e->getMessage());
-        }
-        header("location: /"); // pra alguma pagina, provavelmente a landing page
+        } 
+            session_start();
+            $_SESSION['sessao'] = true;
+        header("location: /dashboard"); // pra alguma pagina, provavelmente a landing page
         die();
     }
 }
