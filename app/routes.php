@@ -16,5 +16,5 @@ use App\Core\Router;
     $router->post('posts/edit', 'PaginacaoController@edit');
     $router->post('posts/delete', 'PaginacaoController@delete');
     $router->get('visualizacao-unica', 'PaginacaoController@viewUnica');
-
+    $router->get('post_list','PostListController@index');
 ?>
