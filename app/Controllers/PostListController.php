@@ -14,4 +14,5 @@ class PostListController {
   }   
         return view('site/Lista_De_Posts',compact('posts')); //Compact Transforma em array             
      }    
-     }  ?>
+     }  
+     ?>
