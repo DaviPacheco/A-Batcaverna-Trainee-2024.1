@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/ModalEdicaoPost.css" />
 </head>
 <body>
            <form id="barra" method="GET" action="">
@@ -56,21 +57,31 @@
         endforeach;
             ?>
                 
-                <span id="pag1">
-                    <span id="recheio">5</span>
-                </span>
-                <span id="pag2">
-                    <span id="recheio">4</span>
-                </span>
-                <span id="pag3">
-                    <span id="recheio">3</span>
-                </span>
-                <span id="pag4">
-                    <span id="recheio">2</span>
-                </span>
-                <span id="pag5">
-                    <span id="recheio">1</span>
-                </span>
+                <nav class="paginacao" style = "display: flex; justify-content: center; margin-top: 20px;" aria-label="Page navigation example">
+  <ul class="paginacao" style = "list-style-type: none">
+    <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
+      <a class="seta_pag1" href="?pagina=<?= $pagina_atual - 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Previous">
+        <span class = "text-dark" aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <?php for($pagina = 1; $pagina <= $pagina_total; $pagina++): ?>
+
+    <li class="page-item">
+      <a class="page-item <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>">
+        <?= $pagina ?>
+      </a>
+  </li>
+
+    <?php endfor ?>
+
+    <li class="page-item <?= $pagina_atual >= $pagina_total ? "disabled" : "" ?>">
+      <a class="seta_pag2" href="?pagina=<?= $pagina_atual + 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Next">
+        <span class = "text-dark" aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
                 
              
                 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

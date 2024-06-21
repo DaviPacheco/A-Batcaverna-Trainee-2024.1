@@ -139,7 +139,7 @@ class QueryBuilder
     
         header('Location: /posts');
     }
-    public function selectAllSearch($table, array $param){
+    public function selectAllSearch($table, array $param, $inicio = null, $contagem_linhas = null){
         $key=null;
         $value=null;
         foreach($param as $keyB=>$valueB){
@@ -147,6 +147,11 @@ class QueryBuilder
               $value=$valueB;
         }
         $sql ="SELECT * FROM {$table} WHERE $key LIKE ?";
+
+        if ($inicio >=0 && $contagem_linhas > 0) {
+            $sql .= " LIMIT {$inicio}, {$contagem_linhas}";
+        }
+
         $titleValue='%'.$value.'%';
         try{
         $stmt = $this->pdo->prepare($sql);
