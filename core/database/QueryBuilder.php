@@ -28,4 +28,14 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+    function get_user(string $username) // object pdo ?
+    {
+        $query = "SELECT * FROM users WHERE email = :username";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }

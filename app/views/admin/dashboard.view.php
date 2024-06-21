@@ -1,3 +1,13 @@
+<?php
+
+use PHPMailer\Test\PHPMailer\LocalizationTest;
+
+    session_start();
+    if(!$_SESSION['sessao']){
+        return redirect('login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -11,7 +21,7 @@
         <img src="/public/assets/Logo_Batcaverna_Preto (2).svg">
     </div>
     <div id="barraMeio">
-        <a href="">
+        <a href="/">
             <ion-icon name="home-outline"></ion-icon>
         </a>
         <a href="">
@@ -20,7 +30,7 @@
         <a href="">
             <ion-icon name="people-outline"></ion-icon>
         </a>
-        <a href="">
+        <a href="logout">
             <ion-icon name="log-out-outline"></ion-icon>
         </a>
     </div>
