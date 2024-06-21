@@ -31,7 +31,7 @@ if($_SESSION['sessao']){
         <form class="formulario" action="/login" method="post">
             <div class="name">  <input type="text" name="username" placeholder="e-mail" /> <i class="bi bi-person"></i> </div>
            <div class="name"> <input type="password" id="senha" name="pwd" placeholder="senha" />  <i class="bi bi-eye" id="btn" onclick="iconsenha()"></i>   </div>
-            <button class="buttonred"type="submit" name="submit">Login<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="white" d="M.75 8S5 7 8 9c0 0 .5 3.75 2.5 3.75V11s.5 1 1.5 1s1.5-1 1.5-1v1.75C15.5 12.75 16 9 16 9c3-2 7.25-1 7.25-1c-2 1-2.25 4.5-2.25 4.5c-4 0-4 3.25-4 3.25c-5-1-5 2.75-5 2.75s0-3.75-5-2.75c0 0 0-3.25-4-3.25C3 12.5 2.75 9 .75 8"/></svg></button>
+            <button class="buttonred"type="submit" name="submit">Login<svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 24 24"><path fill="white" d="M.75 8S5 7 8 9c0 0 .5 3.75 2.5 3.75V11s.5 1 1.5 1s1.5-1 1.5-1v1.75C15.5 12.75 16 9 16 9c3-2 7.25-1 7.25-1c-2 1-2.25 4.5-2.25 4.5c-4 0-4 3.25-4 3.25c-5-1-5 2.75-5 2.75s0-3.75-5-2.75c0 0 0-3.25-4-3.25C3 12.5 2.75 9 .75 8"/></svg></button>
         </form>
           <p>
         <?php
