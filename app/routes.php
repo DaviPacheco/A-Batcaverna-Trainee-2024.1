@@ -7,4 +7,5 @@ use App\Core\Router;
     $router->post('posts/create', 'AdminController@create');
     $router->post('posts/edit', 'AdminController@edit');
     $router->post('posts/delete', 'AdminController@delete');
+    $router->get('visualizacao-unica', 'AdminController@viewUnica');
 ?>

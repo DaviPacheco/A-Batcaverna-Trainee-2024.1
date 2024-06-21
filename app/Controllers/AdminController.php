@@ -37,10 +37,19 @@ class AdminController
     public function create()
     {
 
+        $arquivo = $_FILES['image'];
+          
+          $pasta = "public/imagens/";
+          $nomeDoArquivo = $arquivo['name'];
+          $novoNomeDoArquivo = uniqid();
+          $extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
+          $path = $pasta . $novoNomeDoArquivo . "." . $extensao;
+          move_uploaded_file($arquivo['tmp_name'], $path);
+
         $parameters = [
             'title' => $_POST['title'],
-            'content' => $_POST['content']
-
+            'content' => $_POST['content'],
+            'image'=> $path
         ];
 
 
@@ -59,15 +68,39 @@ class AdminController
 
     public function edit()
     {
+
+        if(!empty($_FILES['image']['tmp_name'])){
+            $arquivo = $_FILES['image'];
+          
+          $pasta = "public/imagens/";
+          $nomeDoArquivo = $arquivo['name'];
+          $novoNomeDoArquivo = uniqid();
+          $extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
+          $path = $pasta . $novoNomeDoArquivo . "." . $extensao;
+          move_uploaded_file($arquivo['tmp_name'], $path);
+        }
+        else
+        {
+            $post = App::get('database')->select('posts', $_POST['id']);
+            $path = $post[0]->image;
+        }
+
+
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
-            'image'=> $_POST['image']
+            'image'=> $path
         ];
         App::get('database')->edit('posts', $_POST['id'] ,$parameters);
         header('Location: /posts');
     }
 
+    public function viewUnica()
+    {
+        $post = App::get('database')->select('posts', $_GET['id']);
+
+        return view('site/visualizacao-post-indiv', compact('post'));
+    }
 }
 
 ?>

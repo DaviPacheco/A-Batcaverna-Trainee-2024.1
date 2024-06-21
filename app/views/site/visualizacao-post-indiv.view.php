@@ -17,22 +17,22 @@
         
           <ul class="lista">
            <li> 
-            <img src="../../../public/assets/a625d712ac589a2180ade4bf2c7c52fd.jpg" alt="perfil do post">
+            <img src="<?= $post[0]->image ?> "alt="perfil do post">
            </li>
-           <li>
-         <div id="titulo">DC: A ORIGEM</div>
+           <li class = "pedro_bial">
+         <div id="titulo"><?= $post[0]->title ?></div>
         </li>
     </ul>
     
          <span id="conteudo">
-            Texto informativo contando a história da DC COMICS, desde os primórdios, e como a empresa se tornou o que é hoje. A DC foi fundada em 1934, por Malcon Wheeler-Nicholson. Atualmente sua sede fica em Burkank, Califórnia, EUA. Suas propriedades nos dias de hoje pertencem a Warner Bros Entretainment, no qual vários filmes estão sendo produzidos para as telas de cinema.
+            <?= $post[0]->content?>
          </span>
          <ul class="infos">
          <li>
             <div id="autor">Autor: Lex Luthor</div>
         </li>
         <li>
-        <div id="data">Data de criação: 14/05/2024</div>
+        <div id="data">Data de criação: <?= $post[0]->created_at ?></div>
         </li>
         </ul>
     </div>
