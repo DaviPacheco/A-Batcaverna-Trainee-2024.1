@@ -41,6 +41,6 @@ if($_SESSION['sessao']){
       </div>
       </div>
     </div>
-    <script src="iconsenha.js"></script>
+    <script src="../../../public/js/iconsenha.js"></script>
   </body>
 </html>
