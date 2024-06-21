@@ -32,9 +32,9 @@ class UserAdminController
             'password' => $_POST['password'],
         ];
         $id = $_POST['id'];
-        App::get('database')->update('users',$parameters,$id);
+        App::get('database')->edit('users',$id, $parameters);
 
-        header('Location: /users'); 
+        header('Location:/users'); 
      }
      public function delete(){
         $id= $_POST['id'];

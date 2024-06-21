@@ -29,12 +29,8 @@
     require_once "navbar.html";
     ?>
     <div id="BlocoTotalLandingPage" class="BlocoTotalLP">
-      <div id="logo">
-        <img
-          src="/public/assets/Logo Batcaverna Preto.svg"
-          alt="Logo Batcaverna Preto"
-        />
-      </div>
+      
+      
       <section id="abertura">
         <img
           src="/public/assets/BatcavernaArkham 1.png"
@@ -351,7 +347,7 @@
               stroke-width="7"
             />
           </svg>
-          <a href="" id="BotaoVerMais"><span>Ver Mais Publicações</span></a>
+          <a href="/post_list" id="BotaoVerMais"><span>Ver Mais Publicações</span></a>
           <img
             id="Logo2"
             src="/public/assets/Logo Batcaverna Vermelho.svg"
