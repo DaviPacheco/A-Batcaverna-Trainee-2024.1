@@ -11,8 +11,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LandingPageBatCaverna</title>
     <link rel="stylesheet" href="/public/css/LandingPage.css" />
+<!-- links da nav -->
+    <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet"> 
+        <script defer src="../../../public/js/index.js"></script>
+<!-- links do footer -->
+        <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
   </head>
   <body>
+    <?php
+    require_once "navbar.html";
+    ?>
     <div id="BlocoTotalLandingPage" class="BlocoTotalLP">
       <div id="logo">
         <img
@@ -346,5 +361,8 @@
         </section>
       </section>
     </div>
+    <?php
+    require_once "footer.html";
+    ?>
   </body>
 </html>

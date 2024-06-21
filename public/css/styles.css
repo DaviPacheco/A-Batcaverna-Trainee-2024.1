@@ -109,17 +109,17 @@ iconify-icon[icon="octicon:book-16"]{
     .hamburguer {
         display: block;
         z-index: 1;
-        position:fixed;   /* hamburguer na msm posição do x */
+        position:absolute;   /* hamburguer na msm posição do x */
         top: 26px;
         right: 16px;
     }
     
     .layout-nav{
-        position: fixed;
+        position: absolute;
         top: 51px;
         left: 0;
         width: 100vw;
-        height: 253px;
+        height: 22px;
         padding: 0;  /* Sem espaço no menu hamburguer */
         clip-path: circle(100px at 90% -80%);
         transition: 1.3s ease-out;
@@ -129,6 +129,7 @@ iconify-icon[icon="octicon:book-16"]{
         align-items: center;
         gap: 0;
         pointer-events: none;
+        z-index: 1;
     }
     .layout-nav a {
         font-size: 18px; /* remover essa linha dps ? */
@@ -152,8 +153,9 @@ iconify-icon[icon="octicon:book-16"]{
     .nav.active .layout-nav{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
-        top: 51px;
-        background: rgba(74, 55, 55, 0.8); /* Cor temporaria */
+        top: 66px;
+        background: rgb(74, 55, 55); /* Cor temporaria */
+        z-index: 3;
     }
 
     .nav .btnav{
@@ -175,7 +177,7 @@ iconify-icon[icon="octicon:book-16"]{
     }
 
     .nav.active .hamburguer {
-        position: fixed;        /* posição do x */
+        position: absolute;        /* posição do x */
         top: 26px;
         right: 16px;
         border-top-color: transparent;
@@ -206,6 +208,7 @@ footer {
 
 .tittle{
     font-size: 30px;
+    margin-top: 20px;
 }
 .text{
     font-size: 20px;
@@ -280,7 +283,7 @@ footer {
 
 @media (max-width:950px){ 
     .code{
-        margin-top: 4%;
+        margin-top: 13%;
     }
     .Triangulo{
         border: 0;
@@ -298,7 +301,7 @@ footer {
     .social{
         flex-direction: row;
         left: -227px;
-        bottom: -231px;
+        bottom: -199px;
         font-size: 56px;
     }
 
@@ -318,15 +321,15 @@ footer {
     }
     .social{
         flex-direction: row;
-        left: -259px;
-        bottom: -329px;
+        left: -257px;
+        bottom: -282px;
         font-size: 56px;
         gap: 10px;
     }
 }
 @media (max-width: 1120px) and (min-width: 951px){ 
     .code {
-        margin-top: 5%;
+        margin-top: 10%;
     }
     .leftTri{
         display: none;
@@ -389,7 +392,7 @@ footer {
 }
 @media (max-width: 1272px) and (min-width: 1120px){
     .code{
-        margin-top: 1%;
+        margin-top: 8%;
     }
     
 }
@@ -410,14 +413,22 @@ footer {
         height: 400px;
     }
     .code{
-        margin-top:30%
+        margin-top:37%
     }
     .social{
+         font-size:3.8em !important;
         flex-direction: row;
-        left: -74vw;
-        bottom: -329px;
+        left: -70vw;
+        bottom: -284px;
         font-size: 56px;
         gap: 10px;
+    }
+    .tittle{
+        margin-top: 20px;
+    }
+    iconify-icon[icon="ant-design:youtube-outlined"]{
+        font-size:72px;
+        margin-top: 10%;
     }
 }
 @media (width:540px){
