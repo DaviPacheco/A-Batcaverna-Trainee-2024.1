@@ -24,10 +24,10 @@ use PHPMailer\Test\PHPMailer\LocalizationTest;
         <a href="/">
             <ion-icon name="home-outline"></ion-icon>
         </a>
-        <a href="">
+        <a href="/posts">
             <ion-icon name="newspaper-outline"></ion-icon>
         </a>
-        <a href="">
+        <a href="/users">
             <ion-icon name="people-outline"></ion-icon>
         </a>
         <a href="logout">

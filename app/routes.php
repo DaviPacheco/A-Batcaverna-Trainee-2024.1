@@ -17,4 +17,8 @@ use App\Core\Router;
     $router->post('posts/delete', 'PaginacaoController@delete');
     $router->get('visualizacao-unica', 'PaginacaoController@viewUnica');
     $router->get('post_list','PostListController@index');
+    $router->get('users','UserAdminController@index');
+    $router->post('users/create', 'UserAdminController@create');
+    $router->post('users/edit', 'UserAdminController@edit');
+    $router->post('users/delete', 'UserAdminController@delete');
 ?>
