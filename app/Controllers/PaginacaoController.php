@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class AdminController
+class PaginacaoController
 {
     public function view()
     {
@@ -13,7 +13,7 @@ class AdminController
         if(isset($_GET['pagina']) && !empty($_GET['pagina'])){
                     $pagina_atual = intval($_GET['pagina']);
                     if ($pagina_atual <= 0){
-                        redirect('site/index');
+                        redirect('site/paginacao');
 }
         }
         $itens_na_pagina = 5;
@@ -23,14 +23,14 @@ class AdminController
         
 
         if ($inicio > $contagem_linhas){
-            redirect('site/index');
+            redirect('site/paginacao');
         }
     
         $posts = App::get('database')->selectAll('posts', $inicio, $itens_na_pagina);
 
         $pagina_total = ceil($contagem_linhas/$itens_na_pagina);
 
-        return view('site/index', compact('posts', 'pagina_atual', 'pagina_total'));
+        return view('site/paginacao', compact('posts', 'pagina_atual', 'pagina_total'));
     }
     
 
@@ -99,7 +99,7 @@ class AdminController
     {
         $post = App::get('database')->select('posts', $_GET['id']);
 
-        return view('site/visualizacao-post-indiv', compact('post'));
+        return view('site/post-indiv', compact('post'));
     }
 }
 
