@@ -9,5 +9,6 @@ use App\Core\Router;
     $router->get('dashboard', 'LoginController@dash');
     $router->get('', 'LoginController@landing');
     $router->get('logout', 'LoginController@logout');
+    
 
 ?>
