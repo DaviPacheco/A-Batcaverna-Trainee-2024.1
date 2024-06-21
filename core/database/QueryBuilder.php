@@ -14,9 +14,13 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function selectAll($table)
+    public function selectAll($table, $inicio = null, $contagem_linhas = null)
     {
         $sql = "select * from {$table}";
+
+        if ($inicio >=0 && $contagem_linhas > 0) {
+            $sql .= " LIMIT {$inicio}, {$contagem_linhas}";
+        }
 
         try {
             $stmt = $this->pdo->prepare($sql);
@@ -38,35 +42,9 @@ class QueryBuilder
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
-}
-class QueryBuilder
-{
-    protected $pdo;
 
+ //parte que eu puxei da paginacao ----------------------
 
-    public function __construct($pdo)
-    {
-        $this->pdo = $pdo;
-    }
-
-    public function selectAll($table, $inicio = null, $contagem_linhas = null)
-    {
-        $sql = "select * from {$table}";
-
-        if ($inicio >=0 && $contagem_linhas > 0) {
-            $sql .= " LIMIT {$inicio}, {$contagem_linhas}";
-        }
-
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
-
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
 
     public function select($table, $id)
     {
