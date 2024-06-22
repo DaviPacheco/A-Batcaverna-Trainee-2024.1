@@ -180,7 +180,6 @@ $date = date('d/m/Y');
           <button
             type = "submit"
             class="Botao1Formulario"
-            onclick="fecharModal('DivFormularioCriacaoDePost')"
           >
             CRIAR
           </button>
