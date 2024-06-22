@@ -80,6 +80,10 @@ class LoginController
         header("location: /dashboard"); // pra alguma pagina, provavelmente a landing page
         die();
     }
+    public function sidebar()
+    {
+        return view('admin/sidebar');
+    }
 }
 
 
