@@ -155,6 +155,13 @@ padding: 16px 8px;
     left: 10px;
 
 }
+@media screen and (max-width:2560px) {
+#batc{
+    left: 5px;
+}
+
+
+}
 @media screen and (max-width:1440px) {
    
     
@@ -165,12 +172,19 @@ padding: 16px 8px;
    
    #batc{
     top: 40px;
-    left: 40px;
+    left: 10px;
    }
 } 
 @media screen and (max-width:1370px) {
+    .principal{
+        background-size:110% ;
+    }
+}    
+@media screen and (max-width:1368px) {
   
-    
+    .principal{
+        background-size:230% ;
+    }
   
 
    .segundaria{
@@ -188,16 +202,18 @@ padding: 16px 8px;
    }
    
 } 
-@media screen and (max-width:1370px) {
-.principal{
-    background-size:110% ;
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .principal{
+        background-size:170% ;
+    }
 }
-
-
-
-
-}
-
 @media screen and (max-width:900px) {
     .principal{
         background-size:190% ;
@@ -207,6 +223,7 @@ padding: 16px 8px;
         
     }
     #batc{
+        left: 5px;
         top: 40px;
     }
      .segundaria{
@@ -216,7 +233,14 @@ padding: 16px 8px;
       left:3px ;
      }
 } 
-@media screen and (max-width:425px) {
+
+@media screen and (max-width:853px) {
+    .principal{
+        background-size:300% ;
+    }
+}
+
+@media screen and (max-width:430px) {
    
    .principal{
     background-size: 350%;
@@ -262,6 +286,7 @@ padding: 16px 8px;
         background-size:380% ;
        }
        .buttonred{
+        
         width: 110px;
         font-size: 12px;
        }
