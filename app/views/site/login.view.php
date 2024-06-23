@@ -1,9 +1,9 @@
 <?php
 session_start();
 require_once 'app/views/include/LoginView.php';
-// if($_SESSION['sessao']){
-//     return redirect('dashboard');
-// }
+if($_SESSION['sessao']){
+   return redirect('dashboard');
+ }git
 ?>
 
 <!DOCTYPE html>
