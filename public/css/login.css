@@ -33,7 +33,12 @@ body{
     background-image: url(../assets/LOGIN\ definitivo\ -.png);
     background-position: center;
     background-size: cover;
-    
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 #batc{
   top: 5px;
@@ -133,9 +138,8 @@ padding: 16px 8px;
 .segundaria{
     display: flex;
     flex-direction: row-reverse;
-    position: relative;
-    top: 200px;
-    right:300px ;
+    
+   margin-right:300px ;
   
 }
 .ptres{
@@ -160,11 +164,11 @@ padding: 16px 8px;
       
    
    #batc{
-    top: 20px;
+    top: 40px;
     left: 40px;
    }
 } 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1370px) {
   
     
   
@@ -175,7 +179,7 @@ padding: 16px 8px;
        
    }
    #batc{
-     top:15px ;
+     
      left:15px ;
    }
    .simbolo{
@@ -184,24 +188,39 @@ padding: 16px 8px;
    }
    
 } 
+@media screen and (max-width:1370px) {
+.principal{
+    background-size:110% ;
+}
+
+
+
+
+}
+
 @media screen and (max-width:900px) {
     .principal{
-        
+        background-size:190% ;
       display: flex;  
        align-items: center;
        flex-direction: column; 
         
     }
+    #batc{
+        top: 40px;
+    }
      .segundaria{
-        left: 80px ;
+        margin-right: 50px ;
      }
      .simbolo{
       left:3px ;
      }
 } 
-@media screen and (max-width:650px) {
+@media screen and (max-width:425px) {
    
-   
+   .principal{
+    background-size: 350%;
+   }
    
     .alfred{
         display: none;
@@ -225,11 +244,7 @@ padding: 16px 8px;
     flex-direction: column;
     margin: 0px;
    }
-   .segundaria{
-     position: relative;
-     top: 300px;
-     left:0px ;
-   }
+   
    #batc{
     margin-left:80px ;
    }
@@ -238,10 +253,13 @@ padding: 16px 8px;
    }
    
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:375px) {
     .login input {
         width:110px ;
         font-size: 12px;
+       }
+       .principal{
+        background-size:380% ;
        }
        .buttonred{
         width: 110px;
@@ -273,7 +291,7 @@ padding: 16px 8px;
 @media screen and (max-width:320px) {
 .principal{
   height:100vh;
-  
+  background-size:450% ;
 }
 
   #batc{
