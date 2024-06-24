@@ -364,14 +364,17 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
 }
 */
 
-
+.cont_tab{
+    width: 100%;
+    margin: auto;
+}
 
 .back{
     background-image: url(../assets/gotham.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    
+    margin-left: 80px;
     background-color: #b5b5b5; /* temporario */
     min-height: 100vh;
     padding: 20px;
@@ -421,9 +424,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
 
 /*///// tabela /////*/
 
-.cont_tab{
-    
-}
+
 table{
     color: #ffffff;
     font-size: 1.25rem;

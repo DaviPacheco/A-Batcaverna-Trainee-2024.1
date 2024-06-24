@@ -52,10 +52,7 @@ body {
     
     
 }
-body{
-    /* isto fez ocupar todo o espaço*/
-   background-color: #b5b5b5;
-}
+
 /*   #sair a i{ /* icone lista*/
 /*    color: red;
    padding-top: 25px; /* preenchimento do icone X*/
@@ -142,11 +139,12 @@ body{
    width: 80px;
    background-color: black;
    height: 100vh; /* nao aumenta o tamanho dela de acordo com o tamanho da pagina*/
-   border-radius: 0px 8px 8px 0px;
+   border-radius: 0px 0px 0px 0px;
    position: fixed; /* linhas 25-27 fixam a side bar por toda a tela*/
    top: 0;
    left: 0;
    overflow: hidden;
+   z-index: 10;
 }
 
 
