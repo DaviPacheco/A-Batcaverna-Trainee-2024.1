@@ -79,7 +79,8 @@
         endforeach;
             ?>
                 
-                <nav class="paginacao" style = "display: flex; justify-content: center; margin-top: 20px;" aria-label="Page navigation example">
+                <div class = "caixote">
+                <nav class="paginacao" style = "display: flex; justify-content:center;" aria-label="Page navigation example">
   <ul class="paginacao" style = "list-style-type: none">
     <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
       <a class="page-link" href="?pagina=<?= $pagina_atual - 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Previous">
@@ -104,6 +105,7 @@
     </li>
   </ul>
 </nav>
+                </div>
                 
              
                 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

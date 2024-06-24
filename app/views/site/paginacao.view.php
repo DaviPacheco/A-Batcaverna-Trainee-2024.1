@@ -145,7 +145,7 @@ $date = date('d/m/Y');
           <input type="text" name="title" placeholder="Digite o título do post aqui" />
         </section>
         <section class="ConteudoPostForm">
-          <h3>Conteúdo:</h3>,
+          <h3>Conteúdo:</h3>
 
           <textarea
             rows="7"
@@ -200,7 +200,7 @@ $date = date('d/m/Y');
               <!-- Modal Visulizar -->
 
               <div class="BlocoPost" id="DivFormularioVisualizacaoDePost<?php echo $post->id ?? '1' ?>">
-        <form class="formA" id="FormularioVisualizacaoDePost" >
+        <div class="formA" id="FormularioVisualizacaoDePost" >
         <input type="hidden" value="<?= $post->id ?? '1' ?>" name="id"/>
           <h2>VISUALIZAR POST</h2>
           <section class="IDpostForm">
@@ -213,9 +213,7 @@ $date = date('d/m/Y');
           </section>
           <section class="ConteudoPostForm">
             <h3>Conteúdo:</h3>
-            <p>
-              <?= $post->content ?>
-            </p>
+            <textarea class="ConteudoVisualizacao" readonly rows=4 ><?= $post->content ?></textarea>
           </section>
           <section class="ImagemDoPostFormV">
             <h3>Imagem:</h3>
@@ -239,7 +237,7 @@ $date = date('d/m/Y');
               FECHAR
             </button>
           </div>
-        </form>
+            </div>
       </div>
 
 <!-- Modal Excluir -->
