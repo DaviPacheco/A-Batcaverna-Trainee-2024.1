@@ -597,6 +597,7 @@ height: 1.8em;
     border-left-width:var(--RaioELarguraBorda2);
     padding-bottom:2%;
     margin:auto;
+    max-width:420px;
 }
 .MenorBaixo{
     width:var(--LarguraMaximaPost3);
@@ -604,6 +605,17 @@ height: 1.8em;
     border-left-width:var(--RaioELarguraBorda3);
     padding-bottom:2%;
     margin:auto;
+    max-width:420px;
+}
+@media screen and (min-width:901px){
+    .ListaDosPostsMenores{
+        
+        min-height:700px;
+        
+    }
+    .MenorCima,.MenorBaixo{
+        margin:0px auto auto 0px;
+    }
 }
 .ImagemPost1{
     width:100%;
@@ -624,23 +636,27 @@ height: 1.8em;
     border-top-right-radius: var(--RaioELarguraBorda2);
 }
 .Titulo1{
-    font-size:2.6em;
+    font-size:2.3em;
     font-weight:500;
 }
 .Titulo2{
     font-size:var(--TamanhoFonteTituloPost2);
     font-weight:500;
     margin:auto;
+    min-height:2lh;
 }
 .Titulo3{
     font-size:var(--TamanhoFonteTituloPost3);
     font-weight:500;
     margin:auto;
+    min-height:2lh;
+
 }
 .TextoDescritivo{
     list-style: none; /*Anula estilo de pontos da lista*/
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
+    min-height:7lh;
 }
 .LinhaLateral{
     background-color: #CC2524;

@@ -219,6 +219,11 @@
         </ul>
         <section id="ParteDosPosts">
           <ul id="CaixaDePosts">
+            <?php 
+            $kont=1;
+            foreach($posts as $post): 
+            if($kont==1){
+            ?>
             <li class="BlocoAPublicacoes">
               <div class="PostLandingPage Maior">
                 <img
@@ -226,108 +231,74 @@
                   src="/public/assets/BatmanPorvisórioPost.jpg"
                   alt="Imagem do Batman do futuro com lua ao fundo"
                 />
-                <h3 class="Titulo1">DC: A ORIGEM</h3>
+                <h3 class="Titulo1"><?= substr( $post->title,0,25 ) ?></h3>
                 <ul class="TextoDescritivo TDPost1">
                   <li class="LinhaLateral LLPost1"></li>
                   <li class="ParteEscrita PEPost1">
-                    Texto informativo contando a história de origem da DC
-                    COMICS, desde os primórdios, e como a empresa se tornou o
-                    que é hoje.
+                    <?= substr( $post->content,0,110 ) . '...'?>
                   </li>
                 </ul>
-                <div class="NomeDoAutor NA1">Autor: Lex Luthor</div>
+                <div class="NomeDoAutor NA1">Autor: <?= $post->author ?></div>
                 <a href="" class="BotaoLerMais BM1"><p>Ler Mais</p></a>
               </div>
             </li>
+            <?php }
+            if($kont==2 || $kont==4){
+            ?>
             <li class="ModeloDePost2">
+             
               <ul class="ListaDosPostsMenores">
-                <li class="PostLandingPage MenorCima">
+                <li class="PostLandingPage MenorCima" >
                   <img
                     class="ImagemPost2"
                     src="/public/assets/BatmanPorvisórioPost.jpg"
                     alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
                   />
-                  <h3 class="Titulo2">DC: A ORIGEM</h3>
+                  <h3 class="Titulo2"><?= substr( $post->title,0,25 ) ?></h3>
                   <ul class="TextoDescritivo TDPost2">
                     <li class="LinhaLateral LLPost2"></li>
                     <li class="ParteEscrita PEPost2">
                       <p>
-                        Texto informativo contando a história de origem da DC
-                        COMICS, desde os primórdios, e como a empresa se tornou
-                        o que é hoje.
+                      <?= substr( $post->content,0,110 ) . '...'?>
                       </p>
                     </li>
                   </ul>
-                  <div class="NomeDoAutor NA2">Autor: Lex Luthor</div>
+                  <div class="NomeDoAutor NA2">Autor: <?= $post->author ?></div>
                   <a href="" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
                 </li>
+                <?php } 
+                if($kont==3 || $kont==5) {  
+                ?> 
                 <li class="PostLandingPage MenorBaixo">
                   <img
                     class="ImagemPost3"
                     src="/public/assets/BatmanPorvisórioPost.jpg"
                     alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
                   />
-                  <h3 class="Titulo3">DC: A ORIGEM</h3>
+                  <h3 class="Titulo3"><?= substr( $post->title,0,25 ) ?></h3>
                   <ul class="TextoDescritivo TDPost3">
                     <li class="LinhaLateral LLPost3"></li>
                     <li class="ParteEscrita PEPost3">
                       <p>
-                        Texto informativo contando a história de origem da DC
-                        COMICS, desde os primórdios, e como a empresa se tornou
-                        o que é hoje.
+                      <?= substr( $post->content,0,110 ) . '...'?>
                       </p>
                     </li>
                   </ul>
-                  <div class="NomeDoAutor NA3">Autor: Lex Luthor</div>
+                  <div class="NomeDoAutor NA3">Autor: <?= $post->author ?></div>
                   <a href="" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
                 </li>
               </ul>
+              
             </li>
-            <li class="ModeloDePost2">
-              <ul class="ListaDosPostsMenores">
-
-                <li class="PostLandingPage MenorCima">
-                  <img
-                    class="ImagemPost2"
-                    src="/public/assets/BatmanPorvisórioPost.jpg"
-                    alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
-                  />
-                  <h3 class="Titulo2">DC: A ORIGEM</h3>
-                  <ul class="TextoDescritivo TDPost2">
-                    <li class="LinhaLateral LLPost2"></li>
-                    <li class="ParteEscrita PEPost2">
-                      <p>
-                        Texto informativo contando a história de origem da DC
-                        COMICS, desde os primórdios, e como a empresa se tornou
-                        o que é hoje.
-                      </p>
-                    </li>
-                  </ul>
-                  <div class="NomeDoAutor NA2">Autor: Lex Luthor</div>
-                  <a href="" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
-                </li>
-                <li class="PostLandingPage MenorBaixo">
-                  <img
-                    class="ImagemPost3"
-                    src="/public/assets/BatmanPorvisórioPost.jpg"
-                    alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
-                  />
-                  <h3 class="Titulo3">DC: A ORIGEM</h3>
-                  <ul class="TextoDescritivo TDPost3">
-                    <li class="LinhaLateral LLPost3"></li>
-                    <li class="ParteEscrita PEPost3">
-                      <p>
-                        Texto informativo contando a história de origem da DC
-                        COMICS, desde os primórdios, e como a empresa se tornou
-                        o que é hoje.
-                      </p>
-                    </li>
-                  </ul>
-                  <div class="NomeDoAutor NA3">Autor: Lex Luthor</div>
-                  <a href="" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
-                </li>
-              </ul>
+            <?php } ;
+            $kont++;
+            endforeach;
+                if($kont==3 || $kont==5) { 
+            ?>
+            
+            </ul>
             </li>
+            <?php } ?>
           </ul>
           <svg
             id="seta3"

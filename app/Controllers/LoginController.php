@@ -24,7 +24,16 @@ class LoginController
 
     public function landing()
     {
-        return view('site/LandingPage');
+        $contagem_linhas = App::get('database')->countAll('posts');
+        if($contagem_linhas<=5)
+        {
+            $inicio=0;
+        }
+        else{
+            $inicio=$contagem_linhas-5;
+        }
+        $posts = App::get('database')->selectAll('posts', $inicio, 5);
+        return view('site/LandingPage',compact('posts','contagem_linhas'));
     }
 
     public function dash()
@@ -72,7 +81,7 @@ class LoginController
                 die();
             }
 
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             die("Consulta falhou: " . $e->getMessage());
         } 
             session_start();
