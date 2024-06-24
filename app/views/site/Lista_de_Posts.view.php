@@ -1,3 +1,10 @@
+<?php
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -26,13 +33,13 @@
                     <span id="post1">
                         <span id="bord1"></span>
                         <span id="batmanDoFuturo1">
-                            <img src="/public/assets/batman do futuro.png">
+                            <img src="<?= $post->image ?>">
                         </span>
-                        <span id="titulo1"><?= $post->title; ?></span>
+                        <span id="titulo1"><?= substr($post->title,0,25) ?></span>
                         <span id="barrinha1"></span>
-                        <span id="resumo1">Texto informativo contando a história de origem da DC Comics, desde os primórdios, e como a empresa se tornou o que é hoje.</span>
+                        <span id="resumo1"><?= substr($post->content,0,150) ?>...</span>
                         <div id="autor1">Autor: Lex Luthor</div>
-                        <button id="lermais1">Ler Mais</button>
+                        <button id="lermais1"><a style = "color: white;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
                     </span>   
                   <?php $kont++;
                    } 
@@ -40,13 +47,13 @@
                 <span id="post<?= $kont ?>">
                     <span id="bord2"></span>
                     <span id="batmanDoFuturo">
-                        <img src="/public/assets/batman do futuro.png">
+                        <img src="<?= $post->image ?>">
                     </span>
-                    <span id="titulo2"><?= $post->title; ?></span>
+                    <span id="titulo2"><?= substr($post->title,0,25) ?></span>
                         <span id="barrinha2"></span>
-                        <span id="resumo2">Texto informativo contando a história de origem da DC Comics, desde os primórdios, e como a empresa se tornou o que é hoje.</span>
+                        <span id="resumo2"><?= substr($post->content,0,110) ?>...</span>
                         <div id="autor2">Autor: Lex Luthor</div>
-                        <button id="lermais2">Ler Mais</button>
+                        <button id="lermais2"><a style = "color: white;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
                 </span>
                 <?php 
                 if($kont<5)

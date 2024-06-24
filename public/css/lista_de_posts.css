@@ -189,9 +189,14 @@ body{
     font-size: 36px;
     line-height: 48px;
     color: white;
-    margin: 327px 39px 228px 134px;
+    margin-top: 327px;
+    margin-left: 30px;
+    width: 416px;
+    display: flex;
+    justify-content: center;
     position: absolute;
 }
+
 
 #barrinha1 {
     width: 1px;
@@ -246,7 +251,10 @@ body{
     line-height: 28px;
     color: white;
     margin-top: 199px;
-    margin-left: 85px;
+    margin-left: 30px;
+    width: 231px;
+    display: flex;
+    justify-content: center;
     position: absolute;
 }
 
