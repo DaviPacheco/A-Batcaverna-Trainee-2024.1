@@ -431,7 +431,9 @@ body{
     #titulo1 {
         font-size: 50.4px;
         line-height: 67.2px;
-        margin: 457.8px 54.6px 319.2px 187.6px;
+        width: 596.4px;
+        margin-top: 457.8px;
+        margin-left: 30px;
     }
     
     #barrinha1 {
@@ -465,8 +467,9 @@ body{
     #titulo2 {
         font-size: 28px;
         line-height: 39.2px;
+        width: 337.4px;
         margin-top: 278.6px;
-        margin-left: 119px;
+        margin-left: 30px;
     }
     
     #barrinha2 {
@@ -580,8 +583,9 @@ body{
         font-size: 20px;
         line-height: 28px;
         margin-top: 199px;
-        margin-left: 85px;
-        margin-right: 0;
+        margin-left: 30px;
+        width: 231px;
+
     }
     
     #barrinha1 {
