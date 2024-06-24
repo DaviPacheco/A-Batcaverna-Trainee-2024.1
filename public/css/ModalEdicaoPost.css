@@ -568,6 +568,9 @@ table{
     display: none;
 }  
 
+
+.disabled>.page-link,.page-link.disabled{pointer-events:none;background-color:var(--bs-pagination-disabled-bg);}
+
 @media (max-width: 400px){
     
     .fa-regular::before {

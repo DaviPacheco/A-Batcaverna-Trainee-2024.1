@@ -67,7 +67,7 @@
                 <nav class="paginacao" style = "display: flex; justify-content: center; margin-top: 20px;" aria-label="Page navigation example">
   <ul class="paginacao" style = "list-style-type: none">
     <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
-      <a class="seta_pag1" href="?pagina=<?= $pagina_atual - 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Previous">
+      <a class="page-link" href="?pagina=<?= $pagina_atual - 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Previous">
         <span class = "text-dark" aria-hidden="true">&laquo;</span>
       </a>
     </li>
@@ -75,7 +75,7 @@
     <?php for($pagina = 1; $pagina <= $pagina_total; $pagina++): ?>
 
     <li class="page-item">
-      <a class="page-item <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>">
+      <a class="page-link <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>">
         <?= $pagina ?>
       </a>
   </li>
@@ -83,7 +83,7 @@
     <?php endfor ?>
 
     <li class="page-item <?= $pagina_atual >= $pagina_total ? "disabled" : "" ?>">
-      <a class="seta_pag2" href="?pagina=<?= $pagina_atual + 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Next">
+      <a class="page-link" href="?pagina=<?= $pagina_atual + 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Next">
         <span class = "text-dark" aria-hidden="true">&raquo;</span>
       </a>
     </li>
