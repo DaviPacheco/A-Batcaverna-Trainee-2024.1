@@ -29,7 +29,7 @@
         <img src="../../../public/assets/Logo_Batcaverna_Preto_1 1 (2).png" alt="logo da batcaverna">
     </div>
     <div id="conteiner"> <!-- caixa principal -->
-        
+      
           <ul class="lista">
            <li> 
             <img src="<?= $post[0]->image ?> "alt="perfil do post">

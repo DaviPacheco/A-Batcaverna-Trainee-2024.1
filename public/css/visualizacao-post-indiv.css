@@ -33,7 +33,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 88px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     border-radius: 23px;
      /*borda de 1px para melhor visualização*/
     }
@@ -44,11 +44,14 @@ body {
         gap: 200px;
         
     }
+    
     .lista img{
         height: 350px;
         width: 350px;
         margin-top: 35px;
         margin-left: 80px;
+        border: 5px solid #cc2524;
+        
     }
     #titulo{
         display: flex;
@@ -96,7 +99,8 @@ body {
     
    @media (max-width: 1024px){ /*LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP*/
         .lista img {
-            height: 200px; /* mudar so a altura da imagem, ja mexe na largura*/
+            height: 190px; /* mudar so a altura da imagem, ja mexe na largura*/
+            width: 190px;
             margin-left: 60px;
         }
         #conteiner .lista{
@@ -158,7 +162,8 @@ body {
    }
    @media (max-width: 768px){   /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET*/
     .lista img {
-        height: 160px;
+        height: 140px;
+        width: 140px;
         margin-top: 25px;
         margin-left: 40px;
     }
@@ -221,6 +226,7 @@ body {
 @media (max-width: 426px){ /*MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L MOBILE L */
     .lista img {
         height: 120px; /* mudar so a altura da imagem, ja mexe na largura*/
+        width:120px;
         margin-top: 20px;
         margin-left: 0px;
         }

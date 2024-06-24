@@ -21,5 +21,5 @@ use App\Core\Router;
     $router->post('users/create', 'UserAdminController@create');
     $router->post('users/edit', 'UserAdminController@edit');
     $router->post('users/delete', 'UserAdminController@delete');
-    $router->get('sidebar', 'LoginController@sidebar');
+    
 ?>
