@@ -228,7 +228,7 @@
               <div class="PostLandingPage Maior">
                 <img
                   class="ImagemPost1"
-                  src="/public/assets/BatmanPorvisórioPost.jpg"
+                  src="<?=$post->image?>"
                   alt="Imagem do Batman do futuro com lua ao fundo"
                 />
                 <h3 class="Titulo1"><?= substr( $post->title,0,25 ) ?></h3>
@@ -251,7 +251,7 @@
                 <li class="PostLandingPage MenorCima" >
                   <img
                     class="ImagemPost2"
-                    src="/public/assets/BatmanPorvisórioPost.jpg"
+                    src="<?=$post->image?>"
                     alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
                   />
                   <h3 class="Titulo2"><?= substr( $post->title,0,25 ) ?></h3>
@@ -272,7 +272,7 @@
                 <li class="PostLandingPage MenorBaixo">
                   <img
                     class="ImagemPost3"
-                    src="/public/assets/BatmanPorvisórioPost.jpg"
+                    src="<?=$post->image?>"
                     alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
                   />
                   <h3 class="Titulo3"><?= substr( $post->title,0,25 ) ?></h3>
@@ -328,8 +328,9 @@
         </section>
       </section>
     </div>
+    <!-- Footer -->
     <?php
-    require_once "footer.html";
+    require_once "footer.html"; 
     ?>
   </body>
 </html>
