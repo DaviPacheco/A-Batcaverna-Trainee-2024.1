@@ -79,7 +79,7 @@
         endforeach;
             ?>
                 
-                <div class = "caixote" style = "margin-top: 877px; position: absolute; width: 739px;">
+                <div class = "caixote">
                 <nav class="paginacao" style = "display: flex; justify-content:center;" aria-label="Page navigation example">
   <ul class="paginacao" style = "list-style-type: none">
     <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
