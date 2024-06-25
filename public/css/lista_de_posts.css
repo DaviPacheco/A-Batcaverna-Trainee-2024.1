@@ -308,6 +308,12 @@ body{
     cursor: pointer;
 }
 
+.caixote {
+    margin-top: 877px;
+    position: absolute;
+    width: 739px;
+}
+
 @media (min-width: 1800px)
 {
     body{
@@ -502,6 +508,11 @@ body{
         margin-top: 490px;
         margin-left: 260.4px;
     }
+
+    .caixote{
+        width: 1034.6px;
+        margin-top: 1236px;
+    }
 }
 
 @media (max-width: 1200px)
@@ -553,12 +564,17 @@ body{
     #pag5 {
         margin: 1845px 548px;
     }
+
+    .caixote{
+        width: 100%;
+        margin-top: 1858px;
+    }
 }
 
 @media (max-width:1000px)
 {
     body {
-        height: 2697px;
+        height: 2747px;
     }
 
     #post1 {
@@ -658,6 +674,11 @@ body{
     
     #pag5 {
         margin: 2557px 244px;
+    }
+
+    .caixote{
+        width: 100%;
+        margin-top: 2570px;
     }
 }
 
@@ -805,4 +826,22 @@ body{
         margin: 2557px 20px;
     }
 }
+}
+footer{
+    margin-top: 1000px;
+}
+@media (min-width:1800px){
+    footer{
+    margin-top: 1400px;
+    }
+}
+@media (max-width: 1200px){
+    footer{
+        margin-top: 1980px;
+    }
+}
+@media (max-width: 1000px){
+    footer{
+        margin-top: 2740px;
+    }
 }

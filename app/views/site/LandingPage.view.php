@@ -23,10 +23,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+<!-- links da sidebar -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../../../public/css/sidebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
+    
+    
     <?php
     require_once "navbar.html";
+    
     ?>
     <div id="BlocoTotalLandingPage" class="BlocoTotalLP">
       
@@ -36,7 +46,7 @@
           src="/public/assets/BatcavernaArkham 1.png"
           alt="Imagem da batcaverna com bordas arredondadas"
         />
-        <nav>
+        <div>
           <a href="#BotaoVerMais" id="BotaoSobreNos" class="BotaoInicial"
             >SOBRE NÓS</a
           >
@@ -44,9 +54,9 @@
             href="#TextoUltimasPublicacoes"
             id="BotaoIrPublicacoes"
             class="BotaoInicial"
-            >PUBLICAÇÕES</a
+            >NOVIDADES</a
           >
-        </nav>
+       </div>
         <div id="titulo">
           <h1>
             BEM-VINDO À BATCAVERNA, BLOG FOCADO EM TUDO QUE ENVOLVE A DC COMICS!
@@ -228,7 +238,7 @@
               <div class="PostLandingPage Maior">
                 <img
                   class="ImagemPost1"
-                  src="/public/assets/BatmanPorvisórioPost.jpg"
+                  src="<?=$post->image?>"
                   alt="Imagem do Batman do futuro com lua ao fundo"
                 />
                 <h3 class="Titulo1"><?= substr( $post->title,0,25 ) ?></h3>
@@ -239,7 +249,7 @@
                   </li>
                 </ul>
                 <div class="NomeDoAutor NA1">Autor: <?= $post->author ?></div>
-                <a href="" class="BotaoLerMais BM1"><p>Ler Mais</p></a>
+                <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM1"><p>Ler Mais</p></a>
               </div>
             </li>
             <?php }
@@ -251,7 +261,7 @@
                 <li class="PostLandingPage MenorCima" >
                   <img
                     class="ImagemPost2"
-                    src="/public/assets/BatmanPorvisórioPost.jpg"
+                    src="<?=$post->image?>"
                     alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
                   />
                   <h3 class="Titulo2"><?= substr( $post->title,0,25 ) ?></h3>
@@ -259,12 +269,12 @@
                     <li class="LinhaLateral LLPost2"></li>
                     <li class="ParteEscrita PEPost2">
                       <p>
-                      <?= substr( $post->content,0,110 ) . '...'?>
+                      <?= substr( $post->content,0,100 ) . '...'?>
                       </p>
                     </li>
                   </ul>
                   <div class="NomeDoAutor NA2">Autor: <?= $post->author ?></div>
-                  <a href="" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
+                  <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
                 </li>
                 <?php } 
                 if($kont==3 || $kont==5) {  
@@ -272,7 +282,7 @@
                 <li class="PostLandingPage MenorBaixo">
                   <img
                     class="ImagemPost3"
-                    src="/public/assets/BatmanPorvisórioPost.jpg"
+                    src="<?=$post->image?>"
                     alt="Imagem do Batman do futuro com lua ao fundo e céu vermelho"
                   />
                   <h3 class="Titulo3"><?= substr( $post->title,0,25 ) ?></h3>
@@ -280,12 +290,12 @@
                     <li class="LinhaLateral LLPost3"></li>
                     <li class="ParteEscrita PEPost3">
                       <p>
-                      <?= substr( $post->content,0,110 ) . '...'?>
+                      <?= substr( $post->content,0,100 ) . '...'?>
                       </p>
                     </li>
                   </ul>
                   <div class="NomeDoAutor NA3">Autor: <?= $post->author ?></div>
-                  <a href="" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
+                  <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
                 </li>
               </ul>
               
@@ -331,6 +341,8 @@
     <!-- Footer -->
     <?php
     require_once "footer.html"; 
+    
     ?>
+    
   </body>
 </html>

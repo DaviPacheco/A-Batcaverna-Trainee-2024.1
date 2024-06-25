@@ -30,7 +30,7 @@
     </div>
     <div class="conteste">
     <div id="conteiner"> <!-- caixa principal -->
-        
+      
           <ul class="lista">
            <li> 
             <img src="<?= $post[0]->image ?> "alt="perfil do post">

@@ -9,20 +9,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/ModalEdicaoPost.css" />
     <script defer src="https://kit.fontawesome.com/10f37f7ffb.js" crossorigin="anonymous"></script>
+
+ <!-- links da sidebar -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../../../public/css/sidebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+<nav id="Sidebar">
+       <!-- <div id="sair">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>-->
+        <div id="space">
+
+        </div>
+        <div id="caixa_sidebar">
+            <ul id="items">
+                <li class="item"> <!-- o class é para aplicar o css em tudo que possui a mesma classe-->
+                    <a href="/">
+                        <span class="icon"><i class="bi bi-house-door"></i></span>
+                        <span class="descricao_do_item">
+                            Home
+                        </span>
+                    </a> 
+        
+                </li>
+                <li class="item"> <!-- o class é para aplicar o css em tudo que possui a mesma classe-->
+                    <a href="/users">
+                        <span class="icon"><i class="bi bi-people"></i></span>
+                        <span class="descricao_do_item">
+                            Users
+                        </span>
+                    </a> 
+        
+                </li>
+                <li class="item"> <!-- o class é para aplicar o css em tudo que possui a mesma classe-->
+                    <a href="/posts">
+                        <span class="icon"><i class="bi bi-postcard"></i></span>
+                        <span class="descricao_do_item">
+                            Posts
+                        </span>
+                    </a> 
+        
+                </li>
+                <li class="item"> <!-- o class é para aplicar o css em tudo que possui a mesma classe-->
+                    <a href="/dashboard">
+                        <span class="icon"><i class="bi bi-columns-gap"></i></span>
+                        <span class="descricao_do_item">
+                            Dashboard
+                        </span>
+                    </a> 
+        
+                </li>
+                <li class="item"> <!-- o class é para aplicar o css em tudo que possui a mesma classe-->
+                    <a href="/login">
+                        <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
+                        <span class="descricao_do_item">
+                            Logout
+                        </span>
+                    </a> 
+        
+                </li>
+              </ul>
+        </div>
+      
+
+
+    </nav>
+    <script src="script.js"></script>
     <div class="back">
+    
     <div class="cont_user">
+    
         <p class="title_user">Lista de Usuários</p>
         <button class="bt_create" onclick="abrirmodal('divform')">Criar Usuário</button>
     </div>
+    
     <div class="cont_tab"> 
-
+    
         
 
         <table>
+        
             <thead>
+            
                 <tr class ="header_tab">
                       <th class="header_id">ID</th>
                         <th>Usuário</th>
@@ -46,76 +123,36 @@
 <?php endforeach; ?> 
             </tbody>
         </table>
-        <table>
-            <thead>
-                <tr class ="header_tab">
-                    <th class="header_id">ID</th>
-                    <th>Usuário</th>
-                    <th>Email</th>
-                    <th class ="header_ac">Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class ="body_tab">
-                    <td>6</td>
-                    <td>Davi</td>
-                    <td>pacheco@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>7</td>
-                    <td>Super</td>
-                    <td>man@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>8</td>
-                    <td>Mulher</td>
-                    <td>maravilha@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>9</td>
-                    <td>Wayne</td>
-                    <td>not_batman@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-                <tr class ="body_tab">
-                    <td>10</td>
-                    <td>Lanterna</td>
-                    <td>verde-msm@gotham.com</td>
-                    <td><button class="bt_vis" onclick="abrirmodal('divvs')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>
-                        <button class="bt_edit"onclick="abrirmodal('eddivform')" ><i class="fa-regular fa-pen-to-square"></i><span class="stx">Editar</span></button>
-                        <button class="bt_delete" onclick="abrirmodal('divdelete')" ><i class="fa-regular fa-trash-can"></i><span class="stx">Excluir</span></button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="paginacao">
-           <button onclick="troca_relativa(-1)" class="seta_pag1"><i class="fa-solid fa-angles-left "></i></button>
-            <a href="#1" class="num_pag">1</a>
-            <a href="#2" class="num_pag">2</a>
-            <button onclick="troca_relativa(+1)"  class="seta_pag2"><i class="fa-solid fa-angles-right"></i></button>
-        </div>
-    </div>
-</div>
-<script defer src="../../../public/js/Paginacao.js"></script>
+        
+        <nav class="paginacao" style = "display: flex; justify-content: center; margin-top: 20px;" aria-label="Page navigation example">
+  <ul class="paginacao" style = "list-style-type: none">
+    <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
+      <a class="page-link" href="?pagina=<?= $pagina_atual - 1 ?>" aria-label="Previous">
+        <span class = "text-dark" aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
 
-    <!--////////////////// MODAL ////////////////-->
+    <?php for($pagina = 1; $pagina <= $pagina_total; $pagina++): ?>
 
-    <!-- CRIAR USUARIO -->
+    <li class="page-item">
+      <a class="page-link <?= $pagina == $pagina_atual ? "active" : "" ?>" href="?pagina=<?= $pagina ?>">
+        <?= $pagina ?>
+      </a>
+  </li>
+
+    <?php endfor ?>
+
+    <li class="page-item <?= $pagina_atual >= $pagina_total ? "disabled" : "" ?>">
+      <a class="page-link" href="?pagina=<?= $pagina_atual + 1 ?>" aria-label="Next">
+        <span class = "text-dark" aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!--////////////////// MODAL ////////////////-->
+
+<!-- CRIAR USUARIO -->
 <div class="cont_modal" id="divform">
     <form class="divform" method="POST" action="users/create">
         <div class="nv"><h2 class="nc">CRIAR USUARIO</h2></div>
@@ -128,14 +165,14 @@
             <input class="in" type="password"placeholder="  digite sua senha" name="password" required>
         </div>
         <div class="af">       
-        <button type="submit"  class="f">SALVAR</button>
-        <button class="fe" type="button" onclick="fecharmodal('divform')">CANCELAR</button>
-         </div>
+            <button type="submit"  class="f">SALVAR</button>
+            <button class="fe" type="button" onclick="fecharmodal('divform')">CANCELAR</button>
+        </div>
     </form>
 </div>
-    
-    <!-- EDITAR -->
-     <?php foreach( $users as $user): ?>
+
+<!-- EDITAR -->
+<?php foreach( $users as $user): ?>
     <div class="cont_modal" id="eddivform<?=$user->id ?? '1'?>" >
         <form class="eddivform"   method="POST" action="users/edit">
             <div class="ednv"><h2 class="ednc">EDITAR USUARIO</h2></div>
@@ -151,48 +188,48 @@
             <div class="edaf">       
             <button type="submit" class="edf" >SALVAR</button>
             <button type="button" class="edfe" onclick="fecharmodal('eddivform<?=$user->id ?? '1'?>')">CANCELAR</button>
-            </div>
-     </form>   
+        </div>
+    </form>   
         </div>
     <!-- VISUALIZAR -->
-        <div class="cont_modal" id="divvs<?=$user->id ?? '1'?>">
+    <div class="cont_modal" id="divvs<?=$user->id ?? '1'?>">
         <div class="divvs">
             <div class="divti">
                 <h2 class="h2vs">VISUALIZAR USUÁRIO</h2>
             </div>
             <div class="cabeca_conteudo">
-            <div class="vsidu">
-                <p class="idu"> ID:</p>
+                <div class="vsidu">
+                    <p class="idu"> ID:</p>
                 <p class="idu2"> <?=$user->id ?? '1'?></p>
-
+                
             </div>
             <div class="divvn">
                 <p class="pvs"> Nome:</p> 
                 <p class="ppu"><?=$user->name ?></p>
             </div>
-
+            
             <div class="divve">
                 <p class="pvs">Email:</p>
                 <p class="ppu2"><?=$user->email ?></p>
             </div>
-            </div>
+        </div>
             <div class="cabeca_butao">
-            <button type="button" class="butvs" onclick="fecharmodal('divvs<?=$user->id ?? '1'?>')" >FECHAR</button>
-            </div>
+                <button type="button" class="butvs" onclick="fecharmodal('divvs<?=$user->id ?? '1'?>')" >FECHAR</button>
             </div>
         </div>
     </div>
-    <!-- EXCLUIR -->
-    <div class="cont_modal" id="divdelete<?=$user->id ?? '1'?>">
-        <form class="divdelete" method="POST" action="users/delete">
+</div>
+<!-- EXCLUIR -->
+<div class="cont_modal" id="divdelete<?=$user->id ?? '1'?>">
+    <form class="divdelete" method="POST" action="users/delete">
             <div class="texti">
-               <h2 class="exu">EXCLUIR USUÁRIO</h2>
+                <h2 class="exu">EXCLUIR USUÁRIO</h2>
             </div>
             <div class="divaviso">
-              <p class="deletext">
-               Atenção, após essa ação for concluida, não será possivel desfazê-la!<br/>
-               Tem certeza que deseja excluir esse Usuário?
-              </p>
+                <p class="deletext">
+                    Atenção, após essa ação for concluida, não será possivel desfazê-la!<br/>
+                    Tem certeza que deseja excluir esse Usuário?
+                </p>
             </div>
             <div class="bbpos"> 
               <input type="hidden" value="<?=$user->id ?? '1'?>" name="id" >           
@@ -200,9 +237,12 @@
              <button class="butex" type="button" onclick="fecharmodal('divdelete<?=$user->id ?? '1'?>')">CANCELAR</button>
            </div>
             </div>
-     </form>
+        </form>
     </div>
-   <?php endforeach; ?>
+    <?php endforeach; ?>
+    
 </body>
+<script defer src="../../../public/js/Paginacao.js"></script>
 <script src="../../../public/js/Modal_Luis.js"></script>
+
 </html>

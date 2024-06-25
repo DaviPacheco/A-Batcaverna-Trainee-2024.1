@@ -201,6 +201,7 @@ footer * {
 
 }
 footer {
+    
     height: 263px;
     display: flex;
     justify-content: center;
@@ -789,6 +790,6 @@ table{
     .bt_create{
         padding: 4px 18px;
     }
+   
 
 }
-
