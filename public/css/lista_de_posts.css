@@ -827,3 +827,16 @@ body{
     }
 }
 }
+footer{
+    margin-top: 1000px;
+}
+@media (max-width: 1200px){
+    footer{
+        margin-top: 1980px;
+    }
+}
+@media (max-width: 1000px){
+    footer{
+        margin-top: 2740px;
+    }
+}
