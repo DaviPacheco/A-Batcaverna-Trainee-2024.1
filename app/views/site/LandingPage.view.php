@@ -54,7 +54,7 @@
             href="#TextoUltimasPublicacoes"
             id="BotaoIrPublicacoes"
             class="BotaoInicial"
-            >PUBLICAÇÕES</a
+            >NOVIDADES</a
           >
        </div>
         <div id="titulo">
@@ -249,7 +249,7 @@
                   </li>
                 </ul>
                 <div class="NomeDoAutor NA1">Autor: <?= $post->author ?></div>
-                <a href="" class="BotaoLerMais BM1"><p>Ler Mais</p></a>
+                <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM1"><p>Ler Mais</p></a>
               </div>
             </li>
             <?php }
@@ -274,7 +274,7 @@
                     </li>
                   </ul>
                   <div class="NomeDoAutor NA2">Autor: <?= $post->author ?></div>
-                  <a href="" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
+                  <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
                 </li>
                 <?php } 
                 if($kont==3 || $kont==5) {  
@@ -295,7 +295,7 @@
                     </li>
                   </ul>
                   <div class="NomeDoAutor NA3">Autor: <?= $post->author ?></div>
-                  <a href="" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
+                  <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
                 </li>
               </ul>
               
