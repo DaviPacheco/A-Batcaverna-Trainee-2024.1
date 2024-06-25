@@ -1,3 +1,6 @@
+<?php
+session_start();
+?> 
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -33,10 +36,9 @@
   </head>
   <body>
     
-    
-    <?php
-    require_once "navbar.html";
-    
+
+  <?php 
+     require_once "navbar.php";
     ?>
     <div id="BlocoTotalLandingPage" class="BlocoTotalLP">
       

@@ -23,7 +23,7 @@
 </head>
 <body>
 <?php
-    require_once "navbar.html";
+    require_once "navbar.php";
     ?>
     <div id="logo">
         <img src="../../../public/assets/Logo_Batcaverna_Preto_1 1 (2).png" alt="logo da batcaverna">
