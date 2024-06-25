@@ -28,6 +28,7 @@
     <div id="logo">
         <img src="../../../public/assets/Logo_Batcaverna_Preto_1 1 (2).png" alt="logo da batcaverna">
     </div>
+    <div class="conteste">
     <div id="conteiner"> <!-- caixa principal -->
         
           <ul class="lista">
@@ -55,5 +56,6 @@
     <?php
     require_once "footer.html"; 
     ?>
+    </div>
 </body>
 </html>

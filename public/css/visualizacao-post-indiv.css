@@ -323,7 +323,11 @@ body {
         font-weight: 350;
     }
 }
+
 }     
+.conteste{
+    display: flex;
+}
 
     
     
