@@ -1,7 +1,5 @@
 <?php
-
-
-
+session_start();
 ?>
 
 
@@ -31,7 +29,7 @@
 </head>
 <body>
   <?php
-    require_once "navbar.html";
+    require_once "navbar.php";
     ?>
     
            <form id="barra" method="GET" action="">
