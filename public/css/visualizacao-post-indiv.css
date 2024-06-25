@@ -331,11 +331,12 @@ body {
 }
 
 }     
-.conteste{
+    .conteste{
     display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    align-content: space-between;
 }
-
-    
     
     
 
