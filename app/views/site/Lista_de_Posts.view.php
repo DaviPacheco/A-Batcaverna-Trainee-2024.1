@@ -55,7 +55,7 @@
                         <span id="barrinha1"></span>
                         <span id="resumo1"><?= substr($post->content,0,150) ?>...</span>
                         <div id="autor1">Autor: Lex Luthor</div>
-                        <button id="lermais1"><a style = "color: white;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
+                        <button id="lermais1"><a style = "color: white; text-decoration: none;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
                     </span>   
                   <?php $kont++;
                    } 
@@ -69,7 +69,7 @@
                         <span id="barrinha2"></span>
                         <span id="resumo2"><?= substr($post->content,0,110) ?>...</span>
                         <div id="autor2">Autor: Lex Luthor</div>
-                        <button id="lermais2"><a style = "color: white;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
+                        <button id="lermais2"><a class = "readmore" style = "color: white; text-decoration: none;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
                 </span>
                 <?php 
                 if($kont<5)
@@ -81,7 +81,7 @@
             ?>
                 
                 <div class = "caixote">
-                <nav class="paginacao" style = "display: flex; justify-content:center;" aria-label="Page navigation example">
+                <nav class="paginacao" style = "display: flex; justify-content:center; margin-right:0px" aria-label="Page navigation example">
   <ul class="paginacao" style = "list-style-type: none">
     <li class="page-item <?= $pagina_atual <= 1 ? "disabled" : "" ?>" style = "list-style-type: none">
       <a class="page-link" href="?pagina=<?= $pagina_atual - 1 ?>&search=<?php if(array_key_exists('search',$_GET)){ echo $_GET['search']; } ?>" aria-label="Previous">

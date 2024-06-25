@@ -243,6 +243,7 @@ body{
 #lermais1:hover {
     border: 1.5px solid white;
     cursor: pointer;
+    text-decoration-line: underline;
 }
 
 #titulo2 {
@@ -301,11 +302,13 @@ body{
     margin-left: 186px;
     position: absolute;
     border: 1.5px solid black;
+    text-decoration: none;
 }
 
 #lermais2:hover {
     border: 1.5px solid white;
     cursor: pointer;
+    text-decoration-line: underline;
 }
 
 .caixote {
