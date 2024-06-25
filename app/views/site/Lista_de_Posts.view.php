@@ -52,7 +52,7 @@ session_start();
                         <span id="titulo1"><?= substr($post->title,0,25) ?></span>
                         <span id="barrinha1"></span>
                         <span id="resumo1"><?= substr($post->content,0,150) ?>...</span>
-                        <div id="autor1">Autor: Lex Luthor</div>
+                        <div id="autor1">Autor: <?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name; endforeach; ?></div>
                         <button id="lermais1"><a style = "color: white; text-decoration: none;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
                     </span>   
                   <?php $kont++;
@@ -66,7 +66,7 @@ session_start();
                     <span id="titulo2"><?= substr($post->title,0,25) ?></span>
                         <span id="barrinha2"></span>
                         <span id="resumo2"><?= substr($post->content,0,110) ?>...</span>
-                        <div id="autor2">Autor: Lex Luthor</div>
+                        <div id="autor2">Autor: <?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name; endforeach; ?></div>
                         <button id="lermais2"><a class = "readmore" style = "color: white; text-decoration: none;" href="/visualizacao-unica?id=<?= $post->id ?>">Ler Mais</a></button>
                 </span>
                 <?php 

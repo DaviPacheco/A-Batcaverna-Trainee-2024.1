@@ -43,7 +43,9 @@ class PostListController {
 
   $pagina_total = ceil($contagem_linhas/$itens_na_pagina);
 
-  return view('site/Lista_de_Posts', compact('posts', 'pagina_atual', 'pagina_total'));            
+  $users = App::get('database')->selectAll('users');
+
+  return view('site/Lista_de_Posts', compact('posts', 'users', 'pagina_atual', 'pagina_total'));            
      }    
      }  
      ?>
