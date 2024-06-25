@@ -228,7 +228,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
 #FormularioVisualizacaoDePost img{
     object-fit:cover;
     max-width:95%;
-    max-height:200px;
+    max-height:160px;
     margin-top:2px;
 }
 .formA button{
@@ -312,6 +312,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
 }
 }
 .formA .ConteudoVisualizacao{
+    margin-top:2px;
     border: 1px solid rgba(204,37,37,0.6);
     background-color:transparent;
 }

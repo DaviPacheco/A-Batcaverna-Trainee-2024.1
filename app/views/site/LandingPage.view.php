@@ -46,7 +46,7 @@
           src="/public/assets/BatcavernaArkham 1.png"
           alt="Imagem da batcaverna com bordas arredondadas"
         />
-        <nav>
+        <div>
           <a href="#BotaoVerMais" id="BotaoSobreNos" class="BotaoInicial"
             >SOBRE NÓS</a
           >
@@ -56,7 +56,7 @@
             class="BotaoInicial"
             >PUBLICAÇÕES</a
           >
-        </nav>
+       </div>
         <div id="titulo">
           <h1>
             BEM-VINDO À BATCAVERNA, BLOG FOCADO EM TUDO QUE ENVOLVE A DC COMICS!
@@ -269,7 +269,7 @@
                     <li class="LinhaLateral LLPost2"></li>
                     <li class="ParteEscrita PEPost2">
                       <p>
-                      <?= substr( $post->content,0,110 ) . '...'?>
+                      <?= substr( $post->content,0,100 ) . '...'?>
                       </p>
                     </li>
                   </ul>
@@ -290,7 +290,7 @@
                     <li class="LinhaLateral LLPost3"></li>
                     <li class="ParteEscrita PEPost3">
                       <p>
-                      <?= substr( $post->content,0,110 ) . '...'?>
+                      <?= substr( $post->content,0,100 ) . '...'?>
                       </p>
                     </li>
                   </ul>
