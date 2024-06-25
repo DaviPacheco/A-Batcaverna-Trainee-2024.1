@@ -830,6 +830,11 @@ body{
 footer{
     margin-top: 1000px;
 }
+@media (min-width:1800px){
+    footer{
+    margin-top: 1400px;
+    }
+}
 @media (max-width: 1200px){
     footer{
         margin-top: 1980px;
