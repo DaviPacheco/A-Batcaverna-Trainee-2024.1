@@ -1,6 +1,6 @@
 
         <header>
-            <img class="logo-nav" src="../../../public/assets/Logo_Batcaverna_vermelha nav.png" alt="Logo_Batcaverna_vermelha">
+            <a href= "/"><img class="logo-nav" src="../../../public/assets/Logo_Batcaverna_vermelha nav.png" alt="Logo_Batcaverna_vermelha"></a>
             <nav class="nav">
                 <button class="hamburguer"></button>
                 <ul class="layout-nav">

@@ -38,7 +38,8 @@ class PostListController {
  else{        
    $title=$_GET['search'];         
    $param=['title'=>$title];        
-   $posts = App::get('database')->selectAllSearch('posts', $param, $inicio, $itens_na_pagina);      // Obtém Banco de Dados e seleciona tudo       
+   $posts = App::get('database')->selectAllSearch('posts', $param, $inicio, $itens_na_pagina);      // Obtém Banco de Dados e seleciona tudo   
+   $contagem_linhas =  count($posts);  
 }  
 
   $pagina_total = ceil($contagem_linhas/$itens_na_pagina);

@@ -29,8 +29,9 @@ class PaginacaoController
         $posts = App::get('database')->selectAll('posts', $inicio, $itens_na_pagina);
 
         $pagina_total = ceil($contagem_linhas/$itens_na_pagina);
+        $users = App::get('database')->selectAll('users');
 
-        return view('site/paginacao', compact('posts', 'pagina_atual', 'pagina_total'));
+        return view('site/paginacao', compact('posts', 'users', 'contagem_linhas', 'pagina_atual', 'pagina_total'));
     }
 
 
@@ -72,11 +73,12 @@ class PaginacaoController
           $extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));
           $path = $pasta . $novoNomeDoArquivo . "." . $extensao;
           move_uploaded_file($arquivo['tmp_name'], $path);
-
+          session_start();
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
-            'image'=> $path
+            'image'=> $path,
+            'author' => $_SESSION['users']['id']
         ];
 
 
@@ -128,6 +130,7 @@ class PaginacaoController
 
         return view('site/post-indiv', compact('post'));
     }
+    
 }
 
 ?>

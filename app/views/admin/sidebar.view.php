@@ -48,7 +48,7 @@
         
                 </li>
                 <li class="item"> <!-- o class é para aplicar o css em tudo que possui a mesma classe-->
-                    <a href="/login">
+                    <a href="/logout">
                         <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
                         <span class="descricao_do_item">
                             Logout

@@ -1,10 +1,10 @@
 <?php
 
 use PHPMailer\Test\PHPMailer\LocalizationTest;
-
     session_start();
-    if(!$_SESSION['sessao']){
-        return redirect('login');
+    // die(var_dump(($_SESSION['sessao'])));
+    if(!isset($_SESSION['sessao'])){
+     redirect('login');
     }
 ?>
 

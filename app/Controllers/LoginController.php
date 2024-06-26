@@ -86,6 +86,7 @@ class LoginController
         } 
             session_start();
             $_SESSION['sessao'] = true;
+            $_SESSION['users'] = $result;
         header("location: /dashboard"); // pra alguma pagina, provavelmente a landing page
         die();
     }

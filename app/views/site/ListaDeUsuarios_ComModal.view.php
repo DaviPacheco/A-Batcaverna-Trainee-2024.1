@@ -1,3 +1,9 @@
+<?php
+session_start();
+    if(!isset($_SESSION['sessao'])){
+     redirect('login');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,9 +115,9 @@
             </thead>
             <tbody>
             <?php
-        foreach($users as $user): ?>
+        foreach($users as $cont => $user): ?>
                 <tr class ="body_tab">
-                    <td><?=$user->id ?? '1'?></td>
+                    <td><?= $cont + 1 + 5 * ($pagina_atual - 1)?></td>
                     <td><?=$user->name?></td>
                     <td><?=$user->email?></td>
                     <td><button class="bt_vis" onclick="abrirmodal('divvs<?=$user->id ?? '1'?>')" ><i class="fa-regular fa-eye"></i><span class="stx">Visualizar</span></button>

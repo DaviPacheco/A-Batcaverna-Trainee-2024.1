@@ -23,7 +23,14 @@ body {
     margin-right: auto;
     
 }
-
+.pedro_bial{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
 #conteiner{
     flex-direction: column;
     display: flex; /*isto fez o texto do conteudo se adequar ao tamanho da caixa conteiner*/
@@ -41,7 +48,7 @@ body {
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: 200px;
+        
         
     }
     
@@ -96,6 +103,7 @@ body {
         font-weight: 750;
         
     }
+    
     
    @media (max-width: 1024px){ /*LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP LAPTOP*/
         .lista img {

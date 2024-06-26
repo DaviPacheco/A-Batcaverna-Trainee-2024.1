@@ -115,22 +115,4 @@ session_start();
     require_once "footer.html"; 
     ?>
 </body>
-<style>
-        #Pesquisar{
-            color:black;
-            outline:0;
-            background-color:#cc2524;
-            border:0;
-        }
-        #Pesquisar:focus{
-            background-color:#cc2524;
-        }
-        #Pesquisar:active{
-            background-color:#cc2524;
-        }
-        #lupa{
-            border:0;
-            outline:0;
-        }
-    </style>
 </html>

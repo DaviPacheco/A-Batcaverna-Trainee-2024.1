@@ -1,6 +1,14 @@
+
 <?php
 
 $date = date('d/m/Y');
+
+
+session_start();
+    if(!isset($_SESSION['sessao'])){
+     redirect('login');
+    }
+
 
 ?>
 
@@ -37,6 +45,7 @@ $date = date('d/m/Y');
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
+
   <nav id="Sidebar">
        <!-- <div id="sair">
             <a href="#">
@@ -128,10 +137,10 @@ $date = date('d/m/Y');
 
             <tbody>
 
-              <?php foreach($posts as $post): ?>
+              <?php foreach($posts as $cont => $post): ?>
 
               <tr class="body_tab">
-                <td><?= $post->id ?></td>
+                <td><?= $contagem_linhas - (($cont) + 5 * ($pagina_atual - 1));?></td>
                 <td>Wayne</td>
                 <td><?= $post->title ?></td>
                 <td>
@@ -242,10 +251,10 @@ $date = date('d/m/Y');
           <h3>Data de criação:</h3>
           <input type="text" value="<?= date('d/m/Y'); ?>" name="created_at" placeholder="<?php echo"<pre>"; print_r($date); echo"</pre>" ?>" readonly/>
         </section>
-        <section class="NomeDoAutorPostForm">
-          <h3>Autor:</h3>
-          <p>be</p>
-        </section>
+        <!-- <section class="NomeDoAutorPostForm"> 
+          <h3>Autor:  </h3>
+          
+        </section> -->
         <div class="BotoesFormularios">
           <button
             type = "submit"
@@ -297,7 +306,7 @@ $date = date('d/m/Y');
           </section>
           <section class="NomeDoAutorPostForm">
             <h3>Autor:</h3>
-            <p><?= $post->author?></p>
+            <p><?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name;  endforeach; ?> </p> 
           </section>
           <div class="BotoesFormularios">
             <button
@@ -368,7 +377,7 @@ $date = date('d/m/Y');
         </section>
         <section class="NomeDoAutorPostForm">
           <h3>Autor:</h3>
-          <p><?= $post->author ?></p>
+          <p><?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name;  endforeach; ?> </p>
         </section>
         <div class="BotoesFormularios">
           <button type = "submit"

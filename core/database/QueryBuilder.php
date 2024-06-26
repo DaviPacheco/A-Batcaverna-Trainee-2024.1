@@ -16,6 +16,9 @@ class QueryBuilder
 
     public function selectAll($table, $inicio = null, $contagem_linhas = null)
     {
+        if($table=='posts')
+        $sql = "select * from {$table} order by id DESC";
+    else
         $sql = "select * from {$table}";
 
         if ($inicio >=0 && $contagem_linhas > 0) {
