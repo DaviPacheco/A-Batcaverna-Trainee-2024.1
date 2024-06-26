@@ -27,13 +27,14 @@ class LoginController
         $contagem_linhas = App::get('database')->countAll('posts');
         if($contagem_linhas<=5)
         {
-            $inicio=0;
+            $fim=$contagem_linhas;
         }
         else{
-            $inicio=$contagem_linhas-5;
+            $fim=5;
         }
-        $posts = App::get('database')->selectAll('posts', $inicio, 5);
-        return view('site/LandingPage',compact('posts','contagem_linhas'));
+        $posts = App::get('database')->selectAll('posts', 0, $fim);
+        $users = App::get('database')->selectAll('users');
+        return view('site/LandingPage',compact('posts', 'users','contagem_linhas'));
     }
 
     public function dash()

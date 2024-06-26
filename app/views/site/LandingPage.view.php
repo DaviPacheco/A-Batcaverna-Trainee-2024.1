@@ -250,7 +250,7 @@ session_start();
                     <?= substr( $post->content,0,110 ) . '...'?>
                   </li>
                 </ul>
-                <div class="NomeDoAutor NA1">Autor: <?= $post->author ?></div>
+                <div class="NomeDoAutor NA1">Autor: <?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name; endforeach; ?></div>
                 <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM1"><p>Ler Mais</p></a>
               </div>
             </li>
@@ -275,7 +275,7 @@ session_start();
                       </p>
                     </li>
                   </ul>
-                  <div class="NomeDoAutor NA2">Autor: <?= $post->author ?></div>
+                  <div class="NomeDoAutor NA2">Autor: <?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name; endforeach; ?></div>
                   <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM2"><p>Ler Mais</p></a>
                 </li>
                 <?php } 
@@ -296,7 +296,7 @@ session_start();
                       </p>
                     </li>
                   </ul>
-                  <div class="NomeDoAutor NA3">Autor: <?= $post->author ?></div>
+                  <div class="NomeDoAutor NA3">Autor: <?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name; endforeach; ?></div>
                   <a href="visualizacao-unica?id=<?= $post->id ?>" class="BotaoLerMais BM3"><p>Ler Mais</p></a>
                 </li>
               </ul>
