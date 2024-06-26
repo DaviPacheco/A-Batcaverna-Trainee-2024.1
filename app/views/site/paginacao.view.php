@@ -141,7 +141,7 @@ session_start();
 
               <tr class="body_tab">
                 <td><?= $contagem_linhas - (($cont) + 5 * ($pagina_atual - 1));?></td>
-                <td>Wayne</td>
+                <td><?php foreach($users as $user): $aux = $post->author; if($user->id == $aux) echo $user->name; endforeach;?></td>
                 <td><?= $post->title ?></td>
                 <td>
                   <button
