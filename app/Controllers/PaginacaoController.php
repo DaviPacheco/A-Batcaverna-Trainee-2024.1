@@ -128,7 +128,9 @@ class PaginacaoController
     {
         $post = App::get('database')->select('posts', $_GET['id']);
 
-        return view('site/post-indiv', compact('post'));
+        $users = App::get('database')->selectAll('users');
+
+        return view('site/post-indiv', compact('post', 'users'));
     }
     
 }

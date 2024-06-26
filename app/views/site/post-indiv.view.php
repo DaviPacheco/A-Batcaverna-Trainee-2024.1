@@ -48,7 +48,7 @@ session_start();
          </span>
          <ul class="infos">
          <li>
-            <div id="autor">Autor: Lex Luthor</div>
+            <div id="autor">Autor: <?php foreach($users as $user): $aux = $post[0]->author; if($user->id == $aux) echo $user->name; endforeach; ?></div>
         </li>
         <li>
         <div id="data">Data de criação: <?= $post[0]->created_at ?></div>
