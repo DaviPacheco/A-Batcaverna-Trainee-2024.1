@@ -375,6 +375,7 @@ padding: 16px 8px;
 }
 .in{
   width:390px ;
+  padding-left:8px;
   background-color:#d9d9d9; 
   height:40px ;
   margin:5px;
@@ -520,7 +521,7 @@ background-color: rgba(220,220,220,0.8);
   }
 }
 
-/edusuarios/ 
+/*edusuarios*/ 
 
 .edfundoprincipal{
   width:100% ;
@@ -562,6 +563,7 @@ background-color: rgba(220,220,220,0.8);
 }
 .edin{
   width:390px ;
+  padding-left: 12px;
   background-color: #d9d9d9;
   height:40px ;
   margin:5px; 
@@ -700,7 +702,7 @@ left: 27%;
   
 }
 
-/deletarusuario/
+/*deletarusuario*/
  
 .deleprincipal{
   width: 100%;
@@ -892,7 +894,7 @@ background-color: rgba(220,220,220,0.8);
 
 } 
 
-/visualizar usuarios/
+/*visualizar usuarios*/
 
 .vsfundo{
 height:100vh ;
@@ -1005,7 +1007,7 @@ font-family: "Oswald", sans-serif;
   width:75% ;
 }
 .h2vs{
-  font-size: 22px;
+  font-size: 20px;
 }
 .pvs{
   font-size:23px ;
