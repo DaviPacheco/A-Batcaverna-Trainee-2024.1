@@ -220,7 +220,7 @@ border-radius:200px;
 
 }
 body{
-    background-color: #b5b5b5;
+    background-color: black;
 }
 body * {
     font-family: "Oswald",sans-serif ;
@@ -245,7 +245,7 @@ body * {
     margin:auto;
     width:95%;
     max-width:1800px;
-    background-color:black;
+    background-color:#161515;
     max-height:100vh;
     margin:50px auto auto auto;
     padding:8px 10px;
@@ -346,7 +346,7 @@ body * {
     flex-direction: var(--ModeloLista); /*Altera o padrão de linha para colunas*/
     gap: var(--gapLista); /*Adiciona um espaço entre os elementos da ul, respeitando o modelo de disposição estabelecido(nesse caso no comando logo acima)*/
     margin:4% 0px 0px 0px;
-    background-color:rgba(0,0,0,0.9);
+    background-color:rgb(24,23,23,0.9);
     padding:10% 3%;
     border-radius:15px;
     align-items: center;
@@ -438,7 +438,7 @@ body * {
   }
 #BlocoDoProposito{
     margin-top:4%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(24,23,23,0.9);
     border-radius:15px;
     width:100%;
     padding-top:2%;
@@ -569,7 +569,7 @@ height: 1.8em;
     border-right:7px solid #CC2524;
     border-left:7px solid #CC2524;
     max-width:1256px;
-    background-color:rgba(115, 115, 115, 0.9);
+    background-color:rgba(24, 23, 23, 0.9);
     padding:1.094% 1.071%;
     position:relative;
 }
@@ -749,13 +749,9 @@ height: 1.8em;
 .NomeDoAutor{
     text-align: left;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     /*Text shadow ficou melhor visualmente que o stroke*/
-    text-shadow:
-        1px 1px 0 white,/*Baixo*/
-        -1px 1px 0 white,/*Esquerda*/
-        -1px -1px 0 white,/*Cima*/
-        1px -1px 0 white;  
+  
 }
 .NA1{
 margin-top:3%;
@@ -838,11 +834,11 @@ font-size: 1.5em;
 }
 #BotaoVerMais
 {
-    width:28%;
+    width:24%;
     min-width:200px;
     height: fit-content;
     display:flex;
-    border-radius: 50%;
+    border-radius: 75px;
     justify-content:center;
     text-align:center;
     align-items: center;

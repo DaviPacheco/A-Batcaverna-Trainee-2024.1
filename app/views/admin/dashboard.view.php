@@ -24,6 +24,10 @@ use PHPMailer\Test\PHPMailer\LocalizationTest;
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <style>body{
+    /* isto fez ocupar todo o espaço*/
+   background-color: #410f0f;
+}</style>
     <?php require_once "sidebar.view.php"?>
     <div id="logobat">
         <img src="/public/assets/Logo_Batcaverna_Preto (2).svg">

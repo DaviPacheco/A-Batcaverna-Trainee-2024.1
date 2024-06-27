@@ -29,7 +29,7 @@ session_start();
     require_once "navbar.php";
     ?>
     <div id="logo">
-        <img src="../../../public/assets/Logo_Batcaverna_Preto_1 1 (2).png" alt="logo da batcaverna">
+        <img src="../../../public/assets/Logo Batcaverna Vermelho.svg"alt="logo da batcaverna">
     </div>
     <div class="conteste">
     <div id="conteiner"> <!-- caixa principal -->
