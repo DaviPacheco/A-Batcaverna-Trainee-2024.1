@@ -46,6 +46,8 @@ body {
     cursor: pointer;
 }
 
+
+
 @media (max-width: 2000px){
     #logobat img{
     margin-top: 170px;
@@ -58,38 +60,52 @@ body {
     }
 }
 
+
+
 @media (max-width: 1000px) {
-
-    
-    #barraMeio{
-        width: 750px;
-        gap: 90px;
-        padding: 10px 40px;
-    }
-}
-
-@media (max-width: 500px) {
 
 body {
     padding-bottom: 20px;
-    border: 1px solid white;
 }
 
     #logobat img{
-        width: 100%;
+        width: 60%;
         margin-top: 0px;
+        margin-left: 80px;
     }
 
     #barraMeio{
-        width: 80%;
+        margin-top: 30px;
+        width: 40%;
         height: 800px;
-        margin: 0px auto 0px;
+        margin-left: 270.4px;
         display: block;
         padding: 20px 10% 20px 10%;
         font-size: 60px;
     }
 
     #barraMeio a{
-        padding: 60px;
+        padding-top: 70px;
+        padding-bottom: 60px;
+
+    }
+}
+
+@media(max-width: 500px){
+    #barraMeio{
+        margin-left: 114.945px;
+        width: 60%;
+    }
+}
+
+@media(max-width: 400px){
+    #barraMeio{
+        margin-left: 114.945px;
+    }
+}
+
+@media(max-width: 350px){
+    #barraMeio{
+        margin-left: 104px;
     }
 }
