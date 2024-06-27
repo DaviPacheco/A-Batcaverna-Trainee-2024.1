@@ -344,10 +344,10 @@ body{
     }
 
     #post1 {
-        max-width: 631.4px;
+        max-width: 541.2px;
         width: 100%;
-        height: 896px;
-        margin: 280px 1183px 560px 201.6px;
+        height: 768px;
+        margin: 344px 1137.9px 560px 246.7px;
     }
     
     #barra {
@@ -378,9 +378,9 @@ body{
     }
     
     #batmanDoFuturo1 img {
-        width: 596.4px;
-        height: 429.8px;
-        margin-left: 35px;
+        width: 511.2px;
+        height: 368.4px;
+        margin-left: 30px;
     }
     
     #batmanDoFuturo img {
@@ -410,8 +410,8 @@ body{
     }
     
     #bord1 {
-        width: 35px;
-        height: 896px;
+        width: 30px;
+        height: 768px;
     }
     
     #bord2 {
@@ -458,39 +458,39 @@ body{
     }
     
     #titulo1 {
-        font-size: 50.4px;
-        line-height: 67.2px;
-        width: 596.4px;
-        margin-top: 457.8px;
+        font-size: 43.2px;
+        line-height: 57.6px;
+        width: 511.2px;
+        margin-top: 392.4px;
         margin-left: 30px;
     }
     
     #barrinha1 {
-        width: 1.4px;
-        height: 170.8px;
-        margin: 561.4px;
-        margin-left: 75.6px;
+        width: 1.2px;
+        height: 146.4px;
+        margin: 481.2px;
+        margin-left: 64.8px;
     }
     
     #resumo1 {
-        font-size: 32.2px;
-        line-height: 44.8px;
-        margin: 554.4px 71.4px 162.4px 112px;
+        font-size: 27.6px;
+        line-height: 38.4px;
+        margin: 475.2px 71.4px 162.4px 96px;
     }
     
     #autor1 {
-        font-size: 39.2px;
-        line-height: 50.4px;
-        margin-top: 760.2px;
-        margin-left: 82.6px;
+        font-size: 33.6px;
+        line-height: 43.2px;
+        margin-top: 651.6px;
+        margin-left: 70.8px;
     }
     
     #lermais1 {
-        width: 151.2px;
-        height: 54.6px;
-        font-size: 33.6px;
-        line-height: 50.4px;
-        margin: 812px 33.6px 9.8px 446.6px;
+        width: 129.6px;
+        height: 46.8px;
+        font-size: 28.8px;
+        line-height: 43.2px;
+        margin: 696px 33.6px 9.8px 382.8px;
     }
     
     #titulo2 {
@@ -852,20 +852,20 @@ body{
 }
 }
 footer{
-    margin-top: 1000px;
+    margin-top: 1040px;
 }
 @media (min-width:1800px){
     footer{
-    margin-top: 1400px;
+    margin-top: 1456px;
     }
 }
 @media (max-width: 1200px){
     footer{
-        margin-top: 1980px;
+        margin-top: 1985px;
     }
 }
 @media (max-width: 1000px){
     footer{
-        margin-top: 2740px;
+        margin-top: 2747px;
     }
 }
