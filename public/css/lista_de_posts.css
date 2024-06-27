@@ -200,7 +200,7 @@ body{
 
 #barrinha1 {
     width: 1px;
-    height: 122px;
+    height: 154px;
     background: #cc2524;
     margin: 401px;
     margin-left: 54px;
@@ -221,7 +221,7 @@ body{
     font-size: 28px;
     line-height: 36px;
     color: white;
-    margin-top: 570px;
+    margin-top: 583px;
     margin-left: 59px;
     position: absolute;
 }
@@ -261,7 +261,7 @@ body{
 
 #barrinha2 {
     width: 1px;
-    height: 73.2px;
+    height: 93.2px;
     background: #cc2524;
     margin-top: 239px;
     margin-left: 40px;
@@ -284,7 +284,7 @@ body{
     font-size: 18px;
     line-height: 22px;
     color: white;
-    margin-top: 327px;
+    margin-top: 352px;
     margin-left: 45px;
     position: absolute;
 }
@@ -467,7 +467,7 @@ body{
     
     #barrinha1 {
         width: 1.2px;
-        height: 146.4px;
+        height: 184.8px;
         margin: 481.2px;
         margin-left: 64.8px;
     }
@@ -481,7 +481,7 @@ body{
     #autor1 {
         font-size: 33.6px;
         line-height: 43.2px;
-        margin-top: 651.6px;
+        margin-top: 699.6px;
         margin-left: 70.8px;
     }
     
@@ -503,7 +503,7 @@ body{
     
     #barrinha2 {
         width: 1.4px;
-        height: 102.48px;
+        height: 130.48px;
         margin-top: 334.6px;
         margin-left: 56px;
     }
@@ -519,7 +519,7 @@ body{
     #autor2 {
         font-size: 25.2px;
         line-height: 30.8px;
-        margin-top: 457.8px;
+        margin-top: 492.8px;
         margin-left: 63px;
     }
     
@@ -630,7 +630,7 @@ body{
     
     #barrinha1 {
         width: 1px;
-        height: 73.2px;
+        height: 93.2px;
         margin-top: 239px;
         margin-left: 40px;
     }
@@ -646,7 +646,7 @@ body{
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
-        margin-top: 350px;
+        margin-top: 352px;
         margin-left: 45px;
     }
     
