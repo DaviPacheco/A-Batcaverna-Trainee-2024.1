@@ -105,6 +105,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
   bottom:0;
   left:0;
   right:0;
+  margin-left: 80px;
 }
 }
 @media screen and (max-height:755px) and (min-width:903px){
@@ -641,5 +642,13 @@ table{
     .bt_create{
         padding: 4px 18px;
     }
+
+}
+
+@media (max-width: 376px){
+    .cont_modal{
+        margin-left: 80px;
+    }
+
 
 }

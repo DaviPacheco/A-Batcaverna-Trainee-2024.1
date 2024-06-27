@@ -415,12 +415,13 @@ footer {
         height: 400px;
     }
     .code{
-        margin-top:37%
+        margin-top:46%;
+        margin-right: 2%;
     }
     .social{
          font-size:3.8em !important;
         flex-direction: row;
-        left: -70vw;
+        left: -77vw;
         bottom: -284px;
         font-size: 56px;
         gap: 10px;
@@ -792,5 +793,34 @@ table{
         padding: 4px 18px;
     }
    
+
+}
+@media (width:768px){
+    .rightTri{
+    width: 49%;
+    background-size: cover;
+    background-position-x: -195px;
+    background-position-y: -4px;
+    }
+
+    .Triangulo{
+        width: 0;
+        height: 0;
+        border-top: 131.5px solid transparent;
+        border-left: 166px solid #6e2120;
+        border-bottom: 131.5px solid transparent;
+        position: relative;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        left: -181px;
+        bottom: -94px;
+        font-size: 57px;
+        flex-direction: column;
+}
+    iconify-icon[icon="ant-design:youtube-outlined"] {
+    font-size: 59px;
+}
 
 }
