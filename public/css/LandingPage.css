@@ -374,24 +374,42 @@ body * {
     width:45%;
     object-fit:contain;
     height:70px;
+    margin-bottom:10px;
 }
 #Interrogacao{
     width:45%;
     object-fit:contain;
     height:70px;
+    margin-bottom:10px;
 }
 #DailyPlanet{
     width:81.67%;
     height:67px;
     object-fit:contain;
-    margin-bottom:5px;
+    margin-bottom:15px;
 }
 #BatmanFatosDiversos{
     width:25.44%;
     object-fit:contain;
     height:75px;
-    margin-bottom:3px;
+    margin-bottom:13px;
     margin-top:-7px;
+}
+@media screen and (min-width:1073px){
+ #LogoDc{
+    margin-bottom:25px;
+ }
+ #Interrogacao{
+    margin-bottom:25px;
+ 
+}
+#DailyPlanet{
+    margin-bottom:30px;
+}
+#BatmanFatosDiversos{
+    margin-bottom:28px;
+}
+
 }
 #Lista2 li div{
     background-color:#CC2524;
@@ -489,7 +507,7 @@ height: 1.8em;
             --TamanhoFonteTituloPost2:2.2em;
             --TamanhoFonteTituloPost3:2em;
             --TamanhoFonteParteEscritaPost2:1.2em;
-            --TamanhoFonteParteEscritaPost3:1em;
+            --TamanhoFonteParteEscritaPost3:1.1em;
             --TamanhoFonteBotaoLerMais2:1.1em;
             --TamanhoFonteBotaoLerMais3:1em;
             --TamanhoOutLineBotaoLerMais2:4px;
@@ -657,6 +675,22 @@ height: 1.8em;
     display: flex; /*Tipo de display flexível*/
     flex-direction: row; /*Altera o padrão de linha para colunas*/
     min-height:7lh;
+}
+@media screen and (min-width:901px){
+.Maior .TextoDescritivo{
+    min-height:8lh;
+}
+.MenorCima .TextoDescritivo{
+   min-height:6lh;
+}
+.MenorBaixo .TextoDescritivo{
+   min-height:5lh; 
+}
+}
+@media screen and (max-width:900px) and (min-width:600px){
+    .TextoDescritivo{
+        min-height:6lh;
+    }
 }
 .LinhaLateral{
     background-color: #CC2524;
