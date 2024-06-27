@@ -120,10 +120,7 @@ body {
 .descricao_do_item{
    width: 0px;
 }
-body{
-    /* isto fez ocupar todo o espaço*/
-   background-color: #b5b5b5;
-}
+
 /*   #sair a i{ /* icone lista*/
 /*    color: red;
    padding-top: 25px; /* preenchimento do icone X*/

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #b5b5b5;
+    background-color: black;
 }
 
 body * {
@@ -130,7 +130,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
 }
 .formA{
     flex-direction:column;
-    width:90%;
+    width:70%;
     max-width:570px;
     padding-left:2%;
     border-radius: 40px;
@@ -159,7 +159,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     border-radius:5px;
     border: 1px solid rgba(204,37,37,0.5);
     background-color: #d9d9d9;
-    width:80%;
+    width:95%;
     margin-top:5px;
     padding-top:0.5em;
     padding-bottom:0.5em;
@@ -167,7 +167,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     padding-right:4px;
 }
 .formA textarea{
-    width:80%;
+    width:95%;
     resize: none;
 }
 .formA input:focus, .formA textarea:focus{
@@ -258,6 +258,7 @@ Agora os coloquei aqui, para evitar incompatibilidade com outras páginas. */
     display:flex;
     justify-content: right;
     padding-right: 10px;
+    margin-top: 12px;
     
 }
 .Botao1Formulario:focus{

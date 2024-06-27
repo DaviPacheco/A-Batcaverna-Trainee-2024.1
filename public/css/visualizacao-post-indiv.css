@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #b5b5b5;
+    background-color: #000000;
 }
 #logo{                   /* para mover uma imagem, é necessario criar uma caixa"em volta" dela*/
     width: 20.8%;
@@ -36,7 +36,7 @@ body {
     display: flex; /*isto fez o texto do conteudo se adequar ao tamanho da caixa conteiner*/
     width: 79.6%;
     border-left: 23px solid #cc2524;
-    background-color: black;
+    background-color: rgb(24, 23, 23 , 0.9);
     margin-left: auto;
     margin-right: auto;
     margin-top: 88px;
@@ -236,7 +236,7 @@ body {
         height: 120px; /* mudar so a altura da imagem, ja mexe na largura*/
         width:120px;
         margin-top: 20px;
-        margin-left: 0px;
+        margin-left: 29%;
         }
     #conteiner .lista{
         list-style: none;
